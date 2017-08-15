@@ -1,0 +1,44 @@
+<% content_for :title, "Edycja uzytkownika" %>
+<% content_for :menu, "admin" %>
+
+<div class="container">
+
+<h1 class=page-header>Edycja użytkownika</h1>
+
+<%= form_for @user, :url => { :action => "update" } do |f| %>
+
+  <div class="row">
+    <div class="form-inputs">
+      <div class="input-group">
+        <span class="input-group-addon">Email</span>
+        <%= f.text_field :email, type:"text", autofocus: true, class:"form-control", placeholder: "email" %>
+      </div>
+      </br>
+      <div class="input-group">
+        <span class="input-group-addon">Imię</span>
+        <%= f.text_field :first_name, type:"text", class:"form-control" %>
+      </div>
+      </br>
+      <div class="input-group">
+        <span class="input-group-addon">Nazwisko</span>
+        <%= f.text_field :last_name, type:"text", class:"form-control" %>
+      </div>
+      </br>
+    </div>
+  </div>
+
+  </br>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="callout" align="center">
+        <%= f.submit :Zatwierdź, class:"btn btn-success" %>
+        <%= link_to 'Lista użytkowników', admin_users_path, class:'btn btn-primary' %>
+      </div>
+    </div>
+
+    <% end %>
+
+  </div>
+
+  </br>

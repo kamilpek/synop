@@ -1,0 +1,67 @@
+<% content_for :title, "Pomiary" %>
+
+<div class="container">
+
+<h1 class=page-header>Pomiary</h1>
+
+<% if current_user.try(:admin) %>
+<div class="row" align="center">
+  <div class="col-md-4">
+    <h4>Importuj Pomiary</h4>
+  </div>
+  <div class="col-md-4">
+    <%= form_tag import_measurements_path, multipart: true do %>
+      <%= file_field_tag :file, class:"form-control" %>
+  </div>
+  <div class="col-md-4">
+    <%= submit_tag "Importuj", class:"btn btn-success" %>
+    <% end %>
+  </div>
+</div>
+<br>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Godzina</th>
+      <th>Temperatura</th>
+      <th>Wiatr [V]</th>
+      <th>Wiatr [kier.]</th>
+      <th>Wilgotoność</th>
+      <th>Ciśnienie</th>
+      <th>Opady</th>
+      <th>Parowanie</th>
+      <th>ID Stacji</th>
+      <th>Akcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @measurements.each do |measurement| %>
+      <tr>
+        <td><%= measurement.date %></td>
+        <td><%= measurement.hour %></td>
+        <td><%= measurement.temperature %></td>
+        <td><%= measurement.wind_speed %></td>
+        <td><%= measurement.wind_direct %></td>
+        <td><%= measurement.humidity %></td>
+        <td><%= measurement.preasure %></td>
+        <td><%= measurement.rainfall %></td>
+        <td><%= measurement.et %></td>
+        <td><%= Station.where(number:measurement.station_number).pluck(:name).last %></td>
+        <td><%= link_to 'Przejdź', measurement, class:"btn btn-primary btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <p align="center"><%= will_paginate @measurements, renderer: BootstrapPagination::Rails %></p>
+
+<% if current_user.try(:admin) %>
+<%= link_to 'Nowy Pomiar', new_measurement_path, class:"btn btn-success" %>
+<% end %>
+
+</div>
+
+<br>

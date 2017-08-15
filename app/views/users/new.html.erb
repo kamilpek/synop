@@ -1,0 +1,45 @@
+<% content_for :title, "Dodawanie uzytkownika" %>
+<% content_for :menu, "admin" %>
+
+<div class="container">
+
+<h1 class=page-header>Nowy użytkownik</h1>
+
+<%= form_for User.new do |f| %>
+
+  <div class="row">
+  <div class="form-inputs">
+    <div class="input-group">
+      <span class="input-group-addon">Email</span>
+      <%= f.text_field :email, type:"text", autofocus: true, required: true, class:"form-control" %>
+    </div>
+    </br>
+    <div class="input-group">
+      <span class="input-group-addon">Imię</span>
+      <%= f.text_field :first_name, type:"text", required: true, class:"form-control" %>
+    </div>
+    </br>
+    <div class="input-group">
+      <span class="input-group-addon">Nazwisko</span>
+      <%= f.text_field :last_name, type:"text", required: true, class:"form-control" %>
+    </div>
+    </br>
+  </div>
+  </div>
+
+  </br>
+  <%= f.hidden_field :password, :value => "startowe" %>
+  <%= f.hidden_field :password_confirmation, :value => "startowe" %>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="callout" align="center">
+        <%= f.submit :Zatwierdź, class:"btn btn-success" %>
+        <%= link_to 'Lista użytkowników', admin_users_path, class:'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+    </br>
+
+</div>

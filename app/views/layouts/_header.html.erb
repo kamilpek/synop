@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse dontprint">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Synoptyk</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href=/ title="Strona Główna">Synoptyk</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'Stacje', stations_path %></li>
+            <li><%= link_to 'Pomiary', measurements_path %></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <% if user_signed_in? %>
+            <% if current_user.admin? %>
+            <li><%= link_to 'Zaplecze', admin_main_path, :title => "Panel Administracyjny" %></li>
+            <% end %>
+            <li><%= link_to "Zalogowany jako #{User.where(id:current_user.id).pluck(:first_name).last} #{User.where(id:current_user.id).pluck(:last_name).last}", edit_user_registration_path, :title => "Zmiana hasła" %></li>
+            <li><%= link_to 'Wyloguj', destroy_user_session_path, :title => "Wylogowanie ze systemu" %></li>
+            <% else %>
+            <li><%= link_to 'Zaloguj', new_user_session_path, :title => "Logowanie do systemu" %></li>
+            <% end %>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

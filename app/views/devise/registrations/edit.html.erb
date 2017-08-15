@@ -1,0 +1,59 @@
+<% content_for :title, "Zmiana hasła" %>
+<div class="container" align="center">
+
+<h1 class=page-header>Zmiany na koncie</h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+<div class="row">
+  <div class="col-md-3"><br></div>
+  <div class="col-md-6">
+    <div class="callout" align="center">
+      <div class="form-inputs">
+        <div class="input-group">
+          <span class="input-group-addon">Login</span>
+            <%= f.text_field :email, type:"text", required: false, readonly: true, class:"form-control" %>
+          </div></br>
+        <div class="input-group">
+          <span class="input-group-addon">Imię</span>
+            <%= f.text_field :first_name, type:"text", required: false, readonly: true, class:"form-control" %>
+        </div>
+        </br>
+        <div class="input-group">
+          <span class="input-group-addon">Nazwisko</span>
+            <%= f.text_field :last_name, type:"text", required: false, readonly: true, class:"form-control" %>
+        </div>
+        </br>
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+        <div class="input-group">
+          <span class="input-group-addon">Stare Hasło </span>
+            <%= f.password_field :current_password, autocomplete: "off", autofocus: true, class:"form-control", required:true %>
+          </div>
+        </br>
+        <div class="input-group">
+          <span class="input-group-addon">Nowe Hasło </span>
+          <%= f.password_field :password, autocomplete: "off", class:"form-control", required:true %>
+        </div><i>Minimum 6 znaków.</i>
+        </br>
+        <div class="input-group">
+          <span class="input-group-addon">Powtórz Nowe Hasło </span>
+            <%= f.password_field :password_confirmation, autocomplete: "off", class:"form-control", required:true %>
+        </div> <i>Minimum 6 znaków.</i> </br>
+        </br>
+          <%= f.hidden_field :sign_in_count, :value => 2 %>
+          <div class="actions">
+            <%= f.submit "Zatwierdź", class:"btn btn-success" %>
+            <%= link_to "Strona Główna", root_path, class:"btn btn-primary" %>
+          </div>
+
+    </div>
+  <div class="col-md-3"><br></div>
+</div>
+</div>
+<% end %>
+</div>
+
+<br>

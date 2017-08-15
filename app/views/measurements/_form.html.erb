@@ -1,0 +1,62 @@
+<%= form_for(measurement) do |f| %>
+  <% if measurement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(measurement.errors.count, "error") %> prohibited this measurement from being saved:</h2>
+
+      <ul>
+      <% measurement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hour %>
+    <%= f.number_field :hour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :temperature %>
+    <%= f.text_field :temperature %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wind_speed %>
+    <%= f.text_field :wind_speed %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wind_direct %>
+    <%= f.number_field :wind_direct %>
+  </div>
+
+  <div class="field">
+    <%= f.label :humidity %>
+    <%= f.text_field :humidity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :preasure %>
+    <%= f.text_field :preasure %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rainfall %>
+    <%= f.text_field :rainfall %>
+  </div>
+
+  <div class="field">
+    <%= f.label :et %>
+    <%= f.text_field :et %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

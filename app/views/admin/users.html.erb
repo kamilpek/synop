@@ -1,0 +1,56 @@
+<% content_for :title, "Panel Administracyjny" %>
+<% content_for :menu, "admin" %>
+<div class="container">
+
+<h1 class=page-header>Zarządzenie użytkownikami</h1>
+
+<br>
+<div class="row" align="center">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Login</th>
+        <th>Admin?</th>
+        <th>Logowanie</th>
+        <th>Logowania</th>
+        <th>Rejestracja</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user|  %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.email %></td>
+          <% if user.admin == true %>
+            <td>Tak</td>
+          <% else %>
+            <td>Nie</td>
+          <% end %>
+          <% if user.last_sign_in_at.nil? %>
+            <td> Jeszcze się nie logował </td>
+          <% else %>
+            <td> <%= user.last_sign_in_at.strftime("%d.%m.%Y; %H:%M") if user.last_sign_in_at? %> </td>
+          <% end %>
+          <td><%= user.sign_in_count %></td>
+          <td><%= user.created_at.strftime("%d.%m.%Y") if user.created_at? %></td>
+          <td><%= link_to "Admin", grantadmin_user_path(user), method: :grantadmin, data: { confirm: "Jesteś pewny?" }, class:'btn btn-xs btn-warning'%>
+          <%= link_to "Hasło", resetpassword_user_path(user), method: :resetpassword, data: { confirm: "Jesteś pewny?" }, class:'btn btn-xs btn-danger'%>
+          <%= link_to "Edytuj", edit_user_path(user), class:'btn btn-xs btn-primary' %>
+          <%= link_to "Usuń", user_path(user), method: :delete, data: { confirm: "Jesteś pewny?" }, class:'btn btn-xs btn-danger' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="row" align="center">
+  <div class="callout" align="center">
+    <%= link_to 'Nowy użytkownik', new_user_path, class:'btn btn-success' %>
+  </div>
+</div>
+
+</div>
+
+</br>

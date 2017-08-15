@@ -1,0 +1,55 @@
+<% content_for :title, "Stacje meteo" %>
+
+<div class="container">
+
+<h1 class=page-header>Stacje meteo</h1>
+
+<% if current_user.try(:admin) %>
+<div class="row" align="center">
+  <div class="col-md-4">
+    <h4>Importuj Stacje</h4>
+  </div>
+  <div class="col-md-4">
+    <%= form_tag import_stations_path, multipart: true do %>
+      <%= file_field_tag :file, class:"form-control" %>
+  </div>
+  <div class="col-md-4">
+    <%= submit_tag "Importuj", class:"btn btn-success" %>
+    <% end %>
+  </div>
+</div>
+<br>
+<% end %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>ID-IMGW</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Akcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stations.each do |station| %>
+      <tr>
+        <td><%= station.name %></td>
+        <td><%= station.number %></td>
+        <td><%= station.latitude %></td>
+        <td><%= station.longitude %></td>
+        <td><%= link_to 'Przejdź', station, class:"btn btn-primary btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <p align="center"><%= will_paginate @stations, renderer: BootstrapPagination::Rails %></p>
+
+<br>
+
+<% if current_user.try(:admin) %>
+<%= link_to 'Nowa Stajca', new_station_path, class:"btn btn-success" %>
+<% end %>
+
+</div>

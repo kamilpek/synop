@@ -1,0 +1,14 @@
+<% content_for :title, "Strona główna" %>
+
+<div class="container">
+
+<div style='width: 800px;'>
+  <div id="sidebar_builder" style='width: 1140px; height: 600px;'></div>
+</div>
+
+<br>
+<p align="center">Data i godzina ostatniego pomiaru: <%= @date %>; <%= @hour %>:00.</p>
+
+<%= render "multimap" %>
+
+</div>

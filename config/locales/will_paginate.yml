@@ -1,0 +1,11 @@
+en:
+  will_paginate:
+    previous_label: "&#8592; Previous"
+    next_label: "Next &#8594;"
+    page_gap: "&hellip;"
+
+pl:
+  will_paginate:
+    previous_label: "Poprzednia strona"
+    next_label: "Następna strona"
+    page_gap: "&hellip;"

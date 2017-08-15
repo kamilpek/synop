@@ -1,0 +1,24 @@
+<% content_for :title, "Stacja #{@station.name}" %>
+
+<div class="container">
+
+<h1 class=page-header>Stacja <%= @station.name %></h1>
+
+<p>IMGW-ID: <strong><%= @station.number %></strong>.</p>
+
+<p>Status: <strong><%= "Aktywny" if @station.status %></strong></p>
+
+<p>Ostatni pomiar: <strong><%= link_to "Przejdź", measurement_path(Measurement.where(station_number:@station.number).pluck(:id).last)  %></strong></p>
+
+<p>Koordynaty: <strong>
+<a href="https://maps.google.com/maps?ll=<%= @station.latitude %>,<%= @station.longitude %>&q=<%= @station.latitude %>,<%= @station.longitude %>"><%= @station.longitude %>, <%= @station.latitude %></a>
+</strong></p>
+
+<iframe width="720" height="400" frameborder="0" style="border:0"
+ src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3WpXtmfwjePmkgLqXZnV7VvM03i0ICE&q=<%= @station.latitude %>,<%= @station.longitude %>"
+ allowfullscreen>
+</iframe>
+
+<br>
+<p><%= link_to 'Edytuj Stację', edit_station_path(@station), class:"btn btn-warning" if current_user.try(:admin) %>
+   <%= link_to 'Lista Stacji', stations_path, class:"btn btn-primary" %></p>

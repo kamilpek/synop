@@ -2,24 +2,8 @@
 
 <div class="container">
 
-<h1 class=page-header>Pomiary</h1>
-
-<% if current_user.try(:admin) %>
-<div class="row" align="center">
-  <div class="col-md-4">
-    <h4>Importuj Pomiary</h4>
-  </div>
-  <div class="col-md-4">
-    <%= form_tag import_measurements_path, multipart: true do %>
-      <%= file_field_tag :file, class:"form-control" %>
-  </div>
-  <div class="col-md-4">
-    <%= submit_tag "Importuj", class:"btn btn-success" %>
-    <% end %>
-  </div>
-</div>
-<br>
-<% end %>
+<h1 class=page-header>Pomiary
+  <%= link_to "Zaimportuj dane z IMGW", measurement_direct_import_path(1), class:'btn btn-xs btn-success' %> </h1>
 
 <table class="table">
   <thead>
@@ -57,6 +41,23 @@
   </tbody>
 </table>
   <p align="center"><%= will_paginate @measurements, renderer: BootstrapPagination::Rails %></p>
+
+<% if current_user.try(:admin) %>
+<div class="row" align="center">
+  <div class="col-md-4">
+    <h4>Importuj Pomiary z pliku [csv]</h4>
+  </div>
+  <div class="col-md-4">
+    <%= form_tag import_measurements_path, multipart: true do %>
+      <%= file_field_tag :file, class:"form-control" %>
+  </div>
+  <div class="col-md-4">
+    <%= submit_tag "Importuj", class:"btn btn-success" %>
+    <% end %>
+  </div>
+</div>
+<br>
+<% end %>
 
 <% if current_user.try(:admin) %>
 <%= link_to 'Nowy Pomiar', new_measurement_path, class:"btn btn-success" %>

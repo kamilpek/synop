@@ -4,7 +4,7 @@
 
 <p>Stacja: <strong><%= link_to Station.where(number:@measurement.station_number).pluck(:name).last, station_path(Station.where(number:@measurement.station_number).pluck(:id).last) %></strong></p>
 <p>Data pomiaru: <strong><%= @measurement.date %></strong></p>
-<p>Godzina pomiaru: <strong><%= @measurement.hour %></strong></p>
+<p>Godzina pomiaru: <strong><%= @measurement.hour %> UTC</strong></p>
 <p>Temperatura: <strong><%= @measurement.temperature %></strong></p>
 <p>Prędkość wiatru: <strong><%= @measurement.wind_speed %></strong></p>
 <p>Kierunek wiatru: <strong><%= @measurement.wind_direct %></strong></p>

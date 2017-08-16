@@ -62,3 +62,4 @@ gem 'roo', '~> 2.7', '>= 2.7.1' # importing
 gem 'geocoder', '~> 1.4', '>= 1.4.4' # geocoding
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2' # geocoding
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3' # js lib
+gem 'whenever', '~> 0.9.7' # schedule

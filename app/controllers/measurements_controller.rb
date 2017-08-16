@@ -81,6 +81,26 @@ class MeasurementsController < ApplicationController
     redirect_to measurements_path, notice: "Zaimportowano pomiary."
   end
 
+  def direct_import
+    file = open('http://danepubliczne.imgw.pl/api/data/synop/format/csv')
+    csv_text = file.read
+    csv = CSV.parse(csv_text, :headers => true)
+    csv.each do |row|
+      Measurement.create!(
+        :station_number => row['id_stacji'],
+        :date => row['data_pomiaru'],
+        :hour => row['godzina_pomiaru'],
+        :temperature => row['temperatura'],
+        :wind_speed => row['predkosc_wiatru'],
+        :wind_direct => row['kierunek_wiatru'],
+        :humidity => row['wilgotnosc_wzgledna'],
+        :et => row['odparowanie'],
+        :rainfall => row['suma_opadu'],
+        :preasure => row['cisnienie'])
+    end
+    redirect_to measurements_path, notice: "Zaimportowano pomiary wprost ze strony imgw."
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_measurement

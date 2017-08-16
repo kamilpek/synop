@@ -1,7 +1,10 @@
-# synop
+# Synoptyk
 
 ## Wstęp
 Mapki meteo
+
+## Plik csv ze stacjami meteo
+[stacje.csv](https://github.com/kamilpek/synop/blob/master/stacje.csv)
 
 ## Specyfikacja zależności
 * Ruby v2.3.1
@@ -11,7 +14,7 @@ Mapki meteo
 * JSAPI
 
 ## Wersja produktu
-* v1.0.0 z dnia 16.08.2017
+* v1.1.0 z dnia 16.08.2017
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

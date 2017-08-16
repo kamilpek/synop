@@ -35,6 +35,14 @@ Rails.application.routes.draw do
     end
   end
 
+  scope "stations" do
+    resources :stations do
+      member do
+        get 'measur'
+      end
+    end
+  end
+
   root 'pages#home'
 
 end

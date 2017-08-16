@@ -3,7 +3,7 @@
 <div class="container">
 
 <h1 class=page-header>Pomiary
-  <%= link_to "Zaimportuj dane z IMGW", measurement_direct_import_path(1), class:'btn btn-xs btn-success' %> </h1>
+  <%= link_to "Zaimportuj dane z IMGW", measurement_direct_import_path(1), class:'btn btn-xs btn-success' if current_user.try(:admin) %> </h1>
 
 <table class="table">
   <thead>

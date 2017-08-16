@@ -74,6 +74,13 @@ class StationsController < ApplicationController
     redirect_to stations_path, notice: "Zaimportowano stacje."
   end
 
+  def measur
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
+    @station = Station.where(id:params[:id]).last
+    @measurements = Measurement.where(station_number:@station.number)
+    @measurements = @measurements.where('extract(day from created_at) = ?', @date.strftime("%d").to_i)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_station

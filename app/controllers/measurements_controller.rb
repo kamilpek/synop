@@ -11,6 +11,7 @@ class MeasurementsController < ApplicationController
   # GET /measurements/1
   # GET /measurements/1.json
   def show
+    @station = Station.where(number:@measurement.station_number).last
   end
 
   # GET /measurements/new

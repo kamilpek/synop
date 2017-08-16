@@ -2,19 +2,24 @@
 
 <div class="container">
 
+<h1 class=page-header>Pomiar</h1>
+
 <p>Stacja: <strong><%= link_to Station.where(number:@measurement.station_number).pluck(:name).last, station_path(Station.where(number:@measurement.station_number).pluck(:id).last) %></strong></p>
 <p>Data pomiaru: <strong><%= @measurement.date %></strong></p>
 <p>Godzina pomiaru: <strong><%= @measurement.hour %> UTC</strong></p>
-<p>Temperatura: <strong><%= @measurement.temperature %></strong></p>
-<p>Prędkość wiatru: <strong><%= @measurement.wind_speed %></strong></p>
+<p>Temperatura: <strong><%= @measurement.temperature %> C</strong></p>
+<p>Prędkość wiatru: <strong><%= @measurement.wind_speed %> m/s</strong></p>
 <p>Kierunek wiatru: <strong><%= @measurement.wind_direct %></strong></p>
-<p>Wilgotność: <strong><%= @measurement.humidity %></strong></p>
-<p>Ciśnienie atmosferyczne: <strong><%= @measurement.preasure %></strong></p>
+<p>Wilgotność: <strong><%= @measurement.humidity %> %</strong></p>
+<p>Ciśnienie atmosferyczne: <strong><%= @measurement.preasure %> hPa</strong></p>
 <p>Opady deszczu: <strong><%= @measurement.rainfall %></strong></p>
 <p>Odparowanie: <strong><%= @measurement.et %></strong></p>
 
+<h3 class=page-header>Akcje</h3>
 <%= link_to 'Edycja pomiaru', edit_measurement_path(@measurement), class:"btn btn-warning" if current_user.try(:admin) %>
 <%= link_to 'Lista pomiarów', measurements_path, class:"btn btn-primary" %>
-<%= link_to 'Mapa pomiarów', root_path, class:"btn btn-success" %>
+<%= link_to 'Przejdź do Stacji', station_path(@station.id), class:"btn btn-default" %>
+<%= link_to 'Lista Pomiarów ze Stacji', measur_station_path(@station.id), class:"btn btn-info" %>
+<%= link_to 'Mapa Ostatnich Pomiarów', root_path, class:"btn btn-success" %>
 
 </div>

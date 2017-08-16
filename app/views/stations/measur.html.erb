@@ -1,0 +1,68 @@
+<% content_for :title, "Pomiary ze stacji #{@station.name}" %>
+
+<div class="container">
+
+<h1 class=page-header>Pomiary ze stacji <%= @station.name %></h1>
+
+<h3 class=page-header>Dane stacji </h3>
+<p>IMGW-ID: <strong><%= @station.number %></strong>.</p>
+<p>Koordynaty: <strong>
+<a href="https://maps.google.com/maps?ll=<%= @station.latitude %>,<%= @station.longitude %>&q=<%= @station.latitude %>,<%= @station.longitude %>"><%= @station.longitude %>, <%= @station.latitude %></a>
+</strong></p>
+
+<h3 class=page-header>Lista pomiarów </h3>
+
+<div class="row" align="center">
+  <div class="col-md-4">
+    <%= link_to measur_station_path(date: @date - 1.day), class: "btn btn-info" do %>
+      <i> Poprzedni Dzień</i>
+    <% end %>
+  </div>
+  <div class="col-md-4">
+    <h4 id="day"><%= @date %></h4>
+  </div>
+  <div class="col-md-4">
+    <%= link_to measur_station_path(date: @date + 1.day), class: "btn btn-info" do %>
+      <i> Następny Dzień</i>
+    <% end %>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Godzina</th>
+      <th>Temperatura</th>
+      <th>Wiatr [V]</th>
+      <th>Wiatr [kier.]</th>
+      <th>Wilgotoność</th>
+      <th>Ciśnienie</th>
+      <th>Opady</th>
+      <th>Parowanie</th>
+      <th>Akcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @measurements.each do |measurement| %>
+      <tr>
+        <td><%= measurement.date %></td>
+        <td><%= measurement.hour %></td>
+        <td><%= measurement.temperature %></td>
+        <td><%= measurement.wind_speed %></td>
+        <td><%= measurement.wind_direct %></td>
+        <td><%= measurement.humidity %></td>
+        <td><%= measurement.preasure %></td>
+        <td><%= measurement.rainfall %></td>
+        <td><%= measurement.et %></td>
+        <td><%= link_to 'Przejdź', measurement, class:"btn btn-primary btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h3 class=page-header>Akcje</h3>
+<%= link_to 'Lista Stacji', stations_path, class:"btn btn-primary" %>
+<%= link_to 'Lista Pomiarów', measurements_path, class:"btn btn-default" %>
+<%= link_to 'Mapa Ostatnich Pomiarów', root_path, class:"btn btn-success" %>

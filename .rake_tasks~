@@ -30,6 +30,7 @@ geocoder:maxmind:geolite:download
 geocoder:maxmind:geolite:extract
 geocoder:maxmind:geolite:insert
 geocoder:maxmind:geolite:load
+import_imgw
 initializers
 log:clear
 middleware

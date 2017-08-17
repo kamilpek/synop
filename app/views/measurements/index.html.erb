@@ -23,7 +23,7 @@
   </thead>
 
   <tbody>
-    <% @measurements.each do |measurement| %>
+    <% @measurements.order("created_at desc").each do |measurement| %>
       <tr>
         <td><%= measurement.date %></td>
         <td><%= measurement.hour %></td>

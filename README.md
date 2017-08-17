@@ -14,7 +14,7 @@ Mapki meteo
 * JSAPI
 
 ## Wersja produktu
-* v1.1.0 z dnia 16.08.2017
+* v1.1.1 z dnia 17.08.2017
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

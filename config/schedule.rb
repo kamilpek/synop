@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 75.minutes do  
+every '15 * * * *' do  
   runner "Measurement.direct_import"
 end

@@ -32,6 +32,7 @@ geocoder:maxmind:geolite:insert
 geocoder:maxmind:geolite:load
 import_imgw
 import_imgw_xml
+import_yrno
 initializers
 log:clear
 middleware

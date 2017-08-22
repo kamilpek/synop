@@ -1,6 +1,6 @@
 desc "Import weather data from Polish IMGW. "
 task :import_imgw => :environment do
-  import = build_import
+  import = build_import_imgw
   if import.nil?
     puts "Something is wrong."
   else
@@ -8,7 +8,7 @@ task :import_imgw => :environment do
   end
 end
 
-def build_import
+def build_import_imgw
   print "Import begining.\n"
   file = open('http://danepubliczne.imgw.pl/api/data/synop/format/csv')
   csv_text = file.read

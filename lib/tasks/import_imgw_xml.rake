@@ -1,6 +1,6 @@
 desc "Import forecast data from Polish IMGW [XML]. "
 task :import_imgw_xml => :environment do
-  import = build_import
+  import = build_import_imgw_xml
   if import.nil?
     puts "Something is wrong."
   else
@@ -8,7 +8,7 @@ task :import_imgw_xml => :environment do
   end
 end
 
-def build_import
+def build_import_imgw_xml
   print "Import begining.\n"
   doc = Nokogiri::XML(open("http://danepubliczne.imgw.pl/api/data/synop/format/xml"))
   doc.xpath('//item').each do |row|

@@ -1,6 +1,6 @@
 desc "Import forecast data from Norwegian yr.no [XML]. "
 task :import_yrno => :environment do
-  import = build_import
+  import = build_import_yrno
   if import.nil?
     puts "Something is wrong."
   else
@@ -8,7 +8,7 @@ task :import_yrno => :environment do
   end
 end
 
-def build_import
+def build_import_yrno
   print "Import begining.\n"
   doc1 = Nokogiri::XML(open("http://api.geonames.org/findNearbyPlaceName?lat=54.114&lng=17.87012&username=kamilpek"))
   geoid = doc1.xpath('//geoname').xpath('geonameId').text

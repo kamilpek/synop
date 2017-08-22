@@ -17,3 +17,4 @@
 //= require underscore
 //= require_tree .
 //= require bootstrap-sprockets
+//= require cookies_eu

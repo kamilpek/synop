@@ -1083,7 +1083,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #edf5fc;
+  background-color: #EFECCA;
 }
 input,
 button,
@@ -1101,7 +1101,7 @@ a:hover,
 a:focus {
   color: black;
   text-decoration: underline;
-  background-color: #edf5fc;
+  background-color: #EFECCA;
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
@@ -1408,7 +1408,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #c9e5fb;
+  border-bottom: 1px solid #E6E2AF;
 }
 ul,
 ol {
@@ -2272,11 +2272,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #c9e5fb;
+  border-top: 1px solid #E6E2AF;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #c9e5fb;
+  border-bottom: 2px solid #E6E2AF;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2287,7 +2287,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #c9e5fb;
+  border-top: 2px solid #E6E2AF;
 }
 .table .table {
   background-color: #fff;
@@ -4587,8 +4587,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #005da8;
-  border-color: #005da8;
+  background-color: #A7A37E;
+  border-color: #A7A37E;
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
@@ -4724,7 +4724,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   line-height: 1.42857143;
   color: #337ab7;
   text-decoration: none;
-  background-color: #c9e5fb;
+  background-color: #E6E2AF;
   border: 1px solid #ddd;
 }
 .pagination > li:first-child > a,
@@ -4744,7 +4744,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:focus {
   z-index: 2;
   color: #23527c;
-  background-color: #c9e5fb;
+  background-color: #E6E2AF;
   border-color: #ddd;
 }
 .pagination > .active > a,
@@ -4754,7 +4754,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   z-index: 3;
-  color: #c9e5fb;
+  color: #E6E2AF;
   cursor: default;
   background-color: #337ab7;
   border-color: #337ab7;
@@ -4767,7 +4767,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a:focus {
   color: #777;
   cursor: not-allowed;
-  background-color: #c9e5fb;
+  background-color: #E6E2AF;
   border-color: #ddd;
 }
 .pagination-lg > li > a,
@@ -4958,7 +4958,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #c9e5fb;
+  background-color: #E6E2AF;
 }
 .jumbotron h1,
 .jumbotron .h1 {

@@ -18,7 +18,9 @@ class MeasurementsController < ApplicationController
 
   def hourly
     @hour = params[:hour]
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
     @measurements = Measurement.all
+    @measurements = @measurements.where('extract(day from date) = ?', @date.strftime("%d").to_i)
     @measurements = @measurements.where(hour:@hour)
   end
 

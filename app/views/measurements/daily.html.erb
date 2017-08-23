@@ -32,7 +32,7 @@
     <% @hours.each do |hour| %>
       <tr>
         <td><%= hour %></td>
-        <td><%= link_to 'Przejdź do godziny', measurement_hourly_path(hour: hour), class:"btn btn-default btn-xs" %></td>
+        <td><%= link_to 'Przejdź do godziny', measurement_hourly_path(hour: hour, date: @date), class:"btn btn-default btn-xs" %></td>
       </tr>
     <% end %>
   </tbody>

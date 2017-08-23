@@ -5,7 +5,45 @@ class MeasurementsController < ApplicationController
   # GET /measurements.json
   def index
     @measurements = Measurement.all
-    @measurements = @measurements.paginate(:page => params[:page], :per_page => 63)
+    @days = @measurements.pluck(:date).uniq.reverse
+    @days = @days.paginate(:page => params[:page], :per_page => 14)
+  end
+
+  def daily
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
+    @measurements = Measurement.all
+    @measurements = @measurements.where('extract(day from date) = ?', @date.strftime("%d").to_i)
+    @hours = @measurements.pluck(:hour).uniq
+  end
+
+  def hourly
+    @hour = params[:hour]
+    @measurements = Measurement.all
+    @measurements = @measurements.where(hour:@hour)
+  end
+
+  def hourly_map
+    @hour = params[:hour]
+    @stations = Station.all
+    @measurements = Measurement.all
+    @measurements = @measurements.where(hour:@hour)
+    @date = @measurements.pluck(:date).last
+    @hour = @measurements.pluck(:hour).last
+    @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
+      @measur_id = @measurements.where(station_number:station.number).pluck(:id).last
+      @temperature = @measurements.where(station_number:station.number).pluck(:temperature).last
+      @information = "#{station.name} – #{@temperature} C"
+      marker.lat station.latitude
+      marker.lng station.longitude
+      marker.infowindow render_to_string(:partial => "infowindow", :locals => { :object => @measur_id, :name => @information})
+      marker.picture({
+                      :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                     })
+    end
   end
 
   # GET /measurements/1

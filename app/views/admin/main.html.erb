@@ -4,7 +4,10 @@
 <div class="container">
   <h1 class=page-header>Panel Administracyjny</h1>
   <div align="center">
-    <%= link_to 'Użytkownicy', admin_users_path, class:'btn btn-danger' %>
+    <%= link_to 'Zarządzanie Użytkownikami', admin_users_path, class:'btn btn-danger' %>
+  </div><br>
+  <div align="center">
+    <%= link_to "Zaimportuj dane z IMGW", measurement_direct_import_path(1), class:'btn btn-success'%>
   </div>
 </div>
 <br>

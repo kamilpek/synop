@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   resources :measurements do
     collection { post :import }
     get :direct_import
+    get 'daily'
+    get 'hourly'
+    get 'hourly_map'
   end
 
   resources :stations do

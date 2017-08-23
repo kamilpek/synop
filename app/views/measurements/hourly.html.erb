@@ -1,0 +1,50 @@
+<% content_for :title, "Pomiary godzinne" %>
+
+<div class="container">
+
+<h1 class=page-header>Pomiary z dnia <%= @measurements.order("created_at desc").pluck(:date).last %>
+  o godzinie <%= @measurements.order("created_at desc").pluck(:hour).last %> UTC </h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Godzina</th>
+      <th>Temperatura</th>
+      <th>Wiatr [V]</th>
+      <th>Wiatr [kier.]</th>
+      <th>Wilgotoność</th>
+      <th>Ciśnienie</th>
+      <th>Opady</th>
+      <th>Parowanie</th>
+      <th>ID Stacji</th>
+      <th>Akcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @measurements.order("created_at desc").each do |measurement| %>
+      <tr>
+        <td><%= measurement.date.strftime("%d.%m.%Y") %></td>
+        <td><%= measurement.hour %></td>
+        <td><%= measurement.temperature %></td>
+        <td><%= measurement.wind_speed %></td>
+        <td><%= measurement.wind_direct %></td>
+        <td><%= measurement.humidity %></td>
+        <td><%= measurement.preasure %></td>
+        <td><%= measurement.rainfall %></td>
+        <td><%= measurement.et %></td>
+        <td><%= Station.where(number:measurement.station_number).pluck(:name).last %></td>
+        <td><%= link_to 'Przejdź', measurement, class:"btn btn-primary btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h3 class=page-header>Akcje</h3>
+<%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: @measurements.pluck(:date).last), class:"btn btn-success" %>
+<%= link_to 'Generuj Mapkę', measurement_hourly_map_path(1, hour: @measurements.pluck(:hour).last), class:"btn btn-primary" %>
+
+</div>
+
+<br>

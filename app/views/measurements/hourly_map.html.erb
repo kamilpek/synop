@@ -1,0 +1,17 @@
+<% content_for :title, "Mapa" %>
+
+<div class="container">
+  <h1 class=page-header>Mapa z dnia <%= @measurements.order("created_at desc").pluck(:date).last %>
+    o godzinie <%= @measurements.order("created_at desc").pluck(:hour).last %> UTC </h1>
+
+  <div style='width: 800px;'>
+    <div id="sidebar_builder" style='width: 1140px; height: 600px;'></div>
+  </div>
+
+  <br>
+  <p align="center">Data i godzina pomiaru: <%= @date %>; <%= @hour %>:00 UTC.</p>
+
+  <%= render "multimap" %>
+
+</div>
+<br>

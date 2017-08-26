@@ -10,7 +10,7 @@ end
 
 def build_import_imgw
   print "Import begining.\n"
-  file = open('http://danepubliczne.imgw.pl/api/data/synop/format/csv')
+  file = open('https://danepubliczne.imgw.pl/api/data/synop/format/csv')
   csv_text = file.read
   csv = CSV.parse(csv_text, :headers => true)
   csv.each do |row|

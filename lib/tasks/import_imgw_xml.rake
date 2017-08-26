@@ -10,7 +10,7 @@ end
 
 def build_import_imgw_xml
   print "Import begining.\n"
-  doc = Nokogiri::XML(open("http://danepubliczne.imgw.pl/api/data/synop/format/xml"))
+  doc = Nokogiri::XML(open("https://danepubliczne.imgw.pl/api/data/synop/format/xml"))
   doc.xpath('//item').each do |row|
     Measurement.create!(
       :station_number => row.xpath('id_stacji').text,

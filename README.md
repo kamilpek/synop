@@ -1,7 +1,7 @@
 # Synoptyk
 
 ## Wstęp
-Mapki meteo
+Rejestr danych ze stacji pogodowych polskiego [IMGW](http://www.imgw.pl/) oraz prognoz Norweskiego [yr.no](https://www.yr.no/).
 
 ## Plik csv ze stacjami meteo
 [stacje.csv](https://github.com/kamilpek/synop/blob/master/stacje.csv)
@@ -14,7 +14,7 @@ Mapki meteo
 * JSAPI
 
 ## Wersja produktu
-* v1.2.2 z dnia 26.08.2017
+* v2.0.0 z dnia 31.08.2017
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

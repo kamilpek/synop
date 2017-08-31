@@ -1,0 +1,26 @@
+<% content_for :title, "Prognozy" %>
+
+<div class="container">
+
+  <h1 class=page-header>Prognozy</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @days.each do |day| %>
+        <tr>
+          <td><%= day %></td>
+          <td><%= link_to 'Przejdź do dnia', daily_forecast_path(1, date: day), class:"btn btn-success btn-xs" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <p><%= will_paginate @days, renderer: BootstrapPagination::Rails %></p>
+
+</div>

@@ -13,6 +13,7 @@
           <ul class="nav navbar-nav">
             <li><%= link_to 'Stacje', stations_path, :title => "Lista Stacji Meteorologicznych" %></li>
             <li><%= link_to 'Pomiary', measurements_path, :title => "Lista pobranych od IMGW pomiarów" %></li>
+            <li><%= link_to 'Prognozy', forecasts_path, :title => "Prognoza pogody z yr.no" %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>

@@ -1,0 +1,43 @@
+<% content_for :title, "Prognozy dzienne" %>
+
+<div class="container">
+
+<h1 class=page-header>Prognozy z dnia</h1>
+
+<div class="row" align="center">
+  <div class="col-md-4">
+    <%= link_to daily_forecast_path(date: @date - 1.day), class: "btn btn-info" do %>
+      <i> Poprzedni Dzień</i>
+    <% end %>
+  </div>
+  <div class="col-md-4">
+    <h4 id="day"><%= @date %></h4>
+  </div>
+  <div class="col-md-4">
+    <%= link_to daily_forecast_path(date: @date + 1.day), class: "btn btn-info" do %>
+      <i> Następny Dzień</i>
+    <% end %>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Godzina</th>
+      <th>Akcje</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hours.each do |hour| %>
+      <tr>
+        <td><%= hour %></td>
+        <td><%= link_to 'Przejdź do godziny', hourly_forecast_path(1, hour: hour, date: @date), class:"btn btn-default btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+
+<br>

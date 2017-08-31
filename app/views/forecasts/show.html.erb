@@ -1,0 +1,37 @@
+<% content_for :title, "Prognoza" %>
+
+<div class="container">
+  <h1 class=page-header>Prognoza</h1>
+
+  <h4 class=page-header>Podstawowe informacje</h4>
+  <p>Station number: <strong><%= Station.where(number:@forecast.station_number).pluck(:name).last %></strong>.
+     Data i godzina prognozy: <strong><%= @forecast.date %>; <%= @forecast.hour %>:00</strong>.
+     Następna prognoza około: <strong><%= @forecast.next.strftime("%Y-%m-%d; %H:%M") if @forecast.next %></strong>.</p>
+
+  <h4 class=page-header>Dane pogodowe</h4>
+  <% for i in 0..@forecast.temperatures.count-1 %>
+    <p>
+      Od <strong><%= @forecast.times_from[i].strftime("%Y-%m-%d; %H:%M") if @forecast.times_from[i] %></strong>
+      do <strong><%= @forecast.times_to[i].strftime("%Y-%m-%d; %H:%M") if @forecast.times_to[i] %></strong>;
+    </p>
+    <p>
+      Temperatura: <strong><%= @forecast.temperatures[i] %>&#8451;</strong>;
+      Ciśnienie: <strong><%= @forecast.preasures[i] %>hPa</strong>;
+      Prędkość wiatru: <strong><%= (@forecast.wind_speeds[i].to_f).round(2) %>m/s</strong>;
+      Kierunek wiatru: <strong><%= @forecast.wind_directs[i] %></strong>;
+      Opady: <strong><%= @forecast.precipitations[i] %>mm/h</strong>;
+      Sytuacja pogodowa: <strong><%= @forecast.situations[i] %></strong>.
+    </p>
+    <hr>
+  <% end %>
+
+  <h4 class=page-header>Akcje</h4>
+  <div>
+    <%= link_to 'Edycja prognozy', edit_forecast_path(@forecast), class:"btn btn-warning" if current_user.try(:admin?) %>
+    <%= link_to 'Lista Prognoz', forecasts_path, class:"btn btn-primary" %>
+    <%= link_to 'Przejdź do Stacji', station_path(@station.id), class:"btn btn-default" %>
+    <%= link_to 'Lista Prognoz ze Stacji', measur_station_path(@station.id), class:"btn btn-info" %>
+  </div>
+  <br>
+
+</div>

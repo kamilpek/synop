@@ -14,6 +14,7 @@
 <%= link_to 'Edytuj Stację', edit_station_path(@station), class:"btn btn-warning" if current_user.try(:admin) %>
 <%= link_to 'Lista Stacji', stations_path, class:"btn btn-primary" %>
 <%= link_to "Ostatni Pomiar", measurement_path(Measurement.where(station_number:@station.number).pluck(:id).last), class:"btn btn-default" %>
+<%= link_to "Ostatnia Prognoza", forecast_path(Forecast.where(station_number:@station.number).pluck(:id).last), class:"btn btn-default" %>
 <%= link_to 'Lista Pomiarów ze Stacji', measur_station_path(@station.id), class:"btn btn-info" %>
 <%= link_to 'Mapa Ostatnich Pomiarów', root_path, class:"btn btn-success" %>
 

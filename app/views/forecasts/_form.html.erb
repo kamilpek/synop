@@ -1,0 +1,72 @@
+<%= form_for(forecast) do |f| %>
+  <% if forecast.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(forecast.errors.count, "error") %> prohibited this forecast from being saved:</h2>
+
+      <ul>
+      <% forecast.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :station_number %>
+    <%= f.number_field :station_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :current %>
+    <%= f.datetime_select :current %>
+  </div>
+
+  <div class="field">
+    <%= f.label :next %>
+    <%= f.datetime_select :next %>
+  </div>
+
+  <div class="field">
+    <%= f.label :temperatures %>
+    <%= f.text_field :temperatures %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wind_speeds %>
+    <%= f.text_field :wind_speeds %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wind_directs %>
+    <%= f.text_field :wind_directs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :preasures %>
+    <%= f.text_field :preasures %>
+  </div>
+
+  <div class="field">
+    <%= f.label :situations %>
+    <%= f.text_field :situations %>
+  </div>
+
+  <div class="field">
+    <%= f.label :precipitations %>
+    <%= f.text_field :precipitations %>
+  </div>
+
+  <div class="field">
+    <%= f.label :times_from %>
+    <%= f.datetime_select :times_from %>
+  </div>
+
+  <div class="field">
+    <%= f.label :times_to %>
+    <%= f.datetime_select :times_to %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

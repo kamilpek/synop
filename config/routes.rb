@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :forecasts
   get 'admin/main'
 
   get 'admin/users'
 
   get 'pages/home'
+  get 'pages/forecast'
   get 'pages/stats'
   get 'pages/about'
 
@@ -17,6 +19,16 @@ Rails.application.routes.draw do
     get 'daily'
     get 'hourly'
     get 'hourly_map'
+  end
+
+  scope "forecasts" do
+    resources :forecasts do
+      member do
+        get 'daily'
+        get 'hourly'
+        get 'hourly_map'
+      end
+    end
   end
 
   resources :stations do

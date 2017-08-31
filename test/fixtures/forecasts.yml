@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  station_number: 1
+  current: 2017-08-29 21:23:48
+  next: 2017-08-29 21:23:48
+  temperatures: MyString
+  wind_speeds: 1.5
+  wind_directs: 1.5
+  preasures: 1.5
+  situations: MyString
+  precipitations: 1.5
+  times_from: 2017-08-29 21:23:48
+  times_to: 2017-08-29 21:23:48
+
+two:
+  station_number: 1
+  current: 2017-08-29 21:23:48
+  next: 2017-08-29 21:23:48
+  temperatures: MyString
+  wind_speeds: 1.5
+  wind_directs: 1.5
+  preasures: 1.5
+  situations: MyString
+  precipitations: 1.5
+  times_from: 2017-08-29 21:23:48
+  times_to: 2017-08-29 21:23:48

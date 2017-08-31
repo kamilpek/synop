@@ -1,0 +1,24 @@
+<% content_for :title, "Mapa prognoz" %>
+
+<div class="container">
+
+  <div class="page-header">
+    <div class="pull-left">
+      <h2>Mapa prognoz</h2>
+    </div>
+    <div class="pull-right">
+      <h3 class="text-right"><%= link_to "Mapa Pomiarów", root_path, class:"btn btn-sm btn-success" %></h3>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div style='width: 800px;'>
+    <div id="sidebar_builder" style='width: 1140px; height: 600px;'></div>
+  </div>
+
+  <br>
+  <p align="center">Prognoza z godziny: <%= @hour %>:00 CEST dnia <%= @date %>.</p>
+
+  <%= render "multimap_forecast" %>
+
+</div>

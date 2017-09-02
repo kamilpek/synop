@@ -24,6 +24,7 @@ db:setup
 db:structure:dump
 db:structure:load
 db:version
+delete_old
 dev:cache
 geocode:all
 geocoder:maxmind:geolite:download

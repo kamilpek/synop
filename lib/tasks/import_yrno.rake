@@ -41,8 +41,8 @@ def build_import_yrno
     doc3.xpath('//tabular').each do |row|
       row.xpath('//time').each do |time|
         temperatures.push(time.xpath('temperature/@value').text)
-        wind_speeds.push(time.xpath('windDirection/@deg').text)
-        wind_directs.push(time.xpath('windSpeed/@mps').text)
+        wind_speeds.push(time.xpath('windSpeed/@deg').text)
+        wind_directs.push(time.xpath('windDirection/@mps').text)
         preasures.push(time.xpath('pressure/@value').text)
         precipitations.push(time.xpath('precipitation/@value').text)
         situations.push(time.xpath('symbol/@name').text)

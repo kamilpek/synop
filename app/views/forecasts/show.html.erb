@@ -18,9 +18,9 @@
       Temperatura: <strong><%= @forecast.temperatures[i] %>&#8451;</strong>;
       Ciśnienie: <strong><%= @forecast.preasures[i] %>hPa</strong>;
       Prędkość wiatru: <strong><%= (@forecast.wind_speeds[i].to_f).round(2) %>m/s</strong>;
-      Kierunek wiatru: <strong><%= @forecast.wind_directs[i] %></strong>;
+      Kierunek wiatru: <strong><%= cardinals(@forecast.wind_directs[i]) %></strong>;
       Opady: <strong><%= @forecast.precipitations[i] %>mm/h</strong>;
-      Sytuacja pogodowa: <strong><%= @forecast.situations[i] %></strong>.
+      Sytuacja pogodowa [eng]: <strong><%= @forecast.situations[i] %></strong>.
     </p>
     <hr>
   <% end %>

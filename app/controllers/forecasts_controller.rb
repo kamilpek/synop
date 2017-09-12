@@ -5,7 +5,7 @@ class ForecastsController < ApplicationController
   # GET /forecasts.json
   def index
     @forecasts = Forecast.all
-    @days = @forecasts.pluck(:date).uniq.reverse
+    @days = @forecasts.order("created_at desc").pluck(:date).uniq
     @days = @days.paginate(:page => params[:page], :per_page => 14)
   end
 

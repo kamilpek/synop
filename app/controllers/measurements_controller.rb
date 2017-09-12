@@ -5,7 +5,7 @@ class MeasurementsController < ApplicationController
   # GET /measurements.json
   def index
     @measurements = Measurement.all
-    @days = @measurements.pluck(:date).uniq.reverse
+    @days = @measurements.order("created_at desc").pluck(:date).uniq
     @days = @days.paginate(:page => params[:page], :per_page => 14)
   end
 

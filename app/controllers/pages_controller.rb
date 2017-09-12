@@ -1,11 +1,11 @@
 class PagesController < ApplicationController
   def home
     @stations = Station.all
-    @date = Measurement.pluck(:date).last
-    @hour = Measurement.pluck(:hour).last
+    @date = Measurement.order("created_at").pluck(:date).last
+    @hour = Measurement.order("created_at").pluck(:hour).last
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
-      @measur_id = Measurement.where(station_number:station.number).pluck(:id).last
-      @temperature = Measurement.where(station_number:station.number).pluck(:temperature).last
+      @measur_id = Measurement.where(station_number:station.number).order("created_at").pluck(:id).last
+      @temperature = Measurement.where(station_number:station.number).order("created_at").pluck(:temperature).last
       @information = "#{station.name} – #{@temperature} C"
       marker.lat station.latitude
       marker.lng station.longitude
@@ -22,12 +22,12 @@ class PagesController < ApplicationController
 
   def forecast
     @stations = Station.all
-    @date = Forecast.pluck(:date).last
-    @hour = Forecast.pluck(:hour).last
+    @date = Forecast.order("created_at").pluck(:date).last
+    @hour = Forecast.order("created_at").pluck(:hour).last
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
-      @forecast_id = Forecast.where(station_number:station.number).pluck(:id).last
-      @forecast = Forecast.where(id:@forecast_id).last
-      @temperatures = Forecast.where(station_number:station.number).pluck(:temperatures).last
+      @forecast_id = Forecast.where(station_number:station.number).order("created_at").pluck(:id).last
+      @forecast = Forecast.where(id:@forecast_id).order("created_at").last
+      @temperatures = Forecast.where(station_number:station.number).order("created_at").pluck(:temperatures).last
       @information = "#{station.name} – przejdź po więcej informacji"
       marker.lat station.latitude
       marker.lng station.longitude

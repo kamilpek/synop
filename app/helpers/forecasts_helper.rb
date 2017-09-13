@@ -2,7 +2,9 @@ module ForecastsHelper
 
   def cardinals(degrees)
     degrees = degrees.to_i
-    if degrees.between?(0, 22)
+    if degrees.between?(0, 1)
+      return "Bezwietrznie"
+    elsif degrees.between?(1, 22)
       return "Północny"
     elsif degrees.between?(337, 360)
       return "Północny"

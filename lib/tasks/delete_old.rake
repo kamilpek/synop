@@ -10,8 +10,8 @@ end
 
 def build_delete_old
   print "Delete begining.\n"
-  @measurements = Measurement.where('created_at < ?', 1.week.ago)
-  @forecasts = Forecast.where('created_at < ?', 1.week.ago)
+  @measurements = Measurement.where('created_at < ?', 5.days.ago)
+  @forecasts = Forecast.where('created_at < ?', 5.days.ago)
   @measurements.delete_all
   @forecasts.delete_all
 end

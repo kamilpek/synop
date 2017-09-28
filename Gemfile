@@ -64,3 +64,4 @@ gem 'gmaps4rails', '~> 2.1', '>= 2.1.2' # geocoding
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3' # js lib
 gem 'whenever', '~> 0.9.7' # schedule
 gem 'cookies_eu', '~> 1.6', '>= 1.6.2' # cookies
+gem 'rabl', '~> 0.13.1' # generowanie json

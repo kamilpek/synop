@@ -58,6 +58,17 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :api do
+    namespace :v1 do
+      resources :measurements do
+        get 'measurements' => 'measurements#index'
+      end
+      resources :forecasts do
+        get 'forecasts' => 'forecasts#index'
+      end
+    end
+  end
+
   root 'pages#home'
 
 end

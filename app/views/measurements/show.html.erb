@@ -9,11 +9,11 @@
 <p>Godzina pomiaru: <strong><%= @measurement.hour %> UTC</strong></p>
 <p>Temperatura: <strong><%= @measurement.temperature %> C</strong></p>
 <p>Prędkość wiatru: <strong><%= @measurement.wind_speed %> m/s</strong></p>
-<p>Kierunek wiatru: <strong><%= @measurement.wind_direct %></strong></p>
+<p>Kierunek wiatru: <strong><%= cardinals(@measurement.wind_direct) %></strong></p>
 <p>Wilgotność: <strong><%= @measurement.humidity %> %</strong></p>
 <p>Ciśnienie atmosferyczne: <strong><%= @measurement.preasure %> hPa</strong></p>
-<p>Opady deszczu: <strong><%= @measurement.rainfall %></strong></p>
-<p>Odparowanie: <strong><%= @measurement.et %></strong></p>
+<p>Opady deszczu: <strong><%= @measurement.rainfall %> mm</strong></p>
+<p>Odparowanie: <strong><%= @measurement.et if @measurement.et %><%= "Brak Danych" unless @measurement.et %></strong></p>
 
 <h3 class=page-header>Akcje</h3>
 <%= link_to 'Edycja pomiaru', edit_measurement_path(@measurement), class:"btn btn-warning" if current_user.try(:admin) %>

@@ -9,14 +9,11 @@
   <thead>
     <tr>
       <th>Data</th>
-      <th>Godzina</th>
-      <th>Temperatura</th>
-      <th>Wiatr [V]</th>
-      <th>Wiatr [kier.]</th>
-      <th>Wilgotoność</th>
-      <th>Ciśnienie</th>
-      <th>Opady</th>
-      <th>Parowanie</th>
+      <th>H (UTC)</th>
+      <th>Temperatura (C)</th>
+      <th>Wiatr (m/s)</th>
+      <th>Ciśnienie (hPa)</th>
+      <th>Opady (mm)</th>
       <th>ID Stacji</th>
       <th>Akcje</th>
     </tr>
@@ -29,11 +26,8 @@
         <td><%= measurement.hour %></td>
         <td><%= measurement.temperature %></td>
         <td><%= measurement.wind_speed %></td>
-        <td><%= measurement.wind_direct %></td>
-        <td><%= measurement.humidity %></td>
         <td><%= measurement.preasure %></td>
         <td><%= measurement.rainfall %></td>
-        <td><%= measurement.et %></td>
         <td><%= Station.where(number:measurement.station_number).pluck(:name).last %></td>
         <td><%= link_to 'Przejdź', measurement, class:"btn btn-primary btn-xs" %></td>
       </tr>

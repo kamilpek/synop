@@ -66,6 +66,9 @@ Rails.application.routes.draw do
       resources :forecasts do
         get 'forecasts' => 'forecasts#index'
       end
+      resources :stations do
+        get 'stations' => 'stations#index'
+      end
     end
   end
 

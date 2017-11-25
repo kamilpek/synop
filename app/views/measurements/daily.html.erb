@@ -2,22 +2,20 @@
 
 <div class="container">
 
-<h1 class=page-header>Pomiary z dnia</h1>
-
-<div class="row" align="center">
-  <div class="col-md-4">
+<div class="page-header">
+  <div class="pull-left">
+  <h2>Lista pomiarów z dnia <%= @date.strftime("%d.%m.%Y") %></h2>
+  </div>
+  <div class="pull-right">
+  <h3 class="text-right">
     <%= link_to measurement_daily_path(date: @date - 1.day), class: "btn btn-info" do %>
       <i> Poprzedni Dzień</i>
     <% end %>
-  </div>
-  <div class="col-md-4">
-    <h4 id="day"><%= @date %></h4>
-  </div>
-  <div class="col-md-4">
     <%= link_to measurement_daily_path(date: @date + 1.day), class: "btn btn-info" do %>
       <i> Następny Dzień</i>
-    <% end %>
+    <% end %>   </h3>
   </div>
+  <div class="clearfix"></div>
 </div>
 
 <table class="table">

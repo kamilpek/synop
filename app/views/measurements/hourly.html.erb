@@ -2,8 +2,20 @@
 
 <div class="container">
 
-<h1 class=page-header>Pomiary z dnia <%= @measurements.order("created_at desc").pluck(:date).last %>
-  o godzinie <%= @measurements.order("created_at desc").pluck(:hour).last %> UTC </h1>
+  <div class="page-header">
+    <div class="pull-left">
+    <h2>Lista pomiarów z dnia <%= @measurements.order("created_at desc").pluck(:date).last %>
+      o godzinie <%= @measurements.order("created_at desc").pluck(:hour).last %> UTC</h2>
+    </div>
+    <div class="pull-right">
+    <h3 class="text-right">
+      <%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: @measurements.pluck(:date).last), class:"btn btn-success" %>
+      <%= link_to 'Generuj Mapkę', measurement_hourly_map_path(1, hour: @measurements.pluck(:hour).last), class:"btn btn-primary" %>
+    </h3>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
 
 <table class="table">
   <thead>
@@ -34,11 +46,6 @@
     <% end %>
   </tbody>
 </table>
-
-<h3 class=page-header>Akcje</h3>
-<%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: @measurements.pluck(:date).last), class:"btn btn-success" %>
-<%= link_to 'Generuj Mapkę', measurement_hourly_map_path(1, hour: @measurements.pluck(:hour).last), class:"btn btn-primary" %>
-
 </div>
 
 <br>

@@ -1,7 +1,21 @@
 <% content_for :title, "Prognoza" %>
 
 <div class="container">
-  <h1 class=page-header>Prognoza</h1>
+
+  <div class="page-header">
+    <div class="pull-left">
+    <h2>Prognoza</h2>
+    </div>
+    <div class="pull-right">
+    <h3 class="text-right">
+      <%= link_to 'Edycja prognozy', edit_forecast_path(@forecast), class:"btn btn-warning" if current_user.try(:admin?) %>
+      <%= link_to 'Lista Prognoz', forecasts_path, class:"btn btn-primary" %>
+      <%= link_to 'Lista Prognoz ze Stacji', measur_station_path(@station.id), class:"btn btn-info" %>
+      <%= link_to 'Przejdź do Stacji', station_path(@station.id), class:"btn btn-success" %>
+     </h3>
+    </div>
+    <div class="clearfix"></div>
+  </div>
 
   <h4 class=page-header>Podstawowe informacje</h4>
   <p>Station number: <strong><%= Station.where(number:@forecast.station_number).pluck(:name).last %></strong>.
@@ -24,14 +38,5 @@
     </p>
     <hr>
   <% end %>
-
-  <h4 class=page-header>Akcje</h4>
-  <div>
-    <%= link_to 'Edycja prognozy', edit_forecast_path(@forecast), class:"btn btn-warning" if current_user.try(:admin?) %>
-    <%= link_to 'Lista Prognoz', forecasts_path, class:"btn btn-primary" %>
-    <%= link_to 'Przejdź do Stacji', station_path(@station.id), class:"btn btn-default" %>
-    <%= link_to 'Lista Prognoz ze Stacji', measur_station_path(@station.id), class:"btn btn-info" %>
-  </div>
   <br>
-
 </div>

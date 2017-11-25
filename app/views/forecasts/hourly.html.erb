@@ -2,7 +2,18 @@
 
 <div class="container">
 
-<h1 class=page-header>Prognozy z dnia <%= @forecasts.order("created_at desc").pluck(:date).last %> z godziny <%= @forecasts.order("created_at desc").pluck(:hour).last %>.</h1>
+<div class="page-header">
+  <div class="pull-left">
+  <h2>Lista prognoz z dnia <%= @forecasts.order("created_at desc").pluck(:date).last %>
+    z godziny <%= @forecasts.order("created_at desc").pluck(:hour).last %>:00.</h2>
+  </div>
+  <div class="pull-right">
+  <h3 class="text-right">
+    <%= link_to 'Przejdź do dnia', daily_forecast_path(1, date: @forecasts.pluck(:date).last), class:"btn btn-success" %>
+   </h3>
+  </div>
+  <div class="clearfix"></div>
+</div>
 
   <table class="table">
     <thead>
@@ -20,14 +31,10 @@
           <td><%= forecast.date %>; <%= forecast.hour %>:00</td>
           <td><%= forecast.next.strftime("%Y-%m-%d; %H:%M") if forecast.next %></td>
           <td><%= Station.where(number:forecast.station_number).pluck(:name).last %></td>
-          <td><%= link_to 'Przejdź', forecast, class:"btn btn-xs btn-success" %></td>
+          <td><%= link_to 'Przejdź do prognozy', forecast, class:"btn btn-xs btn-success" %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
-
-  <h3 class=page-header>Akcje</h3>
-  <%= link_to 'Przejdź do dnia', daily_forecast_path(1, date: @forecasts.pluck(:date).last), class:"btn btn-success" %>
-
 </div>
 <br>

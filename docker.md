@@ -9,6 +9,8 @@ Start bazy danych
 ```bash
 sudo docker-compose up -d postgres_db
 sudo docker run --name postgres_db -e POSTGRES_PASSWORD=super_secure --net=kps -d postgres
+#
+sudo docker start postgres_db
 ```
 Budowa aplikacji
 ```bash

@@ -14,7 +14,7 @@ Rejestr danych ze stacji pogodowych polskiego [IMGW](http://www.imgw.pl/) oraz p
 * JSAPI
 
 ## Wersja produktu
-* v2.1.0 z dnia 25.11.2017
+* v2.1.1 z dnia 26.11.2017
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

@@ -1,12 +1,9 @@
 development: &default
   adapter: postgresql
-  host: <%= ENV["POSTGRES_HOST"] %>
-  username: <%= ENV["POSTGRES_USER"] %>
-  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  encoding: unicode
   database: synop_development
-  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   min_messages: warning
-  pool: 2
   timeout: 5000
 
 test:
@@ -14,5 +11,12 @@ test:
   database: synop_test
 
 production:
-  <<: *default
+  adapter: postgresql
+  host: <%= ENV["POSTGRES_HOST"] %>
+  username: <%= ENV["POSTGRES_USER"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
   database: synop_production
+  encoding: utf8
+  min_messages: warning
+  pool: 2
+  timeout: 5000

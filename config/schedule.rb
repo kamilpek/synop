@@ -19,6 +19,14 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every '15 * * * *' do  
-  runner "Measurement.direct_import"
+every '10 * * * *' do
+  rake 'import_imgw_xml RAILS_ENV=production '
+end
+
+every '0 9 * * *' do
+  rake 'import_yrno RAILS_ENV=production'
+end
+
+every '0 21 * * *' do
+  rake 'import_yrno RAILS_ENV=production'
 end

@@ -7,10 +7,12 @@ RUN apt-get update -yqq \
     qt5-default \
     libqt5webkit5-dev \
     graphviz \
+    cron \
   && apt-get -q clean \
   && rm -rf /var/lib/apt/lists
 
 WORKDIR /usr/src/app
 COPY Gemfile* ./
 RUN bundle install
+RUN service cron start
 COPY . .

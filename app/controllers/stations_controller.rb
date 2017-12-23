@@ -67,8 +67,10 @@ class StationsController < ApplicationController
     csv = CSV.parse(csv_text, :headers => true)
     csv.each do |row|
       Station.create!(
-        :number => row['id_stacji'],
-        :name => row['stacja'],
+        :number => row['number'],
+        :name => row['name'],
+        :latitude => row['latitude'],
+        :longitude => row['longitude'],
         :status => 1)
     end
     redirect_to stations_path, notice: "Zaimportowano stacje."

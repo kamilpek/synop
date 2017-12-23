@@ -15,5 +15,29 @@
  *= require cookies_eu
  */
 
-@import "bootstrap-sprockets";
 @import "bootstrap";
+
+.jumbotron {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-color: #F4F7FA;
+}
+
+$btn-padding-x-xs:  .20rem !default;
+$btn-padding-y-xs:  .12rem !default;
+$input-btn-line-height-xs: 1.1 !default;
+
+.btn.btn-xs {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-xs, $btn-padding-x-xs, $font-size-sm, $input-btn-line-height-xs, $btn-border-radius-sm);
+}
+
+.pagination {
+   align-items: center;
+   justify-content: center;
+}
+
+.res-img {
+  width: 75%;
+  height: 75%;
+}

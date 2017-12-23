@@ -1,8 +1,8 @@
 require 'csv'
 
 class Station < ApplicationRecord
-  geocoded_by :name
-  after_validation :geocode
+  # geocoded_by :name
+  # after_validation :geocode
 
   def self.import(file)
     spreadsheet = open_spreadsheet(file)

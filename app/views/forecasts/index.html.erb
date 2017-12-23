@@ -2,25 +2,27 @@
 
 <div class="container">
 
-  <h2 class=page-header>Lista prognoz pogody</h2>
+  <h4>Lista prognoz pogody</h4><hr>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Data</th>
-        <th>Akcje</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @days.each do |day| %>
-        <tr>
-          <td><%= day %></td>
-          <td><%= link_to 'Przejdź do dnia', daily_forecast_path(1, date: day), class:"btn btn-success btn-xs" %></td>
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Data</th>
+          <th>Akcje</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
-  <p><%= will_paginate @days, renderer: BootstrapPagination::Rails %></p>
+      </thead>
+
+      <tbody>
+        <% @days.each do |day| %>
+          <tr align="center">
+            <td><%= day %></td>
+            <td><%= link_to 'Przejdź do dnia', daily_forecast_path(1, date: day), class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p><%= will_paginate @days, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
 
 </div>

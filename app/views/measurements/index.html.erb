@@ -2,44 +2,43 @@
 
 <div class="container">
 
-<h2 class=page-header>Lista pomiarów</h2>
+<h4>Lista dni pomiarów</h4><hr>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Data</th>
-      <th>Akcje</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @days.each do |day| %>
-      <tr>
-        <td><%= day %></td>
-        <td><%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: day), class:"btn btn-success btn-xs" %></td>
+<div class="table-responsive" align="center">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr align="center">
+        <th>Data</th>
+        <th>Akcje</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-<p><%= will_paginate @days, renderer: BootstrapPagination::Rails %></p>
+    </thead>
 
-<% if current_user.try(:admin) %>
-<div class="row" align="center">
-  <div class="col-md-4">
-    <h4>Importuj Pomiary z pliku [csv]</h4>
-  </div>
-  <div class="col-md-4">
-    <%= form_tag import_measurements_path, multipart: true do %>
-      <%= file_field_tag :file, class:"form-control" %>
-  </div>
-  <div class="col-md-4">
-    <%= submit_tag "Importuj", class:"btn btn-success" %>
-    <% end %>
-  </div>
+    <tbody>
+      <% @days.each do |day| %>
+        <tr align="center">
+          <td><%= day %></td>
+          <td><%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: day), class:"btn btn-outline-primary btn-xs" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </div>
-<br>
-<% end %>
+<p><%= will_paginate @days, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+
+  <% if current_user.try(:admin) %>
+  <div class="row" align="center">
+    <div class="col-md-4">
+      <h4>Importuj Pomiary z pliku [csv]</h4>
+    </div>
+    <div class="col-md-4">
+      <%= form_tag import_measurements_path, multipart: true do %>
+        <%= file_field_tag :file, class:"form-control" %>
+    </div>
+    <div class="col-md-4">
+      <%= submit_tag "Importuj", class:"btn btn-success" %>
+      <% end %>
+    </div>
+  </div>
+  <% end %>
 
 </div>
-
-<br>

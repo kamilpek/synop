@@ -2,76 +2,61 @@
 
 <div class="container">
 
-<div class="page-header">
-  <div class="pull-left">
-  <h2>Pomiary ze stacji <%= @station.name %></h2>
-  </div>
-  <div class="pull-right">
-  <h3 class="text-right">
-    <%= link_to 'Lista Stacji', stations_path, class:"btn btn-primary" %>
-    <%= link_to 'Lista Pomiarów', measurements_path, class:"btn btn-default" %>
-    <%= link_to 'Mapa Ostatnich Pomiarów', root_path, class:"btn btn-success" %>
-  </h3>
-  </div>
-  <div class="clearfix"></div>
-</div>
+  <h4>
+    Pomiary ze stacji <%= @station.name %>
+    <%= link_to 'Lista stacji', stations_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to 'Lista pomiarów', measurements_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to 'Mapa ostatnich pomiarów', root_path, class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
 
-<h3 class=page-header>Dane stacji </h3>
-<p>IMGW-ID: <strong><%= @station.number %></strong>.</p>
-<p>Koordynaty: <strong>
-<a href="https://maps.google.com/maps?ll=<%= @station.latitude %>,<%= @station.longitude %>&q=<%= @station.latitude %>,<%= @station.longitude %>"><%= @station.longitude %>, <%= @station.latitude %></a>
-</strong></p>
+  <h4>Dane stacji </h4><hr>
+  <p>
+    IMGW-ID: <strong><%= @station.number %></strong>.
+    Koordynaty: <strong>
+    <a href="https://maps.google.com/maps?ll=<%= @station.latitude %>,<%= @station.longitude %>&q=<%= @station.latitude %>,<%= @station.longitude %>"><%= @station.longitude %>, <%= @station.latitude %></a>
+  </strong></p>
 
-<div class="page-header">
-  <div class="pull-left">
-  <h3>Lista pomiarów z dnia <%= @date.strftime("%d.%m.%Y") %></h3>
+  <h4>Lista pomiarów z dnia <%= @date.strftime("%d.%m.%Y") %></h4><hr>
+  <p align="center">
+    <%= link_to measur_station_path(date: @date - 1.day), class: "btn btn-sm btn-outline-info" do %> Poprzedni Dzień <% end %>
+    <%= link_to measur_station_path(date: @date + 1.day), class: "btn btn-sm btn-outline-info" do %> Następny Dzień <% end %>
+  </p><hr>
+
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Data</th>
+          <th>Godzina</th>
+          <th>Temperatura</th>
+          <th>Wiatr [V]</th>
+          <th>Wiatr [kier.]</th>
+          <th>Wilgotoność</th>
+          <th>Ciśnienie</th>
+          <th>Opady</th>
+          <th>Parowanie</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @measurements.each do |measurement| %>
+          <tr align="center">
+            <td><%= measurement.date %></td>
+            <td><%= measurement.hour %></td>
+            <td><%= measurement.temperature %></td>
+            <td><%= measurement.wind_speed %></td>
+            <td><%= measurement.wind_direct %></td>
+            <td><%= measurement.humidity %></td>
+            <td><%= measurement.preasure %></td>
+            <td><%= measurement.rainfall %></td>
+            <td><%= measurement.et %></td>
+            <td><%= link_to 'Przejdź', measurement, class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
-  <div class="pull-right">
-  <h3 class="text-right">
-    <%= link_to measur_station_path(date: @date - 1.day), class: "btn btn-info" do %>
-      <i> Poprzedni Dzień</i>
-    <% end %>
-    <%= link_to measur_station_path(date: @date + 1.day), class: "btn btn-info" do %>
-      <i> Następny Dzień</i>
-    <% end %>
-  </h3>
-  </div>
-  <div class="clearfix"></div>
-</div>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Data</th>
-      <th>Godzina</th>
-      <th>Temperatura</th>
-      <th>Wiatr [V]</th>
-      <th>Wiatr [kier.]</th>
-      <th>Wilgotoność</th>
-      <th>Ciśnienie</th>
-      <th>Opady</th>
-      <th>Parowanie</th>
-      <th>Akcje</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @measurements.each do |measurement| %>
-      <tr>
-        <td><%= measurement.date %></td>
-        <td><%= measurement.hour %></td>
-        <td><%= measurement.temperature %></td>
-        <td><%= measurement.wind_speed %></td>
-        <td><%= measurement.wind_direct %></td>
-        <td><%= measurement.humidity %></td>
-        <td><%= measurement.preasure %></td>
-        <td><%= measurement.rainfall %></td>
-        <td><%= measurement.et %></td>
-        <td><%= link_to 'Przejdź', measurement, class:"btn btn-primary btn-xs" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 </div>
-<br>

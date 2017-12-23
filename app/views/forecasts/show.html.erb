@@ -1,28 +1,19 @@
 <% content_for :title, "Prognoza" %>
-
 <div class="container">
 
-  <div class="page-header">
-    <div class="pull-left">
-    <h2>Prognoza</h2>
-    </div>
-    <div class="pull-right">
-    <h3 class="text-right">
-      <%= link_to 'Edycja prognozy', edit_forecast_path(@forecast), class:"btn btn-warning" if current_user.try(:admin?) %>
-      <%= link_to 'Lista Prognoz', forecasts_path, class:"btn btn-primary" %>
-      <%= link_to 'Lista Prognoz ze Stacji', measur_station_path(@station.id), class:"btn btn-info" %>
-      <%= link_to 'Przejdź do Stacji', station_path(@station.id), class:"btn btn-success" %>
-     </h3>
-    </div>
-    <div class="clearfix"></div>
-  </div>
+  <h4>Prognoza
+    <%= link_to 'Edycja prognozy', edit_forecast_path(@forecast), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin?) %>
+    <%= link_to 'Lista prognoz', forecasts_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to 'Lista pomiarów ze stacji', measur_station_path(@station.id), class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to 'Przejdź do stacji', station_path(@station.id), class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
 
-  <h4 class=page-header>Podstawowe informacje</h4>
-  <p>Station number: <strong><%= Station.where(number:@forecast.station_number).pluck(:name).last %></strong>.
+  <h4>Podstawowe informacje</h4><hr>
+  <p>Stacja IMGW: <strong><%= Station.where(number:@forecast.station_number).pluck(:name).last %></strong>.
      Data i godzina prognozy: <strong><%= @forecast.date %>; <%= @forecast.hour %>:00</strong>.
      Następna prognoza około: <strong><%= @forecast.next.strftime("%Y-%m-%d; %H:%M") if @forecast.next %></strong>.</p>
 
-  <h4 class=page-header>Dane pogodowe</h4>
+  <h4>Dane pogodowe</h4><hr>
   <% for i in 0..@forecast.temperatures.count-1 %>
     <p>
       Od <strong><%= @forecast.times_from[i].strftime("%Y-%m-%d; %H:%M") if @forecast.times_from[i] %></strong>
@@ -38,5 +29,4 @@
     </p>
     <hr>
   <% end %>
-  <br>
 </div>

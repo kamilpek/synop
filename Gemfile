@@ -54,9 +54,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # added gems
 gem 'devise', '~> 4.3' # users
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7' # views
+gem 'bootstrap', '~> 4.0.0.beta2.1' # views
 gem 'will_paginate', '~> 3.1', '>= 3.1.5' # paginacja
-gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1' # views
+gem 'will_paginate-bootstrap4', '~> 0.1.3' # pagination
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2' # views
 gem 'roo', '~> 2.7', '>= 2.7.1' # importing
 gem 'geocoder', '~> 1.4', '>= 1.4.4' # geocoding

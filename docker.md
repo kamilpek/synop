@@ -1,4 +1,4 @@
-# Docker
+# Docker for synop
 
 Start sieci
 ```bash
@@ -7,10 +7,8 @@ sudo docker network create --driver=bridge kps
 
 Start bazy danych
 ```bash
-sudo docker-compose up -d postgres_db
-sudo docker run --name postgres_db -e POSTGRES_PASSWORD=super_secure --net=kps -d postgres
-#
 sudo docker start postgres_db
+sudo docker run --name postgres_db -e POSTGRES_PASSWORD=super_secure --net=kps -d postgres
 ```
 Budowa aplikacji
 ```bash
@@ -19,8 +17,9 @@ sudo docker-compose build app
 
 Tworzenie bazy i uruchomienie migracji
 ```bash
-sudo docker-compose run --rm app rake db:create db:migrate RAILS_ENV=production
-sudo docker-compose run --rm app rake db:create db:migrate RAILS_ENV=development
+sudo docker-compose run --rm app rake db:create db:migrate db:seed RAILS_ENV=production
+sudo docker-compose run --rm app rake db:create db:migrate db:seed RAILS_ENV=development
+sudo docker-compose run --rm app rake db:drop RAILS_ENV=production DISABLE_DATABASE_ENVIRONMENT_CHECK=1
 ```
 
 Tworzenie użytkownika

@@ -5,6 +5,7 @@ assets:clean[keep]
 assets:clobber
 assets:environment
 assets:precompile
+autoprefixer:info
 cache_digests:dependencies
 cache_digests:nested_dependencies
 create_user
@@ -33,6 +34,7 @@ geocoder:maxmind:geolite:insert
 geocoder:maxmind:geolite:load
 import_imgw
 import_imgw_xml
+import_stations
 import_yrno
 initializers
 log:clear

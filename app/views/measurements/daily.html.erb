@@ -2,40 +2,33 @@
 
 <div class="container">
 
-<div class="page-header">
-  <div class="pull-left">
-  <h2>Lista pomiarów z dnia <%= @date.strftime("%d.%m.%Y") %></h2>
+  <h4>
+    Lista pomiarów z dnia <%= @date.strftime("%d.%m.%Y") %>
+    <%= link_to "Lista dni", measurements_path, class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <p align="center">
+    <%= link_to measurement_daily_path(date: @date - 1.day), class: "btn btn-sm btn-outline-info" do %> Poprzedni Dzień <% end %>
+    <%= link_to measurement_daily_path(date: @date + 1.day), class: "btn btn-sm btn-outline-info" do %> Następny Dzień <% end %>
+  </p><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Godzina</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @hours.each do |hour| %>
+          <tr align="center">
+            <td><%= hour %></td>
+            <td><%= link_to 'Przejdź do godziny', measurement_hourly_path(hour: hour, date: @date), class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
-  <div class="pull-right">
-  <h3 class="text-right">
-    <%= link_to measurement_daily_path(date: @date - 1.day), class: "btn btn-info" do %>
-      <i> Poprzedni Dzień</i>
-    <% end %>
-    <%= link_to measurement_daily_path(date: @date + 1.day), class: "btn btn-info" do %>
-      <i> Następny Dzień</i>
-    <% end %>   </h3>
-  </div>
-  <div class="clearfix"></div>
 </div>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Godzina</th>
-      <th>Akcje</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @hours.each do |hour| %>
-      <tr>
-        <td><%= hour %></td>
-        <td><%= link_to 'Przejdź do godziny', measurement_hourly_path(hour: hour, date: @date), class:"btn btn-default btn-xs" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-</div>
-
-<br>

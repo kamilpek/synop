@@ -2,50 +2,43 @@
 
 <div class="container">
 
-  <div class="page-header">
-    <div class="pull-left">
-    <h2>Lista pomiarów z dnia <%= @measurements.order("created_at desc").pluck(:date).last %>
-      o godzinie <%= @measurements.order("created_at desc").pluck(:hour).last %> UTC</h2>
-    </div>
-    <div class="pull-right">
-    <h3 class="text-right">
-      <%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: @measurements.pluck(:date).last), class:"btn btn-success" %>
-      <%= link_to 'Generuj Mapkę', measurement_hourly_map_path(1, hour: @measurements.pluck(:hour).last), class:"btn btn-primary" %>
-    </h3>
-    </div>
-    <div class="clearfix"></div>
+  <h4>
+    Lista pomiarów z dnia
+    <%= @measurements.order("created_at desc").pluck(:date).last %> o godzinie
+    <%= @measurements.order("created_at desc").pluck(:hour).last %> UTC
+    <%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: @measurements.pluck(:date).last), class:"btn btn-sm btn-outline-success" %>
+    <%= link_to 'Generuj Mapkę', measurement_hourly_map_path(1, hour: @measurements.pluck(:hour).last), class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Data</th>
+          <th>H (UTC)</th>
+          <th>Temperatura (C)</th>
+          <th>Wiatr (m/s)</th>
+          <th>Ciśnienie (hPa)</th>
+          <th>Opady (mm)</th>
+          <th>ID Stacji</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @measurements.order("created_at desc").each do |measurement| %>
+          <tr align="center">
+            <td><%= measurement.date.strftime("%d.%m.%Y") %></td>
+            <td><%= measurement.hour %></td>
+            <td><%= measurement.temperature %></td>
+            <td><%= measurement.wind_speed %></td>
+            <td><%= measurement.preasure %></td>
+            <td><%= measurement.rainfall %></td>
+            <td><%= Station.where(number:measurement.station_number).pluck(:name).last %></td>
+            <td><%= link_to 'Przejdź', measurement, class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
-
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Data</th>
-      <th>H (UTC)</th>
-      <th>Temperatura (C)</th>
-      <th>Wiatr (m/s)</th>
-      <th>Ciśnienie (hPa)</th>
-      <th>Opady (mm)</th>
-      <th>ID Stacji</th>
-      <th>Akcje</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @measurements.order("created_at desc").each do |measurement| %>
-      <tr>
-        <td><%= measurement.date.strftime("%d.%m.%Y") %></td>
-        <td><%= measurement.hour %></td>
-        <td><%= measurement.temperature %></td>
-        <td><%= measurement.wind_speed %></td>
-        <td><%= measurement.preasure %></td>
-        <td><%= measurement.rainfall %></td>
-        <td><%= Station.where(number:measurement.station_number).pluck(:name).last %></td>
-        <td><%= link_to 'Przejdź', measurement, class:"btn btn-primary btn-xs" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 </div>
-
-<br>

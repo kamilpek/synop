@@ -18,13 +18,13 @@ Rejestr danych ze stacji pogodowych polskiego [IMGW](http://www.imgw.pl/) oraz p
 * sudo docker run --name postgres_db -e POSTGRES_PASSWORD=super_secure --net=kps -d postgres
 * sudo docker-compose build app
 * sudo docker-compose run --rm app rake db:create db:migrate db:seed RAILS_ENV=production
-* sudo docker-compose run --rm app rake import_stations
-* sudo docker-compose run --rm app rake import_yrno
-* sudo docker-compose run --rm app rake import_imgw_xml
+* sudo docker-compose run --rm app rake import_stations RAILS_ENV=production
+* sudo docker-compose run --rm app rake import_yrno RAILS_ENV=production
+* sudo docker-compose run --rm app rake import_imgw_xml RAILS_ENV=production
 * sudo docker-compose up -d app
 
 ## Wersja produktu
-* v2.2.1 z dnia 23.12.2017
+* v2.2.2 z dnia 25.12.2017
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

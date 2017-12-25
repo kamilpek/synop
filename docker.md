@@ -10,6 +10,7 @@ Start bazy danych
 sudo docker start postgres_db
 sudo docker run --name postgres_db -e POSTGRES_PASSWORD=super_secure --net=kps -d postgres
 ```
+
 Budowa aplikacji
 ```bash
 sudo docker-compose build app
@@ -31,6 +32,14 @@ sudo docker-compose run --rm app rake create_user RAILS_ENV=development
 Kompilowanie asstesów
 ```bash
 sudo docker-compose run --rm app rake assets:precompile RAILS_ENV=production
+```
+
+Uruchomienie zaplanowanych zadań
+```bash
+sudo docker-compose run --rm app whenever --update-crontab
+sudo docker-compose run --rm app crontab -l
+sudo docker-compose run --rm app service cron status
+sudo docker-compose run --rm app /etc/init.d/cron start
 ```
 
 Uruchomienie aplikacji

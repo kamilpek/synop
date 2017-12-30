@@ -10,7 +10,7 @@ end
 
 def build_import_stations
   print "Import begining.\n"
-  file = open('https://github.com/kamilpek/synop/blob/master/stacje.csv')
+  file = open('https://raw.githubusercontent.com/kamilpek/synop/master/stacje.csv')
   csv_text = file.read
   csv = CSV.parse(csv_text, :headers => true)
   csv.each do |row|

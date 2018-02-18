@@ -12,11 +12,7 @@ RUN apt-get update -yqq \
   && apt-get -q clean \
   && rm -rf /var/lib/apt/lists
 
-RUN cp /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 WORKDIR /usr/src/app
-CMD touch /log/cron.log
 COPY Gemfile* ./
 RUN bundle install
 COPY . .
-RUN bundle exec whenever --update-crontab
-CMD cron

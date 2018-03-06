@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
       @measur_id = Measurement.where(station_number:station.number).order("created_at").pluck(:id).last
       @temperature = Measurement.where(station_number:station.number).order("created_at").pluck(:temperature).last
-      @information = "#{station.name} – #{@temperature} C"
+      @information = "#{station.name}: #{@temperature} C"
       marker.lat station.latitude
       marker.lng station.longitude
       marker.infowindow render_to_string(:partial => "infowindow", :locals => { :object => @measur_id, :name => @information})
@@ -32,6 +32,25 @@ class PagesController < ApplicationController
       marker.lat station.latitude
       marker.lng station.longitude
       marker.infowindow render_to_string(:partial => "infowindow_forecast", :locals => { :object => @forecast_id, :forecast => @forecast, :name => @information})
+      marker.picture({
+                      :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                     })
+    end
+  end
+
+  def metar
+    @stations_number = MetarRaport.all.pluck(:station)
+    @stations = MetarStation.where(number:@stations_number)
+    @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
+      @metar_raport_id = MetarRaport.where(station:station.number).pluck(:id).last
+      @metar_raport = MetarRaport.find(@metar_raport_id)
+      marker.lat station.latitude
+      marker.lng station.longitude
+      marker.infowindow render_to_string(:partial => "infowindow_metar", :locals => { :object => @metar_raport_id, :metar_raport => @metar_raport, :name => @information})
       marker.picture({
                       :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
                       :width  => 16,

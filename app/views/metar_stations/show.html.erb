@@ -1,0 +1,26 @@
+<% content_for :title, "Stacja #{@metar_station.name}" %>
+
+<div class="container">
+
+  <h4>
+    Stacja METAR – <%= @metar_station.name %>
+    <%= link_to 'Edycja', edit_metar_station_path(@metar_station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+    <%= link_to 'Lista Stacji', metar_stations_path, class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <p>Numer: <strong><%= @metar_station.number %></strong>.</p>
+  <p>Status: <strong><%= "Aktywny" if @metar_station.status %></strong></p>
+  <p>Elevation: <strong><%= @metar_station.elevation %></strong></p>
+  <p>Koordynaty: <strong>
+  <a href="https://maps.google.com/maps?ll=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>&q=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>"><%= @metar_station.longitude %>, <%= @metar_station.latitude %></a>
+  </strong></p>
+
+  <h4>Lokalizacja</h4><hr>
+  <div align="center">
+    <iframe width="720" height="400" frameborder="0" style="border:0"
+     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3WpXtmfwjePmkgLqXZnV7VvM03i0ICE&q=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>"
+     allowfullscreen>
+    </iframe>
+  </div>
+
+</div>

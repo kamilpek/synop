@@ -35,6 +35,7 @@ geocoder:maxmind:geolite:load
 import_imgw
 import_imgw_xml
 import_stations
+import_stations_metar
 import_yrno
 initializers
 log:clear

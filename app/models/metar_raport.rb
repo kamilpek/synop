@@ -1,0 +1,2 @@
+class MetarRaport < ApplicationRecord
+end

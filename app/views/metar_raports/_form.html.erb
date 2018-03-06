@@ -1,0 +1,42 @@
+<%= form_for(metar_raport) do |f| %>
+  <% if metar_raport.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(metar_raport.errors.count, "error") %> prohibited this metar_raport from being saved:</h2>
+
+      <ul>
+      <% metar_raport.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :station %>
+    <%= f.number_field :station %>
+  </div>
+
+  <div class="field">
+    <%= f.label :day %>
+    <%= f.number_field :day %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hour %>
+    <%= f.number_field :hour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :metar %>
+    <%= f.text_field :metar %>
+  </div>
+
+  <div class="field">
+    <%= f.label :message %>
+    <%= f.text_area :message %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

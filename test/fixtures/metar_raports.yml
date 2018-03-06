@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  station: 1
+  day: 1
+  hour: 1
+  metar: MyString
+  message: MyText
+
+two:
+  station: 1
+  day: 1
+  hour: 1
+  metar: MyString
+  message: MyText

@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
-  resources :forecasts
+
   get 'admin/main'
-
   get 'admin/users'
-
   get 'pages/home'
   get 'pages/forecast'
+  get 'pages/metar'
   get 'pages/stats'
   get 'pages/about'
 
+  resources :metar_raports
+  resources :metar_stations
+  resources :forecasts
   resources :measurements
   resources :stations
   devise_for :users

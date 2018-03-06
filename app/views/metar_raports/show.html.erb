@@ -1,0 +1,13 @@
+<% content_for :title, "Depesza METAR" %>
+
+<div class="container">
+
+  <p>Stacja: <strong><%= @metar_station %> – <%= @metar_raport.station %></strong></p>
+  <p>Dzień: <strong><%= @metar_raport.day %></strong></p>
+  <p>Godzina: <strong><%= @metar_raport.hour %></strong></p>
+  <p>Depesza: <strong><%= @metar_raport.metar %></strong></p>
+
+  <p>Treść: </p>
+  <p><%= @metar_raport.message %></p>
+
+</div>

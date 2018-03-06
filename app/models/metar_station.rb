@@ -1,0 +1,2 @@
+class MetarStation < ApplicationRecord
+end

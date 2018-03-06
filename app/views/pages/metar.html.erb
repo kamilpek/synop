@@ -1,0 +1,16 @@
+<% content_for :title, "Mapa METAR" %>
+
+<div class="container">
+
+  <h4>
+    Mapa METAR
+    <%= link_to "Mapa Pomiarów", root_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to "Mapa Prognoz", pages_forecast_path, class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <div style='height: 750px;'>
+    <div id="sidebar_builder" style='width: 100%; height: 100%;'></div>
+    <%= render "multimap_metar" %>
+  </div>
+
+</div>

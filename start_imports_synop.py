@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf8
 # Kamil Pek (C)18.02.2018
-# nohup /root/solectwolubiana/start_imports_synop.py &
+# nohup /root/synop/start_imports_synop.py &
 # nohup python start_imports_synop.py
 
 import os

@@ -1,0 +1,5 @@
+<p>Stacja: <strong><%= MetarStation.find_by(number:@metar_raport.station).name %> – <%= @metar_raport.station %></strong></p>
+<p>Dzień: <%= @metar_raport.day %>. Godzina: <%= @metar_raport.hour %></p>
+<p><%= @metar_raport.metar %></p>
+<p><%= @metar_raport.message %></p>
+<p><%= link_to "Przejdź", metar_raport_path(object), class:"btn btn-xs btn-success" %></p>

@@ -1,0 +1,32 @@
+<% content_for :title, "Depesze METAR" %>
+
+<div class="container">
+
+  <h4>Depesze METAR</h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Stacja</th>
+          <th>D</th>
+          <th>H</th>
+          <th>Depesza METAR</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @metar_raports.each do |metar_raport| %>
+          <tr>
+            <td><%= metar_raport.station %></td>
+            <td><%= metar_raport.day %></td>
+            <td><%= metar_raport.hour %></td>
+            <td><%= metar_raport.metar %></td>
+            <td><%= link_to 'Przejdź', metar_raport, class:"btn btn-xs btn-success" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

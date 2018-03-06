@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170830180448) do
+ActiveRecord::Schema.define(version: 20180306214617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,25 @@ ActiveRecord::Schema.define(version: 20170830180448) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.integer  "station_number"
+  end
+
+  create_table "metar_raports", force: :cascade do |t|
+    t.integer "station"
+    t.integer "day"
+    t.integer "hour"
+    t.string  "metar"
+    t.text    "message"
+  end
+
+  create_table "metar_stations", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "number"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "elevation"
+    t.boolean  "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "stations", force: :cascade do |t|

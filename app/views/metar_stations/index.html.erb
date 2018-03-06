@@ -1,0 +1,36 @@
+<% content_for :title, "Stacje metar" %>
+
+<div class="container">
+
+  <h4>
+    Stacje metar
+    <%= link_to 'Nowa Stajca', new_metar_station_path, class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+  </h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Nazwa</th>
+          <th>Numer</th>
+          <th>Szerokość</th>
+          <th>Długość</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @metar_stations.each do |station| %>
+          <tr align="center">
+            <td><%= station.name %></td>
+            <td><%= station.number %></td>
+            <td><%= station.latitude %></td>
+            <td><%= station.longitude %></td>
+            <td><%= link_to 'Przejdź', station, class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p align="center"><%= will_paginate @metar_stations, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+</div>

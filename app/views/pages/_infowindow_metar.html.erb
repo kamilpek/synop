@@ -1,5 +1,6 @@
-<p>Stacja: <strong><%= MetarStation.find_by(number:@metar_raport.station).name %> – <%= @metar_raport.station %></strong></p>
-<p>Dzień: <%= @metar_raport.day %>. Godzina: <%= @metar_raport.hour %></p>
+<p>Stacja: <strong><%= MetarStation.find_by(number:@metar_raport.station).name %> <%= @metar_raport.station %></strong></p>
+<p>Dzień: <%= @metar_raport.day %>. Godzina: <%= @metar_raport.hour %>
+  – <%= link_to "Przejdź", metar_raport_path(object), class:"btn btn-xs btn-success" %></p>
 <p><%= @metar_raport.metar %></p>
-<p><%= @metar_raport.message %></p>
-<p><%= link_to "Przejdź", metar_raport_path(object), class:"btn btn-xs btn-success" %></p>
+<p align="justify"><%= @metar_raport.message %></p>
+<p>Data i godzina pobrania danych z ogimet.com: <%= @metar_raport.created_at.strftime("%d.%m.%Y, %H:%M %Z") if @metar_raport.created_at %></p>

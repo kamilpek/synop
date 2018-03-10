@@ -2,12 +2,16 @@
 
 <div class="container">
 
-  <p>Stacja: <strong><%= @metar_station %> – <%= @metar_raport.station %></strong></p>
-  <p>Dzień: <strong><%= @metar_raport.day %></strong></p>
-  <p>Godzina: <strong><%= @metar_raport.hour %></strong></p>
-  <p>Depesza: <strong><%= @metar_raport.metar %></strong></p>
+  <p>Stacja: <strong><%= @metar_station %> – <%= @metar_raport.station %></strong>
+     Dzień miesiąca: <strong><%= @metar_raport.day %></strong>
+     Godzina: <strong><%= @metar_raport.hour %></strong>
+     Data i godzina pobrania danych z ogimet.com:
+     <strong><%= @metar_raport.created_at.strftime("%d.%m.%Y, %H:%M %Z") if @metar_raport.created_at %></strong>
+   </p>
+  <p>Depesza: </p>
+  <p><strong><%= @metar_raport.metar %></strong></p>
 
   <p>Treść: </p>
-  <p><%= @metar_raport.message %></p>
+  <p align="justify"><%= @metar_raport.message %></p>
 
 </div>

@@ -4,7 +4,7 @@ class MetarRaportsController < ApplicationController
   # GET /metar_raports
   # GET /metar_raports.json
   def index
-    @metar_raports = MetarRaport.all
+    @metar_raports = MetarRaport.order("created_at desc").paginate(:page => params[:page], :per_page => 75)
   end
 
   # GET /metar_raports/1
@@ -70,6 +70,6 @@ class MetarRaportsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def metar_raport_params
-      params.require(:metar_raport).permit(:station, :day, :hour, :metar, :message)
+      params.require(:metar_raport).permit(:station, :day, :hour, :metar, :message, :created_at)
     end
 end

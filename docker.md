@@ -19,8 +19,18 @@ sudo docker-compose build app
 Tworzenie bazy i uruchomienie migracji
 ```bash
 sudo docker-compose run --rm app rake db:create db:migrate db:seed RAILS_ENV=production
+sudo docker-compose run --rm app rake db:migrate RAILS_ENV=production
 sudo docker-compose run --rm app rake db:create db:migrate db:seed RAILS_ENV=development
 sudo docker-compose run --rm app rake db:drop RAILS_ENV=production DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+```
+
+Pobieranie danych z API
+```bash
+sudo docker-compose run --rm app rake import_stations RAILS_ENV=production
+sudo docker-compose run --rm app rake import_yrno RAILS_ENV=production
+sudo docker-compose run --rm app rake import_imgw_xml RAILS_ENV=production
+sudo docker-compose run --rm app rake import_stations_metar RAILS_ENV=production
+sudo docker-compose run --rm app rake import_ogimet RAILS_ENV=production
 ```
 
 Tworzenie użytkownika
@@ -45,6 +55,16 @@ sudo docker-compose run --rm app /etc/init.d/cron start
 Uruchomienie aplikacji
 ```bash
 sudo docker-compose up -d app
+```
+
+Przejście do konsoli rails
+```bash
+sudo docker-compose run app rails console -e production
+```
+
+Przejście do konsoli R
+```bash
+sudo docker-compose run app R
 ```
 
 Przejście do konsoli w aplikacji

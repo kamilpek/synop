@@ -9,4 +9,5 @@ html_doc.xpath('//table').xpath('//table').xpath('//tr')
 ```ruby
 rails generate scaffold metar_station name:string number:integer latitude:float longitude:float elevation:integer status:boolean
 rails generate scaffold metar_raport station:integer day:integer hour:integer metar:string message:text --no-timestamps
+rails generate migration AddCreatedToMetarRaports created_at:datetime
 ```

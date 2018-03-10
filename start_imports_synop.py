@@ -14,13 +14,18 @@ def yrno():
 def imgw():
     os.system("sudo docker exec synop_app_1 rake import_imgw_xml RAILS_ENV=production")
 
+def metar():
+    os.system("sudo docker-compose run --rm app rake import_ogimet RAILS_ENV=production")
+
 def planer():
     schedule.every().day.at("09:00").do(yrno)
     schedule.every().hour.do(imgw)
+    schedule.every().hour.do(metar)
 
 def test():
     yrno()
     imgw()
+    metar()
 
 planer()
 

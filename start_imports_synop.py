@@ -15,7 +15,7 @@ def imgw():
     os.system("sudo docker exec synop_app_1 rake import_imgw_xml RAILS_ENV=production")
 
 def metar():
-    os.system("sudo docker-compose run --rm app rake import_ogimet RAILS_ENV=production")
+    os.system("Rscript lib/tasks/ogimet.R")
 
 def planer():
     schedule.every().day.at("09:00").do(yrno)

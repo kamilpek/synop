@@ -1,0 +1,2 @@
+json.extract! gios_measurment, :id, :station, :calc_date, :st_index, :co_index, :pm10_index, :c6h6_index, :no2_index, :pm25_index, :o3_index, :so2_index, :co_value, :pm10_value, :c6h6_value, :no2_value, :pm25_value, :o3_value, :so2_value, :co_date, :pm10_date, :c6h6_date, :no2_date, :pm25_date, :o3_date, :so2_date, :created_at, :updated_at
+json.url gios_measurment_url(gios_measurment, format: :json)

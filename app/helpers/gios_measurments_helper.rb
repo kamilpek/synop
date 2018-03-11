@@ -1,4 +1,4 @@
-module PagesHelper
+module GiosMeasurmentsHelper
 
   def get_index_level(level)
     if level == 0

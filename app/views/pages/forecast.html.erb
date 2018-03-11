@@ -13,6 +13,9 @@
         <li class="nav-item">
           <%= link_to "Mapa METAR", pages_metar_path, class:"nav-link" %>
         </li>
+        <li class="nav-item">
+          <%= link_to "Mapa jakości powietrza", pages_gios_path, class:"nav-link" %>
+        </li>
       </ul>
     </div>
     <div class="card-body">
@@ -22,5 +25,6 @@
       </div><hr>
       <p align="center">Prognoza z godziny: <%= @hour %>:00 CEST dnia <%= @date %>.</p>
     </div>
+    <p><%= link_to "Źródło danych: yr.no", "http://yr.no/", class:"btn btn-sm btn-outline-primary" %></p>
   </div>
 </div>

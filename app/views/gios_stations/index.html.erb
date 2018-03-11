@@ -1,0 +1,36 @@
+<% content_for :title, "Stacje GIOS" %>
+
+<div class="container">
+
+  <h4>
+    Stacje GIOS
+    <%= link_to 'Nowa Stajca', new_gios_station_path, class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+  </h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Nazwa</th>
+          <th>Numer</th>
+          <th>Szerokość</th>
+          <th>Długość</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @gios_stations.each do |gios_station| %>
+          <tr align="center">
+            <td><%= gios_station.name %></td>
+            <td><%= gios_station.number %></td>
+            <td><%= gios_station.latitude %></td>
+            <td><%= gios_station.longitude %></td>
+            <td><%= link_to 'Przejdź', gios_station, class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p align="center"><%= will_paginate @gios_stations, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+</div>

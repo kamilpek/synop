@@ -29,6 +29,8 @@ Pobieranie danych z API
 sudo docker-compose run --rm app rake import_stations RAILS_ENV=production
 sudo docker-compose run --rm app rake import_yrno RAILS_ENV=production
 sudo docker-compose run --rm app rake import_imgw_xml RAILS_ENV=production
+sudo docker-compose run --rm app rake import_gios_stations RAILS_ENV=production
+sudo docker-compose run --rm app rake import_gios_measur RAILS_ENV=production
 sudo docker-compose run --rm app rake import_stations_metar RAILS_ENV=production
 Rscript lib/tasks/ogimet.R
 ```

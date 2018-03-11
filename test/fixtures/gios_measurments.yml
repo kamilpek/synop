@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  station: 1
+  calc_date: 2018-03-11 18:10:46
+  st_index: 1
+  co_index: 1
+  pm10_index: 1
+  c6h6_index: 1
+  no2_index: 1
+  pm25_index: 1
+  o3_index: 1
+  so2_index: 1
+  co_value: 1.5
+  pm10_value: 1.5
+  c6h6_value: 1.5
+  no2_value: 1.5
+  pm25_value: 1.5
+  o3_value: 1.5
+  so2_value: 1.5
+  co_date: 2018-03-11 18:10:46
+  pm10_date: 2018-03-11 18:10:46
+  c6h6_date: 2018-03-11 18:10:46
+  no2_date: 2018-03-11 18:10:46
+  pm25_date: 2018-03-11 18:10:46
+  o3_date: 2018-03-11 18:10:46
+  so2_date: 2018-03-11 18:10:46
+
+two:
+  station: 1
+  calc_date: 2018-03-11 18:10:46
+  st_index: 1
+  co_index: 1
+  pm10_index: 1
+  c6h6_index: 1
+  no2_index: 1
+  pm25_index: 1
+  o3_index: 1
+  so2_index: 1
+  co_value: 1.5
+  pm10_value: 1.5
+  c6h6_value: 1.5
+  no2_value: 1.5
+  pm25_value: 1.5
+  o3_value: 1.5
+  so2_value: 1.5
+  co_date: 2018-03-11 18:10:46
+  pm10_date: 2018-03-11 18:10:46
+  c6h6_date: 2018-03-11 18:10:46
+  no2_date: 2018-03-11 18:10:46
+  pm25_date: 2018-03-11 18:10:46
+  o3_date: 2018-03-11 18:10:46
+  so2_date: 2018-03-11 18:10:46

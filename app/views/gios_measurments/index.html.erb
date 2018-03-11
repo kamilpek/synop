@@ -1,0 +1,28 @@
+<% content_for :title, "Jakość powietrza" %>
+
+<div class="container">
+
+  <h4>Pomiary jakości powietrza</h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Stacja</th>
+          <th>Data</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @gios_measurments.each do |gios_measurment| %>
+          <tr align="center">
+            <td><%= GiosStation.find_by(number:gios_measurment.station).name %></td>
+            <td><%= gios_measurment.calc_date.strftime("%H:%M %d.%m.%Y") if gios_measurment.calc_date %></td>
+            <td><%= link_to 'Przejdź', gios_measurment, class:"btn btn-xs btn-outline-primary" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p align="center"><%= will_paginate @gios_measurments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+</div>

@@ -1,0 +1,2 @@
+class GiosMeasurment < ApplicationRecord
+end

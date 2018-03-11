@@ -1,0 +1,137 @@
+<%= form_for(gios_measurment) do |f| %>
+  <% if gios_measurment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gios_measurment.errors.count, "error") %> prohibited this gios_measurment from being saved:</h2>
+
+      <ul>
+      <% gios_measurment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :station %>
+    <%= f.number_field :station %>
+  </div>
+
+  <div class="field">
+    <%= f.label :calc_date %>
+    <%= f.datetime_select :calc_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :st_index %>
+    <%= f.number_field :st_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :co_index %>
+    <%= f.number_field :co_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pm10_index %>
+    <%= f.number_field :pm10_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :c6h6_index %>
+    <%= f.number_field :c6h6_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :no2_index %>
+    <%= f.number_field :no2_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pm25_index %>
+    <%= f.number_field :pm25_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :o3_index %>
+    <%= f.number_field :o3_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :so2_index %>
+    <%= f.number_field :so2_index %>
+  </div>
+
+  <div class="field">
+    <%= f.label :co_value %>
+    <%= f.text_field :co_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pm10_value %>
+    <%= f.text_field :pm10_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :c6h6_value %>
+    <%= f.text_field :c6h6_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :no2_value %>
+    <%= f.text_field :no2_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pm25_value %>
+    <%= f.text_field :pm25_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :o3_value %>
+    <%= f.text_field :o3_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :so2_value %>
+    <%= f.text_field :so2_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :co_date %>
+    <%= f.datetime_select :co_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pm10_date %>
+    <%= f.datetime_select :pm10_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :c6h6_date %>
+    <%= f.datetime_select :c6h6_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :no2_date %>
+    <%= f.datetime_select :no2_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pm25_date %>
+    <%= f.datetime_select :pm25_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :o3_date %>
+    <%= f.datetime_select :o3_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :so2_date %>
+    <%= f.datetime_select :so2_date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf8
-# Kamil Pek (C)18.02.2018
+# Kamil Pek (C)11.03.2018
 # nohup /root/synop/start_imports_synop.py &
 # nohup python start_imports_synop.py
 
@@ -17,15 +17,20 @@ def imgw():
 def metar():
     os.system("Rscript lib/tasks/ogimet.R")
 
+def gios():
+    os.system("sudo docker exec synop_app_1 rake import_gios_measur RAILS_ENV=production")
+
 def planer():
     schedule.every().day.at("09:00").do(yrno)
     schedule.every().hour.do(imgw)
     schedule.every().hour.do(metar)
+    schedule.every().hour.do(gios)
 
 def test():
     yrno()
     imgw()
     metar()
+    gios()
 
 planer()
 

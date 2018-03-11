@@ -5,9 +5,12 @@ Rails.application.routes.draw do
   get 'pages/home'
   get 'pages/forecast'
   get 'pages/metar'
+  get 'pages/gios'
   get 'pages/stats'
   get 'pages/about'
 
+  resources :gios_measurments
+  resources :gios_stations
   resources :metar_raports
   resources :metar_stations
   resources :forecasts

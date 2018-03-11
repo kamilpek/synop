@@ -1,0 +1,2 @@
+class GiosStation < ApplicationRecord
+end

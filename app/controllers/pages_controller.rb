@@ -61,6 +61,25 @@ class PagesController < ApplicationController
     end
   end
 
+  def gios
+    @stations_number = GiosMeasurment.all.pluck(:station)
+    @stations = GiosStation.where(number:@stations_number)
+    @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
+      @gios_measur_id = GiosMeasurment.where(station:station.number).pluck(:id).last
+      @gios_measurment = GiosMeasurment.find(@gios_measur_id)
+      marker.lat station.latitude
+      marker.lng station.longitude
+      marker.infowindow render_to_string(:partial => "infowindow_gios", :locals => { :object => @gios_measur_id, :gios_measurment => @gios_measurment, :name => @information})
+      marker.picture({
+                      :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                     })
+      end
+  end
+
   def stats
   end
 

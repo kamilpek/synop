@@ -1,0 +1,25 @@
+<% content_for :title, "Stacja #{@gios_station.name}" %>
+
+<div class="container">
+
+  <h4>
+    Stacja GIOS – <%= @gios_station.name %>
+    <%= link_to 'Edycja', edit_gios_station_path(@gios_station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+    <%= link_to 'Lista Stacji', gios_stations_path, class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <p>Numer: <strong><%= @gios_station.number %></strong>.</p>  
+  <p>Adres: <strong><%= @gios_station.city %> <%= @gios_station.address %></strong></p>
+  <p>Koordynaty: <strong>
+  <a href="https://maps.google.com/maps?ll=<%= @gios_station.latitude %>,<%= @gios_station.longitude %>&q=<%= @gios_station.latitude %>,<%= @gios_station.longitude %>"><%= @gios_station.longitude %>, <%= @gios_station.latitude %></a>
+  </strong></p>
+
+  <h4>Lokalizacja</h4><hr>
+  <div align="center">
+    <iframe width="720" height="400" frameborder="0" style="border:0"
+     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3WpXtmfwjePmkgLqXZnV7VvM03i0ICE&q=<%= @gios_station.latitude %>,<%= @gios_station.longitude %>"
+     allowfullscreen>
+    </iframe>
+  </div>
+
+</div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180307073130) do
+ActiveRecord::Schema.define(version: 20180311171046) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,44 @@ ActiveRecord::Schema.define(version: 20180307073130) do
     t.datetime "updated_at",     null: false
     t.integer  "hour"
     t.date     "date"
+  end
+
+  create_table "gios_measurments", force: :cascade do |t|
+    t.integer  "station"
+    t.datetime "calc_date"
+    t.integer  "st_index"
+    t.integer  "co_index"
+    t.integer  "pm10_index"
+    t.integer  "c6h6_index"
+    t.integer  "no2_index"
+    t.integer  "pm25_index"
+    t.integer  "o3_index"
+    t.integer  "so2_index"
+    t.float    "co_value"
+    t.float    "pm10_value"
+    t.float    "c6h6_value"
+    t.float    "no2_value"
+    t.float    "pm25_value"
+    t.float    "o3_value"
+    t.float    "so2_value"
+    t.datetime "co_date"
+    t.datetime "pm10_date"
+    t.datetime "c6h6_date"
+    t.datetime "no2_date"
+    t.datetime "pm25_date"
+    t.datetime "o3_date"
+    t.datetime "so2_date"
+  end
+
+  create_table "gios_stations", force: :cascade do |t|
+    t.string   "name"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "number"
+    t.string   "city"
+    t.string   "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "measurements", force: :cascade do |t|

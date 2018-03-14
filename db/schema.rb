@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180311171046) do
+ActiveRecord::Schema.define(version: 20180314160221) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -92,6 +92,13 @@ ActiveRecord::Schema.define(version: 20180311171046) do
     t.string   "metar"
     t.text     "message"
     t.datetime "created_at"
+    t.string   "visibility"
+    t.string   "cloud_cover"
+    t.string   "wind_direct"
+    t.string   "wind_speed"
+    t.string   "temperature"
+    t.string   "pressure"
+    t.string   "situation"
   end
 
   create_table "metar_stations", force: :cascade do |t|

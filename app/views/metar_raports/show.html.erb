@@ -2,16 +2,25 @@
 
 <div class="container">
 
-  <p>Stacja: <strong><%= @metar_station %> – <%= @metar_raport.station %></strong>
-     Dzień miesiąca: <strong><%= @metar_raport.day %></strong>
-     Godzina: <strong><%= @metar_raport.hour %></strong>
-     Data i godzina pobrania danych z ogimet.com:
-     <strong><%= @metar_raport.created_at.strftime("%d.%m.%Y, %H:%M %Z") if @metar_raport.created_at %></strong>
-   </p>
-  <p>Depesza: </p>
-  <p><strong><%= @metar_raport.metar %></strong></p>
-
-  <p>Treść: </p>
-  <p align="justify"><%= @metar_raport.message %></p>
+  <div class="alert alert-primary" align="center">
+    <h6 class="alert-heading">Stacja: <strong><%= @metar_station %> – <%= @metar_raport.station %></strong>
+      Dzień miesiąca: <strong><%= @metar_raport.day %></strong>
+      Godzina: <strong><%= @metar_raport.hour %></strong>
+      Data i godzina pobrania danych z ogimet.com:
+      <strong><%= @metar_raport.created_at.strftime("%d.%m.%Y, %H:%M %Z") if @metar_raport.created_at %></strong>
+    </h6><hr>
+    <h6 class="alert-heading">
+      <strong><%= @metar_raport.metar %></strong>
+    </h6><hr>
+    <p>Temperatura: <strong><%= @metar_raport.temperature %></strong></p>
+    <p>Ciśnienie atmosferyczne: <strong><%= @metar_raport.pressure %></strong></p>
+    <p>Widzialność pozioma: <strong><%= @metar_raport.visibility %></strong></p>
+    <p>Zachmurzenie: <strong><%= @metar_raport.cloud_cover %></strong></p>
+    <p>Kierunek wiatru: <strong><%= @metar_raport.wind_direct %></strong></p>
+    <p>Prędkość wiatru: <strong><%= @metar_raport.wind_speed %> m/s</strong></p>
+    <p>Ogólna sytuacja: <strong><%= @metar_raport.situation %></strong></p>
+    <hr>
+    <p class="mb-0" align="justify"><%= @metar_raport.message %></p>
+  </div>
 
 </div>

@@ -82,6 +82,18 @@ Rails.application.routes.draw do
       resources :stations do
         get 'stations' => 'stations#index'
       end
+      resources :gios_stations do
+        get 'gios_stations' => 'gios_stations#index'
+      end
+      resources :gios_measurements do
+        get 'gios_measurements' => 'gios_measurements#index'
+      end
+      resources :metar_stations do
+        get 'metar_stations' => 'metar_stations#index'
+      end
+      resources :metar_raports do
+        get 'metar_raports' => 'metar_raports#index'
+      end      
     end
   end
 

@@ -102,6 +102,6 @@ class MetarRaportsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def metar_raport_params
-      params.require(:metar_raport).permit(:station, :day, :hour, :metar, :message, :created_at)
+      params.require(:metar_raport).permit(:station, :day, :hour, :metar, :message, :created_at, :visibility, :cloud_cover, :wind_direct, :wind_speed, :temperature, :pressure, :situation)
     end
 end

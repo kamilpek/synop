@@ -10,6 +10,7 @@ html_doc.xpath('//table').xpath('//table').xpath('//tr')
 rails generate scaffold metar_station name:string number:integer latitude:float longitude:float elevation:integer status:boolean
 rails generate scaffold metar_raport station:integer day:integer hour:integer metar:string message:text --no-timestamps
 rails generate migration AddCreatedToMetarRaports created_at:datetime
+rails generate migration AddParamsToMetarRaports visibility:string cloud_cover:string wind_direct:string wind_speed:string temperature:string pressure:string situation:string
 ```
 
 ## powietrze

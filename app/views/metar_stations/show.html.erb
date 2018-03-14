@@ -2,25 +2,46 @@
 
 <div class="container">
 
-  <h4>
-    Stacja METAR – <%= @metar_station.name %>
-    <%= link_to 'Edycja', edit_metar_station_path(@metar_station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
-    <%= link_to 'Lista Stacji', metar_stations_path, class:"btn btn-sm btn-outline-primary" %>
-  </h4><hr>
+  <div class="alert alert-primary" align="center">
+    <h4 class="alert-heading">Stacja METAR – <strong><%= @metar_station.name %></strong></h4>
+    <p>Numer: <strong><%= @metar_station.number %></strong>.</p>
+    <p>Status: <strong><%= "Aktywny" if @metar_station.status %></strong></p>
+    <p>Elevation: <strong><%= @metar_station.elevation %></strong></p>
+    <p>Koordynaty: <strong>
+    <a href="https://maps.google.com/maps?ll=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>&q=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>"><%= @metar_station.longitude %>, <%= @metar_station.latitude %></a>
+    </strong></p>
+    <hr>
+    <p class="mb-0">
+      <%= link_to 'Edycja', edit_metar_station_path(@metar_station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+      <%= link_to 'Lista Stacji', metar_stations_path, class:"btn btn-sm btn-outline-primary" %>
+    </p>
+  </div>
 
-  <p>Numer: <strong><%= @metar_station.number %></strong>.</p>
-  <p>Status: <strong><%= "Aktywny" if @metar_station.status %></strong></p>
-  <p>Elevation: <strong><%= @metar_station.elevation %></strong></p>
-  <p>Koordynaty: <strong>
-  <a href="https://maps.google.com/maps?ll=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>&q=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>"><%= @metar_station.longitude %>, <%= @metar_station.latitude %></a>
-  </strong></p>
+  <h4>Lista depeszy ze stacji</h4><hr>
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Stacja</th>
+          <th>D</th>
+          <th>H</th>
+          <th>Depesza METAR</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
 
-  <h4>Lokalizacja</h4><hr>
-  <div align="center">
-    <iframe width="720" height="400" frameborder="0" style="border:0"
-     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3WpXtmfwjePmkgLqXZnV7VvM03i0ICE&q=<%= @metar_station.latitude %>,<%= @metar_station.longitude %>"
-     allowfullscreen>
-    </iframe>
+      <tbody>
+        <% @metar_raports.each do |metar_raport| %>
+          <tr>
+            <td><%= metar_raport.station %></td>
+            <td><%= metar_raport.day %></td>
+            <td><%= metar_raport.hour %></td>
+            <td><%= metar_raport.metar %></td>
+            <td><%= link_to 'Przejdź', metar_raport, class:"btn btn-xs btn-primary" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 
 </div>

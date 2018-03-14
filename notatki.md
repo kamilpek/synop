@@ -22,3 +22,9 @@ rails generate migration AddCreatedToMetarRaports created_at:datetime
 rails generate scaffold gios_station name:string latitude:float longitude:float number:integer city:string address:string
 rails generate scaffold gios_measurments station:integer calc_date:datetime st_index:integer co_index:integer pm10_index:integer c6h6_index:integer no2_index:integer pm25_index:integer o3_index:integer so2_index:integer co_value:float pm10_value:float c6h6_value:float no2_value:float pm25_value:float o3_value:float so2_value:float co_date:datetime pm10_date:datetime c6h6_date:datetime no2_date:datetime pm25_date:datetime o3_date:datetime so2_date:datetime --no-timestamps
 ```
+
+## dane hydrologiczne
+```ruby
+rails generate scaffold hydro_station name:string number:integer longitude:float latitude:integer river:string
+rails generate scaffold hydro_measurments station:number water:integer water_date:datetime temperature:float temperature_date:datetime ice:integer ice_date:datetime encroach:integer encroach_date:datetime
+```

@@ -4,13 +4,10 @@
 
   <h4>
     Lista pomiarów z dnia <%= @date.strftime("%d.%m.%Y") %>
-    <%= link_to "Lista dni", measurements_path, class:"btn btn-sm btn-outline-primary" %>
-  </h4><hr>
-
-  <p align="center">
-    <%= link_to measurement_daily_path(date: @date - 1.day), class: "btn btn-sm btn-outline-info" do %> Poprzedni Dzień <% end %>
-    <%= link_to measurement_daily_path(date: @date + 1.day), class: "btn btn-sm btn-outline-info" do %> Następny Dzień <% end %>
-  </p><hr>
+    <%= link_to "Kalendarz pomiarów", measurements_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to measurement_daily_path(date: @date - 1.day), class: "btn btn-sm btn-outline-primary" do %> Poprzedni Dzień <% end %>
+    <%= link_to measurement_daily_path(date: @date + 1.day), class: "btn btn-sm btn-outline-primary" do %> Następny Dzień <% end %>
+  </h4><hr> 
 
   <div class="table-responsive" align="center">
     <table class="table table-striped">

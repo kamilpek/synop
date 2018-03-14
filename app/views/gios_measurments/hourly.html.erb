@@ -1,0 +1,22 @@
+<% content_for :title, "Pomiary godzinne" %>
+
+<div class="container">
+
+  <h4>
+    Mapa pomiarów z dnia
+    <%= @gios_measurements.order("calc_date desc").pluck(:calc_date).last.strftime("%Y-%m-%d") %> o godzinie
+    <%= @gios_measurements.order("calc_date desc").pluck(:calc_date).last.strftime("%H") %> UTC
+    <%= link_to "Kalendarz pomiarów", gios_measurments_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to 'Przejdź do dnia', gios_measurment_daily_path(1, date: @gios_measurements.pluck(:calc_date).last), class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <% content_for :title, "Mapa" %>
+
+  <div style='width: 800px;'>
+    <div id="sidebar_builder" style='width: 1140px; height: 600px;'></div>
+  </div>
+  <br>
+  
+  <%= render "multimap" %>
+
+</div>

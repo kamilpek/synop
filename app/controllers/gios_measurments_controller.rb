@@ -4,7 +4,40 @@ class GiosMeasurmentsController < ApplicationController
   # GET /gios_measurments
   # GET /gios_measurments.json
   def index
-    @gios_measurments = GiosMeasurment.all.paginate(:page => params[:page], :per_page => 142)
+    @gios_measurments = GiosMeasurment.all
+    @days = @gios_measurments.order("calc_date desc").pluck(:calc_date).uniq.collect { |d| d = d ? d.strftime("%Y-%m-%d") : DateTime.now.strftime("%Y-%m-%d") }.uniq
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
+  end
+
+  def daily
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
+    @gios_measurements = GiosMeasurment.all
+    @gios_measurements = @gios_measurements.where('extract(day from calc_date) = ?', @date.strftime("%d").to_i)
+    @hours = @gios_measurements.pluck(:calc_date).uniq.collect { |d| d = d ? d.strftime("%H") : DateTime.now.strftime("%H") }.uniq
+  end
+
+  def hourly
+    @hour = params[:hour]
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
+    @stations = Station.all
+    @gios_measurements = GiosMeasurment.all
+    @gios_measurements = @gios_measurements.where('extract(day from calc_date) = ?', @date.strftime("%d").to_i)
+    @stations_number = GiosMeasurment.all.pluck(:station)
+    @stations = GiosStation.where(number:@stations_number)
+    @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
+      @gios_measur_id = GiosMeasurment.where(station:station.number).pluck(:id).last
+      @gios_measurment = GiosMeasurment.find(@gios_measur_id)
+      marker.lat station.latitude
+      marker.lng station.longitude
+      marker.infowindow render_to_string(:partial => "infowindow", :locals => { :object => @gios_measur_id, :gios_measurment => @gios_measurment, :name => @information})
+      marker.picture({
+                      :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                     })
+      end
   end
 
   # GET /gios_measurments/1

@@ -4,30 +4,24 @@
 
   <h4>Depesze METAR</h4><hr>
 
-  <div class="table-responsive" align="center">
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th>Stacja</th>
-          <th>D</th>
-          <th>H</th>
-          <th>Depesza METAR</th>
-          <th>Akcje</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @metar_raports.each do |metar_raport| %>
-          <tr>
-            <td><%= metar_raport.station %></td>
-            <td><%= metar_raport.day %></td>
-            <td><%= metar_raport.hour %></td>
-            <td><%= metar_raport.metar %></td>
-            <td><%= link_to 'Przejdź', metar_raport, class:"btn btn-xs btn-success" %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+  <div class="row" align="center">
+    <div class="col-sm">
+      <%= link_to "Poprzedni Miesiąc", metar_raports_path(date: @date - 1.month), class:"btn btn-block btn-outline-primary btn-sm" %>
+    </div>
+    <div class="col-sm">
+      <h5><%= l(@date, format: :calendar).titleize %></h5>
+    </div>
+    <div class="col-sm">
+      <%= link_to "Następny Miesiąc", metar_raports_path(date: @date + 1.month), class:"btn btn-block btn-outline-primary btn-sm" %>
+    </div>
   </div>
-  <p align="center"><%= will_paginate @metar_raports, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+  <hr>
+  <div>
+    <%= calendar @date do |date| %>
+      <% @days.each do |day| %>
+        <%= link_to "#{date.day}", metar_raport_daily_path(1, date: day), class:"btn btn-block btn-outline-primary btn-xs" if date.strftime("%Y-%m-%d") == day %>
+      <% end %>
+    <% end %>
+  </div>
+
 </div>

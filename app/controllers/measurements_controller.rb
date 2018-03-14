@@ -6,7 +6,7 @@ class MeasurementsController < ApplicationController
   def index
     @measurements = Measurement.all
     @days = @measurements.order("created_at desc").pluck(:date).uniq
-    @days = @days.paginate(:page => params[:page], :per_page => 14)
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
   end
 
   def daily
@@ -19,15 +19,9 @@ class MeasurementsController < ApplicationController
   def hourly
     @hour = params[:hour]
     @date = params[:date] ? Date.parse(params[:date]) : Date.today
-    @measurements = Measurement.all
-    @measurements = @measurements.where('extract(day from date) = ?', @date.strftime("%d").to_i)
-    @measurements = @measurements.where(hour:@hour)
-  end
-
-  def hourly_map
-    @hour = params[:hour]
     @stations = Station.all
     @measurements = Measurement.all
+    @measurements = @measurements.where('extract(day from date) = ?', @date.strftime("%d").to_i)
     @measurements = @measurements.where(hour:@hour)
     @date = @measurements.pluck(:date).last
     @hour = @measurements.pluck(:hour).last

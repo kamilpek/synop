@@ -2,27 +2,25 @@
 
 <div class="container">
 
-  <h4>Pomiary jakości powietrza</h4><hr>
+  <h4>Kalendarz pomiarów jakości powietrza</h4><hr>
 
-  <div class="table-responsive" align="center">
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr align="center">
-          <th>Stacja</th>
-          <th>Data</th>
-          <th>Akcje</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @gios_measurments.each do |gios_measurment| %>
-          <tr align="center">
-            <td><%= GiosStation.find_by(number:gios_measurment.station).name %></td>
-            <td><%= gios_measurment.calc_date.strftime("%H:%M %d.%m.%Y") if gios_measurment.calc_date %></td>
-            <td><%= link_to 'Przejdź', gios_measurment, class:"btn btn-xs btn-outline-primary" %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+  <div class="row" align="center">
+    <div class="col-sm">
+      <%= link_to "Poprzedni Miesiąc", gios_measurments_path(date: @date - 1.month), class:"btn btn-block btn-outline-primary btn-sm" %>
+    </div>
+    <div class="col-sm">
+      <h5><%= l(@date, format: :calendar).titleize %></h5>
+    </div>
+    <div class="col-sm">
+      <%= link_to "Następny Miesiąc", gios_measurments_path(date: @date + 1.month), class:"btn btn-block btn-outline-primary btn-sm" %>
+    </div>
   </div>
-  <p align="center"><%= will_paginate @gios_measurments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+  <hr>
+  <div>
+    <%= calendar @date do |date| %>
+      <% @days.each do |day| %>
+        <%= link_to "#{date.day}", gios_measurment_daily_path(1, date: day), class:"btn btn-block btn-outline-primary btn-xs" if date.strftime("%Y-%m-%d") == day %>
+      <% end %>
+    <% end %>
+  </div>
 </div>

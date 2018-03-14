@@ -3,42 +3,22 @@
 <div class="container">
 
   <h4>
-    Lista pomiarów z dnia
+    Mapa pomiarów z dnia
     <%= @measurements.order("created_at desc").pluck(:date).last %> o godzinie
     <%= @measurements.order("created_at desc").pluck(:hour).last %> UTC
-    <%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: @measurements.pluck(:date).last), class:"btn btn-sm btn-outline-success" %>
-    <%= link_to 'Generuj Mapkę', measurement_hourly_map_path(1, hour: @measurements.pluck(:hour).last), class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to "Kalendarz pomiarów", measurements_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to 'Przejdź do dnia', measurement_daily_path(1, date: @measurements.pluck(:date).last), class:"btn btn-sm btn-outline-primary" %>
   </h4><hr>
 
-  <div class="table-responsive" align="center">
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr align="center">
-          <th>Data</th>
-          <th>H (UTC)</th>
-          <th>Temperatura (C)</th>
-          <th>Wiatr (m/s)</th>
-          <th>Ciśnienie (hPa)</th>
-          <th>Opady (mm)</th>
-          <th>ID Stacji</th>
-          <th>Akcje</th>
-        </tr>
-      </thead>
+  <% content_for :title, "Mapa" %>
 
-      <tbody>
-        <% @measurements.order("created_at desc").each do |measurement| %>
-          <tr align="center">
-            <td><%= measurement.date.strftime("%d.%m.%Y") %></td>
-            <td><%= measurement.hour %></td>
-            <td><%= measurement.temperature %></td>
-            <td><%= measurement.wind_speed %></td>
-            <td><%= measurement.preasure %></td>
-            <td><%= measurement.rainfall %></td>
-            <td><%= Station.where(number:measurement.station_number).pluck(:name).last %></td>
-            <td><%= link_to 'Przejdź', measurement, class:"btn btn-outline-primary btn-xs" %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+  <div style='width: 800px;'>
+    <div id="sidebar_builder" style='width: 1140px; height: 600px;'></div>
   </div>
+
+  <br>
+  <p align="center">Data i godzina pomiaru: <%= @date %>; <%= @hour %>:00 UTC.</p>
+
+  <%= render "multimap" %>
+
 </div>

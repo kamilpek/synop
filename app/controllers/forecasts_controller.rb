@@ -6,14 +6,28 @@ class ForecastsController < ApplicationController
   def index
     @forecasts = Forecast.all
     @days = @forecasts.order("created_at desc").pluck(:date).uniq
-    @days = @days.paginate(:page => params[:page], :per_page => 14)
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
   end
 
   def daily
-    @date = params[:date] ? Date.parse(params[:date]) : Date.today
-    @forecasts = Forecast.all
-    @forecasts = @forecasts.where('extract(day from date) = ?', @date.strftime("%d").to_i)
-    @hours = @forecasts.pluck(:hour).uniq
+    @stations = Station.all
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today    
+    @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
+      @forecast = Forecast.where('extract(day from date) = ?', @date.strftime("%d").to_i).last
+      @forecast_id = @forecast.id
+      @temperatures = Forecast.where(station_number:station.number).order("created_at").pluck(:temperatures).last
+      @information = "#{station.name} – przejdź po więcej informacji"
+      marker.lat station.latitude
+      marker.lng station.longitude
+      marker.infowindow render_to_string(:partial => "infowindow", :locals => { :object => @forecast_id, :forecast => @forecast, :name => @information})
+      marker.picture({
+                      :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                     })
+    end
   end
 
   def hourly

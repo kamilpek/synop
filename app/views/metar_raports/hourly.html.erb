@@ -1,0 +1,22 @@
+<% content_for :title, "Depesze godzinne" %>
+
+<div class="container">
+
+  <h4>
+    Mapa depeszy z dnia
+    <%= @metar_raports.order("created_at desc").pluck(:day).last %> o godzinie
+    <%= @metar_raports.order("created_at desc").pluck(:hour).last %> UTC
+    <%= link_to "Kalendarz pomiarów", metar_raports_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to 'Przejdź do dnia', metar_raport_daily_path(1, date: @metar_raports.pluck(:day).last), class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <% content_for :title, "Mapa" %>
+
+  <div style='width: 800px;'>
+    <div id="sidebar_builder" style='width: 1140px; height: 600px;'></div>
+  </div>
+  <br>
+
+  <%= render "multimap" %>
+
+</div>

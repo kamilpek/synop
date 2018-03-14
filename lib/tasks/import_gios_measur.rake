@@ -8,6 +8,32 @@ task :import_gios_measur => :environment do
   end
 end
 
+def get_value(data)
+  value = nil
+  unless data == []
+    for i in 0..data.count
+      if data[i]["value"]
+        value = data[i]["value"]
+        break
+      end
+    end
+  end
+  return value
+end
+
+def get_date(data)
+  date = nil
+  unless data == []
+    for i in 0..data.count
+      if data[i]["value"]
+        date = data[i]["date"]
+        break
+      end
+    end
+  end
+  return date
+end
+
 def build_import_gios_measur
   print "Import begining.\n"
 
@@ -19,14 +45,14 @@ def build_import_gios_measur
     sensors = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/station/sensors/#{station.number}"), nil, Encoding::UTF_8.to_s))
     for i in 0..sensors.count-1
       data = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/data/getData/#{sensors[i]["id"]}")))["values"]
-      unless data == []
-        value = data[0]["value"]
-        date = data[0]["date"]
+      if data != []
+        value = get_value(data)
+        date = get_date(data)
       else
         value = 0
         date = 0
       end
-      case sensors[i]["param"]["idParam"]
+      case sensors[i]["param"]["idParam"].to_i
       when 1
         so2_value = value
         so2_date = date

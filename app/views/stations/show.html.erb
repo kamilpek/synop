@@ -4,18 +4,23 @@
 
   <h4>
     Stacja IMGW <%= @station.name %>
-    <%= link_to 'Edycja', edit_station_path(@station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
-    <%= link_to 'Lista Stacji', stations_path, class:"btn btn-sm btn-outline-primary" %>
-    <%= link_to "Ostatni Pomiar", measurement_path(Measurement.where(station_number:@station.number).pluck(:id).last), class:"btn btn-sm btn-outline-primary" %>
-    <%= link_to "Ostatnia Prognoza", forecast_path(Forecast.where(station_number:@station.number).pluck(:id).last), class:"btn btn-sm btn-outline-primary" %>
-    <%= link_to 'Lista Pomiarów ze Stacji', measur_station_path(@station.id), class:"btn btn-sm btn-outline-primary" %>
   </h4><hr>
 
-  <p>IMGW-ID: <strong><%= @station.number %></strong>.</p>
-  <p>Status: <strong><%= "Aktywny" if @station.status %></strong></p>
-  <p>Koordynaty: <strong>
-  <a href="https://maps.google.com/maps?ll=<%= @station.latitude %>,<%= @station.longitude %>&q=<%= @station.latitude %>,<%= @station.longitude %>"><%= @station.longitude %>, <%= @station.latitude %></a>
-  </strong></p>
+  <div class="alert alert-primary" align="center">
+    <h4 class="alert-heading"><%= @station.name %> – <strong><%= @station.number %></strong></h4>
+    <p>Status: <strong><%= "Aktywny" if @station.status %></strong></p>
+    <p>Koordynaty: <strong>
+    <a href="https://maps.google.com/maps?ll=<%= @station.latitude %>,<%= @station.longitude %>&q=<%= @station.latitude %>,<%= @station.longitude %>"><%= @station.longitude %>, <%= @station.latitude %></a>
+    </strong></p>
+    <hr>
+    <p class="mb-0">
+      <%= link_to 'Edycja', edit_station_path(@station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+      <%= link_to 'Lista Stacji', stations_path, class:"btn btn-sm btn-outline-primary" %>
+      <%= link_to "Ostatni Pomiar", measurement_path(Measurement.where(station_number:@station.number).pluck(:id).last), class:"btn btn-sm btn-outline-primary" %>
+      <%= link_to "Ostatnia Prognoza", forecast_path(Forecast.where(station_number:@station.number).pluck(:id).last), class:"btn btn-sm btn-outline-primary" %>
+      <%= link_to 'Lista Pomiarów ze Stacji', measur_station_path(@station.id), class:"btn btn-sm btn-outline-primary" %>
+    </p>
+  </div>
 
   <h4>Lokalizacja</h4><hr>
   <div align="center">
@@ -24,5 +29,5 @@
      allowfullscreen>
     </iframe>
   </div>
-  
+
 </div>

@@ -23,7 +23,6 @@ Rails.application.routes.draw do
     get :direct_import
     get 'daily'
     get 'hourly'
-    get 'hourly_map'
   end
 
   scope "forecasts" do
@@ -31,9 +30,18 @@ Rails.application.routes.draw do
       member do
         get 'daily'
         get 'hourly'
-        get 'hourly_map'
       end
     end
+  end
+
+  resources :gios_measurments do
+    get 'daily'
+    get 'hourly'
+  end
+
+  resources :metar_raports do
+    get 'daily'
+    get 'hourly'
   end
 
   resources :stations do

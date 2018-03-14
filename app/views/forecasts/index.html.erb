@@ -2,27 +2,26 @@
 
 <div class="container">
 
-  <h4>Lista prognoz pogody</h4><hr>
+  <h4>Kalendarz prognoz pogody</h4><hr>
 
-  <div class="table-responsive" align="center">
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr align="center">
-          <th>Data</th>
-          <th>Akcje</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <% @days.each do |day| %>
-          <tr align="center">
-            <td><%= day %></td>
-            <td><%= link_to 'Przejdź do dnia', daily_forecast_path(1, date: day), class:"btn btn-outline-primary btn-xs" %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+  <div class="row" align="center">
+    <div class="col-sm">
+      <%= link_to "Poprzedni Miesiąc", forecasts_path(date: @date - 1.month), class:"btn btn-block btn-outline-primary btn-sm" %>
+    </div>
+    <div class="col-sm">
+      <h5><%= l(@date, format: :calendar).titleize %></h5>
+    </div>
+    <div class="col-sm">
+      <%= link_to "Następny Miesiąc", forecasts_path(date: @date + 1.month), class:"btn btn-block btn-outline-primary btn-sm" %>
+    </div>
   </div>
-  <p><%= will_paginate @days, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
-
+  <hr>
+  <div>
+    <%= calendar @date do |date| %>
+      <% @days.each do |day| %>
+        <%= link_to "#{date.day}", daily_forecast_path(1, date: day), class:"btn btn-block btn-outline-primary btn-xs" if date == day %>
+      <% end %>
+    <% end %>
+  </div>
+  
 </div>

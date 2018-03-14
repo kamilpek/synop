@@ -10,6 +10,7 @@ class MetarStationsController < ApplicationController
   # GET /metar_stations/1
   # GET /metar_stations/1.json
   def show
+    @metar_raports = MetarRaport.where(station:@metar_station.number)
   end
 
   # GET /metar_stations/new

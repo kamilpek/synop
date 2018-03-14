@@ -8,14 +8,13 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li><%= link_to 'Strona Główna', pages_home_path, :title => "Strona Główna", class:"nav-link" %></li>
-          <li><%= link_to 'Stacje IMGW', stations_path, :title => "Lista Stacji Meteorologicznych", class:"nav-link" %></li>
-          <li><%= link_to 'Stacje METAR', metar_stations_path, :title => "Lista Stacji METAR", class:"nav-link" %></li>
-          <li><%= link_to 'Stacje GIOS', gios_stations_path, :title => "Lista Stacji GIOS", class:"nav-link" %></li>
-          <li><%= link_to 'Pomiary', measurements_path, :title => "Lista pobranych od IMGW pomiarów", class:"nav-link" %></li>
+          <li><%= link_to 'Dane synoptyczne', measurements_path, :title => "Lista pobranych od IMGW pomiarów", class:"nav-link" %></li>
           <li><%= link_to 'Prognozy', forecasts_path, :title => "Prognoza pogody z yr.no", class:"nav-link" %></li>
-          <li><%= link_to 'Depesze METAR', metar_raports_path, :title => "Depesze METAR", class:"nav-link" %></li>
           <li><%= link_to 'Jakość powietrza', gios_measurments_path, :title => "Jakość powietrza", class:"nav-link" %></li>
+          <li><%= link_to 'Depesze METAR', metar_raports_path, :title => "Depesze METAR", class:"nav-link" %></li>
+          <li><%= link_to 'Stacje IMGW', stations_path, :title => "Lista Stacji Meteorologicznych", class:"nav-link" %></li>
+          <li><%= link_to 'Stacje GIOS', gios_stations_path, :title => "Lista Stacji GIOS", class:"nav-link" %></li>
+          <li><%= link_to 'Stacje METAR', metar_stations_path, :title => "Lista Stacji METAR", class:"nav-link" %></li>
         </ul>
         <ul class="navbar-nav float-right">
           <% if user_signed_in? %>

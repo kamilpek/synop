@@ -8,72 +8,45 @@ task :import_gios_measur => :environment do
   end
 end
 
-def get_value(data)
-  value = nil
-  unless data == []
-    for i in 0..data.count
-      if data[i]["value"]
-        value = data[i]["value"]
-        break
-      end
-    end
-  end
-  return value
-end
-
-def get_date(data)
-  date = nil
-  unless data == []
-    for i in 0..data.count
-      if data[i]["value"]
-        date = data[i]["date"]
-        break
-      end
-    end
-  end
-  return date
-end
-
 def build_import_gios_measur
   print "Import begining.\n"
 
   GiosStation.all.each do |station|
-    co_value, no2_value, o3_value, pm10_value, pm25_value, so2_value, c6h6_value, calc_date = 0
-    st_index, co_index, no2_index, o3_index, pm10_index, pm25_index, so2_index, c6h6_index = 0
-    co_date, no2_date, o3_date, pm10_date, pm25_date, so2_date, c6h6_date = 0
+    co_value = no2_value = o3_value = pm10_value = pm25_value = so2_value = c6h6_value = calc_date = 0
+    st_index = co_index = no2_index = o3_index = pm10_index = pm25_index = so2_index = c6h6_index = 0
+    co_date = no2_date = o3_date = pm10_date = pm25_date = so2_date = c6h6_date = 0
 
     sensors = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/station/sensors/#{station.number}"), nil, Encoding::UTF_8.to_s))
     for i in 0..sensors.count-1
       data = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/data/getData/#{sensors[i]["id"]}")))["values"]
+      value = 0
+      date = 0
       if data != []
-        value = get_value(data)
-        date = get_date(data)
-      else
-        value = 0
-        date = 0
+        value = data[1]["value"]
+        date = data[1]["date"]
       end
       case sensors[i]["param"]["idParam"].to_i
       when 1
-        so2_value = value
-        so2_date = date
+        value == "null" ? so2_value = 0 : so2_value = value
+        date == "null" ? so2_date = 0 : so2_date = date
       when 3
-        pm10_value = value
-        pm10_date = date
+        value == "null" ? pm10_value = 0 : pm10_value = value
+        date == "null" ? pm10_date = 0 : pm10_date = date
       when 5
-        o3_value = value
-        o3_date = date
+        value == "null" ? o3_value = 0 : o3_value = value
+        date == "null" ? o3_date = 0 : o3_date = date
       when 6
-        no2_value = value
-        no2_date = date
+        value == "null" ? no2_value = 0 : no2_value = value
+        date == "null" ? no2_date = 0 : no2_date = date
       when 8
-        co_value = value
-        co_date = date
+        value == "null" ? co_value = 0 : co_value = value
+        date == "null" ? co_date = 0 : co_date = date
       when 10
-        c6h6_value = value
-        c6h6_date = date
+        value == "null" ? c6h6_value = 0 : c6h6_value = value
+        date == "null" ? c6h6_date = 0 : c6h6_date = date
       when 69
-        pm25_value = value
-        pm25_date = date
+        value == "null" ? pm25_value = 0 : pm25_value = value
+        date == "null" ? pm25_date = 0 : pm25_date = date
       end
     end
 
@@ -89,6 +62,16 @@ def build_import_gios_measur
       pm25_index = index["pm25IndexLevel"]["id"] if index["pm25IndexLevel"]
       o3_index = index["o3IndexLevel"]["id"] if index["o3IndexLevel"]
       so2_index = index["so2IndexLevel"]["id"] if index["so2IndexLevel"]
+    else
+      calc_date = DateTime.now.strftime("%d.%m.%Y, %H:%M")
+      st_index = 0
+      co_index = 0
+      pm10_index = 0
+      c6h6_index = 0
+      no2_index = 0
+      pm25_index = 0
+      o3_index = 0
+      so2_index = 0
     end
 
     GiosMeasurment.create(

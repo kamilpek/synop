@@ -79,6 +79,12 @@ Startowanie/Wygaszanie aplikacji
 sudo docker-compose start/stop
 ```
 
+Kopia zapasowa bazy danych
+```bash
+sudo docker exec postgres_db pg_dump -U postgres -c -C -O --inserts solectwo_production > "solectwo-2018-02-05.sql"
+sudo docker exec postgres_db pg_dump -U postgres -c -C -O --inserts synop_production > "synop-2018-03-14.sql"
+```
+
 Czyszczenie obrazów dockera
 ```bash
 sudo docker rmi --force $(sudo docker images | grep "^<none>" | awk "{print $3}")

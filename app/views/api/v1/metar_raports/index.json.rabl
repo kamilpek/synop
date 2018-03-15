@@ -10,5 +10,11 @@ child :data do
     node(:station) do |m|
       "#{MetarStation.where(number:m.station).pluck(:name).last}"
     end
+    node(:latitude) do |m|
+      "#{MetarStation.where(number:m.station).pluck(:latitude).last}"
+    end
+    node(:longitude) do |m|
+      "#{MetarStation.where(number:m.station).pluck(:longitude).last}"
+    end
   end
 end

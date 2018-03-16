@@ -1,0 +1,28 @@
+<% content_for :title, "Gmina" %>
+
+<div class="container">
+
+  <h4>Gmina</h4><hr>
+
+  <div class="alert alert-primary" align="center">
+    <h4 class="alert-heading"><%= @city.name %> – <strong><%= @city.name_add %></strong></h4>
+    <p>Koordynaty: <strong>
+    <a href="https://maps.google.com/maps?ll=<%= @city.latitude %>,<%= @city.longitude %>&q=<%= @city.latitude %>,<%= @city.longitude %>"><%= @city.longitude %>, <%= @city.latitude %></a>
+    </strong></p>
+    <hr>
+    <p class="mb-0">
+      <%= link_to 'Edycja', edit_city_path(@city), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+      <%= link_to 'Usuń gminę', @city, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+      <%= link_to 'Lista gmin', cities_path, class:"btn btn-sm btn-outline-primary" %>
+    </p>
+  </div>
+
+  <h4>Lokalizacja</h4><hr>
+  <div align="center">
+    <iframe width="720" height="400" frameborder="0" style="border:0"
+     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3WpXtmfwjePmkgLqXZnV7VvM03i0ICE&q=<%= @city.latitude %>,<%= @city.longitude %>"
+     allowfullscreen>
+    </iframe>
+  </div>
+
+</div>

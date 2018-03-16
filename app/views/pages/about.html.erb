@@ -1,25 +1,31 @@
 <% content_for :title, "O systemie" %>
 
 <div class="container" align="center">
-  <h1 class=page-header>Synoptyk – szybki serwis meteorologiczny</h1>
-  <p class=lead>Rejestr danych ze stacji pogodowych polskiego IMGW oraz prognoz Norweskiego yr.no.</p>
-  <p class=lead><i>Pomysłodawca projektu Dawid Gackowski.</i></p>
-  <p class=lead><i>&copy; <a href="http://www.kp-software.pl">KP-SOFTWARE.PL</a> Wersja 2.3.0 z dnia 18.02.2018.</i></p>
+  <h2>Synoptyk – szybki serwis meteorologiczny</h2><hr>
+  <p>Rejestr danych ze stacji pogodowych polskiego IMGW oraz prognoz Norweskiego yr.no.</p>
+  <p><i>Pomysłodawca projektu Dawid Gackowski.</i></p>
+  <p><i>&copy; <a href="http://www.kp-software.pl">KP-SOFTWARE.PL</a> Wersja 2.4.0 z dnia 16.03.2018.</i></p>
 
-  <h1 class=page-header>Code</h1>
-  <p class=lead>Synoptyk –
-    <a href="https://github.com/kamilpek/synop"> github.com/kamilpek/synop</a>
-  </p>
-  <p class=lead>Synptyk Android –
-    <a href="https://github.com/kamilpek/synop-android"> github.com/kamilpek/synop-android</a>
-  </p>
+  <h4>Code</h4><hr>
+  <p>Synoptyk – <a href="https://github.com/kamilpek/synop"> github.com/kamilpek/synop</a></p>
+  <p>Synptyk Android
+    – <a href="https://github.com/kamilpek/synop-android"> github.com/kamilpek/synop-android</a>
+    – <a href="https://play.google.com/store/apps/details?id=pl.kp_software.synoptyk"> Google Play</a></p>
 
-  <h1 class=page-header>Copyrights</h1>
-  <p class=lead>Pomiary (eng. Measurements) &copy;
-    <a href="http://www.imgw.pl/">Instytut Meteorologii i Gospodarki Wodnej Państwowy Instytut Badawczy</a>
-  </p>
-  <p class=lead>Prognozy (eng. Forecasts) &copy;
-    <a href="https://www.yr.no/">Norsk Meteorologisk Institutt</a>
-  </p>
+  <h4>Copyrights</h4><hr>
+  <p>Pomiary (eng. Measurements) &copy; <a href="http://www.imgw.pl/">Instytut Meteorologii i Gospodarki Wodnej Państwowy Instytut Badawczy</a></p>
+  <p>Prognozy (eng. Forecasts) &copy; <a href="https://www.yr.no/">Norsk Meteorologisk Institutt</a></p>
+  <p>Depesze METAR &copy; <a href="http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=html&Enviar=Ver">Ogimet.com</a></p>
+  <p>Pomiary jakości powietrza &copy; <a href="http://powietrze.gios.gov.pl">powietrze.gios.gov.pl</a></p>
+
+  <% if user_signed_in? %>
+    <% if current_user.admin? %>
+      <p><%= link_to 'Zaplecze', admin_main_path, :title => "Panel Administracyjny", class:"btn btn-outline-primary" %></p>
+    <% end %>
+      <p><%= link_to "Zalogowany jako #{User.where(id:current_user.id).pluck(:first_name).last} #{User.where(id:current_user.id).pluck(:last_name).last}", edit_user_registration_path, :title => "Zmiana hasła", class:"btn btn-outline-primary" %></p>
+      <p><%= link_to 'Wyloguj', destroy_user_session_path, :method => :delete, :title => "Wylogowanie ze systemu", class:"btn btn-outline-primary" %></p>
+    <% else %>
+      <p><%= link_to 'Zaloguj', new_user_session_path, :title => "Logowanie do systemu", class:"btn btn-outline-primary" %></p>
+  <% end %>
 
 </div>

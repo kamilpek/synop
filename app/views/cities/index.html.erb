@@ -1,0 +1,34 @@
+<% content_for :title, "Gminy TERYT" %>
+
+<div class="container">
+
+  <h4>Gminy TERYT</h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Nazwa</th>
+          <th>Nazwa dodatkowa</th>
+          <th>Szerokość</th>
+          <th>Długość</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @cities.each do |city| %>
+          <tr align="center">
+            <td><%= city.name %></td>
+            <td><%= city.name_add %></td>
+            <td><%= city.latitude %></td>
+            <td><%= city.longitude %></td>
+            <td><%= link_to 'Przejdź', city, class:"btn btn-outline-primary btn-xs" %>
+                <%= link_to 'Edytuj', edit_city_path(city), class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p align="center"><%= will_paginate @cities, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+</div>

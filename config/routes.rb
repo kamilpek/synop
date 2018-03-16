@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :cities
   get 'admin/main'
   get 'admin/users'
   get 'pages/home'

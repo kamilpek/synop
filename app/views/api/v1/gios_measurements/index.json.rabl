@@ -18,6 +18,27 @@ child :data do
     node(:calc_date, :if => lambda { |m| m.calc_date.nil? }) do |m|
       DateTime.now.strftime("%Y-%m-%d; %H:%M")
     end
+    node(:co_date, :if => lambda { |m| m.co_date? }) do |m|
+      m.co_date.strftime("%Y-%m-%d; %H:%M")
+    end
+    node(:pm10_date, :if => lambda { |m| m.pm10_date? }) do |m|
+      m.pm10_date.strftime("%Y-%m-%d; %H:%M")
+    end
+    node(:c6h6_date, :if => lambda { |m| m.c6h6_date? }) do |m|
+      m.c6h6_date.strftime("%Y-%m-%d; %H:%M")
+    end
+    node(:no2_date, :if => lambda { |m| m.no2_date? }) do |m|
+      m.no2_date.strftime("%Y-%m-%d; %H:%M")
+    end
+    node(:pm25_date, :if => lambda { |m| m.pm25_date? }) do |m|
+      m.pm25_date.strftime("%Y-%m-%d; %H:%M")
+    end
+    node(:o3_date, :if => lambda { |m| m.o3_date? }) do |m|
+      m.o3_date.strftime("%Y-%m-%d; %H:%M")
+    end
+    node(:so2_date, :if => lambda { |m| m.so2_date? }) do |m|
+      m.so2_date.strftime("%Y-%m-%d; %H:%M")
+    end
     node(:station) do |m|
       "#{GiosStation.where(number:m.station).pluck(:name).last}"
     end

@@ -1,0 +1,8 @@
+<% content_for :title, "Gmina" %>
+
+<div class="container">
+  <h4>Gmina</h4><hr>
+  <%= render 'form', city: @city %>
+  <%= link_to 'Lista gmin', cities_path, class:"btn btn-block btn-outline-primary" %>
+</div>
+<br>

@@ -29,3 +29,28 @@ rails generate scaffold gios_measurments station:integer calc_date:datetime st_i
 rails generate scaffold hydro_station name:string number:integer longitude:float latitude:integer river:string
 rails generate scaffold hydro_measurments station:number water:integer water_date:datetime temperature:float temperature_date:datetime ice:integer ice_date:datetime encroach:integer encroach_date:datetime
 ```
+
+## gminy
+```ruby
+rails generate scaffold city province:integer county:integer commune:integer genre:integer name:string name_add:string longitude:float latitude:float --no-timestamps
+
+\copy (select * from cities where longitude is null) To 'terc_empty.csv' With CSV HEADER
+delete from cities where longitude is null;
+select * from cities where longitude is null;
+select count(id) from cities where longitude is not null;
+select count(id) from cities where longitude is null;
+select * from cities order by province, county, commune, genre;
+\copy (select province, county, commune, genre, name, name_add, longitude, latitude from cities order by province asc, county asc, commune asc, name asc, genre asc) To 'terc.csv' With CSV HEADER
+
+http://api.geonames.org/findNearbyPlaceName?lat=51.1443537&lng=16.2427819&username=kamilpek
+http://api.geonames.org/get?geonameId=3093691&username=kamilpek&style=full
+http://www.yr.no/place/Poland/Lower Silesia/Legnickie Pole/forecast.xml
+
+encoded_url = URI.encode("http://www.yr.no/place/Poland/Lower%20Silesia/Osiedle%20M%C5%82odych/forecast.xml")
+url = URI.parse("http://www.yr.no/place/Poland/Lower%20Silesia/Osiedle%20M%C5%82odych/forecast.xml")
+url = URI.parse("http://www.yr.no/place/Poland/Lower%20Silesia/L%C4%85dek-Zdr%C3%B3j/forecast.xml")
+req = Net::HTTP.new(url.host, url.port)
+res = req.request_head(url.path)
+res.code
+
+```

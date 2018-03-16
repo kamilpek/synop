@@ -13,19 +13,9 @@
           <li><%= link_to 'Jakość powietrza', gios_measurments_path, :title => "Jakość powietrza", class:"nav-link" %></li>
           <li><%= link_to 'Depesze METAR', metar_raports_path, :title => "Depesze METAR", class:"nav-link" %></li>
           <li><%= link_to 'Stacje IMGW', stations_path, :title => "Lista Stacji Meteorologicznych", class:"nav-link" %></li>
+          <li><%= link_to 'Gminy', cities_path, :title => "Lista gmin", class:"nav-link" %></li>
           <li><%= link_to 'Stacje GIOS', gios_stations_path, :title => "Lista Stacji GIOS", class:"nav-link" %></li>
           <li><%= link_to 'Stacje METAR', metar_stations_path, :title => "Lista Stacji METAR", class:"nav-link" %></li>
-        </ul>
-        <ul class="navbar-nav float-right">
-          <% if user_signed_in? %>
-            <% if current_user.admin? %>
-              <li><%= link_to 'Zaplecze', admin_main_path, :title => "Panel Administracyjny", class:"nav-link" %></li>
-            <% end %>
-              <li><%= link_to "Zalogowany jako #{User.where(id:current_user.id).pluck(:first_name).last} #{User.where(id:current_user.id).pluck(:last_name).last}", edit_user_registration_path, :title => "Zmiana hasła", class:"nav-link" %></li>
-              <li><%= link_to 'Wyloguj', destroy_user_session_path, :method => :delete, :title => "Wylogowanie ze systemu", class:"nav-link" %></li>
-            <% else %>
-              <li><%= link_to 'Zaloguj', new_user_session_path, :title => "Logowanie do systemu", class:"nav-link" %></li>
-          <% end %>
         </ul>
       </div>
   </nav>

@@ -32,6 +32,7 @@ geocoder:maxmind:geolite:download
 geocoder:maxmind:geolite:extract
 geocoder:maxmind:geolite:insert
 geocoder:maxmind:geolite:load
+import_cities
 import_gios_measur
 import_gios_stations
 import_imgw

@@ -1,0 +1,3252 @@
+province,county,commune,genre,name,name_add,longitude,latitude
+2,1,1,1,Bolesławiec,gmina miejska,15.5657397,51.2658553
+2,1,2,2,Bolesławiec,gmina wiejska,15.5657397,51.2658553
+2,1,3,2,Gromadka,gmina wiejska,15.741658,51.4262858
+2,1,4,3,Nowogrodziec,gmina miejsko-wiejska,15.3983422,51.1973679
+2,1,4,4,Nowogrodziec,miasto,15.3983422,51.1973679
+2,1,4,5,Nowogrodziec,obszar wiejski,15.3983422,51.1973679
+2,1,5,2,Osiecznica,gmina wiejska,15.4476094,51.4017634
+2,1,6,2,Warta Bolesławiecka,gmina wiejska,15.7045412,51.2272195
+2,1,,,bolesławiecki,powiat,15.5803488,51.3623002
+2,2,1,1,Bielawa,gmina miejska,16.6229286,50.6907986
+2,2,2,1,Dzierżoniów,gmina miejska,16.6567892,50.7308605
+2,2,3,3,Pieszyce,gmina miejsko-wiejska,16.5820422,50.7116152
+2,2,3,4,Pieszyce,miasto,16.5820422,50.7116152
+2,2,3,5,Pieszyce,obszar wiejski,16.5820422,50.7116152
+2,2,4,1,Piława Górna,gmina miejska,16.7434759,50.6828036
+2,2,5,2,Dzierżoniów,gmina wiejska,16.6567892,50.7308605
+2,2,7,3,Niemcza,gmina miejsko-wiejska,16.8357165,50.7197493
+2,2,7,4,Niemcza,miasto,16.8357165,50.7197493
+2,2,7,5,Niemcza,obszar wiejski,16.8357165,50.7197493
+2,2,,,dzierżoniowski,powiat,16.7233293,50.7717947
+2,3,1,1,Głogów,gmina miejska,16.0846672,51.6635852
+2,3,2,2,Głogów,gmina wiejska,16.0846672,51.6635852
+2,3,3,2,Jerzmanowa,gmina wiejska,16.0449374,51.5962098
+2,3,4,2,Kotla,gmina wiejska,77.2430237,28.6377383
+2,3,5,2,Pęcław,gmina wiejska,16.2632835,51.6447485
+2,3,,,głogowski,powiat,16.096829,51.6574339
+2,4,1,3,Góra,gmina miejsko-wiejska,16.5376529,51.669945
+2,4,1,4,Góra,miasto,16.5376529,51.669945
+2,4,1,5,Góra,obszar wiejski,16.5376529,51.669945
+2,4,3,2,Niechlów,gmina wiejska,16.3542927,51.6642526
+2,4,4,3,Wąsosz,gmina miejsko-wiejska,16.69165,51.5623852
+2,4,4,4,Wąsosz,miasto,16.69165,51.5623852
+2,4,4,5,Wąsosz,obszar wiejski,16.69165,51.5623852
+2,4,,,górowski,powiat,16.5125886,51.663189
+2,5,1,1,Jawor,gmina miejska,16.186323,51.0545282
+2,5,2,3,Bolków,gmina miejsko-wiejska,16.1037801,50.9245
+2,5,2,4,Bolków,miasto,16.1037801,50.9245
+2,5,2,5,Bolków,obszar wiejski,16.1037801,50.9245
+2,5,3,2,Męcinka,gmina wiejska,16.0571725,51.0602826
+2,5,6,2,Wądroże Wielkie,gmina wiejska,16.3309425,51.1153775
+2,5,,,jaworski,powiat,-81.813757,41.35985
+2,6,1,1,Karpacz,gmina miejska,15.7555976,50.7758815
+2,6,2,1,Kowary,gmina miejska,15.83665,50.79171
+2,6,3,1,Piechowice,gmina miejska,15.59851,50.84956
+2,6,4,1,Szklarska Poręba,gmina miejska,15.5261477,50.8274316
+2,6,5,2,Janowice Wielkie,gmina wiejska,15.9233934,50.8793552
+2,6,6,2,Jeżów Sudecki,gmina wiejska,15.74164,50.9361124
+2,6,7,2,Mysłakowice,gmina wiejska,15.7777601,50.8410986
+2,6,8,2,Podgórzyn,gmina wiejska,15.7050984,50.799449
+2,6,9,2,Stara Kamienica,gmina wiejska,21.0152765,52.2314908
+2,6,,,jeleniogórski,powiat,15.6823021,50.8665547
+2,7,1,1,Kamienna Góra,gmina miejska,16.0237177,50.7852076
+2,7,2,2,Kamienna Góra,gmina wiejska,16.0237177,50.7852076
+2,7,3,3,Lubawka,gmina miejsko-wiejska,15.9996227,50.7033992
+2,7,3,4,Lubawka,miasto,15.9996227,50.7033992
+2,7,3,5,Lubawka,obszar wiejski,15.9996227,50.7033992
+2,7,4,2,Marciszów,gmina wiejska,16.0347107,50.8414118
+2,7,,,kamiennogórski,powiat,15.9921471,50.7915164
+2,8,1,1,Duszniki-Zdrój,gmina miejska,16.3904406,50.404284
+2,8,2,1,Kłodzko,gmina miejska,16.6613941,50.4345636
+2,8,3,1,Kudowa-Zdrój,gmina miejska,16.2426605,50.4427156
+2,8,4,1,Nowa Ruda,gmina miejska,16.5037092,50.5797139
+2,8,5,1,Polanica-Zdrój,gmina miejska,16.5148115,50.4119089
+2,8,6,3,Bystrzyca Kłodzka,gmina miejsko-wiejska,16.6417941,50.2990907
+2,8,6,4,Bystrzyca Kłodzka,miasto,16.6417941,50.2990907
+2,8,6,5,Bystrzyca Kłodzka,obszar wiejski,16.6417941,50.2990907
+2,8,7,2,Kłodzko,gmina wiejska,16.6613941,50.4345636
+2,8,8,3,Lądek-Zdrój,gmina miejsko-wiejska,16.8795362,50.3430802
+2,8,8,4,Lądek-Zdrój,miasto,16.8795362,50.3430802
+2,8,8,5,Lądek-Zdrój,obszar wiejski,16.8795362,50.3430802
+2,8,9,2,Lewin Kłodzki,gmina wiejska,16.2909777,50.4056168
+2,8,10,3,Międzylesie,gmina miejsko-wiejska,16.6670843,50.1477491
+2,8,10,4,Międzylesie,miasto,16.6670843,50.1477491
+2,8,10,5,Międzylesie,obszar wiejski,16.6670843,50.1477491
+2,8,11,2,Nowa Ruda,gmina wiejska,16.5037092,50.5797139
+2,8,12,3,Radków,gmina miejsko-wiejska,16.3972701,50.5046222
+2,8,12,4,Radków,miasto,16.3972701,50.5046222
+2,8,12,5,Radków,obszar wiejski,16.3972701,50.5046222
+2,8,13,3,Stronie Śląskie,gmina miejsko-wiejska,16.8739539,50.2954526
+2,8,13,4,Stronie Śląskie,miasto,16.8739539,50.2954526
+2,8,13,5,Stronie Śląskie,obszar wiejski,16.8739539,50.2954526
+2,8,14,3,Szczytna,gmina miejsko-wiejska,16.4474201,50.41339
+2,8,14,4,Szczytna,miasto,16.4474201,50.41339
+2,8,14,5,Szczytna,obszar wiejski,16.4474201,50.41339
+2,8,,,kłodzki,powiat,16.5655666,50.4114042
+2,9,1,1,Chojnów,gmina miejska,15.93648,51.2732
+2,9,2,2,Chojnów,gmina wiejska,15.93648,51.2732
+2,9,3,2,Krotoszyce,gmina wiejska,16.047285,51.1449432
+2,9,4,2,Kunice,gmina wiejska,14.671507,49.9365523
+2,9,5,2,Legnickie Pole,gmina wiejska,16.2427819,51.1443537
+2,9,6,2,Miłkowice,gmina wiejska,16.0659081,51.2564211
+2,9,7,3,Prochowice,gmina miejsko-wiejska,16.3653,51.27304
+2,9,7,4,Prochowice,miasto,16.3653,51.27304
+2,9,7,5,Prochowice,obszar wiejski,16.3653,51.27304
+2,9,8,2,Ruja,gmina wiejska,16.4120948,51.1731895
+2,9,,,legnicki,powiat,16.1593249,51.2067684
+2,10,1,1,Lubań,gmina miejska,15.2893895,51.1179142
+2,10,3,3,Leśna,gmina miejsko-wiejska,15.2640453,51.0241928
+2,10,3,4,Leśna,miasto,15.2640453,51.0241928
+2,10,3,5,Leśna,obszar wiejski,15.2640453,51.0241928
+2,10,4,2,Lubań,gmina wiejska,15.2893895,51.1179142
+2,10,5,3,Olszyna,gmina miejsko-wiejska,15.37221,51.06681
+2,10,5,4,Olszyna,miasto,15.37221,51.06681
+2,10,5,5,Olszyna,obszar wiejski,15.37221,51.06681
+2,10,6,2,Platerówka,gmina wiejska,15.1718308,51.0595634
+2,10,7,2,Siekierczyn,gmina wiejska,15.1849485,51.1259587
+2,11,1,1,Lubin,gmina miejska,16.2095788,51.397722
+2,11,2,2,Lubin,gmina wiejska,16.2095788,51.397722
+2,11,4,3,Ścinawa,gmina miejsko-wiejska,16.4275399,51.4159
+2,11,4,4,Ścinawa,miasto,16.4275399,51.4159
+2,11,4,5,Ścinawa,obszar wiejski,16.4275399,51.4159
+2,11,,,lubiński,powiat,72.6937323,55.1536343
+2,12,1,3,Gryfów Śląski,gmina miejsko-wiejska,15.4122128,51.0350353
+2,12,1,4,Gryfów Śląski,miasto,15.4122128,51.0350353
+2,12,1,5,Gryfów Śląski,obszar wiejski,15.4122128,51.0350353
+2,12,2,3,Lubomierz,gmina miejsko-wiejska,15.510661,51.0126464
+2,12,2,4,Lubomierz,miasto,15.510661,51.0126464
+2,12,2,5,Lubomierz,obszar wiejski,15.510661,51.0126464
+2,12,3,3,Lwówek Śląski,gmina miejsko-wiejska,15.5905136,51.1095792
+2,12,3,4,Lwówek Śląski,miasto,15.5905136,51.1095792
+2,12,3,5,Lwówek Śląski,obszar wiejski,15.5905136,51.1095792
+2,12,4,4,Mirsk,miasto,15.3858774,50.9704636
+2,12,4,5,Mirsk,obszar wiejski,15.3858774,50.9704636
+2,12,,,lwówecki,powiat,15.5136944,51.0283944
+2,13,1,2,Cieszków,gmina wiejska,17.3576012,51.6309996
+2,13,2,2,Krośnice,gmina wiejska,17.3571678,51.429691
+2,13,3,3,Milicz,gmina miejsko-wiejska,17.2712122,51.5275957
+2,13,3,4,Milicz,miasto,17.2712122,51.5275957
+2,13,3,5,Milicz,obszar wiejski,17.2712122,51.5275957
+2,13,,,milicki,powiat,17.332622,51.541736
+2,14,1,1,Oleśnica,gmina miejska,17.3898504,51.2134346
+2,14,2,3,Bierutów,gmina miejsko-wiejska,17.54603,51.12444
+2,14,2,4,Bierutów,miasto,17.54603,51.12444
+2,14,2,5,Bierutów,obszar wiejski,17.54603,51.12444
+2,14,5,3,Międzybórz,gmina miejsko-wiejska,17.6660338,51.3962482
+2,14,5,4,Międzybórz,miasto,17.6660338,51.3962482
+2,14,5,5,Międzybórz,obszar wiejski,17.6660338,51.3962482
+2,14,6,2,Oleśnica,gmina wiejska,17.3898504,51.2134346
+2,14,7,3,Syców,gmina miejsko-wiejska,17.72016,51.30787
+2,14,7,4,Syców,miasto,17.72016,51.30787
+2,14,7,5,Syców,obszar wiejski,17.72016,51.30787
+2,14,8,3,Twardogóra,gmina miejsko-wiejska,17.46841,51.36499
+2,14,8,4,Twardogóra,miasto,17.46841,51.36499
+2,14,8,5,Twardogóra,obszar wiejski,17.46841,51.36499
+2,14,,,oleśnicki,powiat,17.530923,51.251709
+2,15,1,1,Oława,gmina miejska,17.2924017,50.9459276
+2,15,2,2,Domaniów,gmina wiejska,17.1482559,50.9011482
+2,15,3,3,Jelcz-Laskowice,gmina miejsko-wiejska,17.3164789,51.0212945
+2,15,3,4,Jelcz-Laskowice,miasto,17.3164789,51.0212945
+2,15,3,5,Jelcz-Laskowice,obszar wiejski,17.3164789,51.0212945
+2,15,4,2,Oława,gmina wiejska,17.2924017,50.9459276
+2,15,,,oławski,powiat,17.3794513,51.0163482
+2,16,1,3,Chocianów,gmina miejsko-wiejska,15.90438,51.41724
+2,16,1,4,Chocianów,miasto,15.90438,51.41724
+2,16,1,5,Chocianów,obszar wiejski,15.90438,51.41724
+2,16,2,2,Gaworzyce,gmina wiejska,15.8780218,51.6339028
+2,16,3,2,Grębocice,gmina wiejska,16.2480194,51.5928526
+2,16,4,3,Polkowice,gmina miejsko-wiejska,16.0620494,51.5024848
+2,16,4,4,Polkowice,miasto,16.0620494,51.5024848
+2,16,4,5,Polkowice,obszar wiejski,16.0620494,51.5024848
+2,16,5,3,Przemków,gmina miejsko-wiejska,15.7868955,51.5271198
+2,16,5,4,Przemków,miasto,15.7868955,51.5271198
+2,16,5,5,Przemków,obszar wiejski,15.7868955,51.5271198
+2,16,6,2,Radwanice,gmina wiejska,17.1112823,51.0489879
+2,16,,,polkowicki,powiat,16.0198221,51.4738876
+2,17,1,2,Borów,gmina wiejska,21.9097168,50.7960167
+2,17,2,2,Kondratowice,gmina wiejska,16.9272857,50.7736541
+2,17,3,2,Przeworno,gmina wiejska,17.1652797,50.6861184
+2,17,4,3,Strzelin,gmina miejsko-wiejska,17.0646124,50.7812167
+2,17,4,4,Strzelin,miasto,17.0646124,50.7812167
+2,17,4,5,Strzelin,obszar wiejski,17.0646124,50.7812167
+2,17,5,3,Wiązów,gmina miejsko-wiejska,17.2023429,50.813798
+2,17,5,4,Wiązów,miasto,17.2023429,50.813798
+2,17,5,5,Wiązów,obszar wiejski,17.2023429,50.813798
+2,17,,,strzeliński,powiat,17.0007158,50.8161834
+2,18,1,2,Kostomłoty,gmina wiejska,23.618401,51.9730639
+2,18,2,2,Malczyce,gmina wiejska,16.4935981,51.2204266
+2,18,3,2,Miękinia,gmina wiejska,16.75191,51.1750305
+2,18,4,3,Środa Śląska,gmina miejsko-wiejska,16.5925834,51.1641896
+2,18,4,4,Środa Śląska,miasto,16.5925834,51.1641896
+2,18,4,5,Środa Śląska,obszar wiejski,16.5925834,51.1641896
+2,18,5,2,Udanin,gmina wiejska,16.4826214,51.0424529
+2,18,,,średzki,powiat,16.5713037,51.1369337
+2,19,1,1,Świdnica,gmina miejska,16.475679,50.8498434
+2,19,2,1,Świebodzice,gmina miejska,16.3213376,50.8575475
+2,19,3,2,Dobromierz,gmina wiejska,16.241178,50.9117546
+2,19,4,3,Jaworzyna Śląska,gmina miejsko-wiejska,16.432166,50.9129256
+2,19,4,4,Jaworzyna Śląska,miasto,16.432166,50.9129256
+2,19,4,5,Jaworzyna Śląska,obszar wiejski,16.432166,50.9129256
+2,19,5,2,Marcinowice,gmina wiejska,16.6403575,50.89093
+2,19,6,3,Strzegom,gmina miejsko-wiejska,16.3510375,50.9604662
+2,19,6,4,Strzegom,miasto,16.3510375,50.9604662
+2,19,6,5,Strzegom,obszar wiejski,16.3510375,50.9604662
+2,19,7,2,Świdnica,gmina wiejska,16.475679,50.8498434
+2,19,8,3,Żarów,gmina miejsko-wiejska,16.49474,50.94076
+2,19,8,4,Żarów,miasto,16.49474,50.94076
+2,19,8,5,Żarów,obszar wiejski,16.49474,50.94076
+2,19,,,świdnicki,powiat,16.475679,50.8498434
+2,20,1,3,Oborniki Śląskie,gmina miejsko-wiejska,16.9148091,51.3009866
+2,20,1,4,Oborniki Śląskie,miasto,16.9148091,51.3009866
+2,20,1,5,Oborniki Śląskie,obszar wiejski,16.9148091,51.3009866
+2,20,2,3,Prusice,gmina miejsko-wiejska,16.9606267,51.3704296
+2,20,2,4,Prusice,miasto,16.9606267,51.3704296
+2,20,2,5,Prusice,obszar wiejski,16.9606267,51.3704296
+2,20,3,3,Trzebnica,gmina miejsko-wiejska,17.0632716,51.3104211
+2,20,3,4,Trzebnica,miasto,17.0632716,51.3104211
+2,20,3,5,Trzebnica,obszar wiejski,17.0632716,51.3104211
+2,20,4,2,Wisznia Mała,gmina wiejska,17.0241914,51.2315629
+2,20,5,2,Zawonia,gmina wiejska,17.2150504,51.3323339
+2,20,6,3,Żmigród,gmina miejsko-wiejska,16.9058199,51.46654
+2,20,6,4,Żmigród,miasto,16.9058199,51.46654
+2,20,6,5,Żmigród,obszar wiejski,16.9058199,51.46654
+2,20,,,trzebnicki,powiat,16.9985632,51.4188443
+2,21,1,1,Boguszów-Gorce,gmina miejska,16.2042957,50.7559487
+2,21,2,1,Jedlina-Zdrój,gmina miejska,16.345569,50.71966
+2,21,3,1,Szczawno-Zdrój,gmina miejska,16.2478969,50.810462
+2,21,4,2,Czarny Bór,gmina wiejska,16.1300631,50.7716843
+2,21,5,3,Głuszyca,gmina miejsko-wiejska,16.3710701,50.68728
+2,21,5,4,Głuszyca,miasto,16.3710701,50.68728
+2,21,5,5,Głuszyca,obszar wiejski,16.3710701,50.68728
+2,21,6,3,Mieroszów,gmina miejsko-wiejska,16.18882,50.6659
+2,21,6,4,Mieroszów,miasto,16.18882,50.6659
+2,21,6,5,Mieroszów,obszar wiejski,16.18882,50.6659
+2,21,7,2,Stare Bogaczowice,gmina wiejska,16.1893863,50.8383577
+2,21,,,wałbrzyski,powiat,16.2197229,50.7593258
+2,22,1,3,Brzeg Dolny,gmina miejsko-wiejska,16.708557,51.2728265
+2,22,1,4,Brzeg Dolny,miasto,16.708557,51.2728265
+2,22,1,5,Brzeg Dolny,obszar wiejski,16.708557,51.2728265
+2,22,2,2,Wińsko,gmina wiejska,16.6142027,51.4700683
+2,22,3,3,Wołów,gmina miejsko-wiejska,16.6441164,51.3364277
+2,22,3,4,Wołów,miasto,16.6441164,51.3364277
+2,22,3,5,Wołów,obszar wiejski,16.6441164,51.3364277
+2,22,,,wołowski,powiat,16.6003543,51.3910837
+2,23,1,2,Czernica,gmina wiejska,17.2449366,51.0457858
+2,23,2,2,Długołęka,gmina wiejska,17.2064831,51.1933768
+2,23,3,2,Jordanów Śląski,gmina wiejska,16.8683365,50.8638771
+2,23,4,3,Kąty Wrocławskie,gmina miejsko-wiejska,16.7675963,51.0309199
+2,23,4,4,Kąty Wrocławskie,miasto,16.7675963,51.0309199
+2,23,4,5,Kąty Wrocławskie,obszar wiejski,16.7675963,51.0309199
+2,23,6,2,Mietków,gmina wiejska,16.6503844,50.9744926
+2,23,7,3,Sobótka,gmina miejsko-wiejska,16.7445201,50.89984
+2,23,7,4,Sobótka,miasto,16.7445201,50.89984
+2,23,7,5,Sobótka,obszar wiejski,16.7445201,50.89984
+2,23,8,3,Siechnice,gmina miejsko-wiejska,17.14733,51.03365
+2,23,8,4,Siechnice,miasto,17.14733,51.03365
+2,23,8,5,Siechnice,obszar wiejski,17.14733,51.03365
+2,23,9,2,Żórawina,gmina wiejska,17.0357954,50.9811092
+2,23,,,wrocławski,powiat,16.9831788,51.1407764
+2,24,1,3,Bardo,gmina miejsko-wiejska,-83.3443501,36.7598092
+2,24,1,4,Bardo,miasto,-83.3443501,36.7598092
+2,24,1,5,Bardo,obszar wiejski,-83.3443501,36.7598092
+2,24,2,2,Ciepłowody,gmina wiejska,16.9236828,50.667332
+2,24,3,2,Kamieniec Ząbkowicki,gmina wiejska,16.8791589,50.5251922
+2,24,4,2,Stoszowice,gmina wiejska,16.7008823,50.5830254
+2,24,5,3,Ząbkowice Śląskie,gmina miejsko-wiejska,16.8132419,50.5893617
+2,24,5,4,Ząbkowice Śląskie,miasto,16.8132419,50.5893617
+2,24,5,5,Ząbkowice Śląskie,obszar wiejski,16.8132419,50.5893617
+2,24,6,3,Ziębice,gmina miejsko-wiejska,17.03888,50.5983
+2,24,6,4,Ziębice,miasto,17.03888,50.5983
+2,24,6,5,Ziębice,obszar wiejski,17.03888,50.5983
+2,24,7,3,Złoty Stok,gmina miejsko-wiejska,16.87578,50.44459
+2,24,7,4,Złoty Stok,miasto,16.87578,50.44459
+2,24,7,5,Złoty Stok,obszar wiejski,16.87578,50.44459
+2,24,,,ząbkowicki,powiat,16.8122514,50.589523
+2,25,1,1,Zawidów,gmina miejska,15.06215,51.02545
+2,25,2,1,Zgorzelec,gmina miejska,15.0065645,51.1496361
+2,25,3,3,Bogatynia,gmina miejsko-wiejska,14.9561498,50.9072496
+2,25,3,4,Bogatynia,miasto,14.9561498,50.9072496
+2,25,3,5,Bogatynia,obszar wiejski,14.9561498,50.9072496
+2,25,4,3,Pieńsk,gmina miejsko-wiejska,15.04176,51.2475
+2,25,4,4,Pieńsk,miasto,15.04176,51.2475
+2,25,4,5,Pieńsk,obszar wiejski,15.04176,51.2475
+2,25,5,2,Sulików,gmina wiejska,15.0710321,51.0758549
+2,25,6,3,Węgliniec,gmina miejsko-wiejska,15.2299326,51.2879708
+2,25,6,4,Węgliniec,miasto,15.2299326,51.2879708
+2,25,6,5,Węgliniec,obszar wiejski,15.2299326,51.2879708
+2,25,7,2,Zgorzelec,gmina wiejska,15.0065645,51.1496361
+2,25,,,zgorzelecki,powiat,15.1457788,51.2488827
+2,26,1,1,Wojcieszów,gmina miejska,15.92209,50.95167
+2,26,2,1,Złotoryja,gmina miejska,15.9213852,51.1259316
+2,26,3,2,Pielgrzymka,gmina wiejska,21.4399182,49.6153784
+2,26,4,3,Świerzawa,gmina miejsko-wiejska,15.894809,51.0140473
+2,26,4,4,Świerzawa,miasto,15.894809,51.0140473
+2,26,4,5,Świerzawa,obszar wiejski,15.894809,51.0140473
+2,26,5,2,Zagrodno,gmina wiejska,15.8652698,51.1908496
+2,26,6,2,Złotoryja,gmina wiejska,15.9213852,51.1259316
+2,26,,,złotoryjski,powiat,15.8337662,51.1557753
+2,61,1,1,Jelenia Góra,gmina miejska,15.7193616,50.9044171
+2,62,1,1,Legnica,gmina miejska,16.1553231,51.2070067
+2,62,,,Legnica,miasto na prawach powiatu,16.1553231,51.2070067
+2,64,1,1,Wrocław,gmina miejska,17.0385376,51.1078852
+2,64,2,9,Wrocław-Fabryczna,delegatura,16.9285705,51.120355
+2,64,3,9,Wrocław-Krzyki,delegatura,17.0531944,51.0785518
+2,64,4,9,Wrocław-Psie Pole,delegatura,17.0355841,51.1458649
+2,64,6,9,Wrocław-Śródmieście,delegatura,17.0812736,51.1132425
+2,64,,,Wrocław,miasto na prawach powiatu,17.0385376,51.1078852
+2,65,1,1,Wałbrzych,gmina miejska,16.2843553,50.7840092
+2,65,,,Wałbrzych,miasto na prawach powiatu,16.2843553,50.7840092
+2,,,,DOLNOŚLĄSKIE,województwo,16.8841961,51.1339861
+4,1,1,1,Aleksandrów Kujawski,gmina miejska,18.6934504,52.8765762
+4,1,2,1,Ciechocinek,gmina miejska,18.7948147,52.8790493
+4,1,3,1,Nieszawa,gmina miejska,18.8950771,52.8344014
+4,1,4,2,Aleksandrów Kujawski,gmina wiejska,18.6934504,52.8765762
+4,1,5,2,Bądkowo,gmina wiejska,18.7927911,52.7033394
+4,1,6,2,Koneck,gmina wiejska,18.7192458,52.7830135
+4,1,7,2,Raciążek,gmina wiejska,18.8133859,52.856485
+4,1,8,2,Waganiec,gmina wiejska,18.8631427,52.8027478
+4,1,9,2,Zakrzewo,gmina wiejska,16.711787,52.399547
+4,1,,,aleksandrowski,powiat,18.7182522,52.8153832
+4,2,2,2,Bobrowo,gmina wiejska,19.2294383,53.2884315
+4,2,4,2,Brzozie,gmina wiejska,19.6046191,53.3256292
+4,2,5,3,Górzno,gmina miejsko-wiejska,19.6444061,53.1980031
+4,2,5,4,Górzno,miasto,19.6444061,53.1980031
+4,2,5,5,Górzno,obszar wiejski,19.6444061,53.1980031
+4,2,6,2,Bartniczka,gmina wiejska,19.5324547,53.2485394
+4,2,7,3,Jabłonowo Pomorskie,gmina miejsko-wiejska,19.2252994,53.3787566
+4,2,7,4,Jabłonowo Pomorskie,miasto,19.2252994,53.3787566
+4,2,7,5,Jabłonowo Pomorskie,obszar wiejski,19.2252994,53.3787566
+4,2,8,2,Osiek,gmina wiejska,19.2641467,49.9496427
+4,2,9,2,Świedziebnia,gmina wiejska,19.5439482,53.1458064
+4,2,10,2,Zbiczno,gmina wiejska,19.3501101,53.3578427
+4,2,,,brodnicki,powiat,-87.8360513,41.7539653
+4,3,1,2,Białe Błota,gmina wiejska,17.9025308,53.0895614
+4,3,2,2,Dąbrowa Chełmińska,gmina wiejska,18.2532968,53.1792145
+4,3,3,2,Dobrcz,gmina wiejska,18.1315242,53.2764048
+4,3,4,3,Koronowo,gmina miejsko-wiejska,17.924967,53.3155945
+4,3,4,4,Koronowo,miasto,17.924967,53.3155945
+4,3,4,5,Koronowo,obszar wiejski,17.924967,53.3155945
+4,3,5,2,Nowa Wieś Wielka,gmina wiejska,18.1159963,52.9784796
+4,3,6,2,Osielsko,gmina wiejska,18.0984908,53.1841113
+4,3,7,2,Sicienko,gmina wiejska,17.7940342,53.2063746
+4,3,8,4,Solec Kujawski,miasto,18.2258317,53.0832531
+4,3,8,5,Solec Kujawski,obszar wiejski,18.2258317,53.0832531
+4,3,,,bydgoski,powiat,18.0749923,53.118252
+4,4,1,1,Chełmno,gmina miejska,18.4249899,53.34842
+4,4,2,2,Chełmno,gmina wiejska,18.4249899,53.34842
+4,4,3,2,Kijewo Królewskie,gmina wiejska,18.4379758,53.2724884
+4,4,4,2,Lisewo,gmina wiejska,18.6875465,53.2954476
+4,4,5,2,Papowo Biskupie,gmina wiejska,18.566103,53.2482101
+4,4,6,2,Stolno,gmina wiejska,18.5420729,53.3228058
+4,4,7,2,Unisław,gmina wiejska,18.3961325,53.2122406
+4,4,,,chełmiński,powiat,18.5054863,53.2951708
+4,5,1,1,Golub-Dobrzyń,gmina miejska,19.0539107,53.110535
+4,5,2,2,Ciechocin,gmina wiejska,18.9327298,53.0694968
+4,5,3,2,Golub-Dobrzyń,gmina wiejska,19.0539107,53.110535
+4,5,4,3,Kowalewo Pomorskie,gmina miejsko-wiejska,18.89802,53.15467
+4,5,4,4,Kowalewo Pomorskie,miasto,18.89802,53.15467
+4,5,4,5,Kowalewo Pomorskie,obszar wiejski,18.89802,53.15467
+4,5,5,2,Radomin,gmina wiejska,19.1694848,53.0860174
+4,5,6,2,Zbójno,gmina wiejska,19.1119381,53.0063638
+4,5,,,golubsko-dobrzyński,powiat,19.0683907,53.1140073
+4,6,1,2,Grudziądz,gmina wiejska,18.7535649,53.4837486
+4,6,2,2,Gruta,gmina wiejska,18.96118,53.4557163
+4,6,3,3,Łasin,gmina miejsko-wiejska,19.0870908,53.5193613
+4,6,3,4,Łasin,miasto,19.0870908,53.5193613
+4,6,3,5,Łasin,obszar wiejski,19.0870908,53.5193613
+4,6,4,3,Radzyń Chełmiński,gmina miejsko-wiejska,18.9371303,53.385034
+4,6,4,4,Radzyń Chełmiński,miasto,18.9371303,53.385034
+4,6,4,5,Radzyń Chełmiński,obszar wiejski,18.9371303,53.385034
+4,6,5,2,Rogóźno,gmina wiejska,18.9455238,53.5484541
+4,6,6,2,Świecie nad Osą,gmina wiejska,19.1211134,53.4521653
+4,6,,,grudziądzki,powiat,18.7487561,53.4684288
+4,7,1,1,Inowrocław,gmina miejska,18.2562032,52.7993317
+4,7,2,2,Dąbrowa Biskupia,gmina wiejska,18.4622907,52.7902776
+4,7,3,3,Gniewkowo,gmina miejsko-wiejska,18.40746,52.89463
+4,7,3,4,Gniewkowo,miasto,18.40746,52.89463
+4,7,3,5,Gniewkowo,obszar wiejski,18.40746,52.89463
+4,7,4,2,Inowrocław,gmina wiejska,18.2562032,52.7993317
+4,7,5,3,Janikowo,gmina miejsko-wiejska,18.11328,52.75378
+4,7,5,4,Janikowo,miasto,18.11328,52.75378
+4,7,5,5,Janikowo,obszar wiejski,18.11328,52.75378
+4,7,6,3,Kruszwica,gmina miejsko-wiejska,18.33159,52.67429
+4,7,6,4,Kruszwica,miasto,18.33159,52.67429
+4,7,6,5,Kruszwica,obszar wiejski,18.33159,52.67429
+4,7,7,3,Pakość,gmina miejsko-wiejska,18.08517,52.80141
+4,7,7,4,Pakość,miasto,18.08517,52.80141
+4,7,7,5,Pakość,obszar wiejski,18.08517,52.80141
+4,7,8,2,Rojewo,gmina wiejska,18.2725761,52.9093335
+4,7,,,inowrocławski,powiat,18.2957325,52.7947626
+4,8,1,1,Lipno,gmina miejska,14.2293199,48.6393267
+4,8,2,2,Bobrowniki,gmina wiejska,18.9591994,52.7795731
+4,8,4,3,Dobrzyń nad Wisłą,gmina miejsko-wiejska,19.3182434,52.6375464
+4,8,4,4,Dobrzyń nad Wisłą,miasto,19.3182434,52.6375464
+4,8,4,5,Dobrzyń nad Wisłą,obszar wiejski,19.3182434,52.6375464
+4,8,5,2,Kikół,gmina wiejska,19.1199145,52.9119516
+4,8,6,2,Lipno,gmina wiejska,14.2293199,48.6393267
+4,8,7,3,Skępe,gmina miejsko-wiejska,19.356164,52.8677421
+4,8,7,4,Skępe,miasto,19.356164,52.8677421
+4,8,7,5,Skępe,obszar wiejski,19.356164,52.8677421
+4,8,8,2,Tłuchowo,gmina wiejska,19.4129515,52.7553013
+4,8,9,2,Wielgie,gmina wiejska,19.2533342,52.7489266
+4,8,,,lipnowski,powiat,19.2657878,52.8135509
+4,9,1,2,Dąbrowa,gmina wiejska,20.6802939,49.6895754
+4,9,2,2,Jeziora Wielkie,gmina wiejska,18.2975,52.5511332
+4,9,3,3,Mogilno,gmina miejsko-wiejska,17.9556926,52.6577648
+4,9,3,4,Mogilno,miasto,17.9556926,52.6577648
+4,9,3,5,Mogilno,obszar wiejski,17.9556926,52.6577648
+4,9,4,3,Strzelno,gmina miejsko-wiejska,18.1726601,52.62772
+4,9,4,4,Strzelno,miasto,18.1726601,52.62772
+4,9,4,5,Strzelno,obszar wiejski,18.1726601,52.62772
+4,9,,,mogileński,powiat,18.0818447,52.6295025
+4,10,1,3,Kcynia,gmina miejsko-wiejska,17.4884299,52.99166
+4,10,1,4,Kcynia,miasto,17.4884299,52.99166
+4,10,1,5,Kcynia,obszar wiejski,17.4884299,52.99166
+4,10,2,3,Mrocza,gmina miejsko-wiejska,17.60415,53.24285
+4,10,2,4,Mrocza,miasto,17.60415,53.24285
+4,10,2,5,Mrocza,obszar wiejski,17.60415,53.24285
+4,10,3,3,Nakło nad Notecią,gmina miejsko-wiejska,17.6018342,53.1417565
+4,10,3,4,Nakło nad Notecią,miasto,17.6018342,53.1417565
+4,10,3,5,Nakło nad Notecią,obszar wiejski,17.6018342,53.1417565
+4,10,5,3,Szubin,gmina miejsko-wiejska,17.73989,53.00942
+4,10,5,4,Szubin,miasto,17.73989,53.00942
+4,10,5,5,Szubin,obszar wiejski,17.73989,53.00942
+4,10,,,nakielski,powiat,17.5465361,53.0886873
+4,11,1,1,Radziejów,gmina miejska,18.5257,52.62669
+4,11,2,2,Bytoń,gmina wiejska,-2.920938,52.2667707
+4,11,3,2,Dobre,gmina wiejska,18.413937,49.6738269
+4,11,4,2,Osięciny,gmina wiejska,18.727124,52.6282252
+4,11,5,3,Piotrków Kujawski,gmina miejsko-wiejska,18.49897,52.55106
+4,11,5,4,Piotrków Kujawski,miasto,18.49897,52.55106
+4,11,5,5,Piotrków Kujawski,obszar wiejski,18.49897,52.55106
+4,11,6,2,Radziejów,gmina wiejska,18.5257,52.62669
+4,11,,,radziejowski,powiat,18.5512416,52.5766303
+4,12,1,1,Rypin,gmina miejska,19.4094096,53.0657106
+4,12,2,2,Brzuze,gmina wiejska,19.2705124,53.0579377
+4,12,4,2,Rypin,gmina wiejska,19.4094096,53.0657106
+4,12,5,2,Skrwilno,gmina wiejska,19.6212916,53.0172422
+4,12,6,2,Wąpielsk,gmina wiejska,19.2893286,53.1553229
+4,13,1,4,Kamień Krajeński,miasto,17.5213872,53.5333481
+4,13,1,5,Kamień Krajeński,obszar wiejski,17.5213872,53.5333481
+4,13,2,3,Sępólno Krajeńskie,gmina miejsko-wiejska,17.5316201,53.4513
+4,13,2,4,Sępólno Krajeńskie,miasto,17.5316201,53.4513
+4,13,2,5,Sępólno Krajeńskie,obszar wiejski,17.5316201,53.4513
+4,13,4,3,Więcbork,gmina miejsko-wiejska,17.490565,53.3536745
+4,13,4,4,Więcbork,miasto,17.490565,53.3536745
+4,13,4,5,Więcbork,obszar wiejski,17.490565,53.3536745
+4,13,,,sępoleński,powiat,17.5130857,53.4496488
+4,14,1,2,Bukowiec,gmina wiejska,15.8210025,50.8261855
+4,14,2,2,Dragacz,gmina wiejska,18.6636178,53.4710157
+4,14,3,2,Drzycim,gmina wiejska,18.3108864,53.5060589
+4,14,5,2,Lniano,gmina wiejska,18.1903486,53.5128402
+4,14,6,3,Nowe,gmina miejsko-wiejska,18.7271078,53.64903
+4,14,6,4,Nowe,miasto,18.7271078,53.64903
+4,14,6,5,Nowe,obszar wiejski,18.7271078,53.64903
+4,14,7,2,Osie,gmina wiejska,18.3439173,53.5985441
+4,14,9,3,Świecie,gmina miejsko-wiejska,18.4473863,53.4093843
+4,14,9,4,Świecie,miasto,18.4473863,53.4093843
+4,14,9,5,Świecie,obszar wiejski,18.4473863,53.4093843
+4,14,10,2,Świekatowo,gmina wiejska,18.0957046,53.4186995
+4,14,11,2,Warlubie,gmina wiejska,18.5611605,53.6220168
+4,14,,,świecki,powiat,18.3687807,53.4958476
+4,15,1,1,Chełmża,gmina miejska,18.6045572,53.1844724
+4,15,2,2,Chełmża,gmina wiejska,18.6045572,53.1844724
+4,15,5,2,Łubianka,gmina wiejska,18.4813416,53.1383666
+4,15,6,2,Łysomice,gmina wiejska,18.632292,53.1074149
+4,15,8,2,Wielka Nieszawka,gmina wiejska,18.509675,52.9961639
+4,15,9,2,Zławieś Wielka,gmina wiejska,18.3490662,53.1194715
+4,15,,,toruński,powiat,18.6294138,53.0299205
+4,16,1,2,Cekcyn,gmina wiejska,18.039597,53.5699721
+4,16,2,2,Gostycyn,gmina wiejska,17.8328698,53.4678465
+4,16,3,2,Kęsowo,gmina wiejska,17.7093358,53.564958
+4,16,4,2,Lubiewo,gmina wiejska,18.0206091,53.4664444
+4,16,5,2,Śliwice,gmina wiejska,18.122636,53.6914156
+4,16,6,3,Tuchola,gmina miejsko-wiejska,17.85955,53.58762
+4,16,6,4,Tuchola,miasto,17.85955,53.58762
+4,16,6,5,Tuchola,obszar wiejski,17.85955,53.58762
+4,16,,,tucholski,powiat,17.9946401,53.5545868
+4,17,1,1,Wąbrzeźno,gmina miejska,18.9478368,53.2799634
+4,17,2,2,Dębowa Łąka,gmina wiejska,19.0472688,53.2292261
+4,17,3,2,Książki,gmina wiejska,19.0703817,53.3300475
+4,17,4,2,Płużnica,gmina wiejska,18.7765938,53.2917594
+4,17,5,2,Ryńsk,gmina wiejska,18.822814,53.2302753
+4,18,1,1,Kowal,gmina miejska,19.14773,52.53015
+4,18,2,2,Baruchowo,gmina wiejska,19.2646971,52.4807628
+4,18,3,2,Boniewo,gmina wiejska,18.8961182,52.4649091
+4,18,4,3,Brześć Kujawski,gmina miejsko-wiejska,18.9012899,52.60628
+4,18,4,4,Brześć Kujawski,miasto,18.9012899,52.60628
+4,18,4,5,Brześć Kujawski,obszar wiejski,18.9012899,52.60628
+4,18,5,2,Choceń,gmina wiejska,19.0294839,52.5091369
+4,18,6,3,Chodecz,gmina miejsko-wiejska,19.0274989,52.4048502
+4,18,6,4,Chodecz,miasto,19.0274989,52.4048502
+4,18,6,5,Chodecz,obszar wiejski,19.0274989,52.4048502
+4,18,7,2,Fabianki,gmina wiejska,19.1103724,52.717348
+4,18,8,4,Izbica Kujawska,miasto,18.7626608,52.4206613
+4,18,8,5,Izbica Kujawska,obszar wiejski,18.7626608,52.4206613
+4,18,9,2,Kowal,gmina wiejska,19.14773,52.53015
+4,18,10,2,Lubanie,gmina wiejska,18.9126298,52.7279844
+4,18,11,3,Lubień Kujawski,gmina miejsko-wiejska,19.1651495,52.4062515
+4,18,11,4,Lubień Kujawski,miasto,19.1651495,52.4062515
+4,18,11,5,Lubień Kujawski,obszar wiejski,19.1651495,52.4062515
+4,18,12,3,Lubraniec,gmina miejsko-wiejska,18.8315208,52.5413225
+4,18,12,4,Lubraniec,miasto,18.8315208,52.5413225
+4,18,12,5,Lubraniec,obszar wiejski,18.8315208,52.5413225
+4,18,13,2,Włocławek,gmina wiejska,19.0677357,52.6483303
+4,18,,,włocławski,powiat,19.0677357,52.6483303
+4,19,1,3,Barcin,gmina miejsko-wiejska,17.9462614,52.8661061
+4,19,1,4,Barcin,miasto,17.9462614,52.8661061
+4,19,1,5,Barcin,obszar wiejski,17.9462614,52.8661061
+4,19,2,2,Gąsawa,gmina wiejska,17.7555923,52.7674269
+4,19,3,3,Janowiec Wielkopolski,gmina miejsko-wiejska,17.4897099,52.75634
+4,19,3,4,Janowiec Wielkopolski,miasto,17.4897099,52.75634
+4,19,3,5,Janowiec Wielkopolski,obszar wiejski,17.4897099,52.75634
+4,19,4,3,Łabiszyn,gmina miejsko-wiejska,17.91972,52.95211
+4,19,4,4,Łabiszyn,miasto,17.91972,52.95211
+4,19,4,5,Łabiszyn,obszar wiejski,17.91972,52.95211
+4,19,5,2,Rogowo,gmina wiejska,17.6532993,52.7251027
+4,19,6,3,Żnin,gmina miejsko-wiejska,17.719477,52.8493847
+4,19,6,4,Żnin,miasto,17.719477,52.8493847
+4,19,6,5,Żnin,obszar wiejski,17.719477,52.8493847
+4,19,,,żniński,powiat,17.7536284,52.7911685
+4,61,1,1,Bydgoszcz,gmina miejska,18.0084378,53.1234804
+4,61,,,Bydgoszcz,miasto na prawach powiatu,18.0084378,53.1234804
+4,62,1,1,Grudziądz,gmina miejska,18.7535649,53.4837486
+4,62,,,Grudziądz,miasto na prawach powiatu,18.7535649,53.4837486
+4,63,1,1,Toruń,gmina miejska,18.5984437,53.0137902
+4,63,,,Toruń,miasto na prawach powiatu,18.5984437,53.0137902
+4,64,1,1,Włocławek,gmina miejska,19.0677357,52.6483303
+4,64,,,Włocławek,miasto na prawach powiatu,19.0677357,52.6483303
+4,,,,KUJAWSKO-POMORSKIE,województwo,18.4834224,53.1648363
+6,1,1,1,Międzyrzec Podlaski,gmina miejska,22.7848432,51.9853496
+6,1,2,1,Terespol,gmina miejska,23.6080719,52.0732257
+6,1,3,2,Biała Podlaska,gmina wiejska,23.1445026,52.0387126
+6,1,4,2,Drelów,gmina wiejska,22.9459676,51.9258217
+6,1,5,2,Janów Podlaski,gmina wiejska,23.2121137,52.1939792
+6,1,6,2,Kodeń,gmina wiejska,23.6068176,51.914075
+6,1,7,2,Konstantynów,gmina wiejska,19.3254913,51.7476048
+6,1,8,2,Leśna Podlaska,gmina wiejska,23.0297501,52.1316395
+6,1,9,2,Łomazy,gmina wiejska,23.1771438,51.9038827
+6,1,10,2,Międzyrzec Podlaski,gmina wiejska,22.7848432,51.9853496
+6,1,11,2,Piszczac,gmina wiejska,23.4105534,51.9634209
+6,1,12,2,Rokitno,gmina wiejska,15.6408447,52.548516
+6,1,13,2,Rossosz,gmina wiejska,23.0948244,51.8504638
+6,1,15,2,Sosnówka,gmina wiejska,15.7230035,50.8177069
+6,1,16,2,Terespol,gmina wiejska,23.6080719,52.0732257
+6,1,17,2,Tuczna,gmina wiejska,23.4176473,51.8500731
+6,1,18,2,Wisznice,gmina wiejska,23.2083805,51.7888924
+6,1,19,2,Zalesie,gmina wiejska,19.775247,51.778837
+6,1,,,bialski,powiat,23.1298103,52.0331887
+6,2,1,1,Biłgoraj,gmina miejska,22.7219799,50.54099
+6,2,2,2,Aleksandrów,gmina wiejska,19.9486758,52.3060591
+6,2,3,2,Biłgoraj,gmina wiejska,22.7219799,50.54099
+6,2,4,2,Biszcza,gmina wiejska,22.6401578,50.4121145
+6,2,5,3,Frampol,gmina miejsko-wiejska,22.6706518,50.6715465
+6,2,5,4,Frampol,miasto,22.6706518,50.6715465
+6,2,5,5,Frampol,obszar wiejski,22.6706518,50.6715465
+6,2,6,2,Goraj,gmina wiejska,22.6671287,50.7212521
+6,2,7,3,Józefów,gmina miejsko-wiejska,21.2354266,52.1368197
+6,2,7,4,Józefów,miasto,21.2354266,52.1368197
+6,2,7,5,Józefów,obszar wiejski,21.2354266,52.1368197
+6,2,8,2,Księżpol,gmina wiejska,22.7590882,50.4312385
+6,2,10,2,Obsza,gmina wiejska,22.956837,50.315226
+6,2,11,2,Potok Górny,gmina wiejska,22.5616633,50.384498
+6,2,12,3,Tarnogród,gmina miejsko-wiejska,22.7406396,50.3610555
+6,2,12,4,Tarnogród,miasto,22.7406396,50.3610555
+6,2,12,5,Tarnogród,obszar wiejski,22.7406396,50.3610555
+6,2,13,2,Tereszpol,gmina wiejska,22.8928897,50.5672336
+6,2,14,2,Turobin,gmina wiejska,22.7436465,50.8232678
+6,2,,,biłgorajski,powiat,22.7841244,50.4805711
+6,3,1,1,Rejowiec Fabryczny,gmina miejska,23.24615,51.11424
+6,3,2,2,Białopole,gmina wiejska,23.781344,50.9615772
+6,3,3,2,Chełm,gmina wiejska,23.4711986,51.1431232
+6,3,4,2,Dorohusk,gmina wiejska,23.8029761,51.154901
+6,3,5,2,Dubienka,gmina wiejska,23.8924423,51.0484966
+6,3,6,2,Kamień,gmina wiejska,22.1355656,50.3402763
+6,3,7,2,Leśniowice,gmina wiejska,23.4915237,51.0125776
+6,3,8,2,Rejowiec Fabryczny,gmina wiejska,23.24615,51.11424
+6,3,9,2,Ruda-Huta,gmina wiejska,23.5977778,51.211076
+6,3,10,2,Sawin,gmina wiejska,23.4378883,51.2755072
+6,3,11,3,Siedliszcze,gmina miejsko-wiejska,23.163993,51.194538
+6,3,11,4,Siedliszcze,miasto,23.163993,51.194538
+6,3,11,5,Siedliszcze,obszar wiejski,23.163993,51.194538
+6,3,12,2,Wierzbica,gmina wiejska,21.0819865,51.249084
+6,3,13,2,Wojsławice,gmina wiejska,23.5462738,50.9190109
+6,3,14,2,Żmudź,gmina wiejska,23.6756554,51.0180142
+6,3,15,3,Rejowiec,gmina miejsko-wiejska,23.281701,51.091113
+6,3,15,4,Rejowiec,miasto,23.281701,51.091113
+6,3,15,5,Rejowiec,obszar wiejski,23.281701,51.091113
+6,4,1,1,Hrubieszów,gmina miejska,23.8909099,50.80518
+6,4,2,2,Dołhobyczów,gmina wiejska,24.0351643,50.5863925
+6,4,3,2,Horodło,gmina wiejska,24.037468,50.8944154
+6,4,4,2,Hrubieszów,gmina wiejska,23.8909099,50.80518
+6,4,5,2,Mircze,gmina wiejska,23.9420656,50.651264
+6,4,6,2,Trzeszczany,gmina wiejska,23.7241784,50.8194891
+6,4,7,2,Uchanie,gmina wiejska,23.6511021,50.909268
+6,4,8,2,Werbkowice,gmina wiejska,23.763773,50.7535287
+6,4,,,hrubieszowski,powiat,23.8116511,50.7015585
+6,5,1,2,Batorz,gmina wiejska,22.483333,50.85
+6,5,2,2,Chrzanów,gmina wiejska,19.4001765,50.1345643
+6,5,3,2,Dzwola,gmina wiejska,22.5733125,50.6766028
+6,5,4,2,Godziszów,gmina wiejska,22.4965618,50.7687453
+6,5,5,3,Janów Lubelski,gmina miejsko-wiejska,22.41078,50.70669
+6,5,5,4,Janów Lubelski,miasto,22.41078,50.70669
+6,5,5,5,Janów Lubelski,obszar wiejski,22.41078,50.70669
+6,5,6,3,Modliborzyce,gmina miejsko-wiejska,22.3294471,50.7541638
+6,5,6,4,Modliborzyce,miasto,22.3294471,50.7541638
+6,5,6,5,Modliborzyce,obszar wiejski,22.3294471,50.7541638
+6,5,7,2,Potok Wielki,gmina wiejska,22.2302157,50.7786911
+6,5,,,janowski,powiat,22.4424755,50.7250326
+6,6,1,1,Krasnystaw,gmina miejska,23.17194,50.98411
+6,6,2,2,Fajsławice,gmina wiejska,22.9632166,51.0951596
+6,6,3,2,Gorzków,gmina wiejska,22.9694054,50.9569444
+6,6,4,2,Izbica,gmina wiejska,23.1589156,50.8934674
+6,6,5,2,Krasnystaw,gmina wiejska,23.17194,50.98411
+6,6,6,2,Kraśniczyn,gmina wiejska,23.3566967,50.9198888
+6,6,7,2,Łopiennik Górny,gmina wiejska,23.0112394,51.0252979
+6,6,9,2,Rudnik,gmina wiejska,20.5047379,44.1386792
+6,6,10,2,Siennica Różana,gmina wiejska,23.3400806,51.0005293
+6,6,11,2,Żółkiewka,gmina wiejska,22.8346659,50.909807
+6,6,,,krasnostawski,powiat,23.0514042,50.9509066
+6,7,1,1,Kraśnik,gmina miejska,22.2269571,50.9232831
+6,7,2,3,Annopol,gmina miejsko-wiejska,21.0261097,52.299487
+6,7,2,4,Annopol,miasto,21.0261097,52.299487
+6,7,2,5,Annopol,obszar wiejski,21.0261097,52.299487
+6,7,3,2,Dzierzkowice,gmina wiejska,22.0746624,50.9628563
+6,7,4,2,Gościeradów,gmina wiejska,21.9899501,50.8811441
+6,7,5,2,Kraśnik,gmina wiejska,22.2269571,50.9232831
+6,7,6,2,Szastarka,gmina wiejska,22.3516927,50.8417951
+6,7,7,2,Trzydnik Duży,gmina wiejska,22.166421,50.8461016
+6,7,8,3,Urzędów,gmina miejsko-wiejska,22.1422527,50.9930804
+6,7,8,4,Urzędów,miasto,22.1422527,50.9930804
+6,7,8,5,Urzędów,obszar wiejski,22.1422527,50.9930804
+6,7,9,2,Wilkołaz,gmina wiejska,22.314478,51.0026948
+6,7,10,2,Zakrzówek,gmina wiejska,22.380232,50.95123
+6,7,,,kraśnicki,powiat,22.1526153,50.8707311
+6,8,1,1,Lubartów,gmina miejska,22.6094606,51.4598694
+6,8,3,2,Firlej,gmina wiejska,22.5090879,51.5592154
+6,8,4,2,Jeziorzany,gmina wiejska,19.7762794,49.9936629
+6,8,5,2,Kamionka,gmina wiejska,22.4558955,51.4589085
+6,8,6,3,Kock,gmina miejsko-wiejska,22.44796,51.64122
+6,8,6,4,Kock,miasto,22.44796,51.64122
+6,8,6,5,Kock,obszar wiejski,22.44796,51.64122
+6,8,7,2,Lubartów,gmina wiejska,22.6094606,51.4598694
+6,8,8,2,Michów,gmina wiejska,22.3471164,51.5581959
+6,8,9,2,Niedźwiada,gmina wiejska,21.5507849,49.9897891
+6,8,10,3,Ostrów Lubelski,gmina miejsko-wiejska,22.8528812,51.4938767
+6,8,10,4,Ostrów Lubelski,miasto,22.8528812,51.4938767
+6,8,10,5,Ostrów Lubelski,obszar wiejski,22.8528812,51.4938767
+6,8,11,2,Ostrówek,gmina wiejska,21.3577772,52.3921483
+6,8,12,2,Serniki,gmina wiejska,22.6584572,51.4371245
+6,8,13,2,Uścimów,gmina wiejska,22.9261268,51.4738093
+6,8,,,lubartowski,powiat,22.5409476,51.4970599
+6,9,1,3,Bełżyce,gmina miejsko-wiejska,22.28024,51.17404
+6,9,1,4,Bełżyce,miasto,22.28024,51.17404
+6,9,1,5,Bełżyce,obszar wiejski,22.28024,51.17404
+6,9,2,2,Borzechów,gmina wiejska,22.2730417,51.0768632
+6,9,3,3,Bychawa,gmina miejsko-wiejska,22.5301158,51.0134847
+6,9,3,4,Bychawa,miasto,22.5301158,51.0134847
+6,9,3,5,Bychawa,obszar wiejski,22.5301158,51.0134847
+6,9,4,2,Garbów,gmina wiejska,22.3293657,51.355095
+6,9,5,2,Głusk,gmina wiejska,22.6214458,51.160511
+6,9,6,2,Jabłonna,gmina wiejska,20.9170219,52.3780696
+6,9,7,2,Jastków,gmina wiejska,22.3878715,51.2959233
+6,9,8,2,Konopnica,gmina wiejska,22.429406,51.221438
+6,9,9,2,Krzczonów,gmina wiejska,22.7146352,51.0149332
+6,9,10,2,Niedrzwica Duża,gmina wiejska,22.3865959,51.1090087
+6,9,11,2,Niemce,gmina wiejska,22.5710685,51.3472232
+6,9,12,2,Strzyżewice,gmina wiejska,22.4664757,51.0599205
+6,9,13,2,Wojciechów,gmina wiejska,20.521304,50.255342
+6,9,14,2,Wólka,gmina wiejska,19.4352748,52.8928348
+6,9,15,2,Wysokie,gmina wiejska,22.6659667,50.9122993
+6,9,16,2,Zakrzew,gmina wiejska,21.000596,51.4409699
+6,9,,,lubelski,powiat,23.1011392,51.2493519
+6,10,1,2,Cyców,gmina wiejska,23.1403803,51.2992469
+6,10,2,2,Ludwin,gmina wiejska,22.9059007,51.3457825
+6,10,3,3,Łęczna,gmina miejsko-wiejska,22.88211,51.3009
+6,10,3,4,Łęczna,miasto,22.88211,51.3009
+6,10,3,5,Łęczna,obszar wiejski,22.88211,51.3009
+6,10,4,2,Milejów,gmina wiejska,22.9561236,51.2241954
+6,10,5,2,Puchaczów,gmina wiejska,22.9914072,51.3053089
+6,10,,,łęczyński,powiat,22.954777,51.3239456
+6,11,1,1,Łuków,gmina miejska,22.3830242,51.927158
+6,11,2,1,Stoczek Łukowski,gmina miejska,21.97131,51.961354
+6,11,3,2,Adamów,gmina wiejska,22.2640542,51.7430636
+6,11,4,2,Krzywda,gmina wiejska,21.7337583,51.2969739
+6,11,5,2,Łuków,gmina wiejska,22.3830242,51.927158
+6,11,6,2,Serokomla,gmina wiejska,22.3316262,51.7026264
+6,11,7,2,Stanin,gmina wiejska,22.202637,51.8702764
+6,11,8,2,Stoczek Łukowski,gmina wiejska,21.97131,51.961354
+6,11,9,2,Trzebieszów,gmina wiejska,22.5207958,52.0122717
+6,11,10,2,Wojcieszków,gmina wiejska,22.3268118,51.7840088
+6,11,11,2,Wola Mysłowska,gmina wiejska,21.9644626,51.8556651
+6,11,,,łukowski,powiat,22.1028723,51.8950983
+6,12,1,2,Chodel,gmina wiejska,22.1363369,51.109626
+6,12,2,3,Józefów nad Wisłą,gmina miejsko-wiejska,21.9131868,51.0166624
+6,12,2,4,Józefów nad Wisłą,miasto,21.9131868,51.0166624
+6,12,2,5,Józefów nad Wisłą,obszar wiejski,21.9131868,51.0166624
+6,12,3,2,Karczmiska,gmina wiejska,22.0027361,51.2294825
+6,12,4,2,Łaziska,gmina wiejska,18.4549034,49.9324513
+6,12,5,3,Opole Lubelskie,gmina miejsko-wiejska,21.96914,51.14738
+6,12,5,4,Opole Lubelskie,miasto,21.96914,51.14738
+6,12,5,5,Opole Lubelskie,obszar wiejski,21.96914,51.14738
+6,12,6,3,Poniatowa,gmina miejsko-wiejska,22.0650878,51.192893
+6,12,6,4,Poniatowa,miasto,22.0650878,51.192893
+6,12,6,5,Poniatowa,obszar wiejski,22.0650878,51.192893
+6,12,7,2,Wilków,gmina wiejska,17.6617492,51.1016535
+6,12,,,opolski,powiat,17.8547725,50.7706028
+6,13,1,2,Dębowa Kłoda,gmina wiejska,22.9847342,51.5615668
+6,13,2,2,Jabłoń,gmina wiejska,23.0876498,51.7248754
+6,13,3,2,Milanów,gmina wiejska,22.9024512,51.7118861
+6,13,4,3,Parczew,gmina miejsko-wiejska,22.9003199,51.64027
+6,13,4,4,Parczew,miasto,22.9003199,51.64027
+6,13,4,5,Parczew,obszar wiejski,22.9003199,51.64027
+6,13,5,2,Podedwórze,gmina wiejska,23.2040043,51.6494566
+6,13,6,2,Siemień,gmina wiejska,22.7442254,51.6109422
+6,13,7,2,Sosnowica,gmina wiejska,23.0720358,51.4990906
+6,13,,,parczewski,powiat,23.0312051,51.5741699
+6,14,1,1,Puławy,gmina miejska,21.969309,51.4164431
+6,14,2,2,Baranów,gmina wiejska,20.4745018,52.1474235
+6,14,3,2,Janowiec,gmina wiejska,21.890312,51.3235143
+6,14,4,3,Kazimierz Dolny,gmina miejsko-wiejska,21.9542482,51.3180409
+6,14,4,4,Kazimierz Dolny,miasto,21.9542482,51.3180409
+6,14,4,5,Kazimierz Dolny,obszar wiejski,21.9542482,51.3180409
+6,14,5,2,Końskowola,gmina wiejska,22.051777,51.4090959
+6,14,6,2,Kurów,gmina wiejska,22.1851171,51.3895069
+6,14,7,2,Markuszów,gmina wiejska,22.2581847,51.3745015
+6,14,8,3,Nałęczów,gmina miejsko-wiejska,22.215293,51.28567
+6,14,8,4,Nałęczów,miasto,22.215293,51.28567
+6,14,8,5,Nałęczów,obszar wiejski,22.215293,51.28567
+6,14,9,2,Puławy,gmina wiejska,21.969309,51.4164431
+6,14,10,2,Wąwolnica,gmina wiejska,22.147076,51.294469
+6,14,11,2,Żyrzyn,gmina wiejska,22.0908134,51.4987887
+6,14,,,puławski,powiat,-83.7168643,45.333757
+6,15,1,1,Radzyń Podlaski,gmina miejska,22.6218532,51.7832025
+6,15,2,2,Borki,gmina wiejska,19.4160347,50.9955068
+6,15,3,2,Czemierniki,gmina wiejska,22.6385451,51.6726476
+6,15,4,2,Kąkolewnica,gmina wiejska,22.6377219,51.8994863
+6,15,5,2,Komarówka Podlaska,gmina wiejska,22.9406252,51.8376755
+6,15,6,2,Radzyń Podlaski,gmina wiejska,22.6218532,51.7832025
+6,15,7,2,Ulan-Majorat,gmina wiejska,22.5121737,51.8357707
+6,16,1,1,Dęblin,gmina miejska,21.86528,51.56269
+6,16,2,2,Kłoczew,gmina wiejska,21.9900624,51.7175806
+6,16,3,2,Nowodwór,gmina wiejska,22.1016538,51.6623715
+6,16,4,3,Ryki,gmina miejsko-wiejska,21.9326303,51.6256317
+6,16,4,4,Ryki,miasto,21.9326303,51.6256317
+6,16,4,5,Ryki,obszar wiejski,21.9326303,51.6256317
+6,16,5,2,Stężyca,gmina wiejska,17.9499311,54.2101124
+6,16,6,2,Ułęż,gmina wiejska,22.1141409,51.5934916
+6,16,,,rycki,powiat,21.9411997,51.6164904
+6,17,1,1,Świdnik,gmina miejska,22.6914271,51.2168207
+6,17,2,2,Mełgiew,gmina wiejska,22.7842374,51.2485497
+6,17,3,3,Piaski,gmina miejsko-wiejska,22.8485363,51.1388053
+6,17,3,4,Piaski,miasto,22.8485363,51.1388053
+6,17,3,5,Piaski,obszar wiejski,22.8485363,51.1388053
+6,18,1,1,Tomaszów Lubelski,gmina miejska,23.4163099,50.447024
+6,18,4,2,Krynice,gmina wiejska,23.4060228,50.5799404
+6,18,5,3,Lubycza Królewska,gmina miejsko-wiejska,23.5185723,50.3410875
+6,18,5,4,Lubycza Królewska,miasto,23.5185723,50.3410875
+6,18,5,5,Lubycza Królewska,obszar wiejski,23.5185723,50.3410875
+6,18,6,3,Łaszczów,gmina miejsko-wiejska,23.7255557,50.5332417
+6,18,6,4,Łaszczów,miasto,23.7255557,50.5332417
+6,18,6,5,Łaszczów,obszar wiejski,23.7255557,50.5332417
+6,18,7,2,Rachanie,gmina wiejska,23.5454126,50.5372538
+6,18,8,2,Susiec,gmina wiejska,23.2170296,50.4145342
+6,18,9,2,Tarnawatka,gmina wiejska,23.4027578,50.5368321
+6,18,10,2,Telatyn,gmina wiejska,23.9011396,50.5283562
+6,18,11,2,Tomaszów Lubelski,gmina wiejska,23.4163099,50.447024
+6,18,12,3,Tyszowce,gmina miejsko-wiejska,23.6993741,50.6170721
+6,18,12,4,Tyszowce,miasto,23.6993741,50.6170721
+6,18,12,5,Tyszowce,obszar wiejski,23.6993741,50.6170721
+6,18,13,2,Ulhówek,gmina wiejska,23.8350182,50.4550066
+6,19,1,1,Włodawa,gmina miejska,23.55434,51.55178
+6,19,2,2,Hanna,gmina wiejska,-94.6413348,38.9145709
+6,19,3,2,Hańsk,gmina wiejska,23.4319211,51.4237317
+6,19,4,2,Stary Brus,gmina wiejska,23.2851159,51.4990565
+6,19,5,2,Urszulin,gmina wiejska,23.2190192,51.4240902
+6,19,6,2,Włodawa,gmina wiejska,23.55434,51.55178
+6,19,7,2,Wola Uhruska,gmina wiejska,23.578294,51.3482823
+6,19,8,2,Wyryki,gmina wiejska,23.351496,51.5740597
+6,19,,,włodawski,powiat,23.39179,51.4988572
+6,20,1,2,Adamów,gmina wiejska,22.2640542,51.7430636
+6,20,2,2,Grabowiec,gmina wiejska,23.5497339,50.8217024
+6,20,3,2,Komarów-Osada,gmina wiejska,23.4730782,50.6291022
+6,20,4,3,Krasnobród,gmina miejsko-wiejska,23.213387,50.5453129
+6,20,4,4,Krasnobród,miasto,23.213387,50.5453129
+6,20,4,5,Krasnobród,obszar wiejski,23.213387,50.5453129
+6,20,5,2,Łabunie,gmina wiejska,23.3658238,50.6555507
+6,20,6,2,Miączyn,gmina wiejska,23.5303182,50.7400086
+6,20,7,2,Nielisz,gmina wiejska,23.0440354,50.800192
+6,20,8,2,Radecznica,gmina wiejska,22.8328077,50.743136
+6,20,9,2,Sitno,gmina wiejska,18.8763888,48.4027777
+6,20,10,2,Skierbieszów,gmina wiejska,23.3587183,50.8512674
+6,20,11,2,Stary Zamość,gmina wiejska,23.1997827,50.8209463
+6,20,12,2,Sułów,gmina wiejska,17.1688867,51.4993226
+6,20,13,3,Szczebrzeszyn,gmina miejsko-wiejska,22.980033,50.6951326
+6,20,13,4,Szczebrzeszyn,miasto,22.980033,50.6951326
+6,20,13,5,Szczebrzeszyn,obszar wiejski,22.980033,50.6951326
+6,20,14,2,Zamość,gmina wiejska,23.2519685,50.7230879
+6,20,15,3,Zwierzyniec,gmina miejsko-wiejska,22.97512,50.61404
+6,20,15,4,Zwierzyniec,miasto,22.97512,50.61404
+6,20,15,5,Zwierzyniec,obszar wiejski,22.97512,50.61404
+6,20,,,zamojski,powiat,23.210481,50.6541241
+6,61,1,1,Biała Podlaska,gmina miejska,23.1445026,52.0387126
+6,61,,,Biała Podlaska,miasto na prawach powiatu,23.1445026,52.0387126
+6,62,1,1,Chełm,gmina miejska,23.4711986,51.1431232
+6,62,,,Chełm,miasto na prawach powiatu,23.4711986,51.1431232
+6,63,1,1,Lublin,gmina miejska,22.5684463,51.2464536
+6,63,,,Lublin,miasto na prawach powiatu,22.5684463,51.2464536
+6,64,1,1,Zamość,gmina miejska,23.2519685,50.7230879
+6,64,,,Zamość,miasto na prawach powiatu,23.2519685,50.7230879
+6,,,,LUBELSKIE,województwo,23.1011392,51.2493519
+8,1,1,1,Kostrzyn nad Odrą,gmina miejska,14.6494466,52.5871889
+8,1,2,2,Bogdaniec,gmina wiejska,15.0779183,52.676188
+8,1,3,2,Deszczno,gmina wiejska,15.2661167,52.6406369
+8,1,4,2,Kłodawa,gmina wiejska,18.9134684,52.2542661
+8,1,5,2,Lubiszyn,gmina wiejska,14.9494853,52.7800944
+8,1,6,2,Santok,gmina wiejska,15.4102441,52.7374771
+8,1,7,3,Witnica,gmina miejsko-wiejska,14.8976504,52.6730629
+8,1,7,4,Witnica,miasto,14.8976504,52.6730629
+8,1,7,5,Witnica,obszar wiejski,14.8976504,52.6730629
+8,1,,,gorzowski,powiat,15.2018639,52.7256985
+8,2,1,1,Gubin,gmina miejska,14.7284576,51.9489824
+8,2,2,2,Bobrowice,gmina wiejska,15.0571725,51.9281038
+8,2,3,2,Bytnica,gmina wiejska,15.1923396,52.1706186
+8,2,4,2,Dąbie,gmina wiejska,18.8224372,52.0872281
+8,2,5,2,Gubin,gmina wiejska,14.7284576,51.9489824
+8,2,6,3,Krosno Odrzańskie,gmina miejsko-wiejska,15.0972099,52.0550373
+8,2,6,4,Krosno Odrzańskie,miasto,15.0972099,52.0550373
+8,2,6,5,Krosno Odrzańskie,obszar wiejski,15.0972099,52.0550373
+8,2,7,2,Maszewo,gmina wiejska,15.06139,53.49633
+8,2,,,krośnieński,powiat,15.0030846,52.0001091
+8,3,1,2,Bledzew,gmina wiejska,15.414068,52.5172883
+8,3,2,3,Międzyrzecz,gmina miejsko-wiejska,15.5779005,52.4444808
+8,3,2,4,Międzyrzecz,miasto,15.5779005,52.4444808
+8,3,2,5,Międzyrzecz,obszar wiejski,15.5779005,52.4444808
+8,3,3,2,Przytoczna,gmina wiejska,15.6841644,52.5847981
+8,3,4,2,Pszczew,gmina wiejska,15.7809416,52.4779801
+8,3,5,3,Skwierzyna,gmina miejsko-wiejska,15.5060653,52.5991741
+8,3,5,4,Skwierzyna,miasto,15.5060653,52.5991741
+8,3,5,5,Skwierzyna,obszar wiejski,15.5060653,52.5991741
+8,3,6,3,Trzciel,gmina miejsko-wiejska,15.876146,52.363107
+8,3,6,4,Trzciel,miasto,15.876146,52.363107
+8,3,6,5,Trzciel,obszar wiejski,15.876146,52.363107
+8,3,,,międzyrzecki,powiat,15.595523,52.4874029
+8,4,1,1,Nowa Sól,gmina miejska,15.71707,51.80344
+8,4,2,3,Bytom Odrzański,gmina miejsko-wiejska,15.8222235,51.7311819
+8,4,2,4,Bytom Odrzański,miasto,15.8222235,51.7311819
+8,4,2,5,Bytom Odrzański,obszar wiejski,15.8222235,51.7311819
+8,4,3,2,Kolsko,gmina wiejska,15.9490388,51.9706283
+8,4,4,3,Kożuchów,gmina miejsko-wiejska,15.5984299,51.7454
+8,4,4,4,Kożuchów,miasto,15.5984299,51.7454
+8,4,4,5,Kożuchów,obszar wiejski,15.5984299,51.7454
+8,4,5,2,Nowa Sól,gmina wiejska,15.71707,51.80344
+8,4,6,3,Nowe Miasteczko,gmina miejsko-wiejska,15.7319389,51.6904822
+8,4,6,4,Nowe Miasteczko,miasto,15.7319389,51.6904822
+8,4,6,5,Nowe Miasteczko,obszar wiejski,15.7319389,51.6904822
+8,4,7,3,Otyń,gmina miejsko-wiejska,15.7101136,51.8473317
+8,4,7,4,Otyń,miasto,15.7101136,51.8473317
+8,4,7,5,Otyń,obszar wiejski,15.7101136,51.8473317
+8,4,8,2,Siedlisko,gmina wiejska,16.3859451,52.9862012
+8,4,,,nowosolski,powiat,15.6942659,51.7780803
+8,5,1,3,Cybinka,gmina miejsko-wiejska,14.7957248,52.1945642
+8,5,1,4,Cybinka,miasto,14.7957248,52.1945642
+8,5,1,5,Cybinka,obszar wiejski,14.7957248,52.1945642
+8,5,2,2,Górzyca,gmina wiejska,14.655056,52.4943978
+8,5,3,3,Ośno Lubuskie,gmina miejsko-wiejska,14.8755999,52.4530993
+8,5,3,4,Ośno Lubuskie,miasto,14.8755999,52.4530993
+8,5,3,5,Ośno Lubuskie,obszar wiejski,14.8755999,52.4530993
+8,5,4,3,Rzepin,gmina miejsko-wiejska,14.832309,52.3464071
+8,5,4,4,Rzepin,miasto,14.832309,52.3464071
+8,5,4,5,Rzepin,obszar wiejski,14.832309,52.3464071
+8,5,5,3,Słubice,gmina miejsko-wiejska,14.5604649,52.351065
+8,5,5,4,Słubice,miasto,14.5604649,52.351065
+8,5,5,5,Słubice,obszar wiejski,14.5604649,52.351065
+8,5,,,słubicki,powiat,14.7479227,52.3368449
+8,6,1,3,Dobiegniew,gmina miejsko-wiejska,15.7534441,52.9701812
+8,6,1,4,Dobiegniew,miasto,15.7534441,52.9701812
+8,6,1,5,Dobiegniew,obszar wiejski,15.7534441,52.9701812
+8,6,2,3,Drezdenko,gmina miejsko-wiejska,15.83104,52.83797
+8,6,2,4,Drezdenko,miasto,15.83104,52.83797
+8,6,2,5,Drezdenko,obszar wiejski,15.83104,52.83797
+8,6,3,2,Stare Kurowo,gmina wiejska,15.677579,52.8566588
+8,6,4,3,Strzelce Krajeńskie,gmina miejsko-wiejska,15.52966,52.87728
+8,6,4,4,Strzelce Krajeńskie,miasto,15.52966,52.87728
+8,6,4,5,Strzelce Krajeńskie,obszar wiejski,15.52966,52.87728
+8,6,5,2,Zwierzyn,gmina wiejska,22.3831026,49.4455564
+8,7,1,2,Krzeszyce,gmina wiejska,15.0416341,52.5825074
+8,7,2,3,Lubniewice,gmina miejsko-wiejska,15.250038,52.5158607
+8,7,2,4,Lubniewice,miasto,15.250038,52.5158607
+8,7,2,5,Lubniewice,obszar wiejski,15.250038,52.5158607
+8,7,3,2,Słońsk,gmina wiejska,14.8055781,52.5633603
+8,7,4,3,Sulęcin,gmina miejsko-wiejska,15.11697,52.44387
+8,7,4,4,Sulęcin,miasto,15.11697,52.44387
+8,7,4,5,Sulęcin,obszar wiejski,15.11697,52.44387
+8,7,5,3,Torzym,gmina miejsko-wiejska,15.082202,52.3123803
+8,7,5,4,Torzym,miasto,15.082202,52.3123803
+8,7,5,5,Torzym,obszar wiejski,15.082202,52.3123803
+8,7,,,sulęciński,powiat,15.1470452,52.372399
+8,8,1,2,Lubrza,gmina wiejska,15.4425975,52.3046097
+8,8,3,2,Skąpe,gmina wiejska,15.4277668,52.1393935
+8,8,4,2,Szczaniec,gmina wiejska,15.6816114,52.2692122
+8,8,5,3,Świebodzin,gmina miejsko-wiejska,15.5335722,52.2472962
+8,8,5,4,Świebodzin,miasto,15.5335722,52.2472962
+8,8,5,5,Świebodzin,obszar wiejski,15.5335722,52.2472962
+8,8,6,3,Zbąszynek,gmina miejsko-wiejska,15.81632,52.24253
+8,8,6,4,Zbąszynek,miasto,15.81632,52.24253
+8,8,6,5,Zbąszynek,obszar wiejski,15.81632,52.24253
+8,8,,,świebodziński,powiat,15.4559136,52.2443924
+8,9,1,3,Babimost,gmina miejsko-wiejska,15.8274998,52.16469
+8,9,1,4,Babimost,miasto,15.8274998,52.16469
+8,9,1,5,Babimost,obszar wiejski,15.8274998,52.16469
+8,9,2,2,Bojadła,gmina wiejska,15.8196974,51.9667771
+8,9,3,3,Czerwieńsk,gmina miejsko-wiejska,15.4233905,52.0130334
+8,9,3,4,Czerwieńsk,miasto,15.4233905,52.0130334
+8,9,3,5,Czerwieńsk,obszar wiejski,15.4233905,52.0130334
+8,9,4,3,Kargowa,gmina miejsko-wiejska,15.8653468,52.0720997
+8,9,4,4,Kargowa,miasto,15.8653468,52.0720997
+8,9,4,5,Kargowa,obszar wiejski,15.8653468,52.0720997
+8,9,5,3,Nowogród Bobrzański,gmina miejsko-wiejska,15.235124,51.7985281
+8,9,5,4,Nowogród Bobrzański,miasto,15.235124,51.7985281
+8,9,5,5,Nowogród Bobrzański,obszar wiejski,15.235124,51.7985281
+8,9,6,3,Sulechów,gmina miejsko-wiejska,15.6253179,52.0831645
+8,9,6,4,Sulechów,miasto,15.6253179,52.0831645
+8,9,6,5,Sulechów,obszar wiejski,15.6253179,52.0831645
+8,9,7,2,Świdnica,gmina wiejska,16.475679,50.8498434
+8,9,8,2,Trzebiechów,gmina wiejska,15.7348649,52.0233814
+8,9,9,2,Zabór,gmina wiejska,15.7167742,51.9519155
+8,9,,,zielonogórski,powiat,15.5208194,51.9423914
+8,10,1,1,Gozdnica,gmina miejska,15.09816,51.43606
+8,10,2,1,Żagań,gmina miejska,15.3248325,51.6178445
+8,10,3,2,Brzeźnica,gmina wiejska,19.6194112,49.9649061
+8,10,4,3,Iłowa,gmina miejsko-wiejska,15.1996268,51.5000229
+8,10,4,4,Iłowa,miasto,15.1996268,51.5000229
+8,10,4,5,Iłowa,obszar wiejski,15.1996268,51.5000229
+8,10,5,3,Małomice,gmina miejsko-wiejska,15.4496824,51.5557695
+8,10,5,4,Małomice,miasto,15.4496824,51.5557695
+8,10,5,5,Małomice,obszar wiejski,15.4496824,51.5557695
+8,10,6,2,Niegosławice,gmina wiejska,15.7587579,51.6179533
+8,10,7,3,Szprotawa,gmina miejsko-wiejska,15.53798,51.56696
+8,10,7,4,Szprotawa,miasto,15.53798,51.56696
+8,10,7,5,Szprotawa,obszar wiejski,15.53798,51.56696
+8,10,8,2,Wymiarki,gmina wiejska,15.0687406,51.5273962
+8,10,9,2,Żagań,gmina wiejska,15.3248325,51.6178445
+8,10,,,żagański,powiat,15.3245516,51.5689064
+8,11,1,1,Łęknica,gmina miejska,14.7358341,51.5413908
+8,11,2,1,Żary,gmina miejska,15.1369992,51.6420121
+8,11,3,2,Brody,gmina wiejska,-89.0700649,34.9320359
+8,11,4,3,Jasień,gmina miejsko-wiejska,15.0136526,51.7515023
+8,11,4,4,Jasień,miasto,15.0136526,51.7515023
+8,11,4,5,Jasień,obszar wiejski,15.0136526,51.7515023
+8,11,5,2,Lipinki Łużyckie,gmina wiejska,14.999633,51.6396221
+8,11,6,3,Lubsko,gmina miejsko-wiejska,14.9719305,51.784371
+8,11,6,4,Lubsko,miasto,14.9719305,51.784371
+8,11,6,5,Lubsko,obszar wiejski,14.9719305,51.784371
+8,11,7,2,Przewóz,gmina wiejska,14.9541628,51.4805473
+8,11,8,2,Trzebiel,gmina wiejska,14.8221749,51.6132403
+8,11,9,2,Tuplice,gmina wiejska,14.885995,51.7019422
+8,11,10,2,Żary,gmina wiejska,15.1369992,51.6420121
+8,11,,,żarski,powiat,15.021849,51.6950742
+8,12,1,3,Sława,gmina miejsko-wiejska,16.0718133,51.8759458
+8,12,1,4,Sława,miasto,16.0718133,51.8759458
+8,12,1,5,Sława,obszar wiejski,16.0718133,51.8759458
+8,12,2,3,Szlichtyngowa,gmina miejsko-wiejska,16.2425128,51.7119647
+8,12,2,4,Szlichtyngowa,miasto,16.2425128,51.7119647
+8,12,2,5,Szlichtyngowa,obszar wiejski,16.2425128,51.7119647
+8,12,3,3,Wschowa,gmina miejsko-wiejska,16.3164767,51.8071084
+8,12,3,4,Wschowa,miasto,16.3164767,51.8071084
+8,12,3,5,Wschowa,obszar wiejski,16.3164767,51.8071084
+8,12,,,wschowski,powiat,16.1333484,51.825543
+8,61,1,1,Gorzów Wielkopolski,gmina miejska,15.2369305,52.7325285
+8,61,,,Gorzów Wielkopolski,miasto na prawach powiatu,15.2369305,52.7325285
+8,62,1,1,Zielona Góra,gmina miejska,15.5061862,51.9356214
+8,62,,,Zielona Góra,miasto na prawach powiatu,15.5061862,51.9356214
+8,,,,LUBUSKIE,województwo,15.2559103,52.2274612
+10,1,1,1,Bełchatów,gmina miejska,19.3564248,51.3687535
+10,1,2,2,Bełchatów,gmina wiejska,19.3564248,51.3687535
+10,1,3,2,Drużbice,gmina wiejska,19.3857761,51.4598736
+10,1,6,2,Rusiec,gmina wiejska,18.9524075,51.3155536
+10,1,8,3,Zelów,gmina miejsko-wiejska,19.21982,51.46434
+10,1,8,4,Zelów,miasto,19.21982,51.46434
+10,1,8,5,Zelów,obszar wiejski,19.21982,51.46434
+10,1,,,bełchatowski,powiat,19.2352119,51.3657008
+10,2,1,1,Kutno,gmina miejska,19.364278,52.230618
+10,2,3,2,Dąbrowice,gmina wiejska,19.0849647,52.3119225
+10,2,4,3,Krośniewice,gmina miejsko-wiejska,19.17067,52.25581
+10,2,4,4,Krośniewice,miasto,19.17067,52.25581
+10,2,4,5,Krośniewice,obszar wiejski,19.17067,52.25581
+10,2,5,2,Krzyżanów,gmina wiejska,19.4568355,52.1828337
+10,2,6,2,Kutno,gmina wiejska,19.364278,52.230618
+10,2,7,2,Łanięta,gmina wiejska,19.2782681,52.3346733
+10,2,10,2,Strzelce,gmina wiejska,18.3258162,50.5236695
+10,2,11,4,Żychlin,miasto,19.6259601,52.24396
+10,2,11,5,Żychlin,obszar wiejski,19.6259601,52.24396
+10,3,1,2,Buczek,gmina wiejska,19.1848019,51.5268711
+10,3,2,3,Łask,gmina miejsko-wiejska,19.1327882,51.5906364
+10,3,2,4,Łask,miasto,19.1327882,51.5906364
+10,3,2,5,Łask,obszar wiejski,19.1327882,51.5906364
+10,3,3,2,Sędziejowice,gmina wiejska,19.0387552,51.507889
+10,3,4,2,Widawa,gmina wiejska,18.9415121,51.4378863
+10,3,5,2,Wodzierady,gmina wiejska,19.1399209,51.7202419
+10,3,,,łaski,powiat,19.1327882,51.5906364
+10,4,1,1,Łęczyca,gmina miejska,19.19969,52.05959
+10,4,2,2,Daszyna,gmina wiejska,19.1507801,52.157594
+10,4,3,2,Góra Świętej Małgorzaty,gmina wiejska,19.3196261,52.0558597
+10,4,5,2,Łęczyca,gmina wiejska,19.19969,52.05959
+10,4,6,2,Piątek,gmina wiejska,19.4797445,52.0688122
+10,4,,,łęczycki,powiat,22.5129569,52.2876397
+10,5,1,1,Łowicz,gmina miejska,19.9453743,52.1067916
+10,5,2,2,Bielawy,gmina wiejska,19.6406628,52.0629803
+10,5,3,2,Chąśno,gmina wiejska,19.93008,52.2002031
+10,5,4,2,Domaniewice,gmina wiejska,19.8082463,52.0103249
+10,5,5,2,Kiernozia,gmina wiejska,19.871163,52.268474
+10,5,7,2,Łowicz,gmina wiejska,19.9453743,52.1067916
+10,5,8,2,Łyszkowice,gmina wiejska,19.9049106,51.9838396
+10,5,9,2,Nieborów,gmina wiejska,20.0695934,52.0688185
+10,5,10,2,Zduny,gmina wiejska,17.37824,51.64683
+10,5,,,łowicki,powiat,19.8347615,52.0953911
+10,6,3,2,Brójce,gmina wiejska,19.6445296,51.6776501
+10,6,7,3,Koluszki,gmina miejsko-wiejska,19.819639,51.738289
+10,6,7,4,Koluszki,miasto,19.819639,51.738289
+10,6,7,5,Koluszki,obszar wiejski,19.819639,51.738289
+10,6,8,2,Nowosolna,gmina wiejska,19.6406983,51.8099479
+10,6,10,3,Rzgów,gmina miejsko-wiejska,19.489958,51.6631882
+10,6,10,4,Rzgów,miasto,19.489958,51.6631882
+10,6,10,5,Rzgów,obszar wiejski,19.489958,51.6631882
+10,6,11,3,Tuszyn,gmina miejsko-wiejska,19.534931,51.6103612
+10,6,11,4,Tuszyn,miasto,19.534931,51.6103612
+10,6,11,5,Tuszyn,obszar wiejski,19.534931,51.6103612
+10,6,,,łódzki wschodni,powiat,19.6225076,51.6705147
+10,7,2,3,Drzewica,gmina miejsko-wiejska,20.477146,51.4506315
+10,7,2,4,Drzewica,miasto,20.477146,51.4506315
+10,7,2,5,Drzewica,obszar wiejski,20.477146,51.4506315
+10,7,3,2,Mniszków,gmina wiejska,20.0136604,51.3830331
+10,7,4,3,Opoczno,gmina miejsko-wiejska,20.2787632,51.3753379
+10,7,4,4,Opoczno,miasto,20.2787632,51.3753379
+10,7,4,5,Opoczno,obszar wiejski,20.2787632,51.3753379
+10,7,5,2,Paradyż,gmina wiejska,20.1143155,51.30568
+10,7,6,2,Poświętne,gmina wiejska,20.3372134,51.5440296
+10,7,7,2,Sławno,gmina wiejska,16.67836,54.36262
+10,7,8,2,Żarnów,gmina wiejska,20.1718336,51.2476585
+10,7,,,opoczyński,powiat,20.2645148,51.4037758
+10,8,1,1,Konstantynów Łódzki,gmina miejska,19.3254913,51.7476048
+10,8,2,1,Pabianice,gmina miejska,19.35776,51.6567303
+10,8,3,2,Dłutów,gmina wiejska,19.3670725,51.5722743
+10,8,4,2,Dobroń,gmina wiejska,19.2466796,51.6365304
+10,8,6,2,Lutomiersk,gmina wiejska,19.2109304,51.7537563
+10,8,7,2,Pabianice,gmina wiejska,19.35776,51.6567303
+10,8,,,pabianicki,powiat,19.2965652,51.6827392
+10,9,1,3,Działoszyn,gmina miejsko-wiejska,18.8651228,51.1166563
+10,9,1,4,Działoszyn,miasto,18.8651228,51.1166563
+10,9,1,5,Działoszyn,obszar wiejski,18.8651228,51.1166563
+10,9,3,2,Nowa Brzeźnica,gmina wiejska,19.1162428,51.0601105
+10,9,4,3,Pajęczno,gmina miejsko-wiejska,18.99908,51.14489
+10,9,4,4,Pajęczno,miasto,18.99908,51.14489
+10,9,4,5,Pajęczno,obszar wiejski,18.99908,51.14489
+10,9,5,2,Rząśnia,gmina wiejska,19.0581265,51.2326049
+10,9,6,2,Siemkowice,gmina wiejska,18.9005028,51.2034445
+10,9,7,2,Strzelce Wielkie,gmina wiejska,19.1927441,51.1446851
+10,9,8,2,Sulmierzyce,gmina wiejska,17.5307939,51.6059265
+10,9,,,pajęczański,powiat,19.0385025,51.1816467
+10,10,1,2,Aleksandrów,gmina wiejska,19.9486758,52.3060591
+10,10,2,2,Czarnocin,gmina wiejska,19.6814345,51.5902809
+10,10,3,2,Gorzkowice,gmina wiejska,19.6285231,51.2000408
+10,10,4,2,Grabica,gmina wiejska,19.5400374,51.4660507
+10,10,5,2,Łęki Szlacheckie,gmina wiejska,19.7526658,51.2109898
+10,10,6,2,Moszczenica,gmina wiejska,19.7138628,51.5030515
+10,10,7,2,Ręczno,gmina wiejska,19.87794,51.178061
+10,10,9,3,Sulejów,gmina miejsko-wiejska,19.88512,51.35412
+10,10,9,4,Sulejów,miasto,19.88512,51.35412
+10,10,9,5,Sulejów,obszar wiejski,19.88512,51.35412
+10,10,10,2,Wola Krzysztoporska,gmina wiejska,19.550443,51.3660575
+10,10,11,3,Wolbórz,gmina miejsko-wiejska,19.8305259,51.501732
+10,10,11,4,Wolbórz,miasto,19.8305259,51.501732
+10,10,11,5,Wolbórz,obszar wiejski,19.8305259,51.501732
+10,10,,,piotrkowski,powiat,19.7111108,51.4035647
+10,11,1,2,Dalików,gmina wiejska,19.088468,51.8822864
+10,11,2,2,Pęczniew,gmina wiejska,18.7231719,51.8034311
+10,11,3,3,Poddębice,gmina miejsko-wiejska,18.9572,51.89325
+10,11,3,4,Poddębice,miasto,18.9572,51.89325
+10,11,3,5,Poddębice,obszar wiejski,18.9572,51.89325
+10,11,4,3,Uniejów,gmina miejsko-wiejska,18.7966596,51.9696042
+10,11,4,4,Uniejów,miasto,18.7966596,51.9696042
+10,11,4,5,Uniejów,obszar wiejski,18.7966596,51.9696042
+10,11,5,2,Wartkowice,gmina wiejska,18.9946395,51.985801
+10,11,6,2,Zadzim,gmina wiejska,18.9076927,51.7920019
+10,11,,,poddębicki,powiat,18.8873051,51.904933
+10,12,2,2,Dobryszyce,gmina wiejska,19.4256348,51.148238
+10,12,3,2,Gidle,gmina wiejska,19.4712316,50.9619261
+10,12,4,2,Gomunice,gmina wiejska,19.5276196,51.1523425
+10,12,5,3,Kamieńsk,gmina miejsko-wiejska,19.4988657,51.2048619
+10,12,5,4,Kamieńsk,miasto,19.4988657,51.2048619
+10,12,5,5,Kamieńsk,obszar wiejski,19.4988657,51.2048619
+10,12,6,2,Kobiele Wielkie,gmina wiejska,19.6116419,51.0183369
+10,12,8,2,Lgota Wielka,gmina wiejska,19.3237726,51.1440237
+10,12,11,3,Przedbórz,gmina miejsko-wiejska,19.8736305,51.0880091
+10,12,11,4,Przedbórz,miasto,19.8736305,51.0880091
+10,12,11,5,Przedbórz,obszar wiejski,19.8736305,51.0880091
+10,12,12,2,Radomsko,gmina wiejska,19.4449387,51.0668544
+10,13,1,1,Rawa Mazowiecka,gmina miejska,20.25623,51.76623
+10,13,2,3,Biała Rawska,gmina miejsko-wiejska,20.47248,51.80772
+10,13,2,4,Biała Rawska,miasto,20.47248,51.80772
+10,13,2,5,Biała Rawska,obszar wiejski,20.47248,51.80772
+10,13,3,2,Cielądz,gmina wiejska,20.3430805,51.7076946
+10,13,4,2,Rawa Mazowiecka,gmina wiejska,20.25623,51.76623
+10,13,5,2,Regnów,gmina wiejska,20.4025346,51.7409562
+10,13,6,2,Sadkowice,gmina wiejska,20.6046083,51.7152165
+10,13,,,rawski,powiat,20.3801744,51.7339951
+10,14,1,1,Sieradz,gmina miejska,18.7302994,51.5956014
+10,14,2,3,Błaszki,gmina miejsko-wiejska,18.4344355,51.6515663
+10,14,2,4,Błaszki,miasto,18.4344355,51.6515663
+10,14,2,5,Błaszki,obszar wiejski,18.4344355,51.6515663
+10,14,3,2,Brąszewice,gmina wiejska,18.452878,51.5176108
+10,14,4,2,Brzeźnio,gmina wiejska,18.6297861,51.4887046
+10,14,5,2,Burzenin,gmina wiejska,18.8322438,51.4602634
+10,14,6,2,Goszczanów,gmina wiejska,18.5057881,51.791282
+10,14,8,2,Sieradz,gmina wiejska,18.7302994,51.5956014
+10,14,9,4,Warta,miasto,18.6250691,51.7103227
+10,14,9,5,Warta,obszar wiejski,18.6250691,51.7103227
+10,14,11,3,Złoczew,gmina miejsko-wiejska,18.6035594,51.4171963
+10,14,11,4,Złoczew,miasto,18.6035594,51.4171963
+10,14,11,5,Złoczew,obszar wiejski,18.6035594,51.4171963
+10,14,,,sieradzki,powiat,-86.2061471,41.7107393
+10,15,1,2,Bolimów,gmina wiejska,20.1635963,52.0763971
+10,15,2,2,Głuchów,gmina wiejska,20.0744391,51.778804
+10,15,3,2,Godzianów,gmina wiejska,20.0415242,51.8936388
+10,15,4,2,Kowiesy,gmina wiejska,20.4162507,51.8927099
+10,15,5,2,Lipce Reymontowskie,gmina wiejska,19.9416859,51.8978017
+10,15,6,2,Maków,gmina wiejska,20.0493962,51.9468249
+10,15,7,2,Nowy Kawęczyn,gmina wiejska,20.2363892,51.8809676
+10,15,8,2,Skierniewice,gmina wiejska,20.1583303,51.9547169
+10,15,,,skierniewicki,powiat,20.1602619,51.9607088
+10,16,1,1,Tomaszów Mazowiecki,gmina miejska,20.0086471,51.5311945
+10,16,2,2,Będków,gmina wiejska,19.7802355,51.5882629
+10,16,3,2,Budziszewice,gmina wiejska,19.9675275,51.6704021
+10,16,5,2,Inowłódz,gmina wiejska,20.2235462,51.5270197
+10,16,6,2,Lubochnia,gmina wiejska,20.0394521,51.5973392
+10,16,7,2,Rokiciny,gmina wiejska,19.7934904,51.6516736
+10,16,8,2,Rzeczyca,gmina wiejska,20.2704972,51.5879934
+10,16,9,2,Tomaszów Mazowiecki,gmina wiejska,20.0086471,51.5311945
+10,16,10,2,Ujazd,gmina wiejska,18.3476407,50.3888097
+10,16,11,2,Żelechlinek,gmina wiejska,20.0447492,51.7171027
+10,17,1,2,Biała,gmina wiejska,17.6604283,50.3862574
+10,17,2,2,Czarnożyły,gmina wiejska,18.5539244,51.2838615
+10,17,3,2,Konopnica,gmina wiejska,22.429406,51.221438
+10,17,4,2,Mokrsko,gmina wiejska,18.4883474,51.1787574
+10,17,6,2,Ostrówek,gmina wiejska,21.3577772,52.3921483
+10,17,7,2,Pątnów,gmina wiejska,18.6804566,51.0897363
+10,17,8,2,Skomlin,gmina wiejska,18.3941226,51.1691046
+10,17,9,3,Wieluń,gmina miejsko-wiejska,18.56892,51.2186
+10,17,9,4,Wieluń,miasto,18.56892,51.2186
+10,17,9,5,Wieluń,obszar wiejski,18.56892,51.2186
+10,17,,,wieluński,powiat,18.6869712,51.2402915
+10,18,5,2,Łubnice,gmina wiejska,18.2903712,51.1644956
+10,18,6,2,Sokolniki,gmina wiejska,37.6765814,55.7950647
+10,18,7,3,Wieruszów,gmina miejsko-wiejska,18.1547499,51.29486
+10,18,7,4,Wieruszów,miasto,18.1547499,51.29486
+10,18,7,5,Wieruszów,obszar wiejski,18.1547499,51.29486
+10,18,,,wieruszowski,powiat,18.2184073,51.3165967
+10,19,1,1,Zduńska Wola,gmina miejska,18.9393251,51.5990328
+10,19,2,3,Szadek,gmina miejsko-wiejska,18.976395,51.6915722
+10,19,2,4,Szadek,miasto,18.976395,51.6915722
+10,19,2,5,Szadek,obszar wiejski,18.976395,51.6915722
+10,19,3,2,Zapolice,gmina wiejska,18.9125786,51.5399257
+10,19,4,2,Zduńska Wola,gmina wiejska,18.9393251,51.5990328
+10,19,,,zduńskowolski,powiat,18.9438163,51.654763
+10,20,1,1,Głowno,gmina miejska,19.71565,51.9643
+10,20,2,1,Ozorków,gmina miejska,19.291386,51.9632917
+10,20,3,1,Zgierz,gmina miejska,19.4060704,51.8550576
+10,20,4,3,Aleksandrów Łódzki,gmina miejsko-wiejska,19.3038202,51.8194235
+10,20,4,4,Aleksandrów Łódzki,miasto,19.3038202,51.8194235
+10,20,4,5,Aleksandrów Łódzki,obszar wiejski,19.3038202,51.8194235
+10,20,5,2,Głowno,gmina wiejska,19.71565,51.9643
+10,20,6,2,Ozorków,gmina wiejska,19.291386,51.9632917
+10,20,9,2,Zgierz,gmina wiejska,19.4060704,51.8550576
+10,20,,,zgierski,powiat,19.4219463,51.9025569
+10,21,1,1,Brzeziny,gmina miejska,19.7516791,51.800255
+10,21,2,2,Brzeziny,gmina wiejska,19.7516791,51.800255
+10,21,4,2,Jeżów,gmina wiejska,19.9684918,51.8135681
+10,21,,,brzeziński,powiat,19.7813314,51.8403972
+10,61,1,1,Łódź,gmina miejska,19.4559833,51.7592485
+10,61,3,9,Łódź-Górna,delegatura,19.4734251,51.7183072
+10,61,5,9,Łódź-Śródmieście,delegatura,19.4617189,51.7709492
+10,61,6,9,Łódź-Widzew,delegatura,19.5431765,51.7627684
+10,61,,,Łódź,miasto na prawach powiatu,19.4559833,51.7592485
+10,62,1,1,Piotrków Trybunalski,gmina miejska,19.7030244,51.4051721
+10,62,,,Piotrków Trybunalski,miasto na prawach powiatu,19.7030244,51.4051721
+10,63,1,1,Skierniewice,gmina miejska,20.1583303,51.9547169
+10,63,,,Skierniewice,miasto na prawach powiatu,20.1583303,51.9547169
+10,,,,ŁÓDZKIE,województwo,19.1726974,51.4634771
+12,1,1,1,Bochnia,gmina miejska,20.4303286,49.9684577
+12,1,2,2,Bochnia,gmina wiejska,20.4303286,49.9684577
+12,1,5,2,Łapanów,gmina wiejska,20.3132252,49.8709627
+12,1,6,3,Nowy Wiśnicz,gmina miejsko-wiejska,20.4612616,49.9158004
+12,1,6,4,Nowy Wiśnicz,miasto,20.4612616,49.9158004
+12,1,6,5,Nowy Wiśnicz,obszar wiejski,20.4612616,49.9158004
+12,1,7,2,Rzezawa,gmina wiejska,20.5265147,50.0243219
+12,1,8,2,Trzciana,gmina wiejska,20.3843832,49.8366107
+12,1,,,bocheński,powiat,20.4481946,49.899654
+12,2,1,2,Borzęcin,gmina wiejska,20.7125924,50.0541655
+12,2,2,3,Brzesko,gmina miejsko-wiejska,20.6034471,49.9647187
+12,2,2,4,Brzesko,miasto,20.6034471,49.9647187
+12,2,2,5,Brzesko,obszar wiejski,20.6034471,49.9647187
+12,2,3,3,Czchów,gmina miejsko-wiejska,20.6802794,49.8368614
+12,2,3,4,Czchów,miasto,20.6802794,49.8368614
+12,2,3,5,Czchów,obszar wiejski,20.6802794,49.8368614
+12,2,4,2,Dębno,gmina wiejska,14.6979901,52.739
+12,2,5,2,Gnojnik,gmina wiejska,20.6262458,49.8988575
+12,2,6,2,Iwkowa,gmina wiejska,20.5832965,49.7999816
+12,2,,,brzeski,powiat,20.6621498,49.9670967
+12,3,1,3,Alwernia,gmina miejsko-wiejska,19.5394784,50.0598063
+12,3,1,4,Alwernia,miasto,19.5394784,50.0598063
+12,3,1,5,Alwernia,obszar wiejski,19.5394784,50.0598063
+12,3,2,2,Babice,gmina wiejska,19.4273467,50.0553303
+12,3,3,3,Chrzanów,gmina miejsko-wiejska,19.4001765,50.1345643
+12,3,3,4,Chrzanów,miasto,19.4001765,50.1345643
+12,3,3,5,Chrzanów,obszar wiejski,19.4001765,50.1345643
+12,3,4,3,Libiąż,gmina miejsko-wiejska,19.3156774,50.1037928
+12,3,4,4,Libiąż,miasto,19.3156774,50.1037928
+12,3,4,5,Libiąż,obszar wiejski,19.3156774,50.1037928
+12,3,5,3,Trzebinia,gmina miejsko-wiejska,19.4694,50.15847
+12,3,5,4,Trzebinia,miasto,19.4694,50.15847
+12,3,5,5,Trzebinia,obszar wiejski,19.4694,50.15847
+12,3,,,chrzanowski,powiat,19.4651009,50.0967994
+12,4,1,2,Bolesław,gmina wiejska,19.4805745,50.2972189
+12,4,2,3,Dąbrowa Tarnowska,gmina miejsko-wiejska,20.98638,50.17462
+12,4,2,4,Dąbrowa Tarnowska,miasto,20.98638,50.17462
+12,4,2,5,Dąbrowa Tarnowska,obszar wiejski,20.98638,50.17462
+12,4,3,2,Gręboszów,gmina wiejska,20.7999452,50.2527847
+12,4,4,2,Mędrzechów,gmina wiejska,20.9589896,50.2875939
+12,4,5,2,Olesno,gmina wiejska,18.41472,50.87526
+12,4,7,3,Szczucin,gmina miejsko-wiejska,21.074546,50.3094981
+12,4,7,4,Szczucin,miasto,21.074546,50.3094981
+12,4,7,5,Szczucin,obszar wiejski,21.074546,50.3094981
+12,4,,,dąbrowski,powiat,20.9656068,50.232478
+12,5,1,1,Gorlice,gmina miejska,21.1596321,49.6546159
+12,5,2,3,Biecz,gmina miejsko-wiejska,21.26331,49.73554
+12,5,2,4,Biecz,miasto,21.26331,49.73554
+12,5,2,5,Biecz,obszar wiejski,21.26331,49.73554
+12,5,3,3,Bobowa,gmina miejsko-wiejska,20.9509659,49.7102798
+12,5,3,4,Bobowa,miasto,20.9509659,49.7102798
+12,5,3,5,Bobowa,obszar wiejski,20.9509659,49.7102798
+12,5,4,2,Gorlice,gmina wiejska,21.1596321,49.6546159
+12,5,5,2,Lipinki,gmina wiejska,21.2911553,49.6718969
+12,5,6,2,Łużna,gmina wiejska,21.0456377,49.7122766
+12,5,7,2,Moszczenica,gmina wiejska,19.7138628,51.5030515
+12,5,8,2,Ropa,gmina wiejska,-94.1882524,36.3072846
+12,5,9,2,Sękowa,gmina wiejska,21.2770262,49.5624054
+12,5,,,gorlicki,powiat,21.1285391,49.6015013
+12,6,1,2,Czernichów,gmina wiejska,19.6444571,50.0120706
+12,6,2,2,Igołomia-Wawrzeńczyce,gmina wiejska,20.2548173,50.0954564
+12,6,3,2,Iwanowice,gmina wiejska,19.9674657,50.2329574
+12,6,4,2,Jerzmanowice-Przeginia,gmina wiejska,19.7251874,50.2116566
+12,6,5,2,Kocmyrzów-Luborzyca,gmina wiejska,20.111315,50.16427
+12,6,6,3,Krzeszowice,gmina miejsko-wiejska,19.63231,50.14192
+12,6,6,4,Krzeszowice,miasto,19.63231,50.14192
+12,6,6,5,Krzeszowice,obszar wiejski,19.63231,50.14192
+12,6,7,2,Liszki,gmina wiejska,19.7573935,50.0348601
+12,6,9,2,Mogilany,gmina wiejska,19.8866771,49.9478668
+12,6,10,3,Skała,gmina miejsko-wiejska,20.7968395,38.0740965
+12,6,10,4,Skała,miasto,20.7968395,38.0740965
+12,6,10,5,Skała,obszar wiejski,20.7968395,38.0740965
+12,6,11,3,Skawina,gmina miejsko-wiejska,19.8288749,49.9751815
+12,6,11,4,Skawina,miasto,19.8288749,49.9751815
+12,6,11,5,Skawina,obszar wiejski,19.8288749,49.9751815
+12,6,12,3,Słomniki,gmina miejsko-wiejska,20.08212,50.23993
+12,6,12,4,Słomniki,miasto,20.08212,50.23993
+12,6,12,5,Słomniki,obszar wiejski,20.08212,50.23993
+12,6,13,2,Sułoszowa,gmina wiejska,19.7330258,50.2674103
+12,6,14,3,Świątniki Górne,gmina miejsko-wiejska,19.9541354,49.9411601
+12,6,14,4,Świątniki Górne,miasto,19.9541354,49.9411601
+12,6,14,5,Świątniki Górne,obszar wiejski,19.9541354,49.9411601
+12,6,15,2,Wielka Wieś,gmina wiejska,19.8368024,50.1544394
+12,6,16,2,Zabierzów,gmina wiejska,19.7482504,50.1326663
+12,6,,,krakowski,powiat,19.8756378,50.1743075
+12,7,1,1,Limanowa,gmina miejska,20.42228,49.70587
+12,7,2,1,Mszana Dolna,gmina miejska,20.07982,49.67403
+12,7,3,2,Dobra,gmina wiejska,-81.8242869,37.9345483
+12,7,4,2,Jodłownik,gmina wiejska,20.2640903,49.7839293
+12,7,5,2,Kamienica,gmina wiejska,19.0008411,50.6317678
+12,7,6,2,Laskowa,gmina wiejska,20.4503151,49.7613385
+12,7,7,2,Limanowa,gmina wiejska,20.42228,49.70587
+12,7,8,2,Łukowica,gmina wiejska,20.4839135,49.6265449
+12,7,9,2,Mszana Dolna,gmina wiejska,20.07982,49.67403
+12,7,10,2,Niedźwiedź,gmina wiejska,21.1577759,50.679072
+12,7,11,2,Słopnice,gmina wiejska,20.3411053,49.6827191
+12,8,2,2,Gołcza,gmina wiejska,19.9086369,50.3292954
+12,8,3,2,Kozłów,gmina wiejska,18.56445,50.3077781
+12,8,4,2,Książ Wielki,gmina wiejska,20.1398642,50.4432956
+12,8,5,3,Miechów,gmina miejsko-wiejska,20.0274127,50.3568703
+12,8,5,4,Miechów,miasto,20.0274127,50.3568703
+12,8,5,5,Miechów,obszar wiejski,20.0274127,50.3568703
+12,8,6,2,Racławice,gmina wiejska,20.2370492,50.3256947
+12,8,7,2,Słaboszów,gmina wiejska,20.2739969,50.3869066
+12,9,1,3,Dobczyce,gmina miejsko-wiejska,20.0890793,49.8811735
+12,9,1,4,Dobczyce,miasto,20.0890793,49.8811735
+12,9,1,5,Dobczyce,obszar wiejski,20.0890793,49.8811735
+12,9,2,2,Lubień,gmina wiejska,19.9473721,49.6815105
+12,9,3,3,Myślenice,gmina miejsko-wiejska,19.93965,49.83347
+12,9,3,4,Myślenice,miasto,19.93965,49.83347
+12,9,3,5,Myślenice,obszar wiejski,19.93965,49.83347
+12,9,4,2,Pcim,gmina wiejska,19.9707571,49.7505231
+12,9,5,2,Raciechowice,gmina wiejska,20.1574351,49.835261
+12,9,6,2,Siepraw,gmina wiejska,19.9617213,49.9077986
+12,9,7,3,Sułkowice,gmina miejsko-wiejska,19.79959,49.83879
+12,9,7,4,Sułkowice,miasto,19.79959,49.83879
+12,9,7,5,Sułkowice,obszar wiejski,19.79959,49.83879
+12,9,8,2,Tokarnia,gmina wiejska,20.4448314,50.7656667
+12,10,2,2,Chełmiec,gmina wiejska,20.6822236,49.6749679
+12,10,4,2,Grybów,gmina wiejska,20.94789,49.62406
+12,10,6,2,Korzenna,gmina wiejska,20.8312411,49.6790814
+12,10,7,3,Krynica-Zdrój,gmina miejsko-wiejska,20.9594208,49.4215158
+12,10,7,4,Krynica-Zdrój,miasto,20.9594208,49.4215158
+12,10,7,5,Krynica-Zdrój,obszar wiejski,20.9594208,49.4215158
+12,10,8,2,Łabowa,gmina wiejska,20.8861249,49.4984006
+12,10,9,2,Łącko,gmina wiejska,20.4357918,49.557173
+12,10,10,2,Łososina Dolna,gmina wiejska,20.6257069,49.7281118
+12,10,11,3,Muszyna,gmina miejsko-wiejska,20.8971615,49.3565901
+12,10,11,4,Muszyna,miasto,20.8971615,49.3565901
+12,10,11,5,Muszyna,obszar wiejski,20.8971615,49.3565901
+12,10,12,2,Nawojowa,gmina wiejska,20.746196,49.5599707
+12,10,13,3,Piwniczna-Zdrój,gmina miejsko-wiejska,20.713445,49.4396092
+12,10,13,4,Piwniczna-Zdrój,miasto,20.713445,49.4396092
+12,10,13,5,Piwniczna-Zdrój,obszar wiejski,20.713445,49.4396092
+12,10,14,2,Podegrodzie,gmina wiejska,20.5888109,49.5759555
+12,10,15,2,Rytro,gmina wiejska,20.6695079,49.4897541
+12,10,16,3,Stary Sącz,gmina miejsko-wiejska,20.6327686,49.564452
+12,10,16,4,Stary Sącz,miasto,20.6327686,49.564452
+12,10,16,5,Stary Sącz,obszar wiejski,20.6327686,49.564452
+12,11,1,1,Nowy Targ,gmina miejska,20.032096,49.4774647
+12,11,2,3,Szczawnica,gmina miejsko-wiejska,20.4829529,49.4230451
+12,11,2,4,Szczawnica,miasto,20.4829529,49.4230451
+12,11,2,5,Szczawnica,obszar wiejski,20.4829529,49.4230451
+12,11,3,2,Czarny Dunajec,gmina wiejska,19.8387765,49.4465144
+12,11,4,2,Czorsztyn,gmina wiejska,20.3270231,49.4374074
+12,11,5,2,Jabłonka,gmina wiejska,19.6938032,49.4793014
+12,11,6,2,Krościenko nad Dunajcem,gmina wiejska,20.4329165,49.4368364
+12,11,8,2,Łapsze Niżne,gmina wiejska,20.2453232,49.3944007
+12,11,9,2,Nowy Targ,gmina wiejska,20.032096,49.4774647
+12,11,11,2,Raba Wyżna,gmina wiejska,19.8803507,49.5646496
+12,11,12,3,Rabka-Zdrój,gmina miejsko-wiejska,19.9671769,49.6090128
+12,11,12,4,Rabka-Zdrój,miasto,19.9671769,49.6090128
+12,11,12,5,Rabka-Zdrój,obszar wiejski,19.9671769,49.6090128
+12,11,13,2,Spytkowice,gmina wiejska,19.8336493,49.577153
+12,11,14,2,Szaflary,gmina wiejska,20.0264196,49.426862
+12,11,,,nowotarski,powiat,19.9993836,49.4706746
+12,12,3,2,Bolesław,gmina wiejska,19.4805745,50.2972189
+12,12,4,2,Klucze,gmina wiejska,19.5625655,50.3356894
+12,12,5,3,Olkusz,gmina miejsko-wiejska,19.5656869,50.2813157
+12,12,5,4,Olkusz,miasto,19.5656869,50.2813157
+12,12,5,5,Olkusz,obszar wiejski,19.5656869,50.2813157
+12,12,6,2,Trzyciąż,gmina wiejska,19.7945653,50.3065985
+12,12,7,4,Wolbrom,miasto,19.7584,50.37939
+12,12,7,5,Wolbrom,obszar wiejski,19.7584,50.37939
+12,13,1,1,Oświęcim,gmina miejska,19.2097782,50.0343982
+12,13,2,4,Brzeszcze,miasto,19.15303,49.9815
+12,13,2,5,Brzeszcze,obszar wiejski,19.15303,49.9815
+12,13,3,3,Chełmek,gmina miejsko-wiejska,19.24873,50.10002
+12,13,3,4,Chełmek,miasto,19.24873,50.10002
+12,13,3,5,Chełmek,obszar wiejski,19.24873,50.10002
+12,13,5,2,Osiek,gmina wiejska,19.2641467,49.9496427
+12,13,6,2,Oświęcim,gmina wiejska,19.2097782,50.0343982
+12,13,7,2,Polanka Wielka,gmina wiejska,19.3058259,49.9857512
+12,13,9,3,Zator,gmina miejsko-wiejska,19.4374699,49.99621
+12,13,9,4,Zator,miasto,19.4374699,49.99621
+12,13,9,5,Zator,obszar wiejski,19.4374699,49.99621
+12,13,,,oświęcimski,powiat,19.2699881,50.0025789
+12,14,2,2,Koszyce,gmina wiejska,20.5789054,50.1702758
+12,14,3,3,Nowe Brzesko,gmina miejsko-wiejska,20.3745725,50.13151
+12,14,3,4,Nowe Brzesko,miasto,20.3745725,50.13151
+12,14,3,5,Nowe Brzesko,obszar wiejski,20.3745725,50.13151
+12,14,4,2,Pałecznica,gmina wiejska,20.3031768,50.290911
+12,14,5,3,Proszowice,gmina miejsko-wiejska,20.2890751,50.1921916
+12,14,5,4,Proszowice,miasto,20.2890751,50.1921916
+12,14,5,5,Proszowice,obszar wiejski,20.2890751,50.1921916
+12,15,1,1,Jordanów,gmina miejska,19.83001,49.64913
+12,15,2,1,Sucha Beskidzka,gmina miejska,19.58636,49.74127
+12,15,4,2,Bystra-Sidzina,gmina wiejska,19.7797586,49.6474578
+12,15,5,2,Jordanów,gmina wiejska,19.83001,49.64913
+12,15,6,3,Maków Podhalański,gmina miejsko-wiejska,19.67695,49.72953
+12,15,6,4,Maków Podhalański,miasto,19.67695,49.72953
+12,15,6,5,Maków Podhalański,obszar wiejski,19.67695,49.72953
+12,15,7,2,Stryszawa,gmina wiejska,19.5211602,49.7127846
+12,15,9,2,Zembrzyce,gmina wiejska,19.6012239,49.7751811
+12,15,,,suski,powiat,-83.7806372,43.249202
+12,16,1,3,Ciężkowice,gmina miejsko-wiejska,20.973264,49.7856205
+12,16,1,4,Ciężkowice,miasto,20.973264,49.7856205
+12,16,1,5,Ciężkowice,obszar wiejski,20.973264,49.7856205
+12,16,2,2,Gromnik,gmina wiejska,20.9396656,49.8402393
+12,16,3,2,Lisia Góra,gmina wiejska,21.0719149,50.0940333
+12,16,4,2,Pleśna,gmina wiejska,20.8905555,49.924413
+12,16,5,3,Radłów,gmina miejsko-wiejska,20.8132616,50.0997723
+12,16,5,4,Radłów,miasto,20.8132616,50.0997723
+12,16,5,5,Radłów,obszar wiejski,20.8132616,50.0997723
+12,16,6,3,Ryglice,gmina miejsko-wiejska,21.1375994,49.8788079
+12,16,6,4,Ryglice,miasto,21.1375994,49.8788079
+12,16,6,5,Ryglice,obszar wiejski,21.1375994,49.8788079
+12,16,7,2,Rzepiennik Strzyżewski,gmina wiejska,21.0960078,49.7892352
+12,16,8,2,Skrzyszów,gmina wiejska,21.099316,50.0028989
+12,16,9,2,Tarnów,gmina wiejska,20.9858407,50.0121011
+12,16,10,3,Tuchów,gmina miejsko-wiejska,21.05416,49.89477
+12,16,10,4,Tuchów,miasto,21.05416,49.89477
+12,16,10,5,Tuchów,obszar wiejski,21.05416,49.89477
+12,16,11,2,Wierzchosławice,gmina wiejska,20.8341638,50.0207379
+12,16,12,2,Wietrzychowice,gmina wiejska,20.7419169,50.1775514
+12,16,13,3,Wojnicz,gmina miejsko-wiejska,20.8378422,49.9579835
+12,16,13,4,Wojnicz,miasto,20.8378422,49.9579835
+12,16,13,5,Wojnicz,obszar wiejski,20.8378422,49.9579835
+12,16,14,3,Zakliczyn,gmina miejsko-wiejska,20.8093376,49.8557953
+12,16,14,4,Zakliczyn,miasto,20.8093376,49.8557953
+12,16,14,5,Zakliczyn,obszar wiejski,20.8093376,49.8557953
+12,16,15,3,Żabno,gmina miejsko-wiejska,20.9142627,50.1452996
+12,16,15,4,Żabno,miasto,20.9142627,50.1452996
+12,16,15,5,Żabno,obszar wiejski,20.9142627,50.1452996
+12,16,16,2,Szerzyny,gmina wiejska,21.2253281,49.8287686
+12,16,,,tarnowski,powiat,20.9616697,49.8895982
+12,17,2,2,Biały Dunajec,gmina wiejska,20.0020453,49.3665226
+12,17,3,2,Bukowina Tatrzańska,gmina wiejska,20.1075143,49.3422914
+12,17,4,2,Kościelisko,gmina wiejska,19.8895826,49.2902935
+12,17,5,2,Poronin,gmina wiejska,20.0029576,49.3378366
+12,17,,,tatrzański,powiat,20.0014575,49.3011534
+12,18,1,3,Andrychów,gmina miejsko-wiejska,19.3412842,49.8548934
+12,18,1,4,Andrychów,miasto,19.3412842,49.8548934
+12,18,1,5,Andrychów,obszar wiejski,19.3412842,49.8548934
+12,18,2,2,Brzeźnica,gmina wiejska,19.6194112,49.9649061
+12,18,3,3,Kalwaria Zebrzydowska,gmina miejsko-wiejska,19.67676,49.86686
+12,18,3,4,Kalwaria Zebrzydowska,miasto,19.67676,49.86686
+12,18,3,5,Kalwaria Zebrzydowska,obszar wiejski,19.67676,49.86686
+12,18,4,2,Lanckorona,gmina wiejska,19.7150795,49.8456813
+12,18,5,2,Mucharz,gmina wiejska,19.5362497,49.8180332
+12,18,6,2,Spytkowice,gmina wiejska,19.8336493,49.577153
+12,18,7,2,Stryszów,gmina wiejska,19.6347637,49.8220214
+12,18,8,2,Tomice,gmina wiejska,19.4909161,49.9323504
+12,18,9,3,Wadowice,gmina miejsko-wiejska,19.4939579,49.8827856
+12,18,9,4,Wadowice,miasto,19.4939579,49.8827856
+12,18,9,5,Wadowice,obszar wiejski,19.4939579,49.8827856
+12,19,1,2,Biskupice,gmina wiejska,20.1216374,49.9636566
+12,19,2,2,Gdów,gmina wiejska,20.1984873,49.9080376
+12,19,3,2,Kłaj,gmina wiejska,20.2839842,50.0045178
+12,19,4,3,Niepołomice,gmina miejsko-wiejska,20.2225326,50.0406662
+12,19,4,4,Niepołomice,miasto,20.2225326,50.0406662
+12,19,4,5,Niepołomice,obszar wiejski,20.2225326,50.0406662
+12,19,5,3,Wieliczka,gmina miejsko-wiejska,20.0647971,49.9870619
+12,19,5,4,Wieliczka,miasto,20.0647971,49.9870619
+12,19,5,5,Wieliczka,obszar wiejski,20.0647971,49.9870619
+12,61,1,1,Kraków,gmina miejska,19.9449799,50.0646501
+12,61,2,9,Kraków-Krowodrza,delegatura,19.9171877,50.0710629
+12,61,3,9,Kraków-Nowa Huta,delegatura,20.1174435,50.0655144
+12,61,4,9,Kraków-Podgórze,delegatura,20.0155176,50.0365018
+12,61,5,9,Kraków-Śródmieście,delegatura,19.9621693,50.059138
+12,61,,,Kraków,miasto na prawach powiatu,19.9449799,50.0646501
+12,62,1,1,Nowy Sącz,gmina miejska,20.7153325,49.6174535
+12,62,,,Nowy Sącz,miasto na prawach powiatu,20.7153325,49.6174535
+12,63,1,1,Tarnów,gmina miejska,20.9858407,50.0121011
+12,63,,,Tarnów,miasto na prawach powiatu,20.9858407,50.0121011
+14,1,1,3,Białobrzegi,gmina miejsko-wiejska,20.9565466,51.6464991
+14,1,1,4,Białobrzegi,miasto,20.9565466,51.6464991
+14,1,1,5,Białobrzegi,obszar wiejski,20.9565466,51.6464991
+14,1,4,2,Stara Błotnica,gmina wiejska,21.0004876,51.5429846
+14,1,5,2,Stromiec,gmina wiejska,21.083626,51.6264851
+14,1,6,3,Wyśmierzyce,gmina miejsko-wiejska,20.8139759,51.6248663
+14,1,6,4,Wyśmierzyce,miasto,20.8139759,51.6248663
+14,1,6,5,Wyśmierzyce,obszar wiejski,20.8139759,51.6248663
+14,1,,,białobrzeski,powiat,20.9786982,51.6240912
+14,2,1,1,Ciechanów,gmina miejska,20.6197948,52.8814838
+14,2,2,2,Ciechanów,gmina wiejska,20.6197948,52.8814838
+14,2,3,4,Glinojeck,miasto,20.29179,52.81954
+14,2,3,5,Glinojeck,obszar wiejski,20.29179,52.81954
+14,2,4,2,Gołymin-Ośrodek,gmina wiejska,20.8545475,52.8132406
+14,2,6,2,Ojrzeń,gmina wiejska,20.5077962,52.7532348
+14,2,7,2,Opinogóra Górna,gmina wiejska,20.7177253,52.9064052
+14,2,8,2,Regimin,gmina wiejska,20.5756757,52.9536205
+14,2,9,2,Sońsk,gmina wiejska,20.723377,52.7588792
+14,2,,,ciechanowski,powiat,-88.3392281,41.9192124
+14,3,1,1,Garwolin,gmina miejska,21.6149393,51.8971987
+14,3,2,1,Łaskarzew,gmina miejska,21.59133,51.78914
+14,3,3,2,Borowie,gmina wiejska,21.7771981,51.9476764
+14,3,4,2,Garwolin,gmina wiejska,21.6149393,51.8971987
+14,3,5,2,Górzno,gmina wiejska,19.6444061,53.1980031
+14,3,6,2,Łaskarzew,gmina wiejska,21.59133,51.78914
+14,3,7,2,Maciejowice,gmina wiejska,21.5535126,51.6919243
+14,3,8,2,Miastków Kościelny,gmina wiejska,21.8436105,51.8792664
+14,3,9,2,Parysów,gmina wiejska,21.6802041,51.974638
+14,3,10,3,Pilawa,gmina miejsko-wiejska,21.53057,51.95914
+14,3,10,4,Pilawa,miasto,21.53057,51.95914
+14,3,10,5,Pilawa,obszar wiejski,21.53057,51.95914
+14,3,11,2,Sobolew,gmina wiejska,21.6632881,51.7361536
+14,3,12,2,Trojanów,gmina wiejska,21.7780513,51.7147076
+14,3,13,2,Wilga,gmina wiejska,21.3775348,51.8516569
+14,3,14,3,Żelechów,gmina miejsko-wiejska,21.89725,51.81054
+14,3,14,4,Żelechów,miasto,21.89725,51.81054
+14,3,14,5,Żelechów,obszar wiejski,21.89725,51.81054
+14,3,,,garwoliński,powiat,21.7058361,51.8394562
+14,4,1,1,Gostynin,gmina miejska,19.4619176,52.4293273
+14,4,2,2,Gostynin,gmina wiejska,19.4619176,52.4293273
+14,4,3,2,Pacyna,gmina wiejska,19.7011001,52.3065072
+14,4,4,3,Sanniki,gmina miejsko-wiejska,19.8677926,52.3301963
+14,4,4,4,Sanniki,miasto,19.8677926,52.3301963
+14,4,4,5,Sanniki,obszar wiejski,19.8677926,52.3301963
+14,4,5,2,Szczawin Kościelny,gmina wiejska,19.571827,52.3398842
+14,4,,,gostyniński,powiat,19.4024278,52.4352712
+14,5,2,1,Podkowa Leśna,gmina miejska,20.7265083,52.1199928
+14,5,3,2,Baranów,gmina wiejska,20.4745018,52.1474235
+14,5,4,3,Grodzisk Mazowiecki,gmina miejsko-wiejska,20.6350924,52.1044383
+14,5,4,4,Grodzisk Mazowiecki,miasto,20.6350924,52.1044383
+14,5,4,5,Grodzisk Mazowiecki,obszar wiejski,20.6350924,52.1044383
+14,5,6,2,Żabia Wola,gmina wiejska,20.6942336,52.0078021
+14,5,,,grodziski,powiat,20.5429688,52.0796591
+14,6,1,2,Belsk Duży,gmina wiejska,20.8145971,51.8088842
+14,6,2,2,Błędów,gmina wiejska,20.6643952,51.7924056
+14,6,3,2,Chynów,gmina wiejska,21.0863266,51.8909212
+14,6,4,2,Goszczyn,gmina wiejska,20.8520672,51.7303622
+14,6,5,3,Grójec,gmina miejsko-wiejska,20.8666034,51.8655118
+14,6,5,4,Grójec,miasto,20.8666034,51.8655118
+14,6,5,5,Grójec,obszar wiejski,20.8666034,51.8655118
+14,6,6,2,Jasieniec,gmina wiejska,21.0252909,51.8139074
+14,6,7,3,Mogielnica,gmina miejsko-wiejska,20.7235402,51.6940669
+14,6,7,4,Mogielnica,miasto,20.7235402,51.6940669
+14,6,7,5,Mogielnica,obszar wiejski,20.7235402,51.6940669
+14,6,8,3,Nowe Miasto nad Pilicą,gmina miejsko-wiejska,20.5766449,51.6175744
+14,6,8,4,Nowe Miasto nad Pilicą,miasto,20.5766449,51.6175744
+14,6,8,5,Nowe Miasto nad Pilicą,obszar wiejski,20.5766449,51.6175744
+14,6,11,3,Warka,gmina miejsko-wiejska,21.1909879,51.7840019
+14,6,11,4,Warka,miasto,21.1909879,51.7840019
+14,6,11,5,Warka,obszar wiejski,21.1909879,51.7840019
+14,6,,,grójecki,powiat,20.8597574,51.8226058
+14,7,1,2,Garbatka-Letnisko,gmina wiejska,21.6319609,51.4932609
+14,7,2,2,Głowaczów,gmina wiejska,21.2938107,51.6309221
+14,7,3,2,Gniewoszów,gmina wiejska,21.8014892,51.4891892
+14,7,4,2,Grabów nad Pilicą,gmina wiejska,21.2351713,51.7303035
+14,7,5,3,Kozienice,gmina miejsko-wiejska,21.5511768,51.5855328
+14,7,5,4,Kozienice,miasto,21.5511768,51.5855328
+14,7,5,5,Kozienice,obszar wiejski,21.5511768,51.5855328
+14,7,6,2,Magnuszew,gmina wiejska,21.3799569,51.764669
+14,7,7,2,Sieciechów,gmina wiejska,21.7446629,51.536621
+14,7,,,kozienicki,powiat,21.3990659,51.6329647
+14,8,1,1,Legionowo,gmina miejska,20.9499698,52.4044483
+14,8,2,2,Jabłonna,gmina wiejska,20.9170219,52.3780696
+14,8,3,2,Nieporęt,gmina wiejska,21.0682002,52.4162045
+14,8,4,3,Serock,gmina miejsko-wiejska,21.0691045,52.5103662
+14,8,4,4,Serock,miasto,21.0691045,52.5103662
+14,8,4,5,Serock,obszar wiejski,21.0691045,52.5103662
+14,8,5,2,Wieliszew,gmina wiejska,20.9076171,52.4571202
+14,8,,,legionowski,powiat,20.9228345,52.4320224
+14,9,1,2,Chotcza,gmina wiejska,21.7269951,51.250531
+14,9,5,2,Sienno,gmina wiejska,21.4766292,51.0877207
+14,9,6,2,Solec nad Wisłą,gmina wiejska,21.763315,51.1354788
+14,9,,,lipski,powiat,21.5681301,51.1606164
+14,10,1,2,Huszlew,gmina wiejska,22.8346502,52.1274499
+14,10,2,3,Łosice,gmina miejsko-wiejska,22.7184846,52.2115649
+14,10,2,4,Łosice,miasto,22.7184846,52.2115649
+14,10,2,5,Łosice,obszar wiejski,22.7184846,52.2115649
+14,10,3,2,Olszanka,gmina wiejska,22.6697307,52.14667
+14,10,4,2,Platerów,gmina wiejska,22.783441,52.3171591
+14,10,5,2,Sarnaki,gmina wiejska,22.8893801,52.3147542
+14,10,6,2,Stara Kornica,gmina wiejska,22.9008693,52.2035115
+14,10,,,łosicki,powiat,22.8868723,52.2287911
+14,11,4,2,Krasnosielc,gmina wiejska,21.1573578,53.0337688
+14,11,5,2,Młynarze,gmina wiejska,21.3991182,52.958938
+14,11,7,3,Różan,gmina miejsko-wiejska,21.391082,52.8873011
+14,11,7,4,Różan,miasto,21.391082,52.8873011
+14,11,7,5,Różan,obszar wiejski,21.391082,52.8873011
+14,11,8,2,Rzewnie,gmina wiejska,21.3362275,52.8347524
+14,12,1,1,Mińsk Mazowiecki,gmina miejska,21.5721057,52.1792836
+14,12,5,2,Dębe Wielkie,gmina wiejska,21.46318,52.2081565
+14,12,6,2,Dobre,gmina wiejska,18.413937,49.6738269
+14,12,8,2,Jakubów,gmina wiejska,15.9985771,51.6075305
+14,12,9,3,Kałuszyn,gmina miejsko-wiejska,21.808426,52.2067049
+14,12,9,4,Kałuszyn,miasto,21.808426,52.2067049
+14,12,9,5,Kałuszyn,obszar wiejski,21.808426,52.2067049
+14,12,10,2,Latowicz,gmina wiejska,21.8107747,52.0264758
+14,12,11,2,Mińsk Mazowiecki,gmina wiejska,21.5721057,52.1792836
+14,12,12,3,Mrozy,gmina miejsko-wiejska,21.8024361,52.1656651
+14,12,12,4,Mrozy,miasto,21.8024361,52.1656651
+14,12,12,5,Mrozy,obszar wiejski,21.8024361,52.1656651
+14,13,5,2,Strzegowo,gmina wiejska,20.2900627,52.9263969
+14,13,10,2,Wiśniewo,gmina wiejska,20.3482376,53.0651548
+14,14,2,2,Czosnów,gmina wiejska,20.6859936,52.3753359
+14,14,3,2,Leoncin,gmina wiejska,20.4804566,52.3570855
+14,14,4,3,Nasielsk,gmina miejsko-wiejska,20.80568,52.58991
+14,14,4,4,Nasielsk,miasto,20.80568,52.58991
+14,14,4,5,Nasielsk,obszar wiejski,20.80568,52.58991
+14,14,5,2,Pomiechówek,gmina wiejska,20.7337207,52.4720911
+14,14,6,3,Zakroczym,gmina miejsko-wiejska,20.6119813,52.4379891
+14,14,6,4,Zakroczym,miasto,20.6119813,52.4379891
+14,14,6,5,Zakroczym,obszar wiejski,20.6119813,52.4379891
+14,14,,,nowodworski,powiat,20.6780861,52.4769443
+14,15,1,2,Baranowo,gmina wiejska,21.296838,53.175543
+14,15,2,2,Czarnia,gmina wiejska,21.1945343,53.3559413
+14,15,4,2,Goworowo,gmina wiejska,21.5301636,52.8779171
+14,15,5,2,Kadzidło,gmina wiejska,21.4662015,53.2375857
+14,15,7,2,Łyse,gmina wiejska,21.5646215,53.3643392
+14,15,8,3,Myszyniec,gmina miejsko-wiejska,21.3495321,53.380492
+14,15,8,4,Myszyniec,miasto,21.3495321,53.380492
+14,15,8,5,Myszyniec,obszar wiejski,21.3495321,53.380492
+14,15,9,2,Olszewo-Borki,gmina wiejska,21.4088265,53.0809695
+14,15,10,2,Rzekuń,gmina wiejska,21.6508279,53.0463851
+14,15,11,2,Troszyn,gmina wiejska,21.7917726,53.0419702
+14,15,,,ostrołęcki,powiat,21.573285,53.0836961
+14,16,1,1,Ostrów Mazowiecka,gmina miejska,21.8950416,52.8024372
+14,16,2,2,Andrzejewo,gmina wiejska,22.1921471,52.8288783
+14,16,3,2,Boguty-Pianki,gmina wiejska,22.3910257,52.7220001
+14,16,4,3,Brok,gmina miejsko-wiejska,21.8470553,52.6973953
+14,16,4,4,Brok,miasto,21.8470553,52.6973953
+14,16,4,5,Brok,obszar wiejski,21.8470553,52.6973953
+14,16,5,2,Małkinia Górna,gmina wiejska,22.0269962,52.6934663
+14,16,7,2,Ostrów Mazowiecka,gmina wiejska,21.8950416,52.8024372
+14,16,8,2,Stary Lubotyń,gmina wiejska,21.9450089,52.922181
+14,16,9,2,Szulborze Wielkie,gmina wiejska,22.2360956,52.7526398
+14,16,10,2,Wąsewo,gmina wiejska,21.7163435,52.8423967
+14,16,11,2,Zaręby Kościelne,gmina wiejska,22.1237289,52.7569762
+14,16,,,ostrowski,powiat,-76.5912821,39.2865235
+14,17,1,1,Józefów,gmina miejska,21.2354266,52.1368197
+14,17,2,1,Otwock,gmina miejska,21.2616247,52.1053186
+14,17,3,2,Celestynów,gmina wiejska,21.3687944,52.0482246
+14,17,4,3,Karczew,gmina miejsko-wiejska,21.2500669,52.0757659
+14,17,4,4,Karczew,miasto,21.2500669,52.0757659
+14,17,4,5,Karczew,obszar wiejski,21.2500669,52.0757659
+14,17,5,2,Kołbiel,gmina wiejska,21.4909319,52.0694042
+14,17,6,2,Osieck,gmina wiejska,21.419225,51.965973
+14,17,7,2,Sobienie-Jeziory,gmina wiejska,21.3060944,51.9270304
+14,17,8,2,Wiązowna,gmina wiejska,21.3250753,52.1676083
+14,17,,,otwocki,powiat,21.3466091,52.085743
+14,18,1,3,Góra Kalwaria,gmina miejsko-wiejska,21.215337,51.976466
+14,18,1,4,Góra Kalwaria,miasto,21.215337,51.976466
+14,18,1,5,Góra Kalwaria,obszar wiejski,21.215337,51.976466
+14,18,2,3,Konstancin-Jeziorna,gmina miejsko-wiejska,21.117722,52.0938717
+14,18,2,4,Konstancin-Jeziorna,miasto,21.117722,52.0938717
+14,18,2,5,Konstancin-Jeziorna,obszar wiejski,21.117722,52.0938717
+14,18,3,2,Lesznowola,gmina wiejska,20.9137531,52.0891672
+14,18,4,3,Piaseczno,gmina miejsko-wiejska,21.0238602,52.0811536
+14,18,4,4,Piaseczno,miasto,21.0238602,52.0811536
+14,18,4,5,Piaseczno,obszar wiejski,21.0238602,52.0811536
+14,18,6,3,Tarczyn,gmina miejsko-wiejska,20.83374,51.97842
+14,18,6,4,Tarczyn,miasto,20.83374,51.97842
+14,18,6,5,Tarczyn,obszar wiejski,20.83374,51.97842
+14,18,,,piaseczyński,powiat,21.0267424,51.990602
+14,19,1,2,Bielsk,gmina wiejska,23.1867524,52.7650576
+14,19,2,2,Bodzanów,gmina wiejska,19.9612776,52.4939399
+14,19,3,2,Brudzeń Duży,gmina wiejska,19.5307512,52.657401
+14,19,4,2,Bulkowo,gmina wiejska,20.0816413,52.5616792
+14,19,5,3,Drobin,gmina miejsko-wiejska,19.9917009,52.7374731
+14,19,5,4,Drobin,miasto,19.9917009,52.7374731
+14,19,5,5,Drobin,obszar wiejski,19.9917009,52.7374731
+14,19,6,3,Gąbin,gmina miejsko-wiejska,19.735653,52.3974171
+14,19,6,4,Gąbin,miasto,19.735653,52.3974171
+14,19,6,5,Gąbin,obszar wiejski,19.735653,52.3974171
+14,19,8,2,Mała Wieś,gmina wiejska,20.7875525,51.8234971
+14,19,9,2,Nowy Duninów,gmina wiejska,19.4968944,52.541061
+14,19,11,2,Słubice,gmina wiejska,14.5604649,52.351065
+14,19,12,2,Słupno,gmina wiejska,19.8391706,52.5152873
+14,19,13,2,Stara Biała,gmina wiejska,19.6611883,52.6238908
+14,19,14,2,Staroźreby,gmina wiejska,19.9864079,52.6322204
+14,19,15,3,Wyszogród,gmina miejsko-wiejska,20.1900369,52.391799
+14,19,15,4,Wyszogród,miasto,20.1900369,52.391799
+14,19,15,5,Wyszogród,obszar wiejski,20.1900369,52.391799
+14,19,,,płocki,powiat,19.7065364,52.5463446
+14,20,1,1,Płońsk,gmina miejska,20.3753589,52.6230132
+14,20,2,1,Raciąż,gmina miejska,20.11774,52.7815
+14,20,3,2,Baboszewo,gmina wiejska,20.2625856,52.7078343
+14,20,4,2,Czerwińsk nad Wisłą,gmina wiejska,20.3094785,52.3978795
+14,20,5,2,Dzierzążnia,gmina wiejska,20.2261076,52.5917333
+14,20,6,2,Joniec,gmina wiejska,20.3158562,49.734947
+14,20,7,2,Naruszewo,gmina wiejska,20.3264088,52.5181919
+14,20,8,2,Nowe Miasto,gmina wiejska,20.6620485,52.6806269
+14,20,9,2,Płońsk,gmina wiejska,20.3753589,52.6230132
+14,20,10,2,Raciąż,gmina wiejska,20.11774,52.7815
+14,20,11,2,Sochocin,gmina wiejska,20.4722402,52.6873072
+14,20,12,2,Załuski,gmina wiejska,20.5099445,52.4851951
+14,20,,,płoński,powiat,20.4021708,52.5714161
+14,21,1,1,Piastów,gmina miejska,20.8400429,52.1845184
+14,21,3,3,Brwinów,gmina miejsko-wiejska,20.7175048,52.142598
+14,21,3,4,Brwinów,miasto,20.7175048,52.142598
+14,21,3,5,Brwinów,obszar wiejski,20.7175048,52.142598
+14,21,4,2,Michałowice,gmina wiejska,20.8532862,52.1447037
+14,21,5,2,Nadarzyn,gmina wiejska,20.7925004,52.0672357
+14,21,,,pruszkowski,powiat,20.8153846,52.1627843
+14,22,1,1,Przasnysz,gmina miejska,20.880358,53.018984
+14,22,2,3,Chorzele,gmina miejsko-wiejska,20.8970643,53.2600919
+14,22,2,4,Chorzele,miasto,20.8970643,53.2600919
+14,22,2,5,Chorzele,obszar wiejski,20.8970643,53.2600919
+14,22,3,2,Czernice Borowe,gmina wiejska,20.7535563,53.0672599
+14,22,4,2,Jednorożec,gmina wiejska,21.0511534,53.1405147
+14,22,5,2,Krasne,gmina wiejska,-96.4959485,41.4333479
+14,22,6,2,Krzynowłoga Mała,gmina wiejska,20.8157058,53.1458749
+14,22,7,2,Przasnysz,gmina wiejska,20.880358,53.018984
+14,22,,,przasnyski,powiat,20.924927,53.1483961
+14,23,1,2,Borkowice,gmina wiejska,20.68325,51.3201051
+14,23,2,2,Gielniów,gmina wiejska,20.482567,51.4004681
+14,23,3,2,Klwów,gmina wiejska,20.6423078,51.52142
+14,23,4,2,Odrzywół,gmina wiejska,20.5231343,51.5432175
+14,23,5,2,Potworów,gmina wiejska,20.7465335,51.4802843
+14,23,6,3,Przysucha,gmina miejsko-wiejska,20.6317957,51.3578773
+14,23,6,4,Przysucha,miasto,20.6317957,51.3578773
+14,23,6,5,Przysucha,obszar wiejski,20.6317957,51.3578773
+14,23,7,2,Rusinów,gmina wiejska,20.5829574,51.4445348
+14,23,8,2,Wieniawa,gmina wiejska,20.7949705,51.3613799
+14,23,,,przysuski,powiat,20.6795448,51.4158462
+14,24,1,2,Gzy,gmina wiejska,20.9007526,52.7375814
+14,24,2,2,Obryte,gmina wiejska,21.2481067,52.7066595
+14,24,3,2,Pokrzywnica,gmina wiejska,21.0120275,52.6219729
+14,24,4,3,Pułtusk,gmina miejsko-wiejska,21.0852069,52.6974595
+14,24,4,4,Pułtusk,miasto,21.0852069,52.6974595
+14,24,4,5,Pułtusk,obszar wiejski,21.0852069,52.6974595
+14,24,5,2,Świercze,gmina wiejska,20.7774272,52.6707552
+14,24,6,2,Winnica,gmina wiejska,28.4682169,49.233083
+14,24,7,2,Zatory,gmina wiejska,21.1854483,52.6288315
+14,24,,,pułtuski,powiat,20.9854178,52.6883985
+14,25,1,1,Pionki,gmina miejska,21.450936,51.476195
+14,25,2,2,Gózd,gmina wiejska,21.3788326,51.378691
+14,25,3,3,Iłża,gmina miejsko-wiejska,21.23991,51.16305
+14,25,3,4,Iłża,miasto,21.23991,51.16305
+14,25,3,5,Iłża,obszar wiejski,21.23991,51.16305
+14,25,4,2,Jastrzębia,gmina wiejska,20.8682761,49.8003848
+14,25,6,2,Jedlnia-Letnisko,gmina wiejska,21.3127152,51.4181314
+14,25,7,2,Kowala,gmina wiejska,18.5563764,54.3073589
+14,25,8,2,Pionki,gmina wiejska,21.450936,51.476195
+14,25,9,2,Przytyk,gmina wiejska,20.9131216,51.4617501
+14,25,10,3,Skaryszew,gmina miejsko-wiejska,21.2523841,51.3106091
+14,25,10,4,Skaryszew,miasto,21.2523841,51.3106091
+14,25,10,5,Skaryszew,obszar wiejski,21.2523841,51.3106091
+14,25,11,2,Wierzbica,gmina wiejska,21.0819865,51.249084
+14,25,13,2,Zakrzew,gmina wiejska,21.000596,51.4409699
+14,25,,,radomski,powiat,21.2128235,51.2285836
+14,26,1,2,Domanice,gmina wiejska,16.5905746,50.9416207
+14,26,4,2,Mokobody,gmina wiejska,22.1118803,52.2653151
+14,26,5,3,Mordy,gmina miejsko-wiejska,22.5177976,52.2117033
+14,26,5,4,Mordy,miasto,22.5177976,52.2117033
+14,26,5,5,Mordy,obszar wiejski,22.5177976,52.2117033
+14,26,6,2,Paprotnia,gmina wiejska,20.4077319,52.2120982
+14,26,7,2,Przesmyki,gmina wiejska,22.6184595,52.2720762
+14,26,8,2,Siedlce,gmina wiejska,22.2901645,52.1676031
+14,26,9,2,Skórzec,gmina wiejska,22.1183475,52.1035378
+14,26,11,2,Wiśniew,gmina wiejska,22.2776082,52.060883
+14,26,12,2,Wodynie,gmina wiejska,21.9704337,52.0323269
+14,27,1,1,Sierpc,gmina miejska,19.669432,52.8568142
+14,27,3,2,Mochowo,gmina wiejska,19.5567303,52.7864381
+14,27,4,2,Rościszewo,gmina wiejska,19.7357001,52.9340866
+14,27,5,2,Sierpc,gmina wiejska,19.669432,52.8568142
+14,27,6,2,Szczutowo,gmina wiejska,19.5747536,52.9282503
+14,27,,,sierpecki,powiat,19.6929043,52.829901
+14,28,4,2,Młodzieszyn,gmina wiejska,20.1771368,52.3226491
+14,28,6,2,Rybno,gmina wiejska,22.1859251,53.1186537
+14,28,8,2,Teresin,gmina wiejska,20.3682331,52.1887408
+14,29,1,1,Sokołów Podlaski,gmina miejska,22.2533608,52.407031
+14,29,2,2,Bielany,gmina wiejska,20.928664,52.2933234
+14,29,4,2,Jabłonna Lacka,gmina wiejska,22.442844,52.4867562
+14,29,5,3,Kosów Lacki,gmina miejsko-wiejska,22.1470031,52.596028
+14,29,5,4,Kosów Lacki,miasto,22.1470031,52.596028
+14,29,5,5,Kosów Lacki,obszar wiejski,22.1470031,52.596028
+14,29,6,2,Repki,gmina wiejska,22.4152551,52.3912764
+14,29,7,2,Sabnie,gmina wiejska,22.2961374,52.5046907
+14,29,8,2,Sokołów Podlaski,gmina wiejska,22.2533608,52.407031
+14,29,,,sokołowski,powiat,22.2816587,52.5300078
+14,30,2,2,Jastrząb,gmina wiejska,20.947448,51.2463072
+14,30,3,2,Mirów,gmina wiejska,12.8175,53.275386
+14,30,4,2,Orońsko,gmina wiejska,20.9903636,51.3133141
+14,30,5,3,Szydłowiec,gmina miejsko-wiejska,20.8611466,51.2279908
+14,30,5,4,Szydłowiec,miasto,20.8611466,51.2279908
+14,30,5,5,Szydłowiec,obszar wiejski,20.8611466,51.2279908
+14,32,1,3,Błonie,gmina miejsko-wiejska,20.6169567,52.1985472
+14,32,1,4,Błonie,miasto,20.6169567,52.1985472
+14,32,1,5,Błonie,obszar wiejski,20.6169567,52.1985472
+14,32,2,2,Izabelin,gmina wiejska,20.7775174,52.3141061
+14,32,3,2,Kampinos,gmina wiejska,20.4632209,52.2681666
+14,32,4,2,Leszno,gmina wiejska,16.5937545,51.8419861
+14,32,5,3,Łomianki,gmina miejsko-wiejska,20.8869861,52.3336578
+14,32,5,4,Łomianki,miasto,20.8869861,52.3336578
+14,32,5,5,Łomianki,obszar wiejski,20.8869861,52.3336578
+14,32,6,3,Ożarów Mazowiecki,gmina miejsko-wiejska,20.7774829,52.2252425
+14,32,6,4,Ożarów Mazowiecki,miasto,20.7774829,52.2252425
+14,32,6,5,Ożarów Mazowiecki,obszar wiejski,20.7774829,52.2252425
+14,32,,,warszawski zachodni,powiat,20.6938283,52.2738835
+14,33,1,1,Węgrów,gmina miejska,22.0164266,52.3991566
+14,33,2,2,Grębków,gmina wiejska,21.9473099,52.2597944
+14,33,3,2,Korytnica,gmina wiejska,19.282778,48.889511
+14,33,4,2,Liw,gmina wiejska,21.9623939,52.3718313
+14,33,5,3,Łochów,gmina miejsko-wiejska,21.68182,52.5307
+14,33,5,4,Łochów,miasto,21.68182,52.5307
+14,33,5,5,Łochów,obszar wiejski,21.68182,52.5307
+14,33,6,2,Miedzna,gmina wiejska,22.0873172,52.4645268
+14,33,7,2,Sadowne,gmina wiejska,21.8353565,52.6397304
+14,33,8,2,Stoczek,gmina wiejska,21.9001014,52.5429093
+14,33,,,węgrowski,powiat,21.906323,52.4242674
+14,34,1,1,Kobyłka,gmina miejska,21.1959846,52.339238
+14,34,2,1,Marki,gmina miejska,-121.641568,37.116728
+14,34,3,1,Ząbki,gmina miejska,21.1079604,52.2870682
+14,34,4,1,Zielonka,gmina miejska,21.1607239,52.3034398
+14,34,7,2,Klembów,gmina wiejska,21.3060361,52.427416
+14,34,8,2,Poświętne,gmina wiejska,20.3372134,51.5440296
+14,34,9,4,Radzymin,miasto,21.1804029,52.4175467
+14,34,9,5,Radzymin,obszar wiejski,21.1804029,52.4175467
+14,34,10,2,Strachówka,gmina wiejska,21.6206251,52.4011304
+14,34,11,3,Tłuszcz,gmina miejsko-wiejska,21.43511,52.42997
+14,34,11,4,Tłuszcz,miasto,21.43511,52.42997
+14,34,11,5,Tłuszcz,obszar wiejski,21.43511,52.42997
+14,34,12,3,Wołomin,gmina miejsko-wiejska,21.2423181,52.3391162
+14,34,12,4,Wołomin,miasto,21.2423181,52.3391162
+14,34,12,5,Wołomin,obszar wiejski,21.2423181,52.3391162
+14,34,,,wołomiński,powiat,21.2897822,52.3635504
+14,35,5,3,Wyszków,gmina miejsko-wiejska,21.458395,52.5928523
+14,35,5,4,Wyszków,miasto,21.458395,52.5928523
+14,35,5,5,Wyszków,obszar wiejski,21.458395,52.5928523
+14,35,6,2,Zabrodzie,gmina wiejska,21.4226282,52.5059092
+14,36,1,2,Kazanów,gmina wiejska,21.4066395,51.2574531
+14,36,2,2,Policzna,gmina wiejska,21.6795295,51.4247246
+14,36,3,2,Przyłęk,gmina wiejska,21.736643,51.3255946
+14,36,4,2,Tczów,gmina wiejska,21.4678674,51.3335466
+14,36,5,3,Zwoleń,gmina miejsko-wiejska,21.587725,51.3553788
+14,36,5,4,Zwoleń,miasto,21.587725,51.3553788
+14,36,5,5,Zwoleń,obszar wiejski,21.587725,51.3553788
+14,36,,,zwoleński,powiat,21.5724503,51.3354069
+14,37,1,3,Bieżuń,gmina miejsko-wiejska,19.8892395,52.9606362
+14,37,1,4,Bieżuń,miasto,19.8892395,52.9606362
+14,37,1,5,Bieżuń,obszar wiejski,19.8892395,52.9606362
+14,37,2,2,Kuczbork-Osada,gmina wiejska,20.0476701,53.0859681
+14,37,4,2,Lutocin,gmina wiejska,19.766715,52.9812201
+14,37,6,4,Żuromin,miasto,19.9089046,53.0660775
+14,37,6,5,Żuromin,obszar wiejski,19.9089046,53.0660775
+14,38,1,1,Żyrardów,gmina miejska,20.445988,52.048652
+14,38,2,3,Mszczonów,gmina miejsko-wiejska,20.5216182,51.982047
+14,38,2,4,Mszczonów,miasto,20.5216182,51.982047
+14,38,2,5,Mszczonów,obszar wiejski,20.5216182,51.982047
+14,38,3,2,Puszcza Mariańska,gmina wiejska,20.3403653,51.9726002
+14,38,5,2,Wiskitki,gmina wiejska,20.3863042,52.083111
+14,38,,,żyrardowski,powiat,20.4227517,52.0129718
+14,61,1,1,Ostrołęka,gmina miejska,21.5592554,53.0876544
+14,62,1,1,Płock,gmina miejska,19.7065364,52.5463446
+14,62,,,Płock,miasto na prawach powiatu,19.7065364,52.5463446
+14,63,1,1,Radom,gmina miejska,21.1471334,51.4027236
+14,63,,,Radom,miasto na prawach powiatu,21.1471334,51.4027236
+14,64,1,1,Siedlce,gmina miejska,22.2901645,52.1676031
+14,64,,,Siedlce,miasto na prawach powiatu,22.2901645,52.1676031
+14,65,1,1,Warszawa,gmina miejska miasto stołeczne,21.0122287,52.2296756
+14,65,2,8,Bemowo,dzielnica,20.9113297,52.2409067
+14,65,3,8,Białołęka,dzielnica,21.0076792,52.3289879
+14,65,4,8,Bielany,dzielnica,20.928664,52.2933234
+14,65,5,8,Mokotów,dzielnica,21.0346955,52.194157
+14,65,6,8,Ochota,dzielnica,20.9712206,52.2103359
+14,65,7,8,Praga-Południe,dzielnica,21.0840602,52.2416808
+14,65,8,8,Praga-Północ,dzielnica,21.0283169,52.2633005
+14,65,9,8,Rembertów,dzielnica,21.145839,52.2630714
+14,65,10,8,Śródmieście,dzielnica,21.0122287,52.2296756
+14,65,11,8,Targówek,dzielnica,21.0653678,52.2823819
+14,65,12,8,Ursus,dzielnica,20.8837885,52.1951226
+14,65,13,8,Ursynów,dzielnica,21.0291229,52.1378544
+14,65,14,8,Wawer,dzielnica,21.1782252,52.1962166
+14,65,15,8,Wesoła,dzielnica,21.2251979,52.2329397
+14,65,16,8,Wilanów,dzielnica,21.1116284,52.1561298
+14,65,17,8,Włochy,dzielnica,12.56738,41.87194
+14,65,19,8,Żoliborz,dzielnica,20.9818745,52.2693286
+14,,,,MAZOWIECKIE,województwo,21.0021679,51.8927182
+16,1,2,2,Skarbimierz,gmina wiejska,17.4362791,50.8481237
+16,1,3,3,Grodków,gmina miejsko-wiejska,17.38516,50.69625
+16,1,3,4,Grodków,miasto,17.38516,50.69625
+16,1,3,5,Grodków,obszar wiejski,17.38516,50.69625
+16,1,4,3,Lewin Brzeski,gmina miejsko-wiejska,17.6187999,50.74829
+16,1,4,4,Lewin Brzeski,miasto,17.6187999,50.74829
+16,1,4,5,Lewin Brzeski,obszar wiejski,17.6187999,50.74829
+16,1,5,2,Lubsza,gmina wiejska,18.9997977,50.6122772
+16,1,6,2,Olszanka,gmina wiejska,22.6697307,52.14667
+16,1,,,brzeski,powiat,20.6621498,49.9670967
+16,2,1,3,Baborów,gmina miejsko-wiejska,17.9852459,50.1575901
+16,2,1,4,Baborów,miasto,17.9852459,50.1575901
+16,2,1,5,Baborów,obszar wiejski,17.9852459,50.1575901
+16,2,2,2,Branice,gmina wiejska,17.7920431,50.0506869
+16,2,3,3,Głubczyce,gmina miejsko-wiejska,17.8287,50.20027
+16,2,3,4,Głubczyce,miasto,17.8287,50.20027
+16,2,3,5,Głubczyce,obszar wiejski,17.8287,50.20027
+16,2,4,3,Kietrz,gmina miejsko-wiejska,18.00413,50.08005
+16,2,4,4,Kietrz,miasto,18.00413,50.08005
+16,2,4,5,Kietrz,obszar wiejski,18.00413,50.08005
+16,2,,,głubczycki,powiat,17.8417937,50.1746942
+16,3,2,2,Bierawa,gmina wiejska,18.2414529,50.2801801
+16,3,3,2,Cisek,gmina wiejska,18.2011008,50.2812772
+16,3,5,2,Polska Cerekiew,gmina wiejska,18.1267352,50.2277372
+16,3,6,2,Reńska Wieś,gmina wiejska,18.0902218,50.3373414
+16,4,1,4,Byczyna,miasto,18.21114,51.11327
+16,4,1,5,Byczyna,obszar wiejski,18.21114,51.11327
+16,4,2,3,Kluczbork,gmina miejsko-wiejska,18.2180699,50.97235
+16,4,2,4,Kluczbork,miasto,18.2180699,50.97235
+16,4,2,5,Kluczbork,obszar wiejski,18.2180699,50.97235
+16,4,3,2,Lasowice Wielkie,gmina wiejska,18.2047429,50.8652462
+16,4,4,3,Wołczyn,gmina miejsko-wiejska,18.0515704,51.0184963
+16,4,4,4,Wołczyn,miasto,18.0515704,51.0184963
+16,4,4,5,Wołczyn,obszar wiejski,18.0515704,51.0184963
+16,5,1,3,Gogolin,gmina miejsko-wiejska,18.0199044,50.4919804
+16,5,1,4,Gogolin,miasto,18.0199044,50.4919804
+16,5,1,5,Gogolin,obszar wiejski,18.0199044,50.4919804
+16,5,2,3,Krapkowice,gmina miejsko-wiejska,17.9651386,50.4745052
+16,5,2,4,Krapkowice,miasto,17.9651386,50.4745052
+16,5,2,5,Krapkowice,obszar wiejski,17.9651386,50.4745052
+16,5,3,2,Strzeleczki,gmina wiejska,17.8071577,50.4570585
+16,5,4,2,Walce,gmina wiejska,18.003334,50.3731477
+16,5,5,3,Zdzieszowice,gmina miejsko-wiejska,18.12477,50.42422
+16,5,5,4,Zdzieszowice,miasto,18.12477,50.42422
+16,5,5,5,Zdzieszowice,obszar wiejski,18.12477,50.42422
+16,5,,,krapkowicki,powiat,17.9467122,50.4776737
+16,6,2,3,Namysłów,gmina miejsko-wiejska,17.72244,51.07588
+16,6,2,4,Namysłów,miasto,17.72244,51.07588
+16,6,2,5,Namysłów,obszar wiejski,17.72244,51.07588
+16,6,3,2,Pokój,gmina wiejska,17.8430924,50.9040233
+16,6,5,2,Wilków,gmina wiejska,17.6617492,51.1016535
+16,6,,,namysłowski,powiat,17.7773502,51.0408166
+16,7,1,3,Głuchołazy,gmina miejsko-wiejska,17.38347,50.31512
+16,7,1,4,Głuchołazy,miasto,17.38347,50.31512
+16,7,1,5,Głuchołazy,obszar wiejski,17.38347,50.31512
+16,7,2,2,Kamiennik,gmina wiejska,17.143637,50.5702492
+16,7,3,3,Korfantów,gmina miejsko-wiejska,17.5989754,50.4888579
+16,7,3,4,Korfantów,miasto,17.5989754,50.4888579
+16,7,3,5,Korfantów,obszar wiejski,17.5989754,50.4888579
+16,7,4,2,Łambinowice,gmina wiejska,17.5596274,50.538452
+16,7,5,5,Nysa,obszar wiejski,-97.4299356,35.2351384
+16,7,6,3,Otmuchów,gmina miejsko-wiejska,17.1733617,50.4660686
+16,7,6,4,Otmuchów,miasto,17.1733617,50.4660686
+16,7,6,5,Otmuchów,obszar wiejski,17.1733617,50.4660686
+16,7,7,4,Paczków,miasto,17.0057255,50.4635646
+16,7,7,5,Paczków,obszar wiejski,17.0057255,50.4635646
+16,7,8,2,Pakosławice,gmina wiejska,17.3145765,50.5442414
+16,7,,,nyski,powiat,-76.0707393,42.9937577
+16,8,2,3,Gorzów Śląski,gmina miejsko-wiejska,18.4228918,51.0279541
+16,8,2,4,Gorzów Śląski,miasto,18.4228918,51.0279541
+16,8,2,5,Gorzów Śląski,obszar wiejski,18.4228918,51.0279541
+16,8,3,3,Olesno,gmina miejsko-wiejska,18.41472,50.87526
+16,8,3,4,Olesno,miasto,18.41472,50.87526
+16,8,3,5,Olesno,obszar wiejski,18.41472,50.87526
+16,8,4,3,Praszka,gmina miejsko-wiejska,18.4535,51.05359
+16,8,4,4,Praszka,miasto,18.4535,51.05359
+16,8,4,5,Praszka,obszar wiejski,18.4535,51.05359
+16,8,5,2,Radłów,gmina wiejska,20.8132616,50.0997723
+16,9,2,2,Dąbrowa,gmina wiejska,20.6802939,49.6895754
+16,9,3,2,Dobrzeń Wielki,gmina wiejska,17.8467758,50.7825952
+16,9,4,2,Komprachcice,gmina wiejska,17.8332763,50.629311
+16,9,5,2,Łubniany,gmina wiejska,18.0164688,50.7986433
+16,9,6,2,Murów,gmina wiejska,17.9460201,50.8619291
+16,9,7,3,Niemodlin,gmina miejsko-wiejska,17.61989,50.6422
+16,9,7,4,Niemodlin,miasto,17.61989,50.6422
+16,9,7,5,Niemodlin,obszar wiejski,17.61989,50.6422
+16,9,8,3,Ozimek,gmina miejsko-wiejska,18.2137899,50.6787
+16,9,8,4,Ozimek,miasto,18.2137899,50.6787
+16,9,8,5,Ozimek,obszar wiejski,18.2137899,50.6787
+16,9,9,2,Popielów,gmina wiejska,17.7490734,50.8516338
+16,9,10,3,Prószków,gmina miejsko-wiejska,17.8714049,50.5766701
+16,9,10,4,Prószków,miasto,17.8714049,50.5766701
+16,9,10,5,Prószków,obszar wiejski,17.8714049,50.5766701
+16,9,12,3,Tułowice,gmina miejsko-wiejska,17.653119,50.595453
+16,9,12,4,Tułowice,miasto,17.653119,50.595453
+16,9,12,5,Tułowice,obszar wiejski,17.653119,50.595453
+16,9,13,2,Turawa,gmina wiejska,18.0761948,50.737285
+16,9,,,opolski,powiat,17.8547725,50.7706028
+16,10,1,3,Biała,gmina miejsko-wiejska,17.6604283,50.3862574
+16,10,1,4,Biała,miasto,17.6604283,50.3862574
+16,10,1,5,Biała,obszar wiejski,17.6604283,50.3862574
+16,10,2,3,Głogówek,gmina miejsko-wiejska,17.8643499,50.35349
+16,10,2,4,Głogówek,miasto,17.8643499,50.35349
+16,10,2,5,Głogówek,obszar wiejski,17.8643499,50.35349
+16,10,3,2,Lubrza,gmina wiejska,15.4425975,52.3046097
+16,10,4,3,Prudnik,gmina miejsko-wiejska,17.5742265,50.3206779
+16,10,4,4,Prudnik,miasto,17.5742265,50.3206779
+16,10,4,5,Prudnik,obszar wiejski,17.5742265,50.3206779
+16,10,,,prudnicki,powiat,17.6997454,50.3886209
+16,11,1,2,Izbicko,gmina wiejska,18.1546193,50.5715496
+16,11,2,2,Jemielnica,gmina wiejska,18.3780265,50.5461474
+16,11,3,4,Kolonowskie,miasto,18.38426,50.6532734
+16,11,3,5,Kolonowskie,obszar wiejski,18.38426,50.6532734
+16,11,4,3,Leśnica,gmina miejsko-wiejska,19.2924197,44.6593093
+16,11,4,4,Leśnica,miasto,19.2924197,44.6593093
+16,11,4,5,Leśnica,obszar wiejski,19.2924197,44.6593093
+16,11,5,4,Strzelce Opolskie,miasto,18.29987,50.51092
+16,11,5,5,Strzelce Opolskie,obszar wiejski,18.29987,50.51092
+16,11,6,3,Ujazd,gmina miejsko-wiejska,18.3476407,50.3888097
+16,11,6,4,Ujazd,miasto,18.3476407,50.3888097
+16,11,6,5,Ujazd,obszar wiejski,18.3476407,50.3888097
+16,11,7,3,Zawadzkie,gmina miejsko-wiejska,18.48514,50.60435
+16,11,7,4,Zawadzkie,miasto,18.48514,50.60435
+16,11,7,5,Zawadzkie,obszar wiejski,18.48514,50.60435
+16,11,,,strzelecki,powiat,145.902453,-38.3416551
+16,61,1,1,Opole,gmina miejska,17.9212976,50.6751067
+16,61,,,Opole,miasto na prawach powiatu,17.9212976,50.6751067
+16,,,,OPOLSKIE,województwo,17.937989,50.8003761
+18,1,3,2,Czarna,gmina wiejska,22.668617,49.3241114
+18,1,8,3,Ustrzyki Dolne,gmina miejsko-wiejska,22.5942366,49.4303242
+18,1,8,4,Ustrzyki Dolne,miasto,22.5942366,49.4303242
+18,1,8,5,Ustrzyki Dolne,obszar wiejski,22.5942366,49.4303242
+18,1,,,bieszczadzki,powiat,22.6000231,49.3098139
+18,2,1,3,Brzozów,gmina miejsko-wiejska,22.0193601,49.69427
+18,2,1,4,Brzozów,miasto,22.0193601,49.69427
+18,2,1,5,Brzozów,obszar wiejski,22.0193601,49.69427
+18,2,2,2,Domaradz,gmina wiejska,21.9847254,49.7877362
+18,2,5,2,Jasienica Rosielna,gmina wiejska,21.9421457,49.7511863
+18,2,6,2,Nozdrzec,gmina wiejska,22.1560721,49.7534799
+18,2,,,brzozowski,powiat,21.9880699,49.6905132
+18,3,2,4,Brzostek,miasto,-76.337869,43.167663
+18,3,2,5,Brzostek,obszar wiejski,-76.337869,43.167663
+18,3,3,2,Czarna,gmina wiejska,22.668617,49.3241114
+18,3,4,2,Dębica,gmina wiejska,21.4116964,50.0516417
+18,3,5,2,Jodłowa,gmina wiejska,21.2780491,49.871683
+18,3,6,3,Pilzno,gmina miejsko-wiejska,21.29492,49.97976
+18,3,6,4,Pilzno,miasto,21.29492,49.97976
+18,3,6,5,Pilzno,obszar wiejski,21.29492,49.97976
+18,4,1,1,Jarosław,gmina miejska,22.6777169,50.0161463
+18,4,2,1,Radymno,gmina miejska,22.82395,49.94712
+18,4,4,2,Jarosław,gmina wiejska,22.6777169,50.0161463
+18,4,7,3,Pruchnik,gmina miejsko-wiejska,22.5155104,49.9061322
+18,4,7,4,Pruchnik,miasto,22.5155104,49.9061322
+18,4,7,5,Pruchnik,obszar wiejski,22.5155104,49.9061322
+18,4,8,2,Radymno,gmina wiejska,22.82395,49.94712
+18,4,9,2,Rokietnica,gmina wiejska,16.7603259,52.5103659
+18,4,10,2,Roźwienica,gmina wiejska,22.6007278,49.9648175
+18,4,11,2,Wiązownica,gmina wiejska,22.7769128,50.1124738
+18,4,,,jarosławski,powiat,132.2224411,44.1784962
+18,5,1,1,Jasło,gmina miejska,21.4722875,49.7445663
+18,5,2,2,Brzyska,gmina wiejska,21.3826318,49.8199537
+18,5,3,2,Dębowiec,gmina wiejska,21.4604016,49.6827011
+18,5,4,2,Jasło,gmina wiejska,21.4722875,49.7445663
+18,5,5,5,Kołaczyce,obszar wiejski,21.4331923,49.8073734
+18,5,8,2,Osiek Jasielski,gmina wiejska,21.4490777,49.6145537
+18,5,,,jasielski,powiat,21.4728496,49.706141
+18,6,2,3,Kolbuszowa,gmina miejsko-wiejska,21.77627,50.24417
+18,6,2,4,Kolbuszowa,miasto,21.77627,50.24417
+18,6,2,5,Kolbuszowa,obszar wiejski,21.77627,50.24417
+18,6,5,2,Raniżów,gmina wiejska,21.9619305,50.2677408
+18,6,,,kolbuszowski,powiat,21.8378567,50.323594
+18,7,1,2,Chorkówka,gmina wiejska,21.6354296,49.6423706
+18,7,2,4,Dukla,miasto,21.6832308,49.5555137
+18,7,2,5,Dukla,obszar wiejski,21.6832308,49.5555137
+18,7,3,3,Iwonicz-Zdrój,gmina miejsko-wiejska,21.7899388,49.5631235
+18,7,3,4,Iwonicz-Zdrój,miasto,21.7899388,49.5631235
+18,7,3,5,Iwonicz-Zdrój,obszar wiejski,21.7899388,49.5631235
+18,7,4,3,Jedlicze,gmina miejsko-wiejska,21.64896,49.71749
+18,7,4,4,Jedlicze,miasto,21.64896,49.71749
+18,7,4,5,Jedlicze,obszar wiejski,21.64896,49.71749
+18,7,5,2,Korczyna,gmina wiejska,21.8093835,49.7153523
+18,7,7,2,Miejsce Piastowe,gmina wiejska,21.7640067,49.6385152
+18,7,8,3,Rymanów,gmina miejsko-wiejska,21.86815,49.57642
+18,7,8,4,Rymanów,miasto,21.86815,49.57642
+18,7,8,5,Rymanów,obszar wiejski,21.86815,49.57642
+18,7,9,2,Wojaszówka,gmina wiejska,21.7112659,49.7774163
+18,7,10,2,Jaśliska,gmina wiejska,21.8083481,49.4420995
+18,7,,,krośnieński,powiat,15.0030846,52.0001091
+18,8,1,1,Leżajsk,gmina miejska,22.4210807,50.2620534
+18,8,2,2,Grodzisko Dolne,gmina wiejska,22.4368303,50.1713086
+18,8,3,2,Kuryłówka,gmina wiejska,22.4662646,50.2998015
+18,8,4,2,Leżajsk,gmina wiejska,22.4210807,50.2620534
+18,8,5,3,Nowa Sarzyna,gmina miejsko-wiejska,22.2915497,50.3416353
+18,8,5,4,Nowa Sarzyna,miasto,22.2915497,50.3416353
+18,8,5,5,Nowa Sarzyna,obszar wiejski,22.2915497,50.3416353
+18,8,,,leżajski,powiat,22.4790327,50.2819824
+18,9,1,1,Lubaczów,gmina miejska,23.12379,50.15621
+18,9,2,3,Cieszanów,gmina miejsko-wiejska,23.1306266,50.2447893
+18,9,2,4,Cieszanów,miasto,23.1306266,50.2447893
+18,9,2,5,Cieszanów,obszar wiejski,23.1306266,50.2447893
+18,9,3,2,Horyniec-Zdrój,gmina wiejska,23.3634802,50.1918209
+18,9,4,2,Lubaczów,gmina wiejska,23.12379,50.15621
+18,9,5,5,Narol,obszar wiejski,23.3268124,50.3490504
+18,9,6,3,Oleszyce,gmina miejsko-wiejska,23.0349969,50.1676885
+18,9,6,4,Oleszyce,miasto,23.0349969,50.1676885
+18,9,6,5,Oleszyce,obszar wiejski,23.0349969,50.1676885
+18,9,7,2,Stary Dzików,gmina wiejska,22.9032174,50.2599635
+18,9,8,2,Wielkie Oczy,gmina wiejska,23.1640425,50.0235198
+18,9,,,lubaczowski,powiat,23.2122604,50.260564
+18,10,1,1,Łańcut,gmina miejska,22.2298,50.06824
+18,10,2,2,Białobrzegi,gmina wiejska,20.9565466,51.6464991
+18,10,3,2,Czarna,gmina wiejska,22.668617,49.3241114
+18,10,4,2,Łańcut,gmina wiejska,22.2298,50.06824
+18,10,5,2,Markowa,gmina wiejska,22.3113814,50.0221813
+18,10,6,2,Rakszawa,gmina wiejska,22.2388242,50.1602886
+18,10,7,2,Żołynia,gmina wiejska,22.3191779,50.1518357
+18,10,,,łańcucki,powiat,22.2392796,50.15712
+18,11,2,2,Borowa,gmina wiejska,21.3512972,50.3852781
+18,11,3,2,Czermin,gmina wiejska,21.3337019,50.339021
+18,11,4,2,Gawłuszowice,gmina wiejska,21.3962569,50.4203829
+18,11,6,2,Padew Narodowa,gmina wiejska,21.5133015,50.4411071
+18,11,7,4,Przecław,miasto,21.4800672,50.1933744
+18,11,7,5,Przecław,obszar wiejski,21.4800672,50.1933744
+18,11,8,3,Radomyśl Wielki,gmina miejsko-wiejska,21.2769049,50.1968867
+18,11,8,4,Radomyśl Wielki,miasto,21.2769049,50.1968867
+18,11,8,5,Radomyśl Wielki,obszar wiejski,21.2769049,50.1968867
+18,11,9,2,Tuszów Narodowy,gmina wiejska,21.5261533,50.3736573
+18,11,10,2,Wadowice Górne,gmina wiejska,21.2481233,50.2758833
+18,11,,,mielecki,powiat,21.4302478,50.316502
+18,12,1,2,Harasiuki,gmina wiejska,22.4676693,50.4908322
+18,12,2,2,Jarocin,gmina wiejska,17.5019414,51.9724492
+18,12,4,2,Krzeszów,gmina wiejska,16.0707451,50.7333738
+18,12,5,5,Nisko,obszar wiejski,22.1395499,50.52001
+18,12,6,3,Rudnik nad Sanem,gmina miejsko-wiejska,22.24879,50.44324
+18,12,6,4,Rudnik nad Sanem,miasto,22.24879,50.44324
+18,12,6,5,Rudnik nad Sanem,obszar wiejski,22.24879,50.44324
+18,12,7,3,Ulanów,gmina miejsko-wiejska,22.2636037,50.4902323
+18,12,7,4,Ulanów,miasto,22.2636037,50.4902323
+18,12,7,5,Ulanów,obszar wiejski,22.2636037,50.4902323
+18,12,,,niżański,powiat,22.3713566,50.4776809
+18,13,1,2,Bircza,gmina wiejska,22.4858847,49.6923166
+18,13,2,2,Dubiecko,gmina wiejska,22.3924149,49.8279218
+18,13,3,2,Fredropol,gmina wiejska,22.663228,49.6610642
+18,13,4,2,Krasiczyn,gmina wiejska,22.6525426,49.7762204
+18,13,7,2,Orły,gmina wiejska,2.401373,48.745193
+18,13,8,2,Przemyśl,gmina wiejska,22.7677908,49.7838623
+18,13,9,2,Stubno,gmina wiejska,22.9553047,49.8989379
+18,13,10,2,Żurawica,gmina wiejska,22.7888958,49.8234295
+18,13,,,przemyski,powiat,22.7785702,49.7771435
+18,14,2,2,Adamówka,gmina wiejska,22.6976335,50.2589897
+18,14,3,2,Gać,gmina wiejska,-78.881388,35.973901
+18,14,4,2,Jawornik Polski,gmina wiejska,22.3223285,49.9136237
+18,14,5,3,Kańczuga,gmina miejsko-wiejska,22.411607,49.9833529
+18,14,5,4,Kańczuga,miasto,22.411607,49.9833529
+18,14,5,5,Kańczuga,obszar wiejski,22.411607,49.9833529
+18,14,6,2,Przeworsk,gmina wiejska,22.49377,50.0587
+18,14,7,3,Sieniawa,gmina miejsko-wiejska,22.6095389,50.177791
+18,14,7,4,Sieniawa,miasto,22.6095389,50.177791
+18,14,7,5,Sieniawa,obszar wiejski,22.6095389,50.177791
+18,14,8,2,Tryńcza,gmina wiejska,22.5505396,50.1606458
+18,14,9,2,Zarzecze,gmina wiejska,21.9182601,49.9512163
+18,14,,,przeworski,powiat,22.5411805,50.0742865
+18,15,1,2,Iwierzyce,gmina wiejska,21.7550001,50.0159625
+18,15,2,2,Ostrów,gmina wiejska,19.9079315,51.2955606
+18,15,3,3,Ropczyce,gmina miejsko-wiejska,21.60887,50.05228
+18,15,3,4,Ropczyce,miasto,21.60887,50.05228
+18,15,3,5,Ropczyce,obszar wiejski,21.60887,50.05228
+18,15,4,5,Sędziszów Małopolski,obszar wiejski,21.70191,50.07097
+18,15,5,2,Wielopole Skrzyńskie,gmina wiejska,21.6149951,49.9461042
+18,16,1,1,Dynów,gmina miejska,22.23388,49.81506
+18,16,2,3,Błażowa,gmina miejsko-wiejska,22.1027541,49.8856487
+18,16,2,4,Błażowa,miasto,22.1027541,49.8856487
+18,16,2,5,Błażowa,obszar wiejski,22.1027541,49.8856487
+18,16,3,3,Boguchwała,gmina miejsko-wiejska,21.9450838,49.9846987
+18,16,3,4,Boguchwała,miasto,21.9450838,49.9846987
+18,16,3,5,Boguchwała,obszar wiejski,21.9450838,49.9846987
+18,16,4,2,Chmielnik,gmina wiejska,20.75212,50.61415
+18,16,5,2,Dynów,gmina wiejska,22.23388,49.81506
+18,16,6,4,Głogów Małopolski,miasto,21.96286,50.1512
+18,16,6,5,Głogów Małopolski,obszar wiejski,21.96286,50.1512
+18,16,7,2,Hyżne,gmina wiejska,22.1652611,49.9230337
+18,16,8,2,Kamień,gmina wiejska,22.1355656,50.3402763
+18,16,9,2,Krasne,gmina wiejska,-96.4959485,41.4333479
+18,16,10,2,Lubenia,gmina wiejska,21.9610919,49.9214247
+18,16,11,3,Sokołów Małopolski,gmina miejsko-wiejska,22.1196401,50.22904
+18,16,11,4,Sokołów Małopolski,miasto,22.1196401,50.22904
+18,16,11,5,Sokołów Małopolski,obszar wiejski,22.1196401,50.22904
+18,16,12,2,Świlcza,gmina wiejska,21.8729089,50.0789426
+18,16,13,2,Trzebownisko,gmina wiejska,22.0395661,50.0778422
+18,16,14,3,Tyczyn,gmina miejsko-wiejska,22.0339385,49.9638636
+18,16,14,4,Tyczyn,miasto,22.0339385,49.9638636
+18,16,14,5,Tyczyn,obszar wiejski,22.0339385,49.9638636
+18,16,,,rzeszowski,powiat,22.0083082,50.0197452
+18,17,1,1,Sanok,gmina miejska,22.2060658,49.5550187
+18,17,2,2,Besko,gmina wiejska,21.9513347,49.5878927
+18,17,3,2,Bukowsko,gmina wiejska,22.0616032,49.4798845
+18,17,4,2,Komańcza,gmina wiejska,22.0702028,49.3368124
+18,17,5,2,Sanok,gmina wiejska,22.2060658,49.5550187
+18,17,6,2,Tyrawa Wołoska,gmina wiejska,22.3696964,49.5773435
+18,17,7,3,Zagórz,gmina miejsko-wiejska,22.26707,49.5143
+18,17,7,4,Zagórz,miasto,22.26707,49.5143
+18,17,7,5,Zagórz,obszar wiejski,22.26707,49.5143
+18,17,8,2,Zarszyn,gmina wiejska,22.0047221,49.5693954
+18,17,,,sanocki,powiat,22.0947319,49.497926
+18,18,1,1,Stalowa Wola,gmina miejska,22.0535861,50.5826005
+18,18,3,2,Pysznica,gmina wiejska,22.1555282,50.586354
+18,18,4,2,Radomyśl nad Sanem,gmina wiejska,21.9249615,50.7192894
+18,18,5,3,Zaklików,gmina miejsko-wiejska,22.1021741,50.7577772
+18,18,5,4,Zaklików,miasto,22.1021741,50.7577772
+18,18,5,5,Zaklików,obszar wiejski,22.1021741,50.7577772
+18,18,6,2,Zaleszany,gmina wiejska,23.3295857,52.6371204
+18,18,,,stalowowolski,powiat,22.0833908,50.6225178
+18,19,1,2,Czudec,gmina wiejska,21.8376406,49.9454719
+18,19,2,2,Frysztak,gmina wiejska,21.6104056,49.8409644
+18,19,3,2,Niebylec,gmina wiejska,21.9033927,49.8560034
+18,19,4,3,Strzyżów,gmina miejsko-wiejska,21.79386,49.87047
+18,19,4,4,Strzyżów,miasto,21.79386,49.87047
+18,19,4,5,Strzyżów,obszar wiejski,21.79386,49.87047
+18,19,5,2,Wiśniowa,gmina wiejska,20.1149907,49.7874878
+18,19,,,strzyżowski,powiat,21.7658112,49.9062558
+18,20,1,3,Baranów Sandomierski,gmina miejsko-wiejska,21.5417402,50.498985
+18,20,1,4,Baranów Sandomierski,miasto,21.5417402,50.498985
+18,20,1,5,Baranów Sandomierski,obszar wiejski,21.5417402,50.498985
+18,20,2,2,Gorzyce,gmina wiejska,21.8403116,50.6669191
+18,20,4,3,Nowa Dęba,gmina miejsko-wiejska,21.75077,50.42959
+18,20,4,4,Nowa Dęba,miasto,21.75077,50.42959
+18,20,4,5,Nowa Dęba,obszar wiejski,21.75077,50.42959
+18,21,1,2,Baligród,gmina wiejska,22.2868645,49.3357569
+18,21,2,2,Cisna,gmina wiejska,22.3285103,49.2112335
+18,21,4,2,Olszanica,gmina wiejska,22.4430527,49.477405
+18,21,5,2,Solina,gmina wiejska,22.4677303,49.3993322
+18,21,,,leski,powiat,22.4798088,41.8690585
+18,61,1,1,Krosno,gmina miejska,21.7660531,49.6824761
+18,61,,,Krosno,miasto na prawach powiatu,21.7660531,49.6824761
+18,62,1,1,Przemyśl,gmina miejska,22.7677908,49.7838623
+18,62,,,Przemyśl,miasto na prawach powiatu,22.7677908,49.7838623
+18,64,1,1,Tarnobrzeg,gmina miejska,21.6790698,50.5729079
+18,,,,PODKARPACKIE,województwo,22.0895691,50.0574749
+20,1,1,1,Augustów,gmina miejska,22.9796024,53.8434431
+20,1,2,2,Augustów,gmina wiejska,22.9796024,53.8434431
+20,1,3,2,Bargłów Kościelny,gmina wiejska,22.7983645,53.7651194
+20,1,4,3,Lipsk,gmina miejsko-wiejska,23.3921628,53.7370364
+20,1,4,4,Lipsk,miasto,23.3921628,53.7370364
+20,1,4,5,Lipsk,obszar wiejski,23.3921628,53.7370364
+20,1,5,2,Nowinka,gmina wiejska,23.0351482,53.9468485
+20,1,6,2,Płaska,gmina wiejska,23.2918958,53.8945655
+20,1,7,2,Sztabin,gmina wiejska,23.098319,53.6844982
+20,2,1,4,Choroszcz,miasto,22.98815,53.14292
+20,2,1,5,Choroszcz,obszar wiejski,22.98815,53.14292
+20,2,2,3,Czarna Białostocka,gmina miejsko-wiejska,23.28784,53.30215
+20,2,2,4,Czarna Białostocka,miasto,23.28784,53.30215
+20,2,2,5,Czarna Białostocka,obszar wiejski,23.28784,53.30215
+20,2,4,2,Gródek,gmina wiejska,23.6558145,53.1320562
+20,2,5,2,Juchnowiec Kościelny,gmina wiejska,23.1354159,52.9672857
+20,2,6,3,Łapy,gmina miejsko-wiejska,22.8843128,52.9912947
+20,2,6,4,Łapy,miasto,22.8843128,52.9912947
+20,2,6,5,Łapy,obszar wiejski,22.8843128,52.9912947
+20,2,7,3,Michałowo,gmina miejsko-wiejska,23.6062185,53.0329376
+20,2,7,4,Michałowo,miasto,23.6062185,53.0329376
+20,2,7,5,Michałowo,obszar wiejski,23.6062185,53.0329376
+20,2,8,2,Poświętne,gmina wiejska,20.3372134,51.5440296
+20,2,9,3,Supraśl,gmina miejsko-wiejska,23.3393564,53.2049014
+20,2,9,4,Supraśl,miasto,23.3393564,53.2049014
+20,2,9,5,Supraśl,obszar wiejski,23.3393564,53.2049014
+20,2,10,3,Suraż,gmina miejsko-wiejska,22.9564233,52.9490114
+20,2,10,4,Suraż,miasto,22.9564233,52.9490114
+20,2,10,5,Suraż,obszar wiejski,22.9564233,52.9490114
+20,2,12,3,Tykocin,gmina miejsko-wiejska,22.7740605,53.2062669
+20,2,12,4,Tykocin,miasto,22.7740605,53.2062669
+20,2,12,5,Tykocin,obszar wiejski,22.7740605,53.2062669
+20,2,13,3,Wasilków,gmina miejsko-wiejska,23.20779,53.1986
+20,2,13,4,Wasilków,miasto,23.20779,53.1986
+20,2,13,5,Wasilków,obszar wiejski,23.20779,53.1986
+20,2,14,3,Zabłudów,gmina miejsko-wiejska,23.3383288,53.0140919
+20,2,14,4,Zabłudów,miasto,23.3383288,53.0140919
+20,2,14,5,Zabłudów,obszar wiejski,23.3383288,53.0140919
+20,2,15,2,Zawady,gmina wiejska,22.6623844,53.1561272
+20,2,,,białostocki,powiat,23.3148969,53.0438238
+20,3,1,1,Bielsk Podlaski,gmina miejska,23.1867524,52.7650576
+20,3,2,1,Brańsk,gmina miejska,22.8413044,52.7433639
+20,3,3,2,Bielsk Podlaski,gmina wiejska,23.1867524,52.7650576
+20,3,4,2,Boćki,gmina wiejska,23.0446709,52.6515392
+20,3,5,2,Brańsk,gmina wiejska,22.8413044,52.7433639
+20,3,6,2,Orla,gmina wiejska,-103.9085393,31.8247936
+20,3,7,2,Rudka,gmina wiejska,16.3310019,49.2424729
+20,3,8,2,Wyszki,gmina wiejska,22.9711686,52.864932
+20,3,,,bielski,powiat,19.076211,49.9080843
+20,4,1,1,Grajewo,gmina miejska,22.455217,53.6471559
+20,4,2,2,Grajewo,gmina wiejska,22.455217,53.6471559
+20,4,3,2,Radziłów,gmina wiejska,22.408836,53.4103668
+20,4,4,3,Rajgród,gmina miejsko-wiejska,22.7049936,53.7309754
+20,4,4,4,Rajgród,miasto,22.7049936,53.7309754
+20,4,4,5,Rajgród,obszar wiejski,22.7049936,53.7309754
+20,4,5,3,Szczuczyn,gmina miejsko-wiejska,22.2855473,53.5630405
+20,4,5,4,Szczuczyn,miasto,22.2855473,53.5630405
+20,4,5,5,Szczuczyn,obszar wiejski,22.2855473,53.5630405
+20,4,6,2,Wąsosz,gmina wiejska,16.69165,51.5623852
+20,4,,,grajewski,powiat,22.4521604,53.5826026
+20,5,1,1,Hajnówka,gmina miejska,23.58165,52.74514
+20,5,2,2,Białowieża,gmina wiejska,23.6555674,52.7228852
+20,5,3,2,Czeremcha,gmina wiejska,23.3517478,52.5139674
+20,5,4,2,Czyże,gmina wiejska,23.417075,52.8069317
+20,5,5,2,Dubicze Cerkiewne,gmina wiejska,23.442523,52.6493697
+20,5,6,2,Hajnówka,gmina wiejska,23.58165,52.74514
+20,5,7,3,Kleszczele,gmina miejsko-wiejska,23.3252268,52.5726288
+20,5,7,4,Kleszczele,miasto,23.3252268,52.5726288
+20,5,7,5,Kleszczele,obszar wiejski,23.3252268,52.5726288
+20,5,8,2,Narew,gmina wiejska,22.2941467,52.8451928
+20,5,,,hajnowski,powiat,23.6072363,52.7104134
+20,6,1,1,Kolno,gmina miejska,21.9326485,53.4077753
+20,6,2,2,Grabowo,gmina wiejska,22.1537262,53.4651261
+20,6,3,2,Kolno,gmina wiejska,21.9326485,53.4077753
+20,6,4,2,Mały Płock,gmina wiejska,22.0038289,53.2951032
+20,6,5,3,Stawiski,gmina miejsko-wiejska,-85.648227,42.9703243
+20,6,5,4,Stawiski,miasto,-85.648227,42.9703243
+20,6,5,5,Stawiski,obszar wiejski,-85.648227,42.9703243
+20,6,6,2,Turośl,gmina wiejska,21.6989028,53.433014
+20,6,,,kolneński,powiat,21.9991336,53.3980909
+20,7,2,2,Łomża,gmina wiejska,22.0590321,53.1781197
+20,7,3,2,Miastkowo,gmina wiejska,21.817887,53.1385789
+20,7,4,4,Nowogród,miasto,21.8790209,53.226552
+20,7,4,5,Nowogród,obszar wiejski,21.8790209,53.226552
+20,7,7,2,Śniadowo,gmina wiejska,21.9729135,53.0634706
+20,7,8,2,Wizna,gmina wiejska,22.3821446,53.1944253
+20,7,9,2,Zbójna,gmina wiejska,21.7575385,53.2406021
+20,7,,,łomżyński,powiat,22.2444288,53.1688851
+20,8,1,3,Goniądz,gmina miejsko-wiejska,22.735111,53.4897551
+20,8,1,4,Goniądz,miasto,22.735111,53.4897551
+20,8,1,5,Goniądz,obszar wiejski,22.735111,53.4897551
+20,8,2,2,Jasionówka,gmina wiejska,23.0419387,53.3845167
+20,8,3,2,Jaświły,gmina wiejska,22.9450197,53.5068977
+20,8,4,3,Knyszyn,gmina miejsko-wiejska,22.9196898,53.3126826
+20,8,4,4,Knyszyn,miasto,22.9196898,53.3126826
+20,8,4,5,Knyszyn,obszar wiejski,22.9196898,53.3126826
+20,8,5,2,Krypno,gmina wiejska,22.8791341,53.2858296
+20,8,6,3,Mońki,gmina miejsko-wiejska,22.79712,53.40491
+20,8,6,4,Mońki,miasto,22.79712,53.40491
+20,8,6,5,Mońki,obszar wiejski,22.79712,53.40491
+20,8,7,2,Trzcianne,gmina wiejska,22.6146652,53.2998646
+20,9,1,1,Sejny,gmina miejska,23.3469,54.10809
+20,9,3,2,Krasnopol,gmina wiejska,23.206557,54.1161771
+20,9,4,2,Puńsk,gmina wiejska,23.1797382,54.251638
+20,9,5,2,Sejny,gmina wiejska,23.3469,54.10809
+20,10,1,1,Siemiatycze,gmina miejska,22.86373,52.42732
+20,10,2,3,Drohiczyn,gmina miejsko-wiejska,22.6585778,52.4003253
+20,10,2,4,Drohiczyn,miasto,22.6585778,52.4003253
+20,10,2,5,Drohiczyn,obszar wiejski,22.6585778,52.4003253
+20,10,3,2,Dziadkowice,gmina wiejska,22.9217263,52.5588274
+20,10,4,2,Grodzisk,gmina wiejska,20.6350924,52.1044383
+20,10,6,2,Milejczyce,gmina wiejska,23.1320839,52.5196136
+20,10,8,2,Perlejewo,gmina wiejska,22.5559679,52.5765247
+20,10,9,2,Siemiatycze,gmina wiejska,22.86373,52.42732
+20,10,,,siemiatycki,powiat,22.9640433,52.4826091
+20,11,1,3,Dąbrowa Białostocka,gmina miejsko-wiejska,23.3479763,53.653655
+20,11,1,4,Dąbrowa Białostocka,miasto,23.3479763,53.653655
+20,11,1,5,Dąbrowa Białostocka,obszar wiejski,23.3479763,53.653655
+20,11,2,2,Janów,gmina wiejska,-95.618658,37.0354812
+20,11,3,2,Korycin,gmina wiejska,23.1251676,53.4360068
+20,11,4,3,Krynki,gmina miejsko-wiejska,23.7725,53.2639896
+20,11,4,4,Krynki,miasto,23.7725,53.2639896
+20,11,4,5,Krynki,obszar wiejski,23.7725,53.2639896
+20,11,5,2,Kuźnica,gmina wiejska,18.5804453,54.7352753
+20,11,6,2,Nowy Dwór,gmina wiejska,20.6925219,52.4465078
+20,11,7,2,Sidra,gmina wiejska,23.4487883,53.5519734
+20,11,8,3,Sokółka,gmina miejsko-wiejska,23.5030235,53.4061597
+20,11,8,4,Sokółka,miasto,23.5030235,53.4061597
+20,11,8,5,Sokółka,obszar wiejski,23.5030235,53.4061597
+20,11,9,3,Suchowola,gmina miejsko-wiejska,23.1058028,53.5776262
+20,11,9,4,Suchowola,miasto,23.1058028,53.5776262
+20,11,9,5,Suchowola,obszar wiejski,23.1058028,53.5776262
+20,11,10,2,Szudziałowo,gmina wiejska,23.6347653,53.2734047
+20,12,1,2,Bakałarzewo,gmina wiejska,22.6519281,54.0935272
+20,12,2,2,Filipów,gmina wiejska,22.6207739,54.1804047
+20,12,3,2,Jeleniewo,gmina wiejska,22.9126128,54.2037847
+20,12,4,2,Przerośl,gmina wiejska,22.6593392,54.2533084
+20,12,6,2,Rutka-Tartak,gmina wiejska,22.9916912,54.3241867
+20,12,7,2,Suwałki,gmina wiejska,22.9307881,54.1115218
+20,12,8,2,Szypliszki,gmina wiejska,23.051221,54.2198852
+20,12,9,2,Wiżajny,gmina wiejska,22.8686837,54.3632592
+20,12,,,suwalski,powiat,22.9216482,54.0962169
+20,13,1,1,Wysokie Mazowieckie,gmina miejska,22.51003,52.9148
+20,13,2,3,Ciechanowiec,gmina miejsko-wiejska,22.4981661,52.6782617
+20,13,2,4,Ciechanowiec,miasto,22.4981661,52.6782617
+20,13,2,5,Ciechanowiec,obszar wiejski,22.4981661,52.6782617
+20,13,3,3,Czyżew,gmina miejsko-wiejska,22.312295,52.7975103
+20,13,3,4,Czyżew,miasto,22.312295,52.7975103
+20,13,3,5,Czyżew,obszar wiejski,22.312295,52.7975103
+20,13,4,2,Klukowo,gmina wiejska,22.5335863,52.761226
+20,13,5,2,Kobylin-Borzymy,gmina wiejska,22.6350368,53.0687852
+20,13,6,2,Kulesze Kościelne,gmina wiejska,22.5050787,53.01498
+20,13,7,2,Nowe Piekuty,gmina wiejska,22.6884104,52.8769692
+20,13,8,2,Sokoły,gmina wiejska,12.6598918,50.1745286
+20,13,9,3,Szepietowo,gmina miejsko-wiejska,22.5438703,52.870314
+20,13,9,4,Szepietowo,miasto,22.5438703,52.870314
+20,13,9,5,Szepietowo,obszar wiejski,22.5438703,52.870314
+20,13,10,2,Wysokie Mazowieckie,gmina wiejska,22.51003,52.9148
+20,13,,,wysokomazowiecki,powiat,22.5450705,52.8379228
+20,14,1,1,Zambrów,gmina miejska,22.2413857,52.9849941
+20,14,2,2,Kołaki Kościelne,gmina wiejska,22.3807227,53.0288291
+20,14,3,2,Rutki,gmina wiejska,20.7140417,53.5999412
+20,14,4,2,Szumowo,gmina wiejska,22.1242745,52.8985534
+20,14,5,2,Zambrów,gmina wiejska,22.2413857,52.9849941
+20,14,,,zambrowski,powiat,22.2851817,53.0024585
+20,61,1,1,Białystok,gmina miejska,23.1688403,53.1324886
+20,61,,,Białystok,miasto na prawach powiatu,23.1688403,53.1324886
+20,62,1,1,Łomża,gmina miejska,22.0590321,53.1781197
+20,62,,,Łomża,miasto na prawach powiatu,22.0590321,53.1781197
+20,63,1,1,Suwałki,gmina miejska,22.9307881,54.1115218
+20,63,,,Suwałki,miasto na prawach powiatu,22.9307881,54.1115218
+22,1,1,2,Borzytuchom,gmina wiejska,17.3614079,54.2116592
+22,1,2,3,Bytów,gmina miejsko-wiejska,17.4916089,54.1706219
+22,1,2,4,Bytów,miasto,17.4916089,54.1706219
+22,1,2,5,Bytów,obszar wiejski,17.4916089,54.1706219
+22,1,3,2,Czarna Dąbrówka,gmina wiejska,17.5518918,54.34101
+22,1,4,2,Kołczygłowy,gmina wiejska,17.2312846,54.2388118
+22,1,5,2,Lipnica,gmina wiejska,16.6984291,51.3125915
+22,1,6,3,Miastko,gmina miejsko-wiejska,16.98265,54.0026
+22,1,6,4,Miastko,miasto,16.98265,54.0026
+22,1,6,5,Miastko,obszar wiejski,16.98265,54.0026
+22,1,7,2,Parchowo,gmina wiejska,17.6512344,54.2020695
+22,1,8,2,Studzienice,gmina wiejska,17.577063,54.0924525
+22,1,9,2,Trzebielino,gmina wiejska,17.0865173,54.1993929
+22,1,10,2,Tuchomie,gmina wiejska,17.3367473,54.1152557
+22,2,1,1,Chojnice,gmina miejska,17.5569252,53.6944002
+22,2,2,3,Brusy,gmina miejsko-wiejska,17.71915,53.88655
+22,2,2,4,Brusy,miasto,17.71915,53.88655
+22,2,2,5,Brusy,obszar wiejski,17.71915,53.88655
+22,2,3,2,Chojnice,gmina wiejska,17.5569252,53.6944002
+22,2,4,3,Czersk,gmina miejsko-wiejska,17.9763976,53.7950936
+22,2,4,4,Czersk,miasto,17.9763976,53.7950936
+22,2,4,5,Czersk,obszar wiejski,17.9763976,53.7950936
+22,2,5,2,Konarzyny,gmina wiejska,18.089596,53.9665725
+22,3,1,1,Człuchów,gmina miejska,17.359013,53.6671796
+22,3,2,3,Czarne,gmina miejsko-wiejska,16.9383968,53.6840759
+22,3,2,4,Czarne,miasto,16.9383968,53.6840759
+22,3,2,5,Czarne,obszar wiejski,16.9383968,53.6840759
+22,3,3,2,Człuchów,gmina wiejska,17.359013,53.6671796
+22,3,4,3,Debrzno,gmina miejsko-wiejska,17.2364118,53.5380522
+22,3,4,4,Debrzno,miasto,17.2364118,53.5380522
+22,3,4,5,Debrzno,obszar wiejski,17.2364118,53.5380522
+22,3,6,2,Przechlewo,gmina wiejska,17.2528972,53.8006292
+22,3,7,2,Rzeczenica,gmina wiejska,17.1077021,53.7577169
+22,4,1,1,Pruszcz Gdański,gmina miejska,18.6361725,54.2621505
+22,4,3,2,Kolbudy,gmina wiejska,18.4775168,54.2774456
+22,4,4,2,Pruszcz Gdański,gmina wiejska,18.6361725,54.2621505
+22,4,5,2,Przywidz,gmina wiejska,18.3202769,54.1949744
+22,4,6,2,Pszczółki,gmina wiejska,18.6995279,54.1713554
+22,4,,,gdański,powiat,18.6466384,54.3520252
+22,5,2,3,Kartuzy,gmina miejsko-wiejska,18.1972,54.3343
+22,5,2,4,Kartuzy,miasto,18.1972,54.3343
+22,5,2,5,Kartuzy,obszar wiejski,18.1972,54.3343
+22,5,3,2,Przodkowo,gmina wiejska,18.2559087,54.3914983
+22,5,4,2,Sierakowice,gmina wiejska,17.8948288,54.3483636
+22,5,5,2,Somonino,gmina wiejska,18.1984681,54.2746723
+22,5,6,2,Stężyca,gmina wiejska,17.9499311,54.2101124
+22,5,7,2,Sulęczyno,gmina wiejska,17.7717438,54.2317091
+22,5,8,3,Żukowo,gmina miejsko-wiejska,18.3650381,54.3420055
+22,5,8,4,Żukowo,miasto,18.3650381,54.3420055
+22,5,8,5,Żukowo,obszar wiejski,18.3650381,54.3420055
+22,5,,,kartuski,powiat,18.1175348,54.3451554
+22,6,1,1,Kościerzyna,gmina miejska,17.9812605,54.1222457
+22,6,2,2,Dziemiany,gmina wiejska,17.7763729,54.0058465
+22,6,3,2,Karsin,gmina wiejska,17.9238713,53.8961626
+22,6,4,2,Kościerzyna,gmina wiejska,17.9812605,54.1222457
+22,6,6,2,Lipusz,gmina wiejska,17.7835592,54.0984859
+22,6,7,2,Nowa Karczma,gmina wiejska,18.1728263,54.1446018
+22,6,8,2,Stara Kiszewa,gmina wiejska,18.1290817,54.0049387
+22,6,,,kościerski,powiat,18.0203275,53.999309
+22,7,1,1,Kwidzyn,gmina miejska,18.9323043,53.7263529
+22,7,2,2,Gardeja,gmina wiejska,18.9465992,53.6108875
+22,7,3,2,Kwidzyn,gmina wiejska,18.9323043,53.7263529
+22,7,4,3,Prabuty,gmina miejsko-wiejska,19.2045339,53.7558642
+22,7,4,4,Prabuty,miasto,19.2045339,53.7558642
+22,7,4,5,Prabuty,obszar wiejski,19.2045339,53.7558642
+22,7,6,2,Sadlinki,gmina wiejska,18.8692725,53.6620073
+22,7,,,kwidzyński,powiat,19.0069879,53.7069237
+22,8,1,1,Lębork,gmina miejska,17.7532511,54.544642
+22,8,2,1,Łeba,gmina miejska,17.5563117,54.760117
+22,8,4,2,Nowa Wieś Lęborska,gmina wiejska,17.6715048,54.5716392
+22,8,,,lęborski,powiat,17.6445007,54.688957
+22,9,1,1,Malbork,gmina miejska,19.0379763,54.0361319
+22,9,3,2,Lichnowy,gmina wiejska,18.9063861,54.1068265
+22,9,4,2,Malbork,gmina wiejska,19.0379763,54.0361319
+22,9,6,2,Miłoradz,gmina wiejska,18.9182622,54.0139321
+22,9,7,3,Nowy Staw,gmina miejsko-wiejska,19.00874,54.13607
+22,9,7,4,Nowy Staw,miasto,19.00874,54.13607
+22,9,7,5,Nowy Staw,obszar wiejski,19.00874,54.13607
+22,9,8,2,Stare Pole,gmina wiejska,19.2011777,54.0542472
+22,9,,,malborski,powiat,19.0336719,54.0860433
+22,10,1,1,Krynica Morska,gmina miejska,19.4441406,54.3799913
+22,10,2,3,Nowy Dwór Gdański,gmina miejsko-wiejska,19.11753,54.20801
+22,10,2,4,Nowy Dwór Gdański,miasto,19.11753,54.20801
+22,10,2,5,Nowy Dwór Gdański,obszar wiejski,19.11753,54.20801
+22,10,3,2,Ostaszewo,gmina wiejska,18.9507118,54.2119078
+22,10,4,2,Stegna,gmina wiejska,19.1123088,54.3263367
+22,10,5,2,Sztutowo,gmina wiejska,19.1790706,54.3260845
+22,10,,,nowodworski,powiat,20.6780861,52.4769443
+22,11,1,1,Hel,gmina miejska,18.8007998,54.6083804
+22,11,2,3,Jastarnia,gmina miejsko-wiejska,18.6788396,54.6957333
+22,11,2,4,Jastarnia,miasto,18.6788396,54.6957333
+22,11,2,5,Jastarnia,obszar wiejski,18.6788396,54.6957333
+22,11,3,1,Puck,gmina miejska,18.4086339,54.7180477
+22,11,4,3,Władysławowo,gmina miejsko-wiejska,18.403,54.79074
+22,11,4,4,Władysławowo,miasto,18.403,54.79074
+22,11,4,5,Władysławowo,obszar wiejski,18.403,54.79074
+22,11,5,2,Kosakowo,gmina wiejska,18.4867829,54.5933251
+22,11,7,2,Puck,gmina wiejska,18.4086339,54.7180477
+22,11,,,pucki,powiat,18.2737787,54.7744489
+22,12,1,1,Ustka,gmina miejska,16.861891,54.5805607
+22,12,4,2,Główczyce,gmina wiejska,17.415,54.6099327
+22,12,5,3,Kępice,gmina miejsko-wiejska,16.88967,54.24052
+22,12,5,4,Kępice,miasto,16.88967,54.24052
+22,12,5,5,Kępice,obszar wiejski,16.88967,54.24052
+22,12,6,2,Kobylnica,gmina wiejska,16.9983888,54.4405652
+22,12,7,2,Potęgowo,gmina wiejska,17.4609109,54.4674702
+22,12,8,2,Słupsk,gmina wiejska,17.0284824,54.464148
+22,12,9,2,Smołdzino,gmina wiejska,17.2498021,54.6795218
+22,12,10,2,Ustka,gmina wiejska,16.861891,54.5805607
+22,12,,,słupski,powiat,17.0284824,54.464148
+22,13,1,3,Czarna Woda,gmina miejsko-wiejska,18.09998,53.84455
+22,13,1,4,Czarna Woda,miasto,18.09998,53.84455
+22,13,1,5,Czarna Woda,obszar wiejski,18.09998,53.84455
+22,13,2,1,Skórcz,gmina miejska,18.5248959,53.7937151
+22,13,3,1,Starogard Gdański,gmina miejska,18.5162736,53.965614
+22,13,6,2,Lubichowo,gmina wiejska,18.3991666,53.8514527
+22,13,7,2,Osieczna,gmina wiejska,16.6783382,51.9039882
+22,13,8,2,Osiek,gmina wiejska,19.2641467,49.9496427
+22,13,9,3,Skarszewy,gmina miejsko-wiejska,18.4442101,54.06907
+22,13,9,4,Skarszewy,miasto,18.4442101,54.06907
+22,13,9,5,Skarszewy,obszar wiejski,18.4442101,54.06907
+22,13,10,2,Skórcz,gmina wiejska,18.5248959,53.7937151
+22,13,11,2,Smętowo Graniczne,gmina wiejska,18.6465361,53.7430531
+22,13,12,2,Starogard Gdański,gmina wiejska,18.5162736,53.965614
+22,13,13,2,Zblewo,gmina wiejska,18.3177309,53.936
+22,13,,,starogardzki,powiat,18.3428483,53.8589184
+22,14,1,1,Tczew,gmina miejska,18.7773072,54.0919269
+22,14,2,3,Gniew,gmina miejsko-wiejska,18.82249,53.83546
+22,14,2,4,Gniew,miasto,18.82249,53.83546
+22,14,2,5,Gniew,obszar wiejski,18.82249,53.83546
+22,14,3,2,Morzeszczyn,gmina wiejska,18.6636599,53.8415277
+22,14,4,3,Pelplin,gmina miejsko-wiejska,18.6979422,53.9283135
+22,14,4,4,Pelplin,miasto,18.6979422,53.9283135
+22,14,4,5,Pelplin,obszar wiejski,18.6979422,53.9283135
+22,14,5,2,Subkowy,gmina wiejska,18.769656,54.001807
+22,14,6,2,Tczew,gmina wiejska,18.7773072,54.0919269
+22,15,1,1,Reda,gmina miejska,18.3471836,54.6053867
+22,15,2,1,Rumia,gmina miejska,18.3878223,54.5707832
+22,15,3,1,Wejherowo,gmina miejska,18.2330488,54.6003216
+22,15,5,2,Gniewino,gmina wiejska,18.0111563,54.7168708
+22,15,6,2,Linia,gmina wiejska,17.9347953,54.4514664
+22,15,7,2,Luzino,gmina wiejska,18.1037551,54.5660207
+22,15,9,2,Szemud,gmina wiejska,18.2487978,54.4832002
+22,15,10,2,Wejherowo,gmina wiejska,18.2330488,54.6003216
+22,15,,,wejherowski,powiat,18.2330488,54.6003216
+22,16,1,3,Dzierzgoń,gmina miejsko-wiejska,19.34723,53.92148
+22,16,1,4,Dzierzgoń,miasto,19.34723,53.92148
+22,16,1,5,Dzierzgoń,obszar wiejski,19.34723,53.92148
+22,16,2,2,Mikołajki Pomorskie,gmina wiejska,19.166646,53.8522152
+22,16,3,2,Stary Dzierzgoń,gmina wiejska,19.4530283,53.8807878
+22,16,5,3,Sztum,gmina miejsko-wiejska,19.0295929,53.9208518
+22,16,5,4,Sztum,miasto,19.0295929,53.9208518
+22,16,5,5,Sztum,obszar wiejski,19.0295929,53.9208518
+22,61,1,1,Gdańsk,gmina miejska,18.6466384,54.3520252
+22,61,,,Gdańsk,miasto na prawach powiatu,18.6466384,54.3520252
+22,62,1,1,Gdynia,gmina miejska,18.5305409,54.5188898
+22,62,,,Gdynia,miasto na prawach powiatu,18.5305409,54.5188898
+22,63,1,1,Słupsk,gmina miejska,17.0284824,54.464148
+22,63,,,Słupsk,miasto na prawach powiatu,17.0284824,54.464148
+22,64,1,1,Sopot,gmina miejska,18.5600956,54.441581
+22,64,,,Sopot,miasto na prawach powiatu,18.5600956,54.441581
+22,,,,POMORSKIE,województwo,18.1531164,54.2944252
+24,1,1,1,Będzin,gmina miejska,19.125412,50.3255999
+24,1,2,1,Czeladź,gmina miejska,19.0704415,50.317273
+24,1,3,1,Wojkowice,gmina miejska,19.03572,50.364569
+24,1,4,2,Bobrowniki,gmina wiejska,18.9591994,52.7795731
+24,1,5,2,Mierzęcice,gmina wiejska,19.1284378,50.4446475
+24,1,6,2,Psary,gmina wiejska,19.1137896,50.3794553
+24,1,7,3,Siewierz,gmina miejsko-wiejska,19.2302203,50.4665752
+24,1,7,4,Siewierz,miasto,19.2302203,50.4665752
+24,1,7,5,Siewierz,obszar wiejski,19.2302203,50.4665752
+24,1,8,1,Sławków,gmina miejska,19.3880198,50.3045979
+24,1,,,będziński,powiat,19.1132834,50.4140948
+24,2,1,1,Szczyrk,gmina miejska,19.0235999,49.7150006
+24,2,2,2,Bestwina,gmina wiejska,19.0554096,49.9009998
+24,2,4,3,Czechowice-Dziedzice,gmina miejsko-wiejska,18.9917677,49.9016056
+24,2,4,4,Czechowice-Dziedzice,miasto,18.9917677,49.9016056
+24,2,4,5,Czechowice-Dziedzice,obszar wiejski,18.9917677,49.9016056
+24,2,5,2,Jasienica,gmina wiejska,18.9222972,49.81212
+24,2,6,2,Jaworze,gmina wiejska,18.9476275,49.7919321
+24,2,7,2,Kozy,gmina wiejska,-96.789029,32.820766
+24,2,8,2,Porąbka,gmina wiejska,19.2176348,49.8170828
+24,2,9,3,Wilamowice,gmina miejsko-wiejska,19.1520875,49.9166289
+24,2,9,4,Wilamowice,miasto,19.1520875,49.9166289
+24,2,9,5,Wilamowice,obszar wiejski,19.1520875,49.9166289
+24,2,10,2,Wilkowice,gmina wiejska,19.1167175,49.7631724
+24,2,,,bielski,powiat,19.076211,49.9080843
+24,3,1,1,Cieszyn,gmina miejska,18.6354709,49.7497638
+24,3,2,1,Ustroń,gmina miejska,18.8120576,49.719657
+24,3,3,1,Wisła,gmina miejska,18.867739,49.6473215
+24,3,5,2,Chybie,gmina wiejska,18.8414567,49.9000179
+24,3,6,2,Dębowiec,gmina wiejska,21.4604016,49.6827011
+24,3,7,2,Goleszów,gmina wiejska,18.7364724,49.7350685
+24,3,8,2,Hażlach,gmina wiejska,18.6369017,49.7967297
+24,3,9,2,Istebna,gmina wiejska,18.8935173,49.563977
+24,3,10,3,Skoczów,gmina miejsko-wiejska,18.790762,49.8031512
+24,3,10,4,Skoczów,miasto,18.790762,49.8031512
+24,3,10,5,Skoczów,obszar wiejski,18.790762,49.8031512
+24,3,11,3,Strumień,gmina miejsko-wiejska,18.7639258,49.9168442
+24,3,11,4,Strumień,miasto,18.7639258,49.9168442
+24,3,11,5,Strumień,obszar wiejski,18.7639258,49.9168442
+24,3,,,cieszyński,powiat,18.8311872,49.7374201
+24,4,1,3,Blachownia,gmina miejsko-wiejska,18.96224,50.78505
+24,4,1,4,Blachownia,miasto,18.96224,50.78505
+24,4,1,5,Blachownia,obszar wiejski,18.96224,50.78505
+24,4,2,2,Dąbrowa Zielona,gmina wiejska,19.558154,50.8543648
+24,4,3,2,Janów,gmina wiejska,-95.618658,37.0354812
+24,4,4,2,Kamienica Polska,gmina wiejska,19.1531883,50.6758725
+24,4,5,2,Kłomnice,gmina wiejska,19.375871,50.8967201
+24,4,6,3,Koniecpol,gmina miejsko-wiejska,19.68924,50.77414
+24,4,6,4,Koniecpol,miasto,19.68924,50.77414
+24,4,6,5,Koniecpol,obszar wiejski,19.68924,50.77414
+24,4,7,2,Konopiska,gmina wiejska,18.9932796,50.7245067
+24,4,8,2,Kruszyna,gmina wiejska,15.6339499,52.074196
+24,4,9,2,Lelów,gmina wiejska,19.6252779,50.6835923
+24,4,10,2,Mstów,gmina wiejska,19.3283072,50.8076486
+24,4,11,2,Mykanów,gmina wiejska,19.1506637,50.9244259
+24,4,12,2,Olsztyn,gmina wiejska,20.4801192,53.778422
+24,4,13,2,Poczesna,gmina wiejska,19.1592786,50.7159774
+24,4,,,częstochowski,powiat,19.1203094,50.8118195
+24,5,1,1,Knurów,gmina miejska,18.6706469,50.2219315
+24,5,2,1,Pyskowice,gmina miejska,18.6346378,50.3955793
+24,5,3,2,Gierałtowice,gmina wiejska,18.7452459,50.2301286
+24,5,4,2,Pilchowice,gmina wiejska,18.584265,50.2035399
+24,5,5,2,Rudziniec,gmina wiejska,18.460875,50.3946477
+24,5,6,3,Sośnicowice,gmina miejsko-wiejska,18.5286275,50.2718641
+24,5,6,4,Sośnicowice,miasto,18.5286275,50.2718641
+24,5,6,5,Sośnicowice,obszar wiejski,18.5286275,50.2718641
+24,5,7,3,Toszek,gmina miejsko-wiejska,18.522454,50.4542102
+24,5,7,4,Toszek,miasto,18.522454,50.4542102
+24,5,7,5,Toszek,obszar wiejski,18.522454,50.4542102
+24,6,1,3,Kłobuck,gmina miejsko-wiejska,18.9367931,50.9009168
+24,6,1,4,Kłobuck,miasto,18.9367931,50.9009168
+24,6,1,5,Kłobuck,obszar wiejski,18.9367931,50.9009168
+24,6,2,3,Krzepice,gmina miejsko-wiejska,18.7293002,50.969668
+24,6,2,4,Krzepice,miasto,18.7293002,50.969668
+24,6,2,5,Krzepice,obszar wiejski,18.7293002,50.969668
+24,6,4,2,Miedźno,gmina wiejska,19.0032418,50.9926165
+24,6,5,2,Opatów,gmina wiejska,21.427194,50.8018537
+24,6,7,2,Popów,gmina wiejska,18.9216086,51.038784
+24,6,8,2,Przystajń,gmina wiejska,18.6862825,50.8404486
+24,6,9,2,Wręczyca Wielka,gmina wiejska,18.8368095,50.8477509
+24,6,,,kłobucki,powiat,18.8752116,50.9492568
+24,7,1,1,Lubliniec,gmina miejska,18.6846192,50.6687353
+24,7,3,2,Ciasna,gmina wiejska,18.6095519,50.7992779
+24,7,4,2,Herby,gmina wiejska,18.8783173,50.7478709
+24,7,5,2,Kochanowice,gmina wiejska,18.7351952,50.7246691
+24,7,6,2,Koszęcin,gmina wiejska,18.8409208,50.6377774
+24,7,7,2,Pawonków,gmina wiejska,18.5876821,50.6738375
+24,7,8,3,Woźniki,gmina miejsko-wiejska,19.0601901,50.58846
+24,7,8,4,Woźniki,miasto,19.0601901,50.58846
+24,7,8,5,Woźniki,obszar wiejski,19.0601901,50.58846
+24,7,,,lubliniecki,powiat,18.8295757,50.6981811
+24,8,1,1,Łaziska Górne,gmina miejska,18.8402799,50.1494
+24,8,2,1,Mikołów,gmina miejska,18.9038037,50.1790184
+24,8,3,1,Orzesze,gmina miejska,18.7756856,50.1437776
+24,8,4,2,Ornontowice,gmina wiejska,18.751126,50.1811451
+24,8,5,2,Wyry,gmina wiejska,18.8939979,50.1359053
+24,8,,,mikołowski,powiat,18.8118364,50.1656588
+24,9,1,1,Myszków,gmina miejska,19.3144637,50.5706845
+24,9,2,5,Koziegłowy,obszar wiejski,19.16304,50.59991
+24,9,3,2,Niegowa,gmina wiejska,19.4774233,50.6524723
+24,9,4,2,Poraj,gmina wiejska,19.2399064,50.6610707
+24,9,5,3,Żarki,gmina miejsko-wiejska,19.3633201,50.62508
+24,9,5,4,Żarki,miasto,19.3633201,50.62508
+24,9,5,5,Żarki,obszar wiejski,19.3633201,50.62508
+24,10,1,2,Goczałkowice-Zdrój,gmina wiejska,18.9723705,49.9470778
+24,10,2,2,Kobiór,gmina wiejska,18.9345288,50.0624368
+24,10,3,2,Miedźna,gmina wiejska,19.0804172,49.9818075
+24,10,4,2,Pawłowice,gmina wiejska,18.7160882,49.9581835
+24,10,5,3,Pszczyna,gmina miejsko-wiejska,18.9477092,49.9857805
+24,10,5,4,Pszczyna,miasto,18.9477092,49.9857805
+24,10,5,5,Pszczyna,obszar wiejski,18.9477092,49.9857805
+24,10,6,2,Suszec,gmina wiejska,18.7912689,50.029463
+24,10,,,pszczyński,powiat,18.9477092,49.9857805
+24,11,1,1,Racibórz,gmina miejska,18.2199166,50.0915234
+24,11,2,2,Kornowac,gmina wiejska,18.3139861,50.0722914
+24,11,3,3,Krzanowice,gmina miejsko-wiejska,18.1228624,50.0194143
+24,11,3,4,Krzanowice,miasto,18.1228624,50.0194143
+24,11,3,5,Krzanowice,obszar wiejski,18.1228624,50.0194143
+24,11,4,2,Krzyżanowice,gmina wiejska,18.2382033,49.994364
+24,11,5,3,Kuźnia Raciborska,gmina miejsko-wiejska,18.31153,50.20009
+24,11,5,4,Kuźnia Raciborska,miasto,18.31153,50.20009
+24,11,5,5,Kuźnia Raciborska,obszar wiejski,18.31153,50.20009
+24,11,6,2,Nędza,gmina wiejska,18.3108467,50.160732
+24,11,7,2,Pietrowice Wielkie,gmina wiejska,18.0915378,50.1029786
+24,11,8,2,Rudnik,gmina wiejska,20.5047379,44.1386792
+24,11,,,raciborski,powiat,18.1814454,50.1203652
+24,12,1,3,Czerwionka-Leszczyny,gmina miejsko-wiejska,18.6774678,50.1489305
+24,12,1,4,Czerwionka-Leszczyny,miasto,18.6774678,50.1489305
+24,12,1,5,Czerwionka-Leszczyny,obszar wiejski,18.6774678,50.1489305
+24,12,2,2,Gaszowice,gmina wiejska,18.4247715,50.0967077
+24,12,3,2,Jejkowice,gmina wiejska,18.4718486,50.1022746
+24,12,4,2,Lyski,gmina wiejska,18.3887413,50.1132434
+24,12,5,2,Świerklany,gmina wiejska,18.5686935,50.0304828
+24,12,,,rybnicki,powiat,18.5396599,50.1150463
+24,13,1,1,Kalety,gmina miejska,18.88256,50.56501
+24,13,2,1,Miasteczko Śląskie,gmina miejska,18.9394888,50.5018744
+24,13,3,1,Radzionków,gmina miejska,18.9017625,50.3998141
+24,13,4,1,Tarnowskie Góry,gmina miejska,18.8460247,50.4359468
+24,13,6,2,Ożarowice,gmina wiejska,19.0428325,50.4614333
+24,13,7,2,Świerklaniec,gmina wiejska,18.9462071,50.4359088
+24,13,8,2,Tworóg,gmina wiejska,18.7382152,50.5201113
+24,13,9,2,Zbrosławice,gmina wiejska,18.7539867,50.4157082
+24,13,,,tarnogórski,powiat,18.8263957,50.4625163
+24,14,1,1,Bieruń,gmina miejska,19.09291,50.08999
+24,14,2,1,Imielin,gmina miejska,19.1860157,50.145287
+24,14,3,1,Lędziny,gmina miejska,19.1310539,50.1425364
+24,14,5,2,Chełm Śląski,gmina wiejska,19.1951444,50.1072136
+24,15,2,1,Radlin,gmina miejska,18.4768769,50.0491414
+24,15,3,1,Rydułtowy,gmina miejska,18.4173821,50.057879
+24,15,6,2,Gorzyce,gmina wiejska,21.8403116,50.6669191
+24,15,8,2,Marklowice,gmina wiejska,18.5192901,50.0165301
+24,15,9,2,Mszana,gmina wiejska,18.5272387,49.9692585
+24,15,,,wodzisławski,powiat,18.4693241,49.9884454
+24,16,2,1,Zawiercie,gmina miejska,19.4166258,50.487743
+24,16,4,2,Kroczyce,gmina wiejska,19.5697659,50.5664031
+24,16,6,4,Ogrodzieniec,miasto,19.5520942,50.4531127
+24,16,6,5,Ogrodzieniec,obszar wiejski,19.5520942,50.4531127
+24,16,7,3,Pilica,gmina miejsko-wiejska,20.4879656,51.143337
+24,16,7,4,Pilica,miasto,20.4879656,51.143337
+24,16,7,5,Pilica,obszar wiejski,20.4879656,51.143337
+24,16,8,4,Szczekociny,miasto,19.8255,50.62758
+24,16,8,5,Szczekociny,obszar wiejski,19.8255,50.62758
+24,16,9,2,Włodowice,gmina wiejska,19.4586783,50.5588122
+24,16,10,2,Żarnowiec,gmina wiejska,18.0856717,54.7874158
+24,16,,,zawierciański,powiat,19.5827637,50.4834474
+24,17,2,2,Czernichów,gmina wiejska,19.6444571,50.0120706
+24,17,3,2,Gilowice,gmina wiejska,19.3085572,49.7122409
+24,17,6,2,Lipowa,gmina wiejska,19.0503591,49.6685639
+24,17,7,2,Łękawica,gmina wiejska,19.2992416,49.7530269
+24,17,8,2,Łodygowice,gmina wiejska,19.1406482,49.7302193
+24,17,9,2,Milówka,gmina wiejska,19.086865,49.5593676
+24,17,10,2,Radziechowy-Wieprz,gmina wiejska,19.2056445,49.620824
+24,17,11,2,Rajcza,gmina wiejska,19.118131,49.5139337
+24,17,12,2,Ślemień,gmina wiejska,19.367413,49.7176815
+24,17,14,2,Ujsoły,gmina wiejska,19.1216344,49.4345565
+24,17,15,2,Węgierska Górka,gmina wiejska,19.1163069,49.606601
+24,61,1,1,Bielsko-Biała,gmina miejska,19.0583845,49.8223768
+24,61,,,Bielsko-Biała,miasto na prawach powiatu,19.0583845,49.8223768
+24,62,1,1,Bytom,gmina miejska,18.9157176,50.3483816
+24,62,,,Bytom,miasto na prawach powiatu,18.9157176,50.3483816
+24,63,1,1,Chorzów,gmina miejska,18.9545728,50.2974884
+24,63,,,Chorzów,miasto na prawach powiatu,18.9545728,50.2974884
+24,64,1,1,Częstochowa,gmina miejska,19.1203094,50.8118195
+24,65,1,1,Dąbrowa Górnicza,gmina miejska,19.1949126,50.3216897
+24,65,,,Dąbrowa Górnicza,miasto na prawach powiatu,19.1949126,50.3216897
+24,66,1,1,Gliwice,gmina miejska,18.6713802,50.2944923
+24,66,,,Gliwice,miasto na prawach powiatu,18.6713802,50.2944923
+24,67,1,1,Jastrzębie-Zdrój,gmina miejska,18.6101103,49.9454207
+24,67,,,Jastrzębie-Zdrój,miasto na prawach powiatu,18.6101103,49.9454207
+24,68,1,1,Jaworzno,gmina miejska,19.2739314,50.204987
+24,68,,,Jaworzno,miasto na prawach powiatu,19.2739314,50.204987
+24,70,1,1,Mysłowice,gmina miejska,19.1660513,50.2080466
+24,70,,,Mysłowice,miasto na prawach powiatu,19.1660513,50.2080466
+24,71,1,1,Piekary Śląskie,gmina miejska,18.9270475,50.3789108
+24,72,1,1,Ruda Śląska,gmina miejska,18.8555704,50.2558286
+24,72,,,Ruda Śląska,miasto na prawach powiatu,18.8555704,50.2558286
+24,73,1,1,Rybnik,gmina miejska,18.5462847,50.1021742
+24,73,,,Rybnik,miasto na prawach powiatu,18.5462847,50.1021742
+24,74,1,1,Siemianowice Śląskie,gmina miejska,19.0295714,50.3264314
+24,74,,,Siemianowice Śląskie,miasto na prawach powiatu,19.0295714,50.3264314
+24,75,1,1,Sosnowiec,gmina miejska,19.1040791,50.2862638
+24,75,,,Sosnowiec,miasto na prawach powiatu,19.1040791,50.2862638
+24,76,1,1,Świętochłowice,gmina miejska,18.9171298,50.2964328
+24,76,,,Świętochłowice,miasto na prawach powiatu,18.9171298,50.2964328
+24,77,1,1,Tychy,gmina miejska,19.0200023,50.1218007
+24,77,,,Tychy,miasto na prawach powiatu,19.0200023,50.1218007
+24,78,1,1,Zabrze,gmina miejska,18.7857186,50.3249278
+24,78,,,Zabrze,miasto na prawach powiatu,18.7857186,50.3249278
+24,79,1,1,Żory,gmina miejska,18.7006401,50.0447236
+24,79,,,Żory,miasto na prawach powiatu,18.7006401,50.0447236
+24,,,,ŚLĄSKIE,województwo,19.3219768,50.5716595
+26,1,1,3,Busko-Zdrój,gmina miejsko-wiejska,20.7191757,50.470362
+26,1,1,4,Busko-Zdrój,miasto,20.7191757,50.470362
+26,1,1,5,Busko-Zdrój,obszar wiejski,20.7191757,50.470362
+26,1,2,2,Gnojno,gmina wiejska,20.8453989,50.6026887
+26,1,3,2,Nowy Korczyn,gmina wiejska,20.8074789,50.3010266
+26,1,4,2,Pacanów,gmina wiejska,21.0416049,50.400018
+26,1,5,2,Solec-Zdrój,gmina wiejska,20.8912188,50.3657401
+26,1,6,3,Stopnica,gmina miejsko-wiejska,20.938154,50.4406629
+26,1,6,4,Stopnica,miasto,20.938154,50.4406629
+26,1,6,5,Stopnica,obszar wiejski,20.938154,50.4406629
+26,1,8,3,Wiślica,gmina miejsko-wiejska,20.6741631,50.3483062
+26,1,8,4,Wiślica,miasto,20.6741631,50.3483062
+26,1,8,5,Wiślica,obszar wiejski,20.6741631,50.3483062
+26,1,,,buski,powiat,29.0153771,40.2142646
+26,2,1,2,Imielno,gmina wiejska,20.4480843,50.5854351
+26,2,2,4,Jędrzejów,miasto,20.3038771,50.639337
+26,2,2,5,Jędrzejów,obszar wiejski,20.3038771,50.639337
+26,2,3,3,Małogoszcz,gmina miejsko-wiejska,20.2650979,50.8121157
+26,2,3,4,Małogoszcz,miasto,20.2650979,50.8121157
+26,2,3,5,Małogoszcz,obszar wiejski,20.2650979,50.8121157
+26,2,4,2,Nagłowice,gmina wiejska,20.1063921,50.6782371
+26,2,5,2,Oksa,gmina wiejska,20.100239,50.728749
+26,2,6,3,Sędziszów,gmina miejsko-wiejska,20.0553412,50.565562
+26,2,6,4,Sędziszów,miasto,20.0553412,50.565562
+26,2,6,5,Sędziszów,obszar wiejski,20.0553412,50.565562
+26,2,7,2,Słupia,gmina wiejska,17.0213483,54.4688551
+26,2,8,2,Sobków,gmina wiejska,20.4507966,50.6998213
+26,2,9,2,Wodzisław,gmina wiejska,18.4719102,50.003137
+26,2,,,jędrzejowski,powiat,20.3008653,50.65754
+26,3,2,2,Czarnocin,gmina wiejska,19.6814345,51.5902809
+26,3,3,3,Kazimierza Wielka,gmina miejsko-wiejska,20.49344,50.26542
+26,3,3,4,Kazimierza Wielka,miasto,20.49344,50.26542
+26,3,3,5,Kazimierza Wielka,obszar wiejski,20.49344,50.26542
+26,3,4,2,Opatowiec,gmina wiejska,20.7239305,50.2440056
+26,3,5,3,Skalbmierz,gmina miejsko-wiejska,20.3992492,50.3197113
+26,3,5,4,Skalbmierz,miasto,20.3992492,50.3197113
+26,3,5,5,Skalbmierz,obszar wiejski,20.3992492,50.3197113
+26,3,,,kazimierski,powiat,20.519199,50.2940577
+26,4,1,2,Bieliny,gmina wiejska,20.9498215,50.8306446
+26,4,2,3,Bodzentyn,gmina miejsko-wiejska,20.9571249,50.9409245
+26,4,2,4,Bodzentyn,miasto,20.9571249,50.9409245
+26,4,2,5,Bodzentyn,obszar wiejski,20.9571249,50.9409245
+26,4,3,3,Chęciny,gmina miejsko-wiejska,20.4781219,50.8054489
+26,4,3,4,Chęciny,miasto,20.4781219,50.8054489
+26,4,3,5,Chęciny,obszar wiejski,20.4781219,50.8054489
+26,4,4,3,Chmielnik,gmina miejsko-wiejska,20.75212,50.61415
+26,4,4,4,Chmielnik,miasto,20.75212,50.61415
+26,4,4,5,Chmielnik,obszar wiejski,20.75212,50.61415
+26,4,8,2,Łopuszno,gmina wiejska,20.2508581,50.9485739
+26,4,9,2,Masłów,gmina wiejska,20.7413602,50.8966921
+26,4,12,4,Morawica,miasto,20.6058946,50.7533909
+26,4,12,5,Morawica,obszar wiejski,20.6058946,50.7533909
+26,4,14,2,Piekoszów,gmina wiejska,20.423105,50.8845513
+26,4,15,2,Pierzchnica,gmina wiejska,20.8025587,50.6844348
+26,4,19,2,Zagnańsk,gmina wiejska,20.6425202,50.9965742
+26,5,2,2,Gowarczów,gmina wiejska,20.4380252,51.2781803
+26,5,3,4,Końskie,miasto,20.4068498,51.1914693
+26,5,3,5,Końskie,obszar wiejski,20.4068498,51.1914693
+26,5,4,3,Radoszyce,gmina miejsko-wiejska,20.2592764,51.0740778
+26,5,4,4,Radoszyce,miasto,20.2592764,51.0740778
+26,5,4,5,Radoszyce,obszar wiejski,20.2592764,51.0740778
+26,5,7,2,Smyków,gmina wiejska,20.4073153,51.0831895
+26,5,8,3,Stąporków,gmina miejsko-wiejska,20.57188,51.13737
+26,5,8,4,Stąporków,miasto,20.57188,51.13737
+26,5,8,5,Stąporków,obszar wiejski,20.57188,51.13737
+26,5,,,konecki,powiat,20.3261701,51.1305948
+26,6,1,2,Baćkowice,gmina wiejska,21.2322042,50.7917257
+26,6,2,2,Iwaniska,gmina wiejska,21.2819714,50.729753
+26,6,3,2,Lipnik,gmina wiejska,20.5854588,50.6069414
+26,6,4,3,Opatów,gmina miejsko-wiejska,21.427194,50.8018537
+26,6,4,4,Opatów,miasto,21.427194,50.8018537
+26,6,4,5,Opatów,obszar wiejski,21.427194,50.8018537
+26,6,5,3,Ożarów,gmina miejsko-wiejska,21.66654,50.88758
+26,6,5,4,Ożarów,miasto,21.66654,50.88758
+26,6,5,5,Ożarów,obszar wiejski,21.66654,50.88758
+26,6,8,2,Wojciechowice,gmina wiejska,16.7057595,50.4551631
+26,6,,,opatowski,powiat,21.3816143,50.7596348
+26,7,1,1,Ostrowiec Świętokrzyski,gmina miejska,21.3851914,50.9295234
+26,7,2,2,Bałtów,gmina wiejska,21.5418795,51.0177556
+26,7,3,2,Bodzechów,gmina wiejska,21.3327185,50.8888162
+26,7,4,3,Ćmielów,gmina miejsko-wiejska,21.5149892,50.8900563
+26,7,4,4,Ćmielów,miasto,21.5149892,50.8900563
+26,7,4,5,Ćmielów,obszar wiejski,21.5149892,50.8900563
+26,7,5,3,Kunów,gmina miejsko-wiejska,21.3423653,51.0070178
+26,7,5,4,Kunów,miasto,21.3423653,51.0070178
+26,7,5,5,Kunów,obszar wiejski,21.3423653,51.0070178
+26,7,6,2,Waśniów,gmina wiejska,21.2217403,50.8554873
+26,7,,,ostrowiecki,powiat,21.4297744,50.9465911
+26,8,1,3,Działoszyce,gmina miejsko-wiejska,20.3520979,50.3651987
+26,8,1,4,Działoszyce,miasto,20.3520979,50.3651987
+26,8,1,5,Działoszyce,obszar wiejski,20.3520979,50.3651987
+26,8,2,2,Kije,gmina wiejska,18.4019586,51.5600287
+26,8,3,2,Michałów,gmina wiejska,15.9995982,51.3554877
+26,8,4,3,Pińczów,gmina miejsko-wiejska,20.5264571,50.52034
+26,8,4,4,Pińczów,miasto,20.5264571,50.52034
+26,8,4,5,Pińczów,obszar wiejski,20.5264571,50.52034
+26,8,5,2,Złota,gmina wiejska,20.5894496,50.3807266
+26,8,,,pińczowski,powiat,20.5044784,50.4907423
+26,9,2,2,Dwikozy,gmina wiejska,21.7887966,50.7355265
+26,9,4,3,Koprzywnica,gmina miejsko-wiejska,21.5852479,50.5930221
+26,9,4,4,Koprzywnica,miasto,21.5852479,50.5930221
+26,9,4,5,Koprzywnica,obszar wiejski,21.5852479,50.5930221
+26,9,6,2,Obrazów,gmina wiejska,21.650708,50.6922784
+26,9,8,2,Wilczyce,gmina wiejska,17.1507401,51.1299639
+26,9,9,3,Zawichost,gmina miejsko-wiejska,21.8528832,50.8075698
+26,9,9,4,Zawichost,miasto,21.8528832,50.8075698
+26,9,9,5,Zawichost,obszar wiejski,21.8528832,50.8075698
+26,10,1,1,Skarżysko-Kamienna,gmina miejska,20.8477827,51.114294
+26,10,2,2,Bliżyn,gmina wiejska,20.7235049,51.0797038
+26,10,3,2,Łączna,gmina wiejska,20.7941816,51.002642
+26,10,4,2,Skarżysko Kościelne,gmina wiejska,20.9229561,51.1408847
+26,10,5,4,Suchedniów,miasto,20.8292701,51.04762
+26,10,5,5,Suchedniów,obszar wiejski,20.8292701,51.04762
+26,11,1,1,Starachowice,gmina miejska,21.070977,51.0368289
+26,11,2,2,Brody,gmina wiejska,-89.0700649,34.9320359
+26,11,4,2,Pawłów,gmina wiejska,21.1055911,50.9646796
+26,11,5,3,Wąchock,gmina miejsko-wiejska,21.0124401,51.07359
+26,11,5,4,Wąchock,miasto,21.0124401,51.07359
+26,11,5,5,Wąchock,obszar wiejski,21.0124401,51.07359
+26,11,,,starachowicki,powiat,21.1067058,51.0517693
+26,12,1,2,Bogoria,gmina wiejska,36.1002111,0.2648456
+26,12,2,2,Łubnice,gmina wiejska,18.2903712,51.1644956
+26,12,3,2,Oleśnica,gmina wiejska,17.3898504,51.2134346
+26,12,4,3,Osiek,gmina miejsko-wiejska,19.2641467,49.9496427
+26,12,4,4,Osiek,miasto,19.2641467,49.9496427
+26,12,4,5,Osiek,obszar wiejski,19.2641467,49.9496427
+26,12,5,4,Połaniec,miasto,21.28065,50.43302
+26,12,5,5,Połaniec,obszar wiejski,21.28065,50.43302
+26,12,7,4,Staszów,miasto,21.1659309,50.5629974
+26,12,7,5,Staszów,obszar wiejski,21.1659309,50.5629974
+26,12,8,2,Szydłów,gmina wiejska,21.0073408,50.591103
+26,12,,,staszowski,powiat,21.2017973,50.5333986
+26,13,1,2,Kluczewsko,gmina wiejska,19.9041083,50.9669561
+26,13,2,2,Krasocin,gmina wiejska,20.1094204,50.8869862
+26,13,3,2,Moskorzew,gmina wiejska,19.9463021,50.6456056
+26,13,4,2,Radków,gmina wiejska,16.3972701,50.5046222
+26,13,5,2,Secemin,gmina wiejska,19.8210377,50.7650406
+26,13,6,3,Włoszczowa,gmina miejsko-wiejska,19.9677201,50.85237
+26,13,6,4,Włoszczowa,miasto,19.9677201,50.85237
+26,13,6,5,Włoszczowa,obszar wiejski,19.9677201,50.85237
+26,,,,ŚWIĘTOKRZYSKIE,województwo,20.9406279,50.6261041
+28,1,2,1,Górowo Iławeckie,gmina miejska,20.49296,54.28534
+28,1,3,2,Bartoszyce,gmina wiejska,20.80806,54.2533
+28,1,4,5,Bisztynek,obszar wiejski,20.9038564,54.0858374
+28,1,5,2,Górowo Iławeckie,gmina wiejska,20.49296,54.28534
+28,1,6,3,Sępopol,gmina miejsko-wiejska,21.0143445,54.2690259
+28,1,6,4,Sępopol,miasto,21.0143445,54.2690259
+28,1,6,5,Sępopol,obszar wiejski,21.0143445,54.2690259
+28,1,,,bartoszycki,powiat,20.7964826,54.2601481
+28,2,2,2,Braniewo,gmina wiejska,19.8200536,54.3797128
+28,2,3,3,Frombork,gmina miejsko-wiejska,19.6800723,54.3574777
+28,2,3,4,Frombork,miasto,19.6800723,54.3574777
+28,2,3,5,Frombork,obszar wiejski,19.6800723,54.3574777
+28,2,4,2,Lelkowo,gmina wiejska,20.2246278,54.3242873
+28,2,5,3,Pieniężno,gmina miejsko-wiejska,20.1285899,54.236292
+28,2,5,4,Pieniężno,miasto,20.1285899,54.236292
+28,2,5,5,Pieniężno,obszar wiejski,20.1285899,54.236292
+28,2,6,2,Płoskinia,gmina wiejska,19.818826,54.272147
+28,2,,,braniewski,powiat,19.9612973,54.3159867
+28,3,2,2,Działdowo,gmina wiejska,20.1799787,53.2356765
+28,3,3,2,Iłowo-Osada,gmina wiejska,20.2929527,53.1676269
+28,3,4,4,Lidzbark,miasto,19.826521,53.2625544
+28,3,4,5,Lidzbark,obszar wiejski,19.826521,53.2625544
+28,3,5,2,Płośnica,gmina wiejska,20.0115137,53.2716964
+28,3,6,2,Rybno,gmina wiejska,22.1859251,53.1186537
+28,3,,,działdowski,powiat,20.050474,53.3050749
+28,4,3,2,Gronowo Elbląskie,gmina wiejska,19.3179484,54.0843348
+28,4,4,2,Markusy,gmina wiejska,19.4070456,54.0354986
+28,4,6,3,Młynary,gmina miejsko-wiejska,19.7204087,54.1863169
+28,4,6,4,Młynary,miasto,19.7204087,54.1863169
+28,4,6,5,Młynary,obszar wiejski,19.7204087,54.1863169
+28,4,7,3,Pasłęk,gmina miejsko-wiejska,19.6640682,54.0619067
+28,4,7,4,Pasłęk,miasto,19.6640682,54.0619067
+28,4,7,5,Pasłęk,obszar wiejski,19.6640682,54.0619067
+28,5,1,1,Ełk,gmina miejska,22.3646629,53.8280529
+28,5,2,2,Ełk,gmina wiejska,22.3646629,53.8280529
+28,5,3,2,Kalinowo,gmina wiejska,22.6718422,53.8737535
+28,5,,,ełcki,powiat,22.3323582,53.7888026
+28,6,4,2,Giżycko,gmina wiejska,21.7667342,54.036405
+28,6,8,4,Ryn,miasto,21.54633,53.93811
+28,6,8,5,Ryn,obszar wiejski,21.54633,53.93811
+28,7,4,3,Kisielice,gmina miejsko-wiejska,19.2636541,53.6085352
+28,7,4,4,Kisielice,miasto,19.2636541,53.6085352
+28,7,4,5,Kisielice,obszar wiejski,19.2636541,53.6085352
+28,7,6,3,Susz,gmina miejsko-wiejska,19.33541,53.71703
+28,7,6,4,Susz,miasto,19.33541,53.71703
+28,7,6,5,Susz,obszar wiejski,19.33541,53.71703
+28,7,7,5,Zalewo,obszar wiejski,19.6034448,53.8458953
+28,8,5,3,Reszel,gmina miejsko-wiejska,21.1458001,54.0498
+28,8,5,4,Reszel,miasto,21.1458001,54.0498
+28,8,5,5,Reszel,obszar wiejski,21.1458001,54.0498
+28,8,,,kętrzyński,powiat,21.3114621,54.1661097
+28,9,2,2,Kiwity,gmina wiejska,20.7251896,54.1019105
+28,9,5,4,Orneta,miasto,20.1302301,54.11538
+28,9,5,5,Orneta,obszar wiejski,20.1302301,54.11538
+28,10,2,3,Mikołajki,gmina miejsko-wiejska,21.5706044,53.8027021
+28,10,2,4,Mikołajki,miasto,21.5706044,53.8027021
+28,10,2,5,Mikołajki,obszar wiejski,21.5706044,53.8027021
+28,10,3,2,Mrągowo,gmina wiejska,21.3048734,53.8641596
+28,11,1,2,Janowiec Kościelny,gmina wiejska,20.5653374,53.2812613
+28,11,2,2,Janowo,gmina wiejska,20.6900204,53.3489135
+28,11,4,3,Nidzica,gmina miejsko-wiejska,20.4274873,53.360814
+28,11,4,4,Nidzica,miasto,20.4274873,53.360814
+28,11,4,5,Nidzica,obszar wiejski,20.4274873,53.360814
+28,11,,,nidzicki,powiat,20.4868715,53.3178578
+28,12,1,1,Nowe Miasto Lubawskie,gmina miejska,19.59222,53.42232
+28,12,2,2,Biskupiec,gmina wiejska,20.9547075,53.8626958
+28,12,3,2,Grodziczno,gmina wiejska,19.7759878,53.3864102
+28,12,4,2,Kurzętnik,gmina wiejska,19.5713895,53.4017676
+28,12,5,2,Nowe Miasto Lubawskie,gmina wiejska,19.59222,53.42232
+28,12,,,nowomiejski,powiat,19.5339357,53.4165569
+28,13,4,3,Olecko,gmina miejsko-wiejska,22.5069432,54.0337279
+28,13,4,4,Olecko,miasto,22.5069432,54.0337279
+28,13,4,5,Olecko,obszar wiejski,22.5069432,54.0337279
+28,13,5,2,Świętajno,gmina wiejska,21.2154953,53.5664836
+28,13,,,olecki,powiat,22.4074038,54.0488907
+28,14,1,4,Barczewo,miasto,20.6905801,53.82999
+28,14,1,5,Barczewo,obszar wiejski,20.6905801,53.82999
+28,14,2,3,Biskupiec,gmina miejsko-wiejska,20.9547075,53.8626958
+28,14,2,4,Biskupiec,miasto,20.9547075,53.8626958
+28,14,2,5,Biskupiec,obszar wiejski,20.9547075,53.8626958
+28,14,3,3,Dobre Miasto,gmina miejsko-wiejska,20.39746,53.9867
+28,14,3,4,Dobre Miasto,miasto,20.39746,53.9867
+28,14,3,5,Dobre Miasto,obszar wiejski,20.39746,53.9867
+28,14,4,2,Dywity,gmina wiejska,20.4746024,53.8359565
+28,14,6,3,Jeziorany,gmina miejsko-wiejska,20.7461768,53.9755261
+28,14,6,4,Jeziorany,miasto,20.7461768,53.9755261
+28,14,6,5,Jeziorany,obszar wiejski,20.7461768,53.9755261
+28,14,7,2,Jonkowo,gmina wiejska,20.3109946,53.828068
+28,14,8,2,Kolno,gmina wiejska,21.9326485,53.4077753
+28,14,9,4,Olsztynek,miasto,20.2827,53.58244
+28,14,9,5,Olsztynek,obszar wiejski,20.2827,53.58244
+28,14,10,2,Purda,gmina wiejska,20.7070868,53.7086644
+28,14,11,2,Stawiguda,gmina wiejska,20.3967642,53.6587271
+28,14,12,2,Świątki,gmina wiejska,20.2733513,53.9208088
+28,14,,,olsztyński,powiat,20.4735725,53.783365
+28,15,2,2,Dąbrówno,gmina wiejska,20.0377385,53.4338333
+28,15,4,2,Łukta,gmina wiejska,20.0849553,53.8053023
+28,15,5,2,Małdyty,gmina wiejska,19.7442821,53.918411
+28,15,6,4,Miłakowo,miasto,20.0706038,54.0085653
+28,15,6,5,Miłakowo,obszar wiejski,20.0706038,54.0085653
+28,15,7,4,Miłomłyn,miasto,19.8380874,53.764338
+28,15,7,5,Miłomłyn,obszar wiejski,19.8380874,53.764338
+28,16,1,3,Biała Piska,gmina miejsko-wiejska,22.06311,53.6115
+28,16,1,4,Biała Piska,miasto,22.06311,53.6115
+28,16,1,5,Biała Piska,obszar wiejski,22.06311,53.6115
+28,16,2,3,Orzysz,gmina miejsko-wiejska,21.9473,53.80989
+28,16,2,4,Orzysz,miasto,21.9473,53.80989
+28,16,2,5,Orzysz,obszar wiejski,21.9473,53.80989
+28,16,3,5,Pisz,obszar wiejski,21.81237,53.62894
+28,16,4,3,Ruciane-Nida,gmina miejsko-wiejska,21.5398707,53.6416538
+28,16,4,4,Ruciane-Nida,miasto,21.5398707,53.6416538
+28,16,4,5,Ruciane-Nida,obszar wiejski,21.5398707,53.6416538
+28,16,,,piski,powiat,21.8616848,52.9938634
+28,17,4,3,Pasym,gmina miejsko-wiejska,20.7919322,53.650729
+28,17,4,4,Pasym,miasto,20.7919322,53.650729
+28,17,4,5,Pasym,obszar wiejski,20.7919322,53.650729
+28,17,7,2,Świętajno,gmina wiejska,21.2154953,53.5664836
+28,17,,,szczycieński,powiat,20.8938937,53.5604093
+28,18,3,5,Gołdap,obszar wiejski,22.3034477,54.3069111
+28,19,1,2,Budry,gmina wiejska,21.8815209,54.2527206
+28,19,2,2,Pozezdrze,gmina wiejska,21.8600501,54.1410673
+28,19,3,3,Węgorzewo,gmina miejsko-wiejska,21.7416301,54.21359
+28,19,3,4,Węgorzewo,miasto,21.7416301,54.21359
+28,19,3,5,Węgorzewo,obszar wiejski,21.7416301,54.21359
+28,19,,,węgorzewski,powiat,21.7636445,54.1729496
+28,61,1,1,Elbląg,gmina miejska,19.4044897,54.1560613
+28,62,1,1,Olsztyn,gmina miejska,20.4801192,53.778422
+28,62,,,Olsztyn,miasto na prawach powiatu,20.4801192,53.778422
+28,,,,WARMIŃSKO-MAZURSKIE,województwo,20.7027861,53.8671117
+30,1,1,1,Chodzież,gmina miejska,16.9198184,52.995267
+30,1,2,2,Budzyń,gmina wiejska,16.9884873,52.8905294
+30,1,3,2,Chodzież,gmina wiejska,16.9198184,52.995267
+30,1,4,3,Margonin,gmina miejsko-wiejska,17.0947488,52.9731367
+30,1,4,4,Margonin,miasto,17.0947488,52.9731367
+30,1,4,5,Margonin,obszar wiejski,17.0947488,52.9731367
+30,1,5,3,Szamocin,gmina miejsko-wiejska,17.1246243,53.0298854
+30,1,5,4,Szamocin,miasto,17.1246243,53.0298854
+30,1,5,5,Szamocin,obszar wiejski,17.1246243,53.0298854
+30,2,1,1,Czarnków,gmina miejska,16.56567,52.90528
+30,2,2,2,Czarnków,gmina wiejska,16.56567,52.90528
+30,2,4,3,Krzyż Wielkopolski,gmina miejsko-wiejska,16.01119,52.88081
+30,2,4,4,Krzyż Wielkopolski,miasto,16.01119,52.88081
+30,2,4,5,Krzyż Wielkopolski,obszar wiejski,16.01119,52.88081
+30,2,5,2,Lubasz,gmina wiejska,16.4795065,52.8256293
+30,2,6,2,Połajewo,gmina wiejska,16.6610541,52.7996178
+30,2,7,4,Trzcianka,miasto,16.4616756,53.0418691
+30,2,7,5,Trzcianka,obszar wiejski,16.4616756,53.0418691
+30,2,8,3,Wieleń,gmina miejsko-wiejska,16.1713009,52.8943926
+30,2,8,4,Wieleń,miasto,16.1713009,52.8943926
+30,2,8,5,Wieleń,obszar wiejski,16.1713009,52.8943926
+30,2,,,czarnkowsko-trzcianecki,powiat,16.3653689,52.9079232
+30,3,1,1,Gniezno,gmina miejska,17.5826575,52.5349253
+30,3,2,5,Czerniejewo,obszar wiejski,17.4890829,52.4262274
+30,3,3,2,Gniezno,gmina wiejska,17.5826575,52.5349253
+30,3,4,2,Kiszkowo,gmina wiejska,17.3098843,52.5719408
+30,3,5,4,Kłecko,miasto,17.4306461,52.6316439
+30,3,5,5,Kłecko,obszar wiejski,17.4306461,52.6316439
+30,3,8,2,Niechanowo,gmina wiejska,17.6713202,52.4399221
+30,3,9,3,Trzemeszno,gmina miejsko-wiejska,17.82264,52.56166
+30,3,9,4,Trzemeszno,miasto,17.82264,52.56166
+30,3,9,5,Trzemeszno,obszar wiejski,17.82264,52.56166
+30,3,10,3,Witkowo,gmina miejsko-wiejska,17.77321,52.43843
+30,3,10,4,Witkowo,miasto,17.77321,52.43843
+30,3,10,5,Witkowo,obszar wiejski,17.77321,52.43843
+30,3,,,gnieźnieński,powiat,17.628832,52.5014671
+30,4,1,3,Borek Wielkopolski,gmina miejsko-wiejska,17.2409601,51.91673
+30,4,1,4,Borek Wielkopolski,miasto,17.2409601,51.91673
+30,4,1,5,Borek Wielkopolski,obszar wiejski,17.2409601,51.91673
+30,4,2,3,Gostyń,gmina miejsko-wiejska,17.01215,51.8786
+30,4,2,4,Gostyń,miasto,17.01215,51.8786
+30,4,2,5,Gostyń,obszar wiejski,17.01215,51.8786
+30,4,3,4,Krobia,miasto,16.98399,51.774
+30,4,3,5,Krobia,obszar wiejski,16.98399,51.774
+30,4,4,2,Pępowo,gmina wiejska,18.3976805,54.3676945
+30,4,5,2,Piaski,gmina wiejska,22.8485363,51.1388053
+30,4,7,3,Poniec,gmina miejsko-wiejska,16.808734,51.7633843
+30,4,7,4,Poniec,miasto,16.808734,51.7633843
+30,4,7,5,Poniec,obszar wiejski,16.808734,51.7633843
+30,4,,,gostyński,powiat,17.0131816,51.8503709
+30,5,3,2,Kamieniec,gmina wiejska,19.3716237,53.7642445
+30,5,4,4,Rakoniewice,miasto,16.2733584,52.1388364
+30,5,4,5,Rakoniewice,obszar wiejski,16.2733584,52.1388364
+30,5,5,3,Wielichowo,gmina miejsko-wiejska,16.3514938,52.1155638
+30,5,5,4,Wielichowo,miasto,16.3514938,52.1155638
+30,5,5,5,Wielichowo,obszar wiejski,16.3514938,52.1155638
+30,6,2,4,Jarocin,miasto,17.5019414,51.9724492
+30,6,2,5,Jarocin,obszar wiejski,17.5019414,51.9724492
+30,6,4,4,Żerków,miasto,17.5629153,52.0685167
+30,6,4,5,Żerków,obszar wiejski,17.5629153,52.0685167
+30,7,2,2,Brzeziny,gmina wiejska,19.7516791,51.800255
+30,7,3,2,Ceków-Kolonia,gmina wiejska,18.2905544,51.8819599
+30,7,6,2,Lisków,gmina wiejska,18.3961193,51.843093
+30,7,8,4,Opatówek,miasto,18.215687,51.7396616
+30,7,8,5,Opatówek,obszar wiejski,18.215687,51.7396616
+30,7,9,5,Stawiszyn,obszar wiejski,18.1117273,51.9177602
+30,7,11,2,Żelazków,gmina wiejska,18.1397579,51.829578
+30,8,1,2,Baranów,gmina wiejska,20.4745018,52.1474235
+30,8,2,2,Bralin,gmina wiejska,17.8948326,51.2922684
+30,8,3,3,Kępno,gmina miejsko-wiejska,17.9890591,51.2781356
+30,8,3,4,Kępno,miasto,17.9890591,51.2781356
+30,8,3,5,Kępno,obszar wiejski,17.9890591,51.2781356
+30,8,4,2,Łęka Opatowska,gmina wiejska,18.1234427,51.2235343
+30,8,,,kępiński,powiat,17.9321449,51.2755627
+30,9,1,1,Koło,gmina miejska,18.63847,52.19986
+30,9,2,2,Babiak,gmina wiejska,18.6659387,52.3446622
+30,9,3,2,Chodów,gmina wiejska,22.2345855,52.2116952
+30,9,4,3,Dąbie,gmina miejsko-wiejska,18.8224372,52.0872281
+30,9,4,4,Dąbie,miasto,18.8224372,52.0872281
+30,9,4,5,Dąbie,obszar wiejski,18.8224372,52.0872281
+30,9,6,3,Kłodawa,gmina miejsko-wiejska,18.9134684,52.2542661
+30,9,6,4,Kłodawa,miasto,18.9134684,52.2542661
+30,9,6,5,Kłodawa,obszar wiejski,18.9134684,52.2542661
+30,9,7,2,Koło,gmina wiejska,18.63847,52.19986
+30,9,8,2,Kościelec,gmina wiejska,20.0145739,49.2253998
+30,9,9,2,Olszówka,gmina wiejska,18.8632124,52.1899235
+30,9,10,2,Osiek Mały,gmina wiejska,18.5921561,52.272083
+30,9,11,3,Przedecz,gmina miejsko-wiejska,18.8991063,52.3342682
+30,9,11,4,Przedecz,miasto,18.8991063,52.3342682
+30,9,11,5,Przedecz,obszar wiejski,18.8991063,52.3342682
+30,9,,,kolski,powiat,18.7485613,52.2795474
+30,10,1,3,Golina,gmina miejsko-wiejska,18.0927297,52.2428641
+30,10,1,4,Golina,miasto,18.0927297,52.2428641
+30,10,1,5,Golina,obszar wiejski,18.0927297,52.2428641
+30,10,3,2,Kazimierz Biskupi,gmina wiejska,18.167476,52.3128729
+30,10,4,3,Kleczew,gmina miejsko-wiejska,18.1771601,52.37048
+30,10,4,4,Kleczew,miasto,18.1771601,52.37048
+30,10,4,5,Kleczew,obszar wiejski,18.1771601,52.37048
+30,10,5,2,Kramsk,gmina wiejska,18.4360541,52.264365
+30,10,7,3,Rychwał,gmina miejsko-wiejska,18.1662713,52.0697452
+30,10,7,4,Rychwał,miasto,18.1662713,52.0697452
+30,10,7,5,Rychwał,obszar wiejski,18.1662713,52.0697452
+30,10,8,2,Rzgów,gmina wiejska,19.489958,51.6631882
+30,10,10,5,Sompolno,obszar wiejski,18.50286,52.38826
+30,10,12,3,Ślesin,gmina miejsko-wiejska,18.30639,52.37035
+30,10,12,4,Ślesin,miasto,18.30639,52.37035
+30,10,12,5,Ślesin,obszar wiejski,18.30639,52.37035
+30,10,13,2,Wierzbinek,gmina wiejska,18.485152,52.4327047
+30,10,,,koniński,powiat,18.2532296,52.2167513
+30,11,2,4,Czempiń,miasto,16.7591522,52.1426031
+30,11,2,5,Czempiń,obszar wiejski,16.7591522,52.1426031
+30,11,3,2,Kościan,gmina wiejska,16.6385474,52.0816122
+30,11,4,3,Krzywiń,gmina miejsko-wiejska,16.8198962,51.9629815
+30,11,4,4,Krzywiń,miasto,16.8198962,51.9629815
+30,11,4,5,Krzywiń,obszar wiejski,16.8198962,51.9629815
+30,11,5,3,Śmigiel,gmina miejsko-wiejska,16.52708,52.01327
+30,11,5,4,Śmigiel,miasto,16.52708,52.01327
+30,11,5,5,Śmigiel,obszar wiejski,16.52708,52.01327
+30,12,1,1,Sulmierzyce,gmina miejska,17.5307939,51.6059265
+30,12,4,5,Krotoszyn,obszar wiejski,17.4359425,51.6965283
+30,12,6,3,Zduny,gmina miejsko-wiejska,17.37824,51.64683
+30,12,6,4,Zduny,miasto,17.37824,51.64683
+30,12,6,5,Zduny,obszar wiejski,17.37824,51.64683
+30,13,1,2,Krzemieniewo,gmina wiejska,16.7942527,51.8609386
+30,13,2,2,Lipno,gmina wiejska,14.2293199,48.6393267
+30,13,3,3,Osieczna,gmina miejsko-wiejska,16.6783382,51.9039882
+30,13,3,4,Osieczna,miasto,16.6783382,51.9039882
+30,13,3,5,Osieczna,obszar wiejski,16.6783382,51.9039882
+30,13,4,4,Rydzyna,miasto,16.667577,51.7864657
+30,13,4,5,Rydzyna,obszar wiejski,16.667577,51.7864657
+30,13,5,2,Święciechowa,gmina wiejska,16.4509091,51.8238362
+30,13,6,2,Wijewo,gmina wiejska,16.2018,51.9135559
+30,13,,,leszczyński,powiat,16.4995557,51.9037313
+30,14,1,2,Chrzypsko Wielkie,gmina wiejska,16.2112144,52.5997815
+30,14,3,4,Międzychód,miasto,15.89254,52.59855
+30,14,3,5,Międzychód,obszar wiejski,15.89254,52.59855
+30,15,2,3,Lwówek,gmina miejsko-wiejska,16.1810373,52.4479565
+30,15,2,4,Lwówek,miasto,16.1810373,52.4479565
+30,15,2,5,Lwówek,obszar wiejski,16.1810373,52.4479565
+30,15,3,2,Miedzichowo,gmina wiejska,15.9708768,52.4142804
+30,15,4,3,Nowy Tomyśl,gmina miejsko-wiejska,16.1282552,52.3181885
+30,15,4,4,Nowy Tomyśl,miasto,16.1282552,52.3181885
+30,15,4,5,Nowy Tomyśl,obszar wiejski,16.1282552,52.3181885
+30,15,5,3,Opalenica,gmina miejsko-wiejska,16.4127999,52.30876
+30,15,5,4,Opalenica,miasto,16.4127999,52.30876
+30,15,5,5,Opalenica,obszar wiejski,16.4127999,52.30876
+30,15,6,3,Zbąszyń,gmina miejsko-wiejska,15.92527,52.25053
+30,15,6,4,Zbąszyń,miasto,15.92527,52.25053
+30,15,6,5,Zbąszyń,obszar wiejski,15.92527,52.25053
+30,15,,,nowotomyski,powiat,16.1432292,52.3247356
+30,16,1,3,Oborniki,gmina miejsko-wiejska,16.8141991,52.6448607
+30,16,1,4,Oborniki,miasto,16.8141991,52.6448607
+30,16,1,5,Oborniki,obszar wiejski,16.8141991,52.6448607
+30,16,2,3,Rogoźno,gmina miejsko-wiejska,17.00343,52.74965
+30,16,2,4,Rogoźno,miasto,17.00343,52.74965
+30,16,2,5,Rogoźno,obszar wiejski,17.00343,52.74965
+30,16,,,obornicki,powiat,16.9207647,52.7398346
+30,17,1,1,Ostrów Wielkopolski,gmina miejska,17.8068258,51.6549856
+30,17,2,3,Nowe Skalmierzyce,gmina miejsko-wiejska,17.993399,51.7111719
+30,17,2,4,Nowe Skalmierzyce,miasto,17.993399,51.7111719
+30,17,2,5,Nowe Skalmierzyce,obszar wiejski,17.993399,51.7111719
+30,17,3,3,Odolanów,gmina miejsko-wiejska,17.67392,51.57429
+30,17,3,4,Odolanów,miasto,17.67392,51.57429
+30,17,3,5,Odolanów,obszar wiejski,17.67392,51.57429
+30,17,4,2,Ostrów Wielkopolski,gmina wiejska,17.8068258,51.6549856
+30,17,6,3,Raszków,gmina miejsko-wiejska,17.7257496,51.7181762
+30,17,6,4,Raszków,miasto,17.7257496,51.7181762
+30,17,6,5,Raszków,obszar wiejski,17.7257496,51.7181762
+30,17,7,2,Sieroszewice,gmina wiejska,18.0075305,51.6325534
+30,17,,,ostrowski,powiat,-76.5912821,39.2865235
+30,18,3,4,Grabów nad Prosną,miasto,18.1193611,51.5060692
+30,18,3,5,Grabów nad Prosną,obszar wiejski,18.1193611,51.5060692
+30,18,4,2,Kobyla Góra,gmina wiejska,17.8249283,51.3573786
+30,18,5,2,Kraszewice,gmina wiejska,18.2494212,51.506985
+30,18,6,3,Mikstat,gmina miejsko-wiejska,17.9737831,51.5320956
+30,18,6,4,Mikstat,miasto,17.9737831,51.5320956
+30,18,6,5,Mikstat,obszar wiejski,17.9737831,51.5320956
+30,18,7,3,Ostrzeszów,gmina miejsko-wiejska,17.93378,51.42582
+30,18,7,4,Ostrzeszów,miasto,17.93378,51.42582
+30,18,7,5,Ostrzeszów,obszar wiejski,17.93378,51.42582
+30,18,,,ostrzeszowski,powiat,17.9191483,51.4509461
+30,19,3,2,Kaczory,gmina wiejska,16.9035094,53.1068259
+30,19,6,2,Szydłowo,gmina wiejska,16.6193842,53.1589712
+30,19,7,5,Ujście,obszar wiejski,16.7323201,53.05311
+30,19,8,3,Wyrzysk,gmina miejsko-wiejska,17.26802,53.15244
+30,19,8,4,Wyrzysk,miasto,17.26802,53.15244
+30,19,8,5,Wyrzysk,obszar wiejski,17.26802,53.15244
+30,19,9,4,Wysoka,miasto,17.0835566,53.180879
+30,19,9,5,Wysoka,obszar wiejski,17.0835566,53.180879
+30,20,3,3,Dobrzyca,gmina miejsko-wiejska,17.5879327,51.8614232
+30,20,3,4,Dobrzyca,miasto,17.5879327,51.8614232
+30,20,3,5,Dobrzyca,obszar wiejski,17.5879327,51.8614232
+30,20,4,2,Gizałki,gmina wiejska,17.8504238,52.0610443
+30,20,5,2,Gołuchów,gmina wiejska,17.9307043,51.848739
+30,21,1,1,Luboń,gmina miejska,16.8773762,52.3461661
+30,21,3,5,Buk,obszar wiejski,16.519559,52.35536
+30,21,5,2,Dopiewo,gmina wiejska,16.7027319,52.3652665
+30,21,6,2,Kleszczewo,gmina wiejska,17.1341654,52.3237035
+30,21,7,2,Komorniki,gmina wiejska,16.8117099,52.3439225
+30,21,9,4,Kórnik,miasto,17.0901297,52.2467738
+30,21,9,5,Kórnik,obszar wiejski,17.0901297,52.2467738
+30,21,10,4,Mosina,miasto,16.8470545,52.2454069
+30,21,10,5,Mosina,obszar wiejski,16.8470545,52.2454069
+30,21,12,5,Pobiedziska,obszar wiejski,17.2880008,52.47747
+30,21,13,2,Rokietnica,gmina wiejska,16.7603259,52.5103659
+30,21,14,4,Stęszew,miasto,16.7007399,52.28375
+30,21,14,5,Stęszew,obszar wiejski,16.7007399,52.28375
+30,21,16,5,Swarzędz,obszar wiejski,17.0855511,52.4125371
+30,21,17,2,Tarnowo Podgórne,gmina wiejska,16.6785303,52.4589663
+30,21,,,poznański,powiat,16.9412479,52.4071021
+30,22,1,3,Bojanowo,gmina miejsko-wiejska,16.7482949,51.7074688
+30,22,1,4,Bojanowo,miasto,16.7482949,51.7074688
+30,22,1,5,Bojanowo,obszar wiejski,16.7482949,51.7074688
+30,22,2,3,Jutrosin,gmina miejsko-wiejska,17.1688525,51.6522585
+30,22,2,4,Jutrosin,miasto,17.1688525,51.6522585
+30,22,2,5,Jutrosin,obszar wiejski,17.1688525,51.6522585
+30,22,3,4,Miejska Górka,miasto,16.9564844,51.6551687
+30,22,3,5,Miejska Górka,obszar wiejski,16.9564844,51.6551687
+30,22,4,2,Pakosław,gmina wiejska,17.0581003,51.6141162
+30,22,5,3,Rawicz,gmina miejsko-wiejska,16.85863,51.60945
+30,22,5,4,Rawicz,miasto,16.85863,51.60945
+30,22,5,5,Rawicz,obszar wiejski,16.85863,51.60945
+30,22,,,rawicki,powiat,16.9890188,51.6584444
+30,23,1,1,Słupca,gmina miejska,17.8720745,52.287267
+30,23,2,2,Lądek,gmina wiejska,16.8723206,50.3457183
+30,23,3,2,Orchowo,gmina wiejska,18.0010558,52.5097905
+30,23,4,2,Ostrowite,gmina wiejska,18.7070791,54.1946635
+30,23,6,2,Słupca,gmina wiejska,17.8720745,52.287267
+30,23,8,4,Zagórów,miasto,17.8955629,52.1682974
+30,23,8,5,Zagórów,obszar wiejski,17.8955629,52.1682974
+30,23,,,słupecki,powiat,17.9179392,52.2368221
+30,24,1,1,Obrzycko,gmina miejska,16.5270775,52.7029536
+30,24,4,2,Obrzycko,gmina wiejska,16.5270775,52.7029536
+30,24,5,5,Ostroróg,obszar wiejski,16.4511988,52.626727
+30,24,,,szamotulski,powiat,16.4583259,52.6306916
+30,25,,,średzki,powiat,16.5713037,51.1369337
+30,26,1,2,Brodnica,gmina wiejska,19.3956618,53.2599703
+30,26,2,4,Dolsk,miasto,17.0627666,51.9817834
+30,26,2,5,Dolsk,obszar wiejski,17.0627666,51.9817834
+30,26,3,3,Książ Wielkopolski,gmina miejsko-wiejska,17.239347,52.0609041
+30,26,3,4,Książ Wielkopolski,miasto,17.239347,52.0609041
+30,26,3,5,Książ Wielkopolski,obszar wiejski,17.239347,52.0609041
+30,26,,,śremski,powiat,17.113896,52.0096542
+30,27,2,2,Brudzew,gmina wiejska,18.6026263,52.0944427
+30,27,3,3,Dobra,gmina miejsko-wiejska,-81.8242869,37.9345483
+30,27,3,4,Dobra,miasto,-81.8242869,37.9345483
+30,27,3,5,Dobra,obszar wiejski,-81.8242869,37.9345483
+30,,,,WIELKOPOLSKIE,województwo,17.3522939,52.279986
+32,4,3,3,Maszewo,gmina miejsko-wiejska,15.06139,53.49633
+32,4,3,4,Maszewo,miasto,15.06139,53.49633
+32,4,3,5,Maszewo,obszar wiejski,15.06139,53.49633
+32,10,3,3,Dębno,gmina miejsko-wiejska,14.6979901,52.739
+32,10,3,4,Dębno,miasto,14.6979901,52.739
+32,10,3,5,Dębno,obszar wiejski,14.6979901,52.739
+32,13,2,1,Sławno,gmina miejska,16.67836,54.36262
+32,13,6,2,Sławno,gmina wiejska,16.67836,54.36262
+32,18,1,3,Dobra,gmina miejsko-wiejska,-81.8242869,37.9345483
+32,18,1,4,Dobra,miasto,-81.8242869,37.9345483
+32,18,1,5,Dobra,obszar wiejski,-81.8242869,37.9345483

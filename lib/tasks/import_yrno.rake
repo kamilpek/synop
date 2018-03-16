@@ -11,8 +11,11 @@ end
 def build_import_yrno
   print "Import begining.\n"
 
+  # @cities = City.where("province IS NOT NULL").where("county IS NOT NULL").where("commune IS NOT NULL")
+  # @cities.all.each do |city|
   Station.all.each do |station|
     doc1 = Nokogiri::XML(open("http://api.geonames.org/findNearbyPlaceName?lat=#{station.latitude}&lng=#{station.longitude}&username=kamilpek"))
+    # doc1 = Nokogiri::XML(open("http://api.geonames.org/findNearbyPlaceName?lat=#{city.latitude}&lng=#{city.longitude}&username=kamilpek"))
     geoid = doc1.xpath('//geoname').xpath('geonameId').text
     doc2 = Nokogiri::XML(open("http://api.geonames.org/get?geonameId=#{geoid}&username=kamilpek&style=full"))
     countryname = doc2.xpath('//geoname').xpath('countryName').text
@@ -25,6 +28,14 @@ def build_import_yrno
     cityname = doc2.xpath('//geoname').xpath('toponymName').text
     encoded_url = URI.encode("http://www.yr.no/place/#{countryname}/#{adminname}/#{cityname}/forecast.xml")
 
+    # url = URI.parse(encoded_url)
+    # req = Net::HTTP.new(url.host, url.port)
+    # res = req.request_head(url.path)
+    # if res.code != "200"
+    #   print(encoded_url + "\n")
+    #   next
+    # end
+
     temperatures = []
     wind_speeds = []
     wind_directs = []
@@ -34,6 +45,7 @@ def build_import_yrno
     times_from = []
     times_to = []
     station_number = station.number
+    # city_number = "#{city.province}#{city.county}#{city.commune}#{city.genre}"
     doc3 = Nokogiri::XML(open(URI.parse(encoded_url)))
     forecast_date = DateTime.parse(doc3.xpath('//meta').xpath('//lastupdate').text).strftime("%Y-%m-%d")
     forecast_hour = DateTime.parse(doc3.xpath('//meta').xpath('//lastupdate').text).strftime("%H")
@@ -51,6 +63,7 @@ def build_import_yrno
       end
       Forecast.create!(
         :station_number => station_number,
+        # :station_number => city_number,
         :next => forecast_next,
         :temperatures => temperatures,
         :wind_speeds => wind_speeds,

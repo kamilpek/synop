@@ -1,5 +1,6 @@
 require_relative 'boot'
 
+require 'io/console'
 require 'rails/all'
 require 'roo'
 require 'will_paginate/array'

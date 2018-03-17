@@ -17,8 +17,8 @@ def build_import_stations_metar
     MetarStation.create!(
       :number => row['number'],
       :name => row['name'],
-      :latitude => ((row['latitude']).to_f)/100,
-      :longitude => ((row['longitude']).to_f)/100,
+      :latitude => row['latitude'],
+      :longitude => row['longitude'],
       :elevation => row['elevation'],
       :status => 1)
   end

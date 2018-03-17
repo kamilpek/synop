@@ -72,6 +72,12 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :cities do
+    member do
+      get 'map'
+    end
+  end
+
   namespace :api do
     namespace :v1 do
       resources :measurements do
@@ -94,7 +100,7 @@ Rails.application.routes.draw do
       end
       resources :metar_raports do
         get 'metar_raports' => 'metar_raports#index'
-      end      
+      end
     end
   end
 

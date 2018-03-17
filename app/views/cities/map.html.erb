@@ -1,0 +1,17 @@
+<% content_for :title, "Miasta" %>
+
+<div class="container">
+
+  <h4>
+    Mapa miast
+    <%= link_to "Lista miast", cities_path, class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>  
+
+  <div style='width: 800px;'>
+    <div id="sidebar_builder" style='width: 1140px; height: 600px;'></div>
+  </div>
+  <br>
+
+  <%= render "multimap" %>
+
+</div>

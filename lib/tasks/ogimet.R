@@ -200,7 +200,7 @@ fifth_group <- function(code){
       mes <- paste(mes, sprintf("wielkość tendencji %s.%s hPa.", substr(code, 2, 4), substr(code, 5, 5)))
     }
   }
-  mes <- paste("[5]Tendencja ciśnienia na poziomie stacji w ciągu 3 ostatnich godzin:", 
+  mes <- paste("[5]Tendencja ciśnienia na poziomie stacji w ciągu 3 ostatnich godzin:",
                preassure(substr(code, 2, 2)),
                trend(code))
   message <<- paste(message, mes, sep=" ")
@@ -503,7 +503,7 @@ third_eith_group <- function(code){
   }
   mes <- paste("[3.8]Wielkość zachmurzenia:", size(substr(code, 2, 2)))
   mes <- paste(mes, "Rodzaj chmur:", clouds_type(substr(code, 3, 3)))
-  mes <- paste(mes, "Wysokość podstawy chmur:", height(substr(code, 4, 5)))  
+  mes <- paste(mes, "Wysokość podstawy chmur:", height(substr(code, 4, 5)))
   message <<- paste(message, mes, sep=" ")
 }
 ninth_time_group <- function(code){
@@ -705,7 +705,7 @@ ninth_storm_group <- function(code){
 ninth_sea_twister_group <- function(code){
   mes = ""
   twister_type <- function(x){
-    switch(x, 
+    switch(x,
            "0" = "trąba(y) morska(ie) w odległości do 3 km od stacji.",
            "1" = "trąba(y) morska(ie) w odległości powyżej 3 km od stacji.",
            "2" = "trąba(y) lądowa(e) w odległości do 3 km od stacji.",
@@ -1149,7 +1149,7 @@ ninth_cloud_mountaians_group <- function(code){
            "4" = "chmury zalegają nisko nad górami, lecz wszystkie stoki i szczyty gór odsłonięte (mogą występować tylko pojedyncze chmury na zboczach).",
            "5" = "chmury zalegają nisko nad górami, szczyty częściowo przesłonięte przez chmury lub smugi opadów.",
            "6" = "wszystkie szczyty zasłonięte lecz przełęcze wolne od chmur, zbocza gór zasłonięte lub odsłonięte.",
-           "7" = "góry przeważnie zasłonięte przez chmury, jednak niektóre szczyty wolne od chmur, zbocza gór zasłonięte lub odsłonięte.",  
+           "7" = "góry przeważnie zasłonięte przez chmury, jednak niektóre szczyty wolne od chmur, zbocza gór zasłonięte lub odsłonięte.",
            "8" = "wszystkie zbocza, szczyty i przełęcze zasłonięte przez chmury.",
            "9" = "góry niewidoczne z powodu ciemności, mgły, opadu itp."
     )
@@ -1830,7 +1830,7 @@ for(i in 1:length(ogimet.table)){
   message <- ""
   visibility <- ""
   cloud_cover <- ""
-  wind_direct <- "" 
+  wind_direct <- ""
   wind_speed <- ""
   temperature <- ""
   pressure <- ""

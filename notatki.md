@@ -11,6 +11,8 @@ rails generate scaffold metar_station name:string number:integer latitude:float 
 rails generate scaffold metar_raport station:integer day:integer hour:integer metar:string message:text --no-timestamps
 rails generate migration AddCreatedToMetarRaports created_at:datetime
 rails generate migration AddParamsToMetarRaports visibility:string cloud_cover:string wind_direct:string wind_speed:string temperature:string pressure:string situation:string
+
+\copy (select name, number, latitude, longitude, elevation from metar_stations) To 'stacje_metar.csv' With CSV HEADER
 ```
 
 ## powietrze

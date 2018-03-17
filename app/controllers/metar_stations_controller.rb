@@ -4,7 +4,7 @@ class MetarStationsController < ApplicationController
   # GET /metar_stations
   # GET /metar_stations.json
   def index
-    @metar_stations = MetarStation.all.paginate(:page => params[:page], :per_page => 118)
+    @metar_stations = MetarStation.all.order(:name).paginate(:page => params[:page], :per_page => 118)
   end
 
   # GET /metar_stations/1

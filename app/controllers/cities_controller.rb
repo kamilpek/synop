@@ -62,6 +62,25 @@ class CitiesController < ApplicationController
     end
   end
 
+  def map
+    @cities = City.all
+    @hash = Gmaps4rails.build_markers(@cities) do |city, marker|
+      # @gios_measur_id = GiosMeasurment.where(station:station.number).pluck(:id).last
+      # @gios_measurment = GiosMeasurment.find(@gios_measur_id)
+      @city = City.find(city.id)
+      marker.lat city.latitude
+      marker.lng city.longitude
+      marker.infowindow render_to_string(:partial => "infowindow", :locals => { :object => city, :city => @city, :name => @information})
+      marker.picture({
+                      :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                     })
+      end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_city

@@ -1,0 +1,2 @@
+<p class="lead"><%= @city.name %></p>
+<%= link_to 'Edycja', edit_city_path(@city), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>

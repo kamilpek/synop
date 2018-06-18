@@ -1817,7 +1817,7 @@ ogimet.html <- read_html("http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=
 ogimet.table <- html_nodes(ogimet.html, "table table tr")
 # baza
 drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, host="172.19.0.2", user= "postgres", password="super_secure", dbname = "synop_production")
+con <- dbConnect(drv, host="172.19.0.3", user= "postgres", password="super_secure", dbname = "synop_production")
 # con <- dbConnect(drv, dbname = "synop_development")
 # przetwarzanie
 ogimet.metars <- list()

@@ -2,57 +2,73 @@
 
 <div class="container">
 
-<h4>
-  Stacje meteo
-  <%= link_to 'Nowa Stajca', new_station_path, class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
-</h4><hr>
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <%= link_to "Stache IMGW", stations_path, class:"nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Stacje GIOS", gios_stations_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Stacje METAR", metar_stations_path, class:"nav-link" %>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <h4>
+        Stacje meteo
+        <%= link_to 'Nowa Stajca', new_station_path, class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+      </h4><hr>
 
-<% if current_user.try(:admin) %>
-  <div class="row" align="center">
-    <div class="col-md-4">
-      <h4>Importuj Stacje</h4>
-    </div>
-    <div class="col-md-4">
-      <%= form_tag import_stations_path, multipart: true do %>
-        <%= file_field_tag :file, class:"form-control" %>
-    </div>
-    <div class="col-md-4">
-      <%= submit_tag "Importuj", class:"btn btn-outline-primary" %>
+      <% if current_user.try(:admin) %>
+        <div class="row" align="center">
+          <div class="col-md-4">
+            <h4>Importuj Stacje</h4>
+          </div>
+          <div class="col-md-4">
+            <%= form_tag import_stations_path, multipart: true do %>
+              <%= file_field_tag :file, class:"form-control" %>
+          </div>
+          <div class="col-md-4">
+            <%= submit_tag "Importuj", class:"btn btn-outline-primary" %>
+            <% end %>
+          </div>
+        </div><hr>
+      <% end %>
+
+      <div class="table-responsive" align="center">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr align="center">
+              <th>Nazwa</th>
+              <th>ID-IMGW</th>
+              <th>Szerokość</th>
+              <th>Długość</th>
+              <th>Akcje</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @stations.each do |station| %>
+              <tr align="center">
+                <td><%= station.name %></td>
+                <td><%= station.number %></td>
+                <td><%= station.latitude %></td>
+                <td><%= station.longitude %></td>
+                <td><%= link_to 'Przejdź', station, class:"btn btn-outline-primary btn-xs" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      <p align="center"><%= will_paginate @stations, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+
+      <% if current_user.try(:admin) %>
+      <hr>
+
       <% end %>
     </div>
-  </div><hr>
-<% end %>
-
-<div class="table-responsive" align="center">
-  <table class="table table-striped">
-    <thead class="thead-dark">
-      <tr align="center">
-        <th>Nazwa</th>
-        <th>ID-IMGW</th>
-        <th>Szerokość</th>
-        <th>Długość</th>
-        <th>Akcje</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @stations.each do |station| %>
-        <tr align="center">
-          <td><%= station.name %></td>
-          <td><%= station.number %></td>
-          <td><%= station.latitude %></td>
-          <td><%= station.longitude %></td>
-          <td><%= link_to 'Przejdź', station, class:"btn btn-outline-primary btn-xs" %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
-<p align="center"><%= will_paginate @stations, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
-
-<% if current_user.try(:admin) %>
-<hr>
-
-<% end %>
-
+  </div>
 </div>

@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :cities
   get 'admin/main'
   get 'admin/users'
   get 'pages/home'
   get 'pages/forecast'
   get 'pages/metar'
   get 'pages/gios'
+  get 'pages/radars'
   get 'pages/stats'
   get 'pages/about'
 
@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   resources :forecasts
   resources :measurements
   resources :stations
+  resources :radars
+  resources :cities
   devise_for :users
 
   resources :measurements do
@@ -75,6 +77,13 @@ Rails.application.routes.draw do
   resources :cities do
     member do
       get 'map'
+    end
+  end
+
+  resources :radars do
+    member do
+      get 'daily'
+      get 'hourly'
     end
   end
 

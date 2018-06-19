@@ -56,3 +56,15 @@ res = req.request_head(url.path)
 res.code
 
 ```
+
+## radary
+```ruby
+rails generate scaffold radar cappi:string cmaxdbz:string eht:string pac:string zhail:string hshear:string
+rails generate uploader RadarCappi
+rails generate uploader RadarCmaxdbz
+rails generate uploader RadarEht
+rails generate uploader RadarPac
+rails generate uploader RadarZhail
+rails generate uploader RadarHshear
+mount_uploader :cappi, RadarCappi
+```

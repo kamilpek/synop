@@ -80,6 +80,10 @@ class PagesController < ApplicationController
       end
   end
 
+  def radars
+    @radar = Radar.last
+  end
+
   def stats
   end
 

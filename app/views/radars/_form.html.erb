@@ -1,0 +1,47 @@
+<%= form_for(radar) do |f| %>
+  <% if radar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(radar.errors.count, "error") %> prohibited this radar from being saved:</h2>
+
+      <ul>
+      <% radar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cappi %>
+    <%= f.text_field :cappi %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cmaxdbz %>
+    <%= f.text_field :cmaxdbz %>
+  </div>
+
+  <div class="field">
+    <%= f.label :eht %>
+    <%= f.text_field :eht %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pac %>
+    <%= f.text_field :pac %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zhail %>
+    <%= f.text_field :zhail %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hshear %>
+    <%= f.text_field :hshear %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

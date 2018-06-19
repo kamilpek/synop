@@ -1,0 +1,59 @@
+<% content_for :title, "Mapa jakości powietrza" %>
+
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <%= link_to "Mapa Pomiarów", root_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Mapa Prognoz", pages_forecast_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Mapa METAR", pages_metar_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Mapa jakości powietrza", pages_gios_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Radar", pages_radars_path, class:"nav-link active" %>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <div class="row" align="center">
+        <div class="col-sm">
+          <h5>CAPPI</h5>
+          <%= link_to (image_tag(@radar.cappi.url(:pomorze))), @radar.cappi.url %>
+        </div>
+        <div class="col-sm">
+          <h5>CMAX</h5>
+          <%= link_to (image_tag(@radar.cmaxdbz.url(:pomorze))), @radar.cmaxdbz.url %>
+        </div>
+        <div class="col-sm">
+          <h5>EHT</h5>
+          <%= link_to (image_tag(@radar.eht.url(:pomorze))), @radar.eht.url %>
+        </div>
+      </div>
+      <br>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <h5>PAC</h5>
+          <%= link_to (image_tag(@radar.pac.url(:pomorze))), @radar.pac.url %>
+        </div>
+        <div class="col-sm">
+          <h5>ZHAIL</h5>
+          <%= link_to (image_tag(@radar.zhail.url(:pomorze))), @radar.zhail.url %>
+        </div>
+        <div class="col-sm">
+          <h5>HSHEAR</h5>
+          <%= link_to (image_tag(@radar.hshear.url(:pomorze))), @radar.hshear.url %>
+        </div>
+      </div>
+      <hr>
+      <p align="center"><i>Data i godzina pobrania: <%= @radar.created_at.strftime("%d.%m.%Y %H:%M %z") %></i></p>
+    </div>
+    <p><%= link_to "Źródło danych: meteomodel.pl", "https://meteomodel.pl/dane/radary/", class:"btn btn-sm btn-outline-primary" %></p>
+  </div>
+</div>

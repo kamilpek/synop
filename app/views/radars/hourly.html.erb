@@ -1,0 +1,33 @@
+<% content_for :title, "Pomiary godzinne" %>
+
+<div class="container">
+
+  <h4>
+    Pomiary radarowe z godziny <%= @hour %>, <%= @date %>
+    <%= link_to "Kalendarz pomiarów", radars_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to "Wróć do dnia", daily_radar_path(1, date: params[:date]), class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to "Poprzednia godzina", hourly_radar_path(hour: @hour.to_i-1, date: @date), class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to "Następna godzina", hourly_radar_path(hour: @hour.to_i+1, date: @date), class:"btn btn-sm btn-outline-primary" %>
+  </h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Godzina</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @radars.each do |radar| %>
+          <tr align="center">
+            <td><%= radar.created_at.utc.strftime("%H:%M") %> (UTC) <%= radar.created_at.strftime("%H:%M") %> (PL)</td>
+            <td><%= link_to 'Przejdź', radar, class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+</div>

@@ -1,0 +1,31 @@
+<% content_for :title, "Pomiary dzienne" %>
+
+<div class="container">
+
+  <h4>
+    Lista pomiarów radarowych z dnia <%= @date.strftime("%d.%m.%Y") %>
+    <%= link_to "Kalendarz pomiarów", radars_path, class:"btn btn-sm btn-outline-primary" %>
+    <%= link_to daily_radar_path(date: @date - 1.day), class: "btn btn-sm btn-outline-primary" do %> Poprzedni Dzień <% end %>
+    <%= link_to daily_radar_path(date: @date + 1.day), class: "btn btn-sm btn-outline-primary" do %> Następny Dzień <% end %>
+  </h4><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Godzina</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @hours.each do |hour| %>
+          <tr align="center">
+            <td><%= hour %></td>
+            <td><%= link_to 'Przejdź do godziny', hourly_radar_path(hour: hour, date: @date), class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

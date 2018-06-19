@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cappi: MyString
+  cmaxdbz: MyString
+  eht: MyString
+  pac: MyString
+  zhail: MyString
+  hshear: MyString
+
+two:
+  cappi: MyString
+  cmaxdbz: MyString
+  eht: MyString
+  pac: MyString
+  zhail: MyString
+  hshear: MyString

@@ -65,3 +65,6 @@ gem 'underscore-rails', '~> 1.8', '>= 1.8.3' # js lib
 gem 'whenever', '~> 0.9.7' # schedule
 gem 'cookies_eu', '~> 1.6', '>= 1.6.2' # cookies
 gem 'rabl', '~> 0.13.1' # generowanie json
+gem 'carrierwave', '~> 1.2', '>= 1.2.3' # upload
+gem 'rmagick', '~> 2.16' # images
+gem 'mini_magick', '~> 4.8' # images

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'pages/metar'
   get 'pages/gios'
   get 'pages/radars'
+  get 'pages/safir'
   get 'pages/stats'
   get 'pages/about'
 

@@ -2,19 +2,17 @@
 <div class="container">
 
   <h4>Logowanie</h4><hr>
-  <div class="jumbotron" align="center">
+  <div class="jumbotron">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <form class="form-signin">
-        <div class="input-group">
-          <span class="input-group-addon">Użytkownik</span>
-            <%= f.text_field :email, placeholder:"Nazwa użytkownika", type:"text", required: true, autofocus: true, class:"form-control" %>
+        <div class="form-group">
+          <label>Użytkownik</label>
+            <%= f.text_field :email, placeholder:"Adres e-mail", type:"text", required: true, autofocus: true, class:"form-control" %>
         </div>
-        <br>
-        <div class="input-group">
-          <span class="input-group-addon">Hasło</span>
+        <div class="form-group">
+          <label>Hasło</label>
             <%= f.text_field :password, placeholder:"Hasło", type:"password", required: true, class:"form-control" %>
-        </div>
-        <br>
+        </div>        
         <%= f.submit "Zaloguj", class:"btn btn-block btn-outline-primary" %>
       </form>
     <% end %>

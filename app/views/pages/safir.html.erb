@@ -1,37 +1,12 @@
 <% content_for :title, "SAFIR – system detekcji wyładowań atmosferycznych" %>
 
-<div class="container">
-  <div class="card text-center">
-    <div class="card-header">
-      <ul class="nav nav-tabs card-header-tabs">
-        <li class="nav-item">
-          <%= link_to "Mapa Pomiarów", root_path, class:"nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Mapa Prognoz", pages_forecast_path, class:"nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Mapa METAR", pages_metar_path, class:"nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Mapa jakości powietrza", pages_gios_path, class:"nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Radar", pages_radars_path, class:"nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "SAFIR", pages_radars_path, class:"nav-link active" %>
-        </li>
-      </ul>
-    </div>
-    <div class="card-body">
-      <h4>System detekcji wyładowań atmosferycznych – SAFIR LTS2005</h4><hr>
-      <img src="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DIS.GIF" alt="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DIS.GIF">
-      <hr></hr>
-      <img src="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DENS.GIF" alt="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DENS.GIF">
-      <hr></hr>
-      <img src="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_CELL.GIF" alt="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_CELL.GIF">
-    </div>
-    <p><%= link_to "Źródło danych: pogodynka.pl", "http://www.pogodynka.pl/", class:"btn btn-sm btn-outline-primary" %></p>
-  </div>
+<div class="container-fluid" align="center">
+  <h4>System detekcji wyładowań atmosferycznych – SAFIR LTS2005</h4><hr>
+  <img src="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DIS.GIF" alt="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DIS.GIF">
+  <hr></hr>
+  <img src="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DENS.GIF" alt="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_DENS.GIF">
+  <hr></hr>
+  <img src="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_CELL.GIF" alt="http://www.pogodynka.pl/http/assets/products/aktualna_pogoda/PERUN_CELL.GIF">
+  <hr></hr>
+  <p><%= link_to "Źródło danych: pogodynka.pl", "http://www.pogodynka.pl/", class:"btn btn-sm btn-outline-primary" %></p>
 </div>

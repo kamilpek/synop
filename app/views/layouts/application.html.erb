@@ -15,8 +15,53 @@
   <body>
     <%= render 'layouts/header' %>
     <%= render partial: 'layouts/messages', flash: flash %>
-    <%= yield %>
-    <p align="center" class="dontprint" ><%= link_to "\u00A9 #{DateTime.now.strftime("%Y")} kp-software.pl", pages_about_path, :title => "v2.5.2 z dnia 22.06.2018" %></p>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Mapy</span>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><%= link_to 'Mapa Pomiarów', root_path, :title => "Radary", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to "Mapa Prognoz", pages_forecast_path, class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to "Mapa METAR", pages_metar_path, class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to "Mapa jakości powietrza", pages_gios_path, class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to "Radar", pages_radars_path, class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to "SAFIR", pages_safir_path, class:"nav-link" %></li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Kalendarze</span>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><%= link_to 'Dane synoptyczne', measurements_path, :title => "Lista pobranych od IMGW pomiarów", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Prognozy', forecasts_path, :title => "Prognoza pogody z yr.no", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Radary', radars_path, :title => "Radary", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Jakość powietrza', gios_measurments_path, :title => "Jakość powietrza", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Depesze METAR', metar_raports_path, :title => "Depesze METAR", class:"nav-link" %></li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Pozostałe</span>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><%= link_to 'Stacje', stations_path, :title => "Lista Stacji Meteorologicznych", class:"nav-link" %></li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <%= yield %>
+          </div>
+        </main>
+      </div>
+    </div>
+
     <%= render 'cookies_eu/consent_banner' %>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>

@@ -1,22 +1,8 @@
-<br>
-<div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light dontprint">
-      <%= link_to 'Synoptyk', pages_home_path, :title => "Strona Główna", class:"navbar-brand" %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li><%= link_to 'Dane synoptyczne', measurements_path, :title => "Lista pobranych od IMGW pomiarów", class:"nav-link" %></li>
-          <li><%= link_to 'Prognozy', forecasts_path, :title => "Prognoza pogody z yr.no", class:"nav-link" %></li>
-          <li><%= link_to 'Radary', radars_path, :title => "Radary", class:"nav-link" %></li>
-          <li><%= link_to 'Jakość powietrza', gios_measurments_path, :title => "Jakość powietrza", class:"nav-link" %></li>
-          <li><%= link_to 'Depesze METAR', metar_raports_path, :title => "Depesze METAR", class:"nav-link" %></li>
-          <li><%= link_to 'Stacje', stations_path, :title => "Lista Stacji Meteorologicznych", class:"nav-link" %></li>
-          <!-- <li><%= link_to 'Gminy', cities_path, :title => "Lista gmin", class:"nav-link" %></li> -->
-        </ul>
-      </div>
-  </nav>
-</div>
-<br>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <%= link_to 'Synoptyk', pages_home_path, :title => "Strona Główna", class:"navbar-brand col-sm-3 col-md-2 mr-0" %>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <%= link_to "v2.6.0 \u00A9 #{DateTime.now.strftime("%Y")}", pages_about_path, :title => "v2.6.0 z dnia 26.06.2018", class:"nav-link" %>
+    </li>
+  </ul>
+</nav>

@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'pages/radars'
   get 'pages/safir'
   get 'pages/stats'
+  get 'pages/nowcasting'
+  get 'pages/monitor'
   get 'pages/about'
 
   resources :gios_measurments

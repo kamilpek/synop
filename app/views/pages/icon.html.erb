@@ -1,0 +1,23 @@
+<% content_for :title, "Modele numeryczne – Model ICON EU – Mapy" %>
+
+<div class="container-fluid" align="center">
+  <h4>Modele numeryczne – Model ICON EU – Mapy</h4><hr>
+
+  <% for i in 1..78 %>
+    <% if i % 3 == 1 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <%= link_to (image_tag("https://meteomodel.pl/icon-new/99/T2M/T2M_#{i.to_s.rjust(2, '0')}.png")), "https://meteomodel.pl/icon-new/99/T2M/T2M_#{i.to_s.rjust(2, '0')}.png" %>
+        </div>
+        <div class="col-sm">
+          <%= link_to (image_tag("https://meteomodel.pl/icon-new/99/T2M/T2M_#{(i+1).to_s.rjust(2, '0')}.png")), "https://meteomodel.pl/icon-new/99/T2M/T2M_#{(i+1).to_s.rjust(2, '0')}.png" %>
+        </div>
+        <div class="col-sm">
+          <%= link_to (image_tag("https://meteomodel.pl/icon-new/99/T2M/T2M_#{(i+2).to_s.rjust(2, '0')}.png")), "https://meteomodel.pl/icon-new/99/T2M/T2M_#{(i+2).to_s.rjust(2, '0')}.png" %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  <hr></hr>
+  <p><%= link_to "Źródło danych: meteomodel.pl", "https://meteomodel.pl/modele-numeryczne-model-icon-eu-mapy/", class:"btn btn-sm btn-outline-primary" %></p>
+</div>

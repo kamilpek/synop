@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'pages/nowcasting'
   get 'pages/monitor'
   get 'pages/icon'
+  get 'pages/gfs'
   get 'pages/about'
 
   resources :gios_measurments

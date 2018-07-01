@@ -24,7 +24,7 @@ def planer():
     schedule.every().day.at("09:00").do(yrno)
     schedule.every().hour.do(imgw)
     schedule.every().hour.do(metar)
-    schedule.every().hour.do(gios)
+    #schedule.every().hour.do(gios)
 
 def test():
     yrno()

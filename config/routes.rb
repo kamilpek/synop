@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'pages/monitor'
   get 'pages/icon'
   get 'pages/gfs'
+  get 'pages/radio'
+  get 'pages/dwd'
+  get 'pages/eumetsat'
+  get 'pages/forecast_map'
   get 'pages/about'
 
   resources :gios_measurments

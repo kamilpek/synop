@@ -42,6 +42,16 @@ $input-btn-line-height-xs: 1.1 !default;
   height: 75%;
 }
 
+.full-img {
+  width: 100%;
+  height: auto;
+}
+
+.half-img {
+  width: 50%;
+  height: auto;
+}
+
 img {
   width: 75%;
   height: auto;

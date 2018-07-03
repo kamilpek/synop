@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'pages/dwd'
   get 'pages/eumetsat'
   get 'pages/forecast_map'
+  get 'pages/showers'
   get 'pages/about'
 
   resources :gios_measurments

@@ -1,5 +1,6 @@
 class MetarRaportsController < ApplicationController
   before_action :set_metar_raport, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /metar_raports
   # GET /metar_raports.json

@@ -1,5 +1,6 @@
 class MetarStationsController < ApplicationController
   before_action :set_metar_station, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /metar_stations
   # GET /metar_stations.json

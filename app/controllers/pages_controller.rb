@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, except: [:about]
+
   def home
     @stations = Station.all
     @date = Measurement.order("created_at").pluck(:date).last

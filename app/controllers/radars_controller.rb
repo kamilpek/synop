@@ -1,5 +1,6 @@
 class RadarsController < ApplicationController
   before_action :set_radar, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /radars
   # GET /radars.json

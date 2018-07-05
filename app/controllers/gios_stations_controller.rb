@@ -1,5 +1,6 @@
 class GiosStationsController < ApplicationController
   before_action :set_gios_station, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /gios_stations
   # GET /gios_stations.json

@@ -1,5 +1,6 @@
 class GiosMeasurmentsController < ApplicationController
   before_action :set_gios_measurment, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /gios_measurments
   # GET /gios_measurments.json

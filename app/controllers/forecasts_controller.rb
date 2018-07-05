@@ -1,5 +1,6 @@
 class ForecastsController < ApplicationController
   before_action :set_forecast, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /forecasts
   # GET /forecasts.json
@@ -11,7 +12,7 @@ class ForecastsController < ApplicationController
 
   def daily
     @stations = Station.all
-    @date = params[:date] ? Date.parse(params[:date]) : Date.today    
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
       @forecast = Forecast.where('extract(day from date) = ?', @date.strftime("%d").to_i).last
       @forecast_id = @forecast.id

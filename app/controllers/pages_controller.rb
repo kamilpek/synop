@@ -86,6 +86,14 @@ class PagesController < ApplicationController
     @radar = Radar.last
   end
 
+  def um
+    if DateTime.now.utc.strftime("%H").to_i < 13
+      @hour = "00"
+    else
+      @hour = "12"
+    end
+  end
+
   def stats
   end
 

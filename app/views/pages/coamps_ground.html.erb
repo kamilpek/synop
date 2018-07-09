@@ -1,0 +1,295 @@
+<% content_for :title, "Model COAMPS – Dane powierzchniowe" %>
+
+<div class="container-fluid" align="center">
+  <h4>Model COAMPS – Dane powierzchniowe</h4><hr>
+
+  <h5>Ciśnienie na poziomie morza</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Podstawa chmur</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Wierzchołek chmur</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Chmury wysokie</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Chmury średnie</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Chmury niskie</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Zachmurzenie ogólne</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Wysokość powierzchni zamarzania</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Opad deszcz konwekcyjny</h5>
+  <% for i in (4..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Opad deszcz wielkoskalowy</h5>
+  <% for i in (4..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Śnieg</h5>
+  <% for i in (4..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Suma opadu</h5>
+  <% for i in (4..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Deszcz + śnieg</h5>
+  <% for i in (4..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Temperatura</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Widzialność</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <h5>Temperatura powierzchni gruntu</h5>
+  <% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+  <% end %>
+  <% end %>
+  <hr></hr>
+
+  <p><%= link_to "Źródło danych: meteo.pl", "http://new.meteo.pl/um/php/small_maps.php?all=1", class:"btn btn-sm btn-outline-primary" %></p>
+</div>

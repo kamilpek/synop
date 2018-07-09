@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   get 'pages/forecast_map'
   get 'pages/showers'
   get 'pages/um'
+  get 'pages/coamps'
+  get 'pages/coamps_ground'
   get 'pages/about'
 
   resources :gios_measurments

@@ -87,6 +87,20 @@ class PagesController < ApplicationController
   end
 
   def um
+    hour
+  end
+
+  def coamps
+    hour
+    @date = DateTime.now.utc.strftime("%Y%m%d")
+  end
+
+  def coamps_ground
+    hour
+    @date = DateTime.now.utc.strftime("%Y%m%d")
+  end
+
+  def hour
     if DateTime.now.utc.strftime("%H").to_i < 13
       @hour = "00"
     else

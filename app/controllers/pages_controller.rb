@@ -87,25 +87,31 @@ class PagesController < ApplicationController
   end
 
   def um
-    hour
+    hour_um
   end
 
   def coamps
-    hour
-    @date = DateTime.now.utc.strftime("%Y%m%d")
+    hour_coamps
   end
 
   def coamps_ground
-    hour
-    @date = DateTime.now.utc.strftime("%Y%m%d")
+    hour_coamps
   end
 
-  def hour
+  def hour_um
     if DateTime.now.utc.strftime("%H").to_i < 13
       @hour = "00"
     else
       @hour = "12"
     end
+  end
+
+  def hour_coamps
+    doc = HTTParty.get("http://coamps.icm.edu.pl/")
+    @parse_page ||= Nokogiri::HTML(doc)
+    @datetime = DateTime.parse((@parse_page.css('font').text[0..-7])+":"+(@parse_page.css('font').text[-3..-7]))
+    @date = @datetime.strftime("%Y%m%d")
+    @hour = @datetime.strftime("%H")
   end
 
   def stats

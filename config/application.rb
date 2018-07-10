@@ -4,6 +4,7 @@ require 'io/console'
 require 'rails/all'
 require 'roo'
 require 'will_paginate/array'
+require "net/http"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

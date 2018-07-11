@@ -99,11 +99,11 @@ class PagesController < ApplicationController
   end
 
   def hour_um
-    if DateTime.now.utc.strftime("%H").to_i < 13
-      @hour = "00"
-    else
-      @hour = "12"
-    end
+    doc = HTTParty.get("http://new.meteo.pl/um/php/pict_show.php?cat=0&time=0")
+    @parse_page ||= Nokogiri::HTML(doc)
+    @datetime = DateTime.parse((@parse_page.css('font').text[0..-7])+":"+(@parse_page.css('font').text[-3..-7]))
+    @date = @datetime.strftime("%Y%m%d")
+    @hour = @datetime.strftime("%H")
   end
 
   def hour_coamps

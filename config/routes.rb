@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'pages/um'
   get 'pages/coamps'
   get 'pages/coamps_ground'
+  get 'pages/eport'
   get 'pages/about'
 
   resources :gios_measurments

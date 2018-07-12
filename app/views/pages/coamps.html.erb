@@ -1,7 +1,7 @@
 <% content_for :title, "Model COAMPS – Dane na poziomach ciśnieniowych" %>
 
 <div class="container-fluid" align="center">
-  <h4>Model COAMPS – Dane na poziomach ciśnieniowych</h4><hr>
+  <h4>Model COAMPS – Dane na poziomach ciśnieniowych – <%= @datetime.strftime("%d.%m.%Y %H:%M") %></h4><hr>
 
   <h5>0300hPa – Prędkość wiatru</h5>
   <% for i in (1..81).step(3) %>

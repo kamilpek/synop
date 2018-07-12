@@ -1,7 +1,7 @@
 <% content_for :title, "Model UM" %>
 
 <div class="container-fluid" align="center">
-  <h4>Model UM</h4><hr>
+  <h4>Model UM – <%= @datetime.strftime("%d.%m.%Y %H:%M") %></h4><hr>
 
   <h5>Ciśnienie na poziomie morza</h5>
   <iframe src="http://new.meteo.pl/um/php/pict_show.php?cat=0&time=0&date=<%= @date %><%= @hour %>" width="735" height="880" frameborder="0" scrolling="no"></iframe>

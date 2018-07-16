@@ -4,30 +4,34 @@
   <div class="row" align="center">
     <div class="col-sm">
       <h5>CAPPI</h5>
-      <%= link_to (image_tag(@radar.cappi.url(:pomorze))), @radar.cappi.url %>
+      <%= link_to (image_tag(@radar.cappi.url(:pomorze))), @radar.cappi.url, class:"full-img" %>
     </div>
     <div class="col-sm">
       <h5>CMAX</h5>
-      <%= link_to (image_tag(@radar.cmaxdbz.url(:pomorze))), @radar.cmaxdbz.url %>
+      <%= link_to (image_tag(@radar.cmaxdbz.url(:pomorze))), @radar.cmaxdbz.url, class:"full-img" %>
     </div>
     <div class="col-sm">
       <h5>EHT</h5>
-      <%= link_to (image_tag(@radar.eht.url(:pomorze))), @radar.eht.url %>
+      <%= link_to (image_tag(@radar.eht.url(:pomorze))), @radar.eht.url, class:"full-img" %>
     </div>
   </div>
   <br>
   <div class="row" align="center">
     <div class="col-sm">
       <h5>PAC</h5>
-      <%= link_to (image_tag(@radar.pac.url(:pomorze))), @radar.pac.url %>
+      <%= link_to (image_tag(@radar.pac.url(:pomorze))), @radar.pac.url, class:"full-img" %>
     </div>
     <div class="col-sm">
       <h5>ZHAIL</h5>
-      <%= link_to (image_tag(@radar.zhail.url(:pomorze))), @radar.zhail.url %>
+      <%= link_to (image_tag(@radar.zhail.url(:pomorze))), @radar.zhail.url, class:"full-img" %>
     </div>
     <div class="col-sm">
       <h5>HSHEAR</h5>
-      <%= link_to (image_tag(@radar.hshear.url(:pomorze))), @radar.hshear.url %>
+      <%= link_to (image_tag(@radar.hshear.url(:pomorze))), @radar.hshear.url, class:"full-img" %>
+    </div>
+    <div class="col-sm">
+      <h5>SRI</h5>
+      <%= link_to (image_tag(@radar.sri.url(:pomorze))), @radar.sri.url, class:"full-img" %>
     </div>
   </div>
   <hr>

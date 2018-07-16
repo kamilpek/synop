@@ -67,4 +67,6 @@ rails generate uploader RadarPac
 rails generate uploader RadarZhail
 rails generate uploader RadarHshear
 mount_uploader :cappi, RadarCappi
+rails generate migration AddSriToRadars sri:string
+rails generate uploader RadarSri
 ```

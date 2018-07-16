@@ -85,6 +85,6 @@ class RadarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def radar_params
-      params.require(:radar).permit(:cappi, :cmaxdbz, :eht, :pac, :zhail, :hshear)
+      params.require(:radar).permit(:cappi, :cmaxdbz, :eht, :pac, :zhail, :hshear, :sri)
     end
 end

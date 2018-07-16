@@ -101,7 +101,7 @@ class PagesController < ApplicationController
   def hour_um
     doc = HTTParty.get("http://new.meteo.pl/um/php/pict_show.php?cat=0&time=0")
     @parse_page ||= Nokogiri::HTML(doc)
-    @datetime = DateTime.parse((@parse_page.css('font').text[0..-7])+":"+(@parse_page.css('font').text[-3..-7]))
+    @datetime = DateTime.parse(@parse_page.css('font').text[6..-1])
     @date = @datetime.strftime("%Y%m%d")
     @hour = @datetime.strftime("%H")
   end
@@ -109,7 +109,7 @@ class PagesController < ApplicationController
   def hour_coamps
     doc = HTTParty.get("http://coamps.icm.edu.pl/")
     @parse_page ||= Nokogiri::HTML(doc)
-    @datetime = DateTime.parse((@parse_page.css('font').text[0..-7])+":"+(@parse_page.css('font').text[-3..-7]))
+    @datetime = DateTime.parse(@parse_page.css('font').text)
     @date = @datetime.strftime("%Y%m%d")
     @hour = @datetime.strftime("%H")
   end

@@ -5,4 +5,5 @@ class Radar < ApplicationRecord
   mount_uploader :pac, RadarPacUploader
   mount_uploader :zhail, RadarZhailUploader
   mount_uploader :hshear, RadarHshearUploader
+  mount_uploader :sri, RadarSriUploader
 end

@@ -1,0 +1,95 @@
+no,name,lat,lon,active,rain,water,winddir,windlevel
+251,Jana Pawła II H,54.409024,18.617432,true,false,true,false,false
+255,M.Wisła Stogi,54.381093,18.699738,true,false,true,false,false
+254,Port Pn,54.399844,18.691995,true,false,true,false,false
+201,Zb. Orłowska II,54.425366,18.587082,true,false,true,false,false
+215,Zb. 1 Jelitkowska,54.424649,18.594771,true,false,true,false,false
+214,Zb 2 - Orłowska,54.425373,18.587076,true,false,true,false,false
+213,Zb. 3 - Chłopska,54.418677,18.584700,true,false,true,false,false
+212,Zb. 4 - Subisława,54.416600,18.576072,true,false,true,false,false
+211,Zb 5 - Grunwaldzka,54.413185,18.568310,true,false,true,false,false
+210,Zb. 6 - Opacka,54.411755,18.565188,true,false,true,false,false
+241,Katedra,54.411159,18.557104,true,false,true,false,false
+209,Zb. 8 - Spacerowa,54.409289,18.554593,true,false,true,false,false
+240,IBW PAN,54.408005,18.544261,true,false,true,false,false
+253,Rynarzewski Pot.,54.406522,18.538886,true,false,true,false,false
+208,Zb. 11 - Kuźnia,54.404839,18.536703,true,false,true,false,false
+207,Zb. 12 - Bytowska 4,54.404812,18.536718,true,false,true,false,false
+206,Zb. 14 - Bytowska 4A,54.400936,18.532594,true,false,true,false,false
+203,Zb. Owczarnia,54.410653,18.489560,true,false,true,false,false
+1,Dolne Miasto,54.343960,18.662242,true,true,false,false,false
+310,Stogi/Kaczeńce,54.365018,18.700443,true,true,false,false,false
+35,Nowy Port,54.400817,18.662601,true,true,false,false,false
+303,Brzeźno,54.407577,18.632995,true,true,false,false,false
+302,Jelitkowo,54.424120,18.595540,true,true,false,false,false
+2,Górki Zachodnie,54.359874,18.760215,true,true,false,false,false
+309,Przegalina,54.316535,18.912423,true,true,false,false,false
+313,Lipce/Trakt Św.Wojciecha,54.301260,18.631431,true,true,false,false,false
+307,Śródmieście/Góra Gradowa,54.356875,18.640527,true,true,false,false,false
+312,Oliwa/Potok Kołobrzeski,54.403117,18.586371,true,true,false,false,false
+9,Oliwa/IBW PAN,54.408155,18.544251,true,true,false,false,false
+306,Łostowice,54.312221,18.594789,true,true,false,false,false
+308,Potok Borkowski/Starogardzka,54.297862,18.605607,true,true,false,false,false
+305,Zabornia,54.339269,18.571483,true,true,false,false,false
+18,Cygańska Góra,54.358120,18.618049,true,true,false,false,false
+311,Chełm/Dragana,54.340880,18.611068,true,true,false,false,false
+8,Matemblewo,54.363544,18.561283,true,true,false,false,false
+31,Szadółki/ZUT,54.322526,18.541505,true,true,false,false,false
+16,Matarnia,54.385838,18.474358,true,true,false,false,false
+12,Jasień,54.339969,18.547282,true,true,false,false,false
+304,Kokoszki,54.354273,18.492004,true,true,false,false,false
+301,Klukowo,54.400124,18.479957,true,true,false,false,false
+11,Kiełpino Górne,54.339241,18.501796,true,true,false,false,false
+10,Osowa,54.418716,18.479046,true,true,false,false,false
+245,Park Orunski,54.321735,18.623801,true,false,true,false,false
+232,Zbiornik Augustowska,54.319522,18.604833,true,false,true,false,false
+231,KD zb. Jeleniogórska,54.325929,18.583075,true,false,true,false,false
+230,KD zb. Przemyska - Białostocka,54.329899,18.591100,true,false,true,false,false
+229,KD zb. Warszawska,54.333033,18.591390,true,false,true,false,false
+227,dopływ P zb. Wielkopolska,54.316028,18.590259,true,false,true,false,false
+244,Bieszczadzka,54.316433,18.585912,true,false,true,false,false
+228,dopływ L - zbiornik Wieżycka,54.318204,18.583970,true,false,true,false,false
+248,Kowalski Pot,54.312865,18.583648,true,false,true,false,false
+226,Zbiornik Świętokrzyska II - Łostowice,54.318050,18.574392,true,false,true,false,false
+225,Zbiornik Świętokrzyska I - Rębowo,54.320478,18.568046,true,false,true,false,false
+249,Wlot do zb. Świętokrzyska I,54.321110,18.564892,true,false,true,false,false
+246,Wlot zbiornik Świętokrzyska I,54.323094,18.565858,true,false,true,false,false
+247,Św. Wojciech Pot. poniżej Borkowski Pot.,54.279928,18.620091,true,false,true,false,false
+239,Zaroślak,54.343089,18.643021,true,false,true,false,false
+238,Cienista,54.338772,18.638315,true,false,true,false,false
+237,Nakielska - poniżej KD Małomiejska,54.329765,18.633165,true,false,true,false,false
+223,KD Zbiornik Madalińskiego,54.333125,18.607130,true,false,true,false,false
+224,KD Zbiornik Platynowa,54.327110,18.612484,true,false,true,false,false
+236,Orunia - poniżej Oruński Pot.,54.325552,18.632032,true,false,true,false,false
+235,Lipce - poniżej Maćkowy Pot.,54.310170,18.629398,true,false,true,false,false
+233,Maćkowy Pot. Zbiornik Kolorowy,54.310374,18.601331,true,false,true,false,false
+234,Św. Wojciech,54.284763,18.637635,true,false,true,false,false
+250,UM Gdańsk,54.351577,18.640979,true,false,true,false,false
+222,Dopływ L Zbiornik Mokra Fosa,54.351890,18.637540,true,false,true,false,false
+221,Zbiornik Zabornia,54.345595,18.592962,true,false,true,false,false
+220,Zbiornik Myśliwska,54.346181,18.582695,true,false,true,false,false
+218,Rów S-1 dopływ P zbiornik Cedrowa,54.340420,18.578518,true,false,true,false,false
+217,Rów S-1 zbiornik Jabłoniowa,54.332872,18.566688,true,false,true,false,false
+219,Rów S-1 zbiornik Łabędzia,54.343499,18.576655,true,false,true,false,false
+202,Rów M M1 KD Zbiornik Barniewice,54.409403,18.482792,true,false,true,false,false
+205,Rów M M4 KD Zbiornik Rębiechowo,54.391065,18.462990,true,false,true,false,false
+204,Rów M Zbiornik Klukowo,54.398236,18.461617,true,false,true,false,false
+216,Zbiornik Budowlanych,54.370130,18.461232,true,false,true,false,false
+28,Ujście,54.375664,18.642429,true,false,true,false,false
+7,Reja,54.380712,18.625452,true,true,true,false,false
+6,Zb. Wileńska,54.360681,18.604349,true,false,true,false,false
+252,Jaśkowa Dol./Sobótki,54.374663,18.605634,true,false,true,false,false
+27,Zbiornik Uphagena,54.376707,18.616745,true,false,true,false,false
+4,Kubacza,54.380890,18.618497,true,false,true,false,false
+243,Wrzeszcz Aldony,54.382163,18.612826,true,false,true,false,false
+242,Wrzeszcz Słowackiego 36A,54.379390,18.585279,true,false,true,false,false
+23,Zbiornik,54.377799,18.577455,true,false,true,false,false
+26,pow. zb. Srebrniki,54.375701,18.571914,true,false,true,false,false
+15,Ogrodowa,54.370614,18.572075,true,true,true,false,false
+20,Zbiornik Ogrodowa,54.370145,18.571989,true,false,true,false,false
+24,Zbiornik Górne Młyny,54.362972,18.560266,true,false,true,false,false
+22,Zbiornik Nowiec 2,54.362357,18.558921,true,false,true,false,false
+14,Matemblewo,54.361469,18.554898,true,false,true,false,false
+21,Zbiornik Jasień,54.355033,18.545811,true,false,true,false,false
+13,Matemblewo przepust,54.361538,18.553900,true,false,true,false,false
+25,Zbiornik Kiełpinek,54.358928,18.517744,true,false,true,false,false

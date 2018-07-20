@@ -70,3 +70,9 @@ mount_uploader :cappi, RadarCappi
 rails generate migration AddSriToRadars sri:string
 rails generate uploader RadarSri
 ```
+
+## gdańskie wody
+```ruby
+rails generate scaffold gw_station no:integer name:string lat:float lng:float active:boolean rain:boolean water:boolean winddir:boolean windlevel:boolean
+rails generate scaffold gw_measur gw_station:references datetime:datetime rain:float water:float winddir:float windlevel:float
+```

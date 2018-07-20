@@ -1,0 +1,2 @@
+class GwStation < ApplicationRecord
+end

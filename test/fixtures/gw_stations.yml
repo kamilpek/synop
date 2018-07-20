@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  'no': 1
+  name: MyString
+  lat: 1.5
+  lng: 1.5
+  active: false
+  rain: false
+  water: false
+  winddir: false
+  windlevel: false
+
+two:
+  'no': 1
+  name: MyString
+  lat: 1.5
+  lng: 1.5
+  active: false
+  rain: false
+  water: false
+  winddir: false
+  windlevel: false

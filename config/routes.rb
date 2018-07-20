@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :gw_measurs
+  resources :gw_stations
   get 'admin/main'
   get 'admin/users'
   get 'pages/home'
@@ -24,6 +26,8 @@ Rails.application.routes.draw do
   get 'pages/eport'
   get 'pages/aladin'
   get 'pages/about'
+  get 'pages/measurements'
+  get 'pages/gw'
 
   resources :gios_measurments
   resources :gios_stations

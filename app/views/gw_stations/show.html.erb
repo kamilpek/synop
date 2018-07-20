@@ -1,0 +1,29 @@
+<% content_for :title, "Stacja #{@gw_station.name}" %>
+
+<div class="container-fluid" align="center">
+  <div class="alert alert-primary" align="center">
+    <h4 class="alert-heading">Stacja Gdańskie Wody – <strong><%= @gw_station.name %> – <%= @gw_station.no %></strong></h4>
+    <p>Koordynaty: <strong>
+    <a href="https://maps.google.com/maps?ll=<%= @gw_station.lat %>,<%= @gw_station.lng %>&q=<%= @gw_station.lat %>,<%= @gw_station.lng %>"><%= @gw_station.lng %>, <%= @gw_station.lat %></a>
+    </strong></p>
+    <hr>
+    <p>Active: <strong><%= @gw_station.active %></strong></p>
+    <p>Rain: <strong><%= @gw_station.rain %></strong></p>
+    <p>Water: <strong><%= @gw_station.water %></strong></p>
+    <p>Winddir: <strong><%= @gw_station.winddir %></strong></p>
+    <p>Windlevel: <strong><%= @gw_station.windlevel %></strong></p>
+    <hr>
+    <p class="mb-0">
+      <%= link_to 'Edycja', edit_gw_station_path(@gw_station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+      <%= link_to 'Lista Stacji', gw_stations_path, class:"btn btn-sm btn-outline-primary" %>
+    </p>
+  </div>
+
+  <h4>Lokalizacja</h4><hr>
+  <div align="center">
+    <iframe width="720" height="400" frameborder="0" style="border:0"
+     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCx3WpXtmfwjePmkgLqXZnV7VvM03i0ICE&q=<%= @gw_station.lat %>,<%= @gw_station.lng %>"
+     allowfullscreen>
+    </iframe>
+  </div>
+</div>

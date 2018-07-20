@@ -1,0 +1,9 @@
+<% content_for :title, "Mapa pomiarów – Gdańskie Wody" %>
+
+<div class="container-fluid" align="center">
+  <div style='height: 750px;'>
+    <div id="sidebar_builder" style='width: 100%; height: 100%;'></div>
+    <%= render "multimap_gw" %>
+  </div><br>
+  <p><%= link_to "Źródło danych: pomiary.gdanskiewody.pl", "https://pomiary.gdanskiewody.pl", class:"btn btn-sm btn-outline-primary" %></p>
+</div>

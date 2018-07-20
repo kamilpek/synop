@@ -1,0 +1,47 @@
+<%= form_for(gw_measur) do |f| %>
+  <% if gw_measur.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gw_measur.errors.count, "error") %> prohibited this gw_measur from being saved:</h2>
+
+      <ul>
+      <% gw_measur.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gw_station_id %>
+    <%= f.text_field :gw_station_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :datetime %>
+    <%= f.datetime_select :datetime %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rain %>
+    <%= f.text_field :rain %>
+  </div>
+
+  <div class="field">
+    <%= f.label :water %>
+    <%= f.text_field :water %>
+  </div>
+
+  <div class="field">
+    <%= f.label :winddir %>
+    <%= f.text_field :winddir %>
+  </div>
+
+  <div class="field">
+    <%= f.label :windlevel %>
+    <%= f.text_field :windlevel %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

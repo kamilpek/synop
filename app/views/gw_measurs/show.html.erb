@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gw station:</strong>
+  <%= @gw_measur.gw_station %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @gw_measur.datetime %>
+</p>
+
+<p>
+  <strong>Rain:</strong>
+  <%= @gw_measur.rain %>
+</p>
+
+<p>
+  <strong>Water:</strong>
+  <%= @gw_measur.water %>
+</p>
+
+<p>
+  <strong>Winddir:</strong>
+  <%= @gw_measur.winddir %>
+</p>
+
+<p>
+  <strong>Windlevel:</strong>
+  <%= @gw_measur.windlevel %>
+</p>
+
+<%= link_to 'Edit', edit_gw_measur_path(@gw_measur) %> |
+<%= link_to 'Back', gw_measurs_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180717194147) do
+ActiveRecord::Schema.define(version: 20180718164432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -77,6 +77,32 @@ ActiveRecord::Schema.define(version: 20180717194147) do
     t.integer  "number"
     t.string   "city"
     t.string   "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "gw_measurs", force: :cascade do |t|
+    t.integer  "gw_station_id"
+    t.datetime "datetime"
+    t.float    "rain"
+    t.float    "water"
+    t.float    "winddir"
+    t.float    "windlevel"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["gw_station_id"], name: "index_gw_measurs_on_gw_station_id", using: :btree
+  end
+
+  create_table "gw_stations", force: :cascade do |t|
+    t.integer  "no"
+    t.string   "name"
+    t.float    "lat"
+    t.float    "lng"
+    t.boolean  "active"
+    t.boolean  "rain"
+    t.boolean  "water"
+    t.boolean  "winddir"
+    t.boolean  "windlevel"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -165,4 +191,5 @@ ActiveRecord::Schema.define(version: 20180717194147) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "gw_measurs", "gw_stations"
 end

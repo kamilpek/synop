@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gw_station: one
+  datetime: 2018-07-18 18:44:32
+  rain: 1.5
+  water: 1.5
+  winddir: 1.5
+  windlevel: 1.5
+
+two:
+  gw_station: two
+  datetime: 2018-07-18 18:44:32
+  rain: 1.5
+  water: 1.5
+  winddir: 1.5
+  windlevel: 1.5

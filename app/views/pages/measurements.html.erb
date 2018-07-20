@@ -1,0 +1,10 @@
+<% content_for :title, "Mapa pomiarów" %>
+
+<div class="container-fluid" align="center">
+  <div style='height: 750px;'>
+    <div id="sidebar_builder" style='width: 100%; height: 100%;'></div>
+    <%= render "multimap" %>
+  </div><hr>
+  <p align="center">Data i godzina ostatniego pomiaru: <%= @date %>; <%= @hour %>:00 UTC.</p>
+  <p><%= link_to "Źródło danych: imgw.pl", "http://www.imgw.pl/", class:"btn btn-sm btn-outline-primary" %></p>
+</div>

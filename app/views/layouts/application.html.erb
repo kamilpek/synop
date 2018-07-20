@@ -23,10 +23,11 @@
               <span>Mapy i wykresy</span>
             </h6>
             <ul class="nav flex-column">
-              <li class="nav-item"><%= link_to 'Mapa Pomiarów IMGW', root_path, :title => "Radary", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Mapa Pomiarów IMGW', pages_measurements_path, :title => "Radary", class:"nav-link" %></li>
               <li class="nav-item"><%= link_to "Mapa Prognoz YR.NO", pages_forecast_path, class:"nav-link" %></li>
               <li class="nav-item"><%= link_to "Mapa METAR", pages_metar_path, class:"nav-link" %></li>
               <li class="nav-item"><%= link_to "Mapa jakości powietrza", pages_gios_path, class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to "Mapa pomiarów – Gdańskie Wody", pages_gw_path, class:"nav-link" %></li>
               <li class="nav-item"><%= link_to "Radar", pages_radars_path, class:"nav-link" %></li>
               <li class="nav-item"><%= link_to "SAFIR", pages_safir_path, class:"nav-link" %></li>
               <li class="nav-item"><%= link_to "Nowcasting", pages_nowcasting_path, class:"nav-link" %></li>
@@ -53,6 +54,7 @@
               <li class="nav-item"><%= link_to 'Radary', radars_path, :title => "Radary", class:"nav-link" %></li>
               <li class="nav-item"><%= link_to 'Jakość powietrza', gios_measurments_path, :title => "Jakość powietrza", class:"nav-link" %></li>
               <li class="nav-item"><%= link_to 'Depesze METAR', metar_raports_path, :title => "Depesze METAR", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Pomiary Gdańskie Wody', gw_measurs_path, :title => "Pomiary Gdańskie Wody", class:"nav-link" %></li>
             </ul>
             <% end %>
           </div>

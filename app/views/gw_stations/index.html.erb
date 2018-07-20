@@ -1,0 +1,65 @@
+<% content_for :title, "Stacje pomiarowe – Gdańskie Wody" %>
+
+<div class="container-fluid" align="center">
+  <div class="card text-center">
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <%= link_to "Stache IMGW", stations_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Stacje GIOS", gios_stations_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Stacje METAR", metar_stations_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Stacje Gdańskie Wody", gw_stations_path, class:"nav-link active" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body">
+      <h4>
+        Stacje pomiarowe – Gdańskie Wody
+        <%= link_to 'Nowa Stajca', new_gw_station_path, class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
+      </h4><hr>
+      <div class="table-responsive" align="center">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr align="center">
+              <th>No</th>
+              <th>Name</th>
+              <th>Lat</th>
+              <th>Lng</th>
+              <th>Active</th>
+              <th>Rain</th>
+              <th>Water</th>
+              <th>Winddir</th>
+              <th>Windlevel</th>
+              <th>Akcje</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @gw_stations.each do |gw_station| %>
+              <tr>
+                <td><%= gw_station.no %></td>
+                <td><%= gw_station.name %></td>
+                <td><%= gw_station.lat %></td>
+                <td><%= gw_station.lng %></td>
+                <td><%= gw_station.active %></td>
+                <td><%= gw_station.rain %></td>
+                <td><%= gw_station.water %></td>
+                <td><%= gw_station.winddir %></td>
+                <td><%= gw_station.windlevel %></td>
+                <td><%= link_to 'Przejdź', gw_station, class:"btn btn-outline-primary btn-xs" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

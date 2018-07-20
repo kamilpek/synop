@@ -1,0 +1,4 @@
+<p class="lead"><strong><%= GwStation.find_by(id:@gw_measurment.gw_station_id).name %> – <%= @gw_measurment.gw_station_id %></strong></p>
+<p>Rain: <%= @gw_measurment.rain %><%= "b/d" if not @gw_measurment.rain %></p>
+<p>Water: <%= @gw_measurment.water %><%= "b/d" if not @gw_measurment.water %></p>
+<p>Date: <%= @gw_measurment.datetime.strftime("%d.%m.%Y %H:%M") if @gw_measurment.datetime %> UTC</p>

@@ -35,11 +35,13 @@ geocoder:maxmind:geolite:load
 import_cities
 import_gios_measur
 import_gios_stations
+import_gw
 import_imgw
 import_imgw_xml
 import_ogimet
 import_radar
 import_stations
+import_stations_gw
 import_stations_hydro
 import_stations_metar
 import_yrno

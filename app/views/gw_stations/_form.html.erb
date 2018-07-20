@@ -1,0 +1,62 @@
+<%= form_for(gw_station) do |f| %>
+  <% if gw_station.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gw_station.errors.count, "error") %> prohibited this gw_station from being saved:</h2>
+
+      <ul>
+      <% gw_station.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :no %>
+    <%= f.number_field :no %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lat %>
+    <%= f.text_field :lat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lng %>
+    <%= f.text_field :lng %>
+  </div>
+
+  <div class="field">
+    <%= f.label :active %>
+    <%= f.check_box :active %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rain %>
+    <%= f.check_box :rain %>
+  </div>
+
+  <div class="field">
+    <%= f.label :water %>
+    <%= f.check_box :water %>
+  </div>
+
+  <div class="field">
+    <%= f.label :winddir %>
+    <%= f.check_box :winddir %>
+  </div>
+
+  <div class="field">
+    <%= f.label :windlevel %>
+    <%= f.check_box :windlevel %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

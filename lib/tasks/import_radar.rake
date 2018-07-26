@@ -27,4 +27,6 @@ def build_import_radar
                 :remote_zhail_url => zhail,
                 :remote_hshear_url => hshear,
                 :remote_sri_url => sri)
+
+  Radar.first.delete
 end

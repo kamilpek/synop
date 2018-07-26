@@ -8,15 +8,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/SLPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -26,15 +30,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLBH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -44,15 +52,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLTH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -62,15 +74,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_H_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -80,15 +96,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_M_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -98,15 +118,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_L_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -116,15 +140,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CLCS_T_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -134,15 +162,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/FRHH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -152,15 +184,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/CNPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -170,15 +206,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/STPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -188,15 +228,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -206,15 +250,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TTPH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -224,15 +272,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/TRSH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -242,15 +294,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/T__H_0002.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -260,15 +316,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/VISH_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>
@@ -278,15 +338,19 @@
   <% if i % 9 == 1 %>
     <div class="row" align="center">
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
       </div>
       <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
         <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/GT_H_0000.0_2N_#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
       </div>
     </div>
+    <br>
   <% end %>
   <% end %>
   <hr></hr>

@@ -1,6 +1,8 @@
 class RadarsController < ApplicationController
   before_action :set_radar, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  before_destroy :remember_id
+  after_destroy :remove_id_directory
 
   # GET /radars
   # GET /radars.json
@@ -87,4 +89,21 @@ class RadarsController < ApplicationController
     def radar_params
       params.require(:radar).permit(:cappi, :cmaxdbz, :eht, :pac, :zhail, :hshear, :sri)
     end
+
+    protected
+
+    def remember_id
+      @id = id
+    end
+
+    def remove_id_directory
+      FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/cappi/#{@id}", :force => true)
+      FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/cmaxdbz/#{@id}", :force => true)
+      FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/eht/#{@id}", :force => true)
+      FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/hshear/#{@id}", :force => true)
+      FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/pac/#{@id}", :force => true)
+      FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/sri/#{@id}", :force => true)
+      FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/zhail/#{@id}", :force => true)
+    end
+
 end

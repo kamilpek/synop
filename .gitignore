@@ -19,4 +19,5 @@
 .env
 
 /public/uploads
+/public/assets
 nohup.out

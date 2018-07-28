@@ -23,12 +23,16 @@ def gios():
 def radar():
     os.system("sudo docker exec synop_app_1 rake import_radar RAILS_ENV=production")
 
+def radar():
+    os.system("sudo docker exec synop_app_1 rake import_gw RAILS_ENV=production")
+
 def planer():
     schedule.every().day.at("09:00").do(yrno)
     schedule.every().hour.do(imgw)
     schedule.every().hour.do(metar)
     #schedule.every().hour.do(gios)
     schedule.every(20).minutes.do(radar)
+    schedule.every().hour.do(gw)
 
 def test():
     yrno()
@@ -36,6 +40,7 @@ def test():
     metar()
     gios()
     radar()
+    gw()
 
 planer()
 

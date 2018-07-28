@@ -24,7 +24,7 @@ Rejestr danych ze stacji pogodowych polskiego [IMGW](http://www.imgw.pl/) oraz p
 * sudo docker-compose up -d app
 
 ## Wersja produktu
-* v2.7.1 z dnia 23.07.2018
+* v2.7.2 z dnia 27.07.2018
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

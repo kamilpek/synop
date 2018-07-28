@@ -28,5 +28,6 @@ def build_import_radar
                 :remote_hshear_url => hshear,
                 :remote_sri_url => sri)
 
+  # Radar.first.delete if Radar.count > 1000
   Radar.first.delete
 end

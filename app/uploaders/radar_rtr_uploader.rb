@@ -1,4 +1,4 @@
-class RadarSriUploader < CarrierWave::Uploader::Base
+class RadarRtrUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick

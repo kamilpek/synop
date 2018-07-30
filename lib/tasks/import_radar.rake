@@ -19,6 +19,7 @@ def build_import_radar
   @date = Time.now.utc.strftime("%Y%m%d")
   @hour = Time.now.utc.strftime("%H") + ((((Time.now.utc.strftime("%M").to_s.first).to_i*6)-1)%5).to_s + 0.to_s
   sri = "https://danepubliczne.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_SRI.comp.sri/#{@date}#{@hour}0000dBR.sri.png"
+  rtr = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{@date}#{@hour}0000avg_sri.rtr.png"
 
   Radar.create!(:remote_cappi_url => cappi,
                 :remote_cmaxdbz_url => cmaxdbz,
@@ -26,7 +27,8 @@ def build_import_radar
                 :remote_pac_url => pac,
                 :remote_zhail_url => zhail,
                 :remote_hshear_url => hshear,
-                :remote_sri_url => sri)
+                :remote_sri_url => sri,
+                :remote_rtr_url => rtr)
 
   Radar.first.delete if Radar.count > 1000
   # Radar.first.delete

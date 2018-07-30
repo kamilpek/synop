@@ -6,6 +6,7 @@ class Radar < ApplicationRecord
   mount_uploader :zhail, RadarZhailUploader
   mount_uploader :hshear, RadarHshearUploader
   mount_uploader :sri, RadarSriUploader
+  mount_uploader :rtr, RadarRtrUploader
 
   before_destroy :remember_id
   after_destroy :remove_id_directory
@@ -25,5 +26,6 @@ class Radar < ApplicationRecord
     FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/pac/#{@id}", :force => true)
     FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/sri/#{@id}", :force => true)
     FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/zhail/#{@id}", :force => true)
+    FileUtils.remove_dir("#{Rails.root}/public/uploads/radar/rtr/#{@id}", :force => true)
   end
 end

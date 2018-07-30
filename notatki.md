@@ -69,6 +69,8 @@ rails generate uploader RadarHshear
 mount_uploader :cappi, RadarCappi
 rails generate migration AddSriToRadars sri:string
 rails generate uploader RadarSri
+rails generate migration AddRtrToRadars rtr:string
+rails generate uploader RadarRtr
 ```
 
 ## gdańskie wody

@@ -105,6 +105,18 @@ class PagesController < ApplicationController
     @radar = Radar.last
   end
 
+  def rtr
+    date = Time.now.utc.strftime("%Y%m%d")
+    hour = Time.now.utc.strftime("%H") + ((((Time.now.utc.strftime("%M").to_s.first).to_i*6)-1)%5).to_s + 0.to_s
+    @top0 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000top0.rtr.png"
+    @top1 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000top1.rtr.png"
+    @top2 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000top2.rtr.png"
+    @top3 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000top3.rtr.png"
+    @top4 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000top4.rtr.png"
+    @top5 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000top5.rtr.png"
+    @top6 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000top6.rtr.png"
+  end
+
   def um
     hour_um
   end

@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   get 'pages/about'
   get 'pages/measurements'
   get 'pages/gw'
+  get 'pages/cosmo'
+  get 'pages/rtr'
 
   resources :gios_measurments
   resources :gios_stations

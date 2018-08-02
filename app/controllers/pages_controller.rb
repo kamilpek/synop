@@ -88,17 +88,29 @@ class PagesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
       @gw_measur_id = GwMeasur.where(gw_station_id:station.id).pluck(:id).last
       @gw_measurment = GwMeasur.find(@gw_measur_id)
+      @type = 1 if @gw_measurment.rain
+      @type = 2 if @gw_measurment.water
       marker.lat station.lat
       marker.lng station.lng
-      marker.infowindow render_to_string(:partial => "infowindow_gw", :locals => {:object => @gw_measur_id, :gw_measurment => @gw_measurment})
-      marker.picture({
-                      :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png",
-                      :width  => 16,
-                      :height => 16,
-                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
-                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
-                     })
+      marker.infowindow render_to_string(:partial => "infowindow_gw", :locals => {:object => @gw_measur_id, :gw_measurment => @gw_measurment, :type => @type})
+      if @type == 1
+        marker.picture({
+                        :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png", #kropka
+                        :width  => 16,
+                        :height => 16,
+                        :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                        :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                       })
+      elsif @type == 2
+        marker.picture({
+                        :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1533547330/bluetraingle_nqxfq5.png", #trójkąt
+                        :width  => 16,
+                        :height => 16,
+                        :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                        :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                       })
       end
+    end
   end
 
   def radars

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  category: one
+  level: 1
+  intro: MyString
+  content: MyText
+  time_from: 2018-08-08 18:02:13
+  time_for: 2018-08-08 18:02:13
+  clients: 1
+  number: 1
+  status: 1
+
+two:
+  user: two
+  category: two
+  level: 1
+  intro: MyString
+  content: MyText
+  time_from: 2018-08-08 18:02:13
+  time_for: 2018-08-08 18:02:13
+  clients: 1
+  number: 1
+  status: 1

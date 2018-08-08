@@ -35,5 +35,27 @@ module PagesHelper
       "alert-dark"
     end
   end
-  
+
+  def show_level_short(level)
+    if level == 1
+      return "Stopień 1."
+    elsif level == 2
+      return "Stopień 2."
+    elsif level == 3
+      return "Stopień 3."
+    end
+  end
+
+  def show_status(status)
+    if status == 1
+      "Aktywny"
+    elsif status == 0
+      "Nieaktywny"
+    elsif status == 2
+      "Anulowany"
+    else
+      "b/d"
+    end
+  end
+
 end

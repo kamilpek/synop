@@ -20,6 +20,14 @@
           <div class="sidebar-sticky">
             <% if user_signed_in? %>
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Ostrzeżenia meteo</span>
+            </h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><%= link_to 'Ostrzeżenia', alerts_path, :title => "Lista ostrzeżeń meteo", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Kategorie', categories_path, :title => "Kategorie ostrzeżeń meteo", class:"nav-link" %></li>
+              <li class="nav-item"><%= link_to 'Klienci', clients_path, :title => "Klienci", class:"nav-link" %></li>
+            </ul>
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Mapy i wykresy</span>
             </h6>
             <ul class="nav flex-column">

@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :alerts
+  resources :categories
+  resources :clients
   resources :gw_measurs
   resources :gw_stations
   get 'admin/main'
@@ -31,6 +34,7 @@ Rails.application.routes.draw do
   get 'pages/cosmo'
   get 'pages/rtr'
   get 'pages/rainviewer'
+  get 'pages/alerts'
 
   resources :gios_measurments
   resources :gios_stations
@@ -73,6 +77,13 @@ Rails.application.routes.draw do
     collection { post :import }
   end
 
+  scope "alerts" do
+    resources :alerts do
+      get 'activate'
+      get 'deactivate'
+    end
+  end
+
   scope "admin" do
     resources :users do
       member do
@@ -111,6 +122,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
+      resources :alerts do
+        get 'alerts' => 'alerts#index'
+      end
       resources :measurements do
         get 'measurements' => 'measurements#index'
       end

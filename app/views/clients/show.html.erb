@@ -1,0 +1,51 @@
+<% content_for :title, "Odbiorca" %>
+
+<div class="container-fluid">
+  <h3>
+    Karta Odbiorcy
+    <%= link_to 'Edytuj', edit_client_path(@client), class:"btn btn-sm btn-warning" %>
+    <%= link_to 'Usuń', @client, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:"btn btn-sm btn-danger" %>
+    <%= link_to 'Lista Odbiorców', clients_path, class:"btn btn-sm btn-primary" %>
+  </h3><hr>
+
+  <p class="lead">Nazwa: <%= @client.name %></p>
+  <hr>
+  <p>Osoba kontaktowa: <strong><%= @client.person %></strong></p>
+  <p>Adres poczty elektronicznej: <strong><%= @client.email %></strong></p>
+  <p>Strona Internetowa: <strong><%= @client.website %></strong></p>
+  <p>Status: <strong><%= get_status(@client.status) %></strong></p>
+  <p>Token dostępu: <strong><%= @client.access_token %></strong></p>
+
+  <h4>Ostrzeżenia</h4><hr>
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Autor</th>
+          <th>Rodzaj</th>
+          <th>Stopień</th>
+          <th>Wstęp</th>
+          <th>Ważny do</th>
+          <th>Ważny do</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @alerts.each do |alert| %>
+          <tr align="center">
+            <td><%= show_author(alert.user_id) %></td>
+            <td><%= Category.find(alert.category_id).name %></td>
+            <td><%= show_level_short(alert.level) %></td>
+            <td><%= alert.intro %></td>
+            <td><%= alert.time_from.strftime('%Y-%m-%d, %H:%M') %></td>
+            <td><%= alert.time_for.strftime('%Y-%m-%d, %H:%M') %></td>
+            <td><%= link_to 'Przejdź', alert, class:"btn btn-xs btn-success" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p><%= will_paginate @alerts, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+
+</div>

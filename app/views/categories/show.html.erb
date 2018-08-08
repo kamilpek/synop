@@ -1,0 +1,47 @@
+<% content_for :title, "Kategoria" %>
+
+<div class="container-fluid">
+  <h3>
+    Kategoria
+    <%= link_to 'Edytuj', edit_category_path(@category), class:"btn btn-sm btn-warning" %>
+    <%= link_to 'Usuń', @category, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-sm btn-danger" %>
+    <%= link_to 'Lista Kategorii', categories_path, class:"btn btn-sm btn-primary" %>
+  </h3>
+  <hr>
+  <p class="lead">Nazwa: <strong><%= @category.name %></strong></p>
+  <p class="lead">Ilustracja: <%= image_tag @category.image.url(:thumb) if @category.image? %></p>
+  <hr>
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Numer</th>
+          <th>Autor</th>
+          <th>Utworzony</th>
+          <th>Rodzaj</th>
+          <th>Stopień</th>
+          <th>Wstęp</th>
+          <th>Ważny</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @alerts.each do |alert| %>
+          <tr align="center">
+            <td><%= alert.number %>/<%= alert.created_at.strftime("%Y") %></td>
+            <td><%= show_author(alert.user_id) %></td>
+            <td><%= alert.created_at.strftime('%Y-%m-%d, %H:%M') %></td>
+            <td><%= Category.find(alert.category_id).name %></td>
+            <td><%= show_level_short(alert.level) %></td>
+            <td><%= alert.intro %></td>
+            <td><%= alert.time_from.strftime('%Y-%m-%d, %H:%M') %> - <%= alert.time_for.strftime('%Y-%m-%d, %H:%M') %></td>
+            <td><%= link_to 'Przejdź', alert, class:"btn btn-xs btn-success" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p><%= will_paginate @alerts, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+
+</div>

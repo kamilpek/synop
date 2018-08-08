@@ -1,0 +1,29 @@
+<% content_for :title, "Lista Odbiorców" %>
+
+<div class="container-fluid">
+  <h3>
+    Lista Odbiorców
+    <%= link_to 'Nowy Odbiorca', new_client_path, class:"btn btn-sm btn-success" %>
+  </h3><hr>
+
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>Nazwa</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @clients.each do |client| %>
+          <tr align="center">
+            <td><%= client.name %></td>
+            <td><%= link_to 'Przjedź', client, class:"btn btn-xs btn-success" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <p><%= will_paginate @clients, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+</div>

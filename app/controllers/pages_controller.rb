@@ -162,4 +162,9 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def alerts
+    @alerts = Alert.where("time_from < ?", DateTime.now).where("time_for > ?", DateTime.now)
+    @clients = Client.where(status:1)
+  end
 end

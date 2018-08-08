@@ -1,0 +1,50 @@
+<% content_for :title, "Lista ostrzeżeń" %>
+
+<div class="container-fluid">
+<h3>
+  Lista ostrzeżeń
+  <%= link_to 'Nowe Ostrzeżenie', new_alert_path, class:"btn btn-sm btn-success" %>
+</h3><hr>
+<%= form_tag alerts_path, :method => :get do %>
+<div class="form-group">
+  <label>Filtrowanie ostrzeżeń według statusu</label>
+  <%= select :search_status, params[:search_status], options_for_select([["Aktywny", "1"], ["Nieaktywny", "2"], ["Anulowany", "3"]]), {prompt: "Wybierz"}, {class:"form-control", :onchange => "this.form.submit()"} %>
+</div><hr>
+<% end %>
+<div class="table-responsive" align="center">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr align="center">
+        <th>Numer</th>
+        <th>Autor</th>
+        <th>Utworzony</th>
+        <th>Rodzaj</th>
+        <th>Stopień</th>
+        <th>Wstęp</th>
+        <th>Ważny</th>
+        <th>Akcje</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @alerts.each do |alert| %>
+        <tr align="center">
+          <td><%= alert.number %>/<%= alert.created_at.strftime("%Y") if alert.created_at %></td>
+          <td><%= show_author(alert.user_id) %></td>
+          <td><%= alert.created_at.strftime('%Y-%m-%d, %H:%M') if alert.created_at %></td>
+          <td><%= Category.find(alert.category_id).name %></td>
+          <td><%= show_level_short(alert.level) %></td>
+          <td><%= alert.intro %></td>
+          <td><%= alert.time_from.strftime('%Y-%m-%d, %H:%M') if alert.time_from %> - <%= alert.time_for.strftime('%Y-%m-%d, %H:%M') if alert.time_for %></td>
+          <td>
+            <%= link_to 'Przejdź', alert, class:"btn btn-xs btn-success" %>
+            <%= link_to 'Aktywuj', alert_activate_path(1, id:alert.id), class:"btn btn-xs btn-warning" if alert.status != 1 %>
+            <%= link_to 'Dezaktywuj', alert_deactivate_path(1, id:alert.id), class:"btn btn-xs btn-warning" if alert.status != 2 %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<p><%= will_paginate @alerts, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %></p>
+</div>

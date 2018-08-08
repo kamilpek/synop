@@ -1,0 +1,40 @@
+<% content_for :title, "Ostrzeżenie" %>
+
+<div class="container-fluid">
+  <h3>
+    Ostrzeżenie
+    <%= link_to 'Edytuj', edit_alert_path(@alert), class:"btn btn-sm btn-warning" %>
+    <%= link_to 'Usuń', @alert, method: :delete, data: { confirm: 'Jesteś pewny?' }, class:"btn btn-sm btn-danger" %>
+    <%= link_to 'Lista Ostrzeżeń', alerts_path, class:"btn btn-sm btn-primary" %>
+  </h3><hr>
+
+  <p class="lead">Numer: <strong><%= @alert.number %>/<%= @alert.created_at.strftime("%Y") %></strong></p>
+  <hr>
+  <p class="lead"><strong><%= show_level(@alert.level) %></strong></p>
+  <hr>
+  <p>Wstęp:</p>
+  <p class="lead">
+    <%= image_tag Category.find(@alert.category_id).image.url(:thumb) if Category.find(@alert.category_id).image? %>
+    <%= @alert.intro %></p>
+  <p>Treść:</p>
+  <p class="lead"><%= @alert.content %></p>
+  <hr>
+  <p>Odbiorcy:</p>
+  <p class="lead">
+    <% if @alert.clients? %>
+      <% @alert.clients[1..-1].each do |client| %>
+        <%= link_to Client.find(client).name, client_path(client), class:"btn btn-outline-secondary btn-sm" %>
+      <% end %>
+    <% else %>
+      <i>brak odbiorców</i>
+    <% end %>
+  </p>
+  <hr>
+  <p class="lead">Ważne od: <strong><%= @alert.time_from.strftime('%Y-%m-%d, %H:%M') if @alert.time_from %></strong></p>
+  <p class="lead">Ważne do: <strong><%= @alert.time_for.strftime('%Y-%m-%d, %H:%M') if @alert.time_for %></strong></p>
+  <hr>
+  <p class="lead">Autor: <strong><%= show_author(@alert.user_id) %></strong></p>
+  <p class="lead">Kategoria: <strong><%= Category.find(@alert.category_id).name %></strong></p>
+  <p class="lead">Status: <strong><%= show_status(@alert.status) %></strong></p>
+
+</div>

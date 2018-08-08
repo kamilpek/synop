@@ -78,3 +78,12 @@ rails generate uploader RadarRtr
 rails generate scaffold gw_station no:integer name:string lat:float lng:float active:boolean rain:boolean water:boolean winddir:boolean windlevel:boolean
 rails generate scaffold gw_measur gw_station:references datetime:datetime rain:float water:float winddir:float windlevel:float
 ```
+
+## ostrzeżenia meteo
+```ruby
+rails generate scaffold client name:string person:string website:string email:string status:integer access_token:string --no-timestamps
+rails generate scaffold category name:string image:string --no-timestamps
+rails generate scaffold alert user:references category:references level:integer intro:string content:text time_from:datetime time_for:datetime clients:integer number:integer status:integer
+
+rails generate uploader CategoryImageUploader
+```

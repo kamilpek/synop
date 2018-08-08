@@ -23,8 +23,13 @@ Rejestr danych ze stacji pogodowych polskiego [IMGW](http://www.imgw.pl/) oraz p
 * sudo docker-compose run --rm app rake import_imgw_xml RAILS_ENV=production
 * sudo docker-compose up -d app
 
+## Ostrzeżenia meteo
+```bash
+curl http://localhost:3000/api/v1/alerts.json?access_token=f04e31f2a69a7eedc293cea8a107ae3e
+```
+
 ## Wersja produktu
-* v2.7.6 z dnia 02.08.2018
+* v2.8.0 z dnia 08.08.2018
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

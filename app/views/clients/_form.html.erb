@@ -1,0 +1,28 @@
+<%= form_for(client) do |form| %>
+
+  <div class="form-group">
+    <label>Nazwa odbiorcy</label>
+    <%= form.text_field :name, placeholder:"Nazwa", :autofocus => true, class:"form-control", required: true %>
+  </div>
+  <div class="form-group">
+    <label>Osoba kontaktowa</label>
+    <%= form.text_field :person, placeholder:"Imię i Nazwisko", class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Strona Internetowa</label>
+    <%= form.text_field :website, placeholder:"www", class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Adres poczty elektronicznej</label>
+    <%= form.text_field :email, placeholder:"name@example.com", class:"form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Status</label>
+    <%= form.select :status, options_for_select([["Aktywny", 1], ["Nieaktywny", 0], ["Zalega z płatnościami", 2]], @client.status), {}, {class:"form-control"} %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Zatwierdź", class:"btn btn-block btn-success" %>
+    <%= link_to 'Lista odbiorców', clients_path, class:"btn btn-block btn-primary" %>
+  </div>
+<% end %>

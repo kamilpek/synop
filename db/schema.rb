@@ -10,10 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180731130028) do
+ActiveRecord::Schema.define(version: 20180808160213) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "alerts", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "category_id"
+    t.integer  "level"
+    t.string   "intro"
+    t.text     "content"
+    t.datetime "time_from"
+    t.datetime "time_for"
+    t.integer  "clients",                  array: true
+    t.integer  "number"
+    t.integer  "status"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["category_id"], name: "index_alerts_on_category_id", using: :btree
+    t.index ["user_id"], name: "index_alerts_on_user_id", using: :btree
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+  end
 
   create_table "cities", force: :cascade do |t|
     t.integer "province"
@@ -24,6 +46,15 @@ ActiveRecord::Schema.define(version: 20180731130028) do
     t.string  "name_add"
     t.float   "longitude"
     t.float   "latitude"
+  end
+
+  create_table "clients", force: :cascade do |t|
+    t.string  "name"
+    t.string  "person"
+    t.string  "website"
+    t.string  "email"
+    t.integer "status"
+    t.string  "access_token"
   end
 
   create_table "forecasts", force: :cascade do |t|
@@ -192,5 +223,7 @@ ActiveRecord::Schema.define(version: 20180731130028) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "alerts", "categories"
+  add_foreign_key "alerts", "users"
   add_foreign_key "gw_measurs", "gw_stations"
 end

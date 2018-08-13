@@ -88,28 +88,36 @@ class PagesController < ApplicationController
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
       @gw_measur_id = GwMeasur.where(gw_station_id:station.id).pluck(:id).last
       @gw_measurment = GwMeasur.find(@gw_measur_id)
-      @type = 1 if @gw_measurment.rain
-      @type = 2 if @gw_measurment.water
+      @image = "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png" if @gw_measurment.rain
+      if @gw_measurment.water
+        @image = "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1533547330/bluetraingle_nqxfq5.png"
+        if station.level_normal
+          case @gw_measurment.water
+          when 0..(station.level_normal.to_i/2) # niski
+            @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/blue_traingle_uzugp2.png" # Niebieski
+          when (station.level_normal.to_i/2)..station.level_normal # średni
+            @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/green_traingle_bcsd1y.png" # Zielony
+          when (station.level_max.to_i/2)..station.level_max # wysoki
+            @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/yellow_traingle_xzsthb.png" # Żółty
+          when station.level_max..(station.level_max+level_rise) # ostrzegawczy
+            @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/orange_traingle_kdztwa.png" # Pomarańczowy
+          when (station.level_max+station.level_rise)..1000 # alarmowy
+            @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/red_traingle_jwjgx3.png" # Czerwony
+          else
+            @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/black_traingle_btmgkp.png" # Czarny
+          end
+        end
+      end
       marker.lat station.lat
       marker.lng station.lng
       marker.infowindow render_to_string(:partial => "infowindow_gw", :locals => {:object => @gw_measur_id, :gw_measurment => @gw_measurment, :type => @type})
-      if @type == 1
-        marker.picture({
-                        :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png", #kropka
-                        :width  => 16,
-                        :height => 16,
-                        :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
-                        :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
-                       })
-      elsif @type == 2
-        marker.picture({
-                        :url    => "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1533547330/bluetraingle_nqxfq5.png", #trójkąt
-                        :width  => 16,
-                        :height => 16,
-                        :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
-                        :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
-                       })
-      end
+      marker.picture({
+                      :url    => @image,
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32, # Scaled width is half of the retina resolution; optional
+                      :scaledHeight => 32, # Scaled width is half of the retina resolution; optional
+                     })
     end
   end
 

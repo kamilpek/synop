@@ -77,7 +77,15 @@ rails generate uploader RadarRtr
 ```ruby
 rails generate scaffold gw_station no:integer name:string lat:float lng:float active:boolean rain:boolean water:boolean winddir:boolean windlevel:boolean
 rails generate scaffold gw_measur gw_station:references datetime:datetime rain:float water:float winddir:float windlevel:float
+rails generate migration AddLevelsToGwStations level_normal:float level_max:float level_rise:float
 ```
+#### poziomy wody
+1. Czarny - brak danych
+1. Niebieski - niski - 0 - 1/2 normalnego
+1. Zielony - średni - 1/2 - 1/1 normalnego
+1. Żółty - wysoki - 1/2 - 1/1 maksymalnego
+1. Pomarańczowy - ostrzegawczy - powyzej maksymalnego
+1. Czerwony - alarmowy - normalny + wysokosc pietrzenia
 
 ## ostrzeżenia meteo
 ```ruby

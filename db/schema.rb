@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180808160213) do
+ActiveRecord::Schema.define(version: 20180813152829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -134,8 +134,11 @@ ActiveRecord::Schema.define(version: 20180808160213) do
     t.boolean  "water"
     t.boolean  "winddir"
     t.boolean  "windlevel"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.float    "level_normal"
+    t.float    "level_max"
+    t.float    "level_rise"
   end
 
   create_table "measurements", force: :cascade do |t|

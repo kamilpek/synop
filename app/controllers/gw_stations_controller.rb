@@ -69,6 +69,6 @@ class GwStationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gw_station_params
-      params.require(:gw_station).permit(:no, :name, :lat, :lng, :active, :rain, :water, :winddir, :windlevel)
+      params.require(:gw_station).permit(:no, :name, :lat, :lng, :active, :rain, :water, :winddir, :windlevel, :level_normal, :level_max, :level_rise)
     end
 end

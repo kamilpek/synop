@@ -10,7 +10,8 @@ end
 
 def build_import_stations_gw
   print "Import begining.\n"
-  file = open('https://raw.githubusercontent.com/kamilpek/synop/master/stacje_gw.csv')
+  # file = open('https://raw.githubusercontent.com/kamilpek/synop/master/stacje_gw.csv')
+  file = open(Rails.root + "stacje_gw.csv")
   csv_text = file.read
   csv = CSV.parse(csv_text, :headers => true)
   csv.each do |row|
@@ -23,7 +24,10 @@ def build_import_stations_gw
       :rain => row['rain'],
       :water => row['water'],
       :winddir => row['winddir'],
-      :windlevel => row['windlevel']
+      :windlevel => row['windlevel'],
+      :level_normal => row['level_normal'],
+      :level_max => row['level_max'],
+      :level_rise => row['level_rise']
     )
   end
 end

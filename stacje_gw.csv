@@ -1,21 +1,21 @@
-no,name,lat,lon,active,rain,water,winddir,windlevel
+no,name,lat,lon,active,rain,water,winddir,windlevel,level_normal,level_max,level_rise
 251,Jana Pawła II H,54.409024,18.617432,true,false,true,false,false
 255,M.Wisła Stogi,54.381093,18.699738,true,false,true,false,false
 254,Port Pn,54.399844,18.691995,true,false,true,false,false
-201,Zb. Orłowska II,54.425366,18.587082,true,false,true,false,false
-215,Zb. 1 Jelitkowska,54.424649,18.594771,true,false,true,false,false
-214,Zb 2 - Orłowska,54.425373,18.587076,true,false,true,false,false
-213,Zb. 3 - Chłopska,54.418677,18.584700,true,false,true,false,false
-212,Zb. 4 - Subisława,54.416600,18.576072,true,false,true,false,false
-211,Zb 5 - Grunwaldzka,54.413185,18.568310,true,false,true,false,false
-210,Zb. 6 - Opacka,54.411755,18.565188,true,false,true,false,false
+201,Zb. Orłowska II,54.425366,18.587082,true,false,true,false,false,2.0,2.7,1
+215,Zb. 1 Jelitkowska,54.424649,18.594771,true,false,true,false,false,1.58,2.18,1.35
+214,Zb 2 - Orłowska,54.425373,18.587076,true,false,true,false,false,5.6,6.1,3.2
+213,Zb. 3 - Chłopska,54.418677,18.584700,true,false,true,false,false,9.0,9.5,1.7
+212,Zb. 4 - Subisława,54.416600,18.576072,true,false,true,false,false,15.7,16.2,0
+211,Zb 5 - Grunwaldzka,54.413185,18.568310,true,false,true,false,false,20.4,20.9,0.8
+210,Zb. 6 - Opacka,54.411755,18.565188,true,false,true,false,false,23.1,23.6,0.76
 241,Katedra,54.411159,18.557104,true,false,true,false,false
-209,Zb. 8 - Spacerowa,54.409289,18.554593,true,false,true,false,false
+209,Zb. 8 - Spacerowa,54.409289,18.554593,true,false,true,false,false,33.4,33.8,4.6
 240,IBW PAN,54.408005,18.544261,true,false,true,false,false
 253,Rynarzewski Pot.,54.406522,18.538886,true,false,true,false,false
-208,Zb. 11 - Kuźnia,54.404839,18.536703,true,false,true,false,false
-207,Zb. 12 - Bytowska 4,54.404812,18.536718,true,false,true,false,false
-206,Zb. 14 - Bytowska 4A,54.400936,18.532594,true,false,true,false,false
+208,Zb. 11 - Kuźnia,54.404839,18.536703,true,false,true,false,false,47.0,47.5,4.9
+207,Zb. 12 - Bytowska 4,54.404812,18.536718,true,false,true,false,false,52.2,52.5,1.2
+206,Zb. 14 - Bytowska 4A,54.400936,18.532594,true,false,true,false,false,61.8,62.3,3.3
 203,Zb. Owczarnia,54.410653,18.489560,true,false,true,false,false
 1,Dolne Miasto,54.343960,18.662242,true,true,false,false,false
 310,Stogi/Kaczeńce,54.365018,18.700443,true,true,false,false,false

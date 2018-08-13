@@ -13,6 +13,10 @@
     <p>Winddir: <strong><%= @gw_station.winddir %></strong></p>
     <p>Windlevel: <strong><%= @gw_station.windlevel %></strong></p>
     <hr>
+    <p>Poziom piętrzenia – normalny: <strong><%= @gw_station.level_normal %></strong></p>
+    <p>Poziom piętrzenia – maksymalny: <strong><%= @gw_station.level_max %></strong></p>
+    <p>Wysokość piętrzenia: <strong><%= @gw_station.level_rise %></strong></p>
+    <hr>
     <p class="mb-0">
       <%= link_to 'Edycja', edit_gw_station_path(@gw_station), class:"btn btn-sm btn-outline-primary" if current_user.try(:admin) %>
       <%= link_to 'Lista Stacji', gw_stations_path, class:"btn btn-sm btn-outline-primary" %>

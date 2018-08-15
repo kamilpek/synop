@@ -1,0 +1,21 @@
+<h5><%= title %></h5>
+<% for i in (1..81).step(3) %>
+  <% if i % 9 == 1 %>
+    <div class="row" align="center">
+      <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i-1).to_s.rjust(3, '0')} H" %></p>
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/#{type}#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png", class:"res-img")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/#{type}#{@date}#{@hour}_#{(i-1).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+2).to_s.rjust(3, '0')} H" %></p>
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/#{type}#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png", class:"res-img")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/#{type}#{@date}#{@hour}_#{(i+2).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+      <div class="col-sm">
+        <p><%= "#{@date} #{@hour} UTC + #{(i+5).to_s.rjust(3, '0')} H" %></p>
+        <%= link_to (image_tag("http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/#{type}#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png", class:"res-img")), "http://coamps.icm.edu.pl/pictN/N#{@date}#{@hour}/#{type}#{@date}#{@hour}_#{(i+5).to_s.rjust(3, '0')}-00.png" %>
+      </div>
+    </div>
+    <br>
+  <% end %>
+<% end %>
+<hr></hr>

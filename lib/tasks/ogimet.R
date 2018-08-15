@@ -5,8 +5,8 @@
 #
 # biblioteki
 options(encoding="utf-8")
-install.packages("rvest", repos = "http://cran.us.r-project.org")
-install.packages("RPostgreSQL", repos = "http://cran.us.r-project.org")
+# install.packages("rvest", repos = "http://cran.us.r-project.org")
+# install.packages("RPostgreSQL", repos = "http://cran.us.r-project.org")
 library("rvest")
 library("RPostgreSQL")
 # funckje
@@ -1816,8 +1816,8 @@ translate <- function(code){
 ogimet.html <- read_html("http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=html&Enviar=Ver")
 ogimet.table <- html_nodes(ogimet.html, "table table tr")
 # baza
-drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, host="172.19.0.3", user= "postgres", password="super_secure", dbname = "synop_production")
+# drv <- dbDriver("PostgreSQL")
+# con <- dbConnect(drv, host="172.19.0.3", user= "postgres", password="super_secure", dbname = "synop_production")
 # con <- dbConnect(drv, dbname = "synop_development")
 # przetwarzanie
 ogimet.metars <- list()
@@ -1843,8 +1843,8 @@ for(i in 1:length(ogimet.table)){
   created_at = Sys.time()
   ogimet.df <- data.frame(station, day, hour, metar, message, created_at, visibility,
                           cloud_cover, wind_direct, wind_speed, temperature, pressure, situation, row.names = NULL)
-  dbWriteTable(con, "metar_raports", value = ogimet.df, append = TRUE, row.names = FALSE)
+  # dbWriteTable(con, "metar_raports", value = ogimet.df, append = TRUE, row.names = FALSE)
 }
 # zamykanie połączenia z bazą
-dbDisconnect(con)
+# dbDisconnect(con)
 #

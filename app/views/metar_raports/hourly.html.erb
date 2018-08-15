@@ -19,4 +19,27 @@
 
   <%= render "multimap" %>
 
+  <hr>
+  <div class="table-responsive" align="center">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr align="center">
+          <th>METAR</th>
+          <th>Stacja</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @metar_raports.each do |raport| %>
+          <tr align="center">
+            <td><%= raport.metar %></td>
+            <td><%= raport.station %></td>
+            <td><%= link_to 'Przejdź', raport, class:"btn btn-outline-primary btn-xs" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
 </div>

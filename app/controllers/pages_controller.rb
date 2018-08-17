@@ -99,7 +99,7 @@ class PagesController < ApplicationController
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/green_traingle_bcsd1y.png" # Zielony
           when (station.level_max.to_i/2)..station.level_max # wysoki
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/yellow_traingle_xzsthb.png" # Żółty
-          when station.level_max..(station.level_max+level_rise) # ostrzegawczy
+          when station.level_max..(station.level_max+station.level_rise) # ostrzegawczy
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/orange_traingle_kdztwa.png" # Pomarańczowy
           when (station.level_max+station.level_rise)..1000 # alarmowy
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/red_traingle_jwjgx3.png" # Czerwony

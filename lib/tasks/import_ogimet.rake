@@ -10,17 +10,18 @@ end
 
 def build_import_ogimet
   print "Import begining.\n"
-  $temperature = ""
-  $cloud_cover = ""
-  $wind_direct = ""
-  $wind_speed = ""
-  $visibility = ""
-  $situation = ""
-  $pressure = ""
-  $message = ""
   ogimet_html = Nokogiri::HTML(open("http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=html&Enviar=Ver"))
   ogimet_table = ogimet_html.css('table')[0].css('table')[0].css('tr')
   for i in 0..ogimet_table.count-1
+  # for i in 1..1
+    $temperature = ""
+    $cloud_cover = ""
+    $wind_direct = ""
+    $wind_speed = ""
+    $visibility = ""
+    $situation = ""
+    $pressure = ""
+    $message = ""
     ogimet_data = ogimet_table[i].css('td')[2].text.gsub(/[^a-zA-Z0-9 \-]/,"")
     ogimet_synop = ogimet_table[i].css('td')[3].text.gsub(/[^a-zA-Z0-9 \-]/,"")
     ogimet_metar = ogimet_data + ogimet_synop
@@ -29,7 +30,7 @@ def build_import_ogimet
     station = ogimet_metar[10..15]
     hour = ogimet_metar[7..8]
     day = ogimet_metar[5..6]
-    # puts ogimet_metar
+    # puts ogimet_metar + " " + station
     # puts $message
     MetarRaport.create!(
       :temperature => $temperature,
@@ -54,10 +55,10 @@ def translate(code)
   metar_date(split_code[1])
   precipations(split_code[2])
   clouds(split_code[3])
-  for i in 6..split_code.count-1
+  for i in 4..split_code.count-1
     if split_code[i] == "333"
       for j in (i+1)..split_code.count-1
-        case j[0]
+        case split_code[j][0].to_s
         when "1"
           thrid_first_group(split_code[j])
         when "2"
@@ -73,7 +74,7 @@ def translate(code)
         when "8"
           third_eith_group(split_code[j])
         when "9"
-          # ninth_group(split_code[j])
+          ninth_group(split_code[j])
         end
       end
     elsif split_code[i] == "555"
@@ -228,9 +229,9 @@ def precipations(code)
     altitude += "nieznana."
   end
   message += altitude
-  visibility_horizont = " Widzialność pozioma: " + visibility_horizontal(code[3..4])
-  message += visibility_horizont
+  visibility_horizont = visibility_horizontal(code[3..4]).to_s
   $visibility = visibility_horizont
+  message += " Widzialność pozioma: " + visibility_horizont
   $message += message
 end
 
@@ -274,9 +275,9 @@ def clouds(code)
   end
   message += wind_drct.to_s
   $wind_direct = wind_drct
-  wind_speed = " Prędkość wiatru: #{code[3..4].to_s}."
-  message += wind_speed
+  wind_speed = code[3..4].to_s
   $wind_speed = wind_speed
+  message += " Prędkość wiatru: #{wind_speed}."
   $message += message
 end
 
@@ -285,7 +286,7 @@ def first_group(code)
   if code[1..1].to_i == 1
     mes += "-"
   end
-  value = "#{code[2..2]}#{code[3..3]}.#{code[4..4]} st.C."
+  value = "#{code[2..3]}.#{code[4..4]} st.C."
   mes += value
   $message += mes
   $temperature += value
@@ -316,7 +317,7 @@ end
 def fourth_group(code)
   mes = " [4]Ciśnienie atmosferyczne zredukowane do poziomu morza: "
   if code[1..1] == "0"
-    mes += "1#{code[2..3]}.#{code[4..4]} hPa "
+    mes += "10#{code[2..3]}.#{code[4..4]} hPa "
   else
     mes += "0#{code[2..3]}.#{code[4..4]} hPa "
   end

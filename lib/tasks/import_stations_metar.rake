@@ -10,7 +10,8 @@ end
 
 def build_import_stations_metar
   print "Import begining.\n"
-  file = open('https://raw.githubusercontent.com/kamilpek/synop/master/stacje_metar.csv')
+  # file = open('https://raw.githubusercontent.com/kamilpek/synop/master/stacje_metar.csv')
+  file = open(Rails.root + "stacje_metar.csv")
   csv_text = file.read
   csv = CSV.parse(csv_text, :headers => true)
   csv.each do |row|

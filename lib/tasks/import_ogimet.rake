@@ -12,8 +12,8 @@ def build_import_ogimet
   print "Import begining.\n"
   ogimet_html = Nokogiri::HTML(open("http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=html&Enviar=Ver"))
   ogimet_table = ogimet_html.css('table')[0].css('table')[0].css('tr')
-  for i in 0..ogimet_table.count-1
-  # for i in 1..1
+  # for i in 0..ogimet_table.count-1
+  for i in 1..1
     $temperature = ""
     $cloud_cover = ""
     $wind_direct = ""
@@ -30,23 +30,23 @@ def build_import_ogimet
     station = ogimet_metar[10..15]
     hour = ogimet_metar[7..8]
     day = ogimet_metar[5..6]
-    # puts ogimet_metar + " " + station
-    # puts $message
-    MetarRaport.create!(
-      :temperature => $temperature,
-      :cloud_cover => $cloud_cover,
-      :wind_direct => $wind_direct,
-      :wind_speed => $wind_speed,
-      :visibility => $visibility,
-      :created_at => created_at,
-      :situation => $situation,
-      :pressure => $pressure,
-      :metar => ogimet_metar,
-      :message => $message,
-      :station => station,
-      :hour => hour,
-      :day => day,
-    )
+    puts ogimet_metar + " " + station
+    puts $message
+    # MetarRaport.create!(
+    #   :temperature => $temperature,
+    #   :cloud_cover => $cloud_cover,
+    #   :wind_direct => $wind_direct,
+    #   :wind_speed => $wind_speed,
+    #   :visibility => $visibility,
+    #   :created_at => created_at,
+    #   :situation => $situation,
+    #   :pressure => $pressure,
+    #   :metar => ogimet_metar,
+    #   :message => $message,
+    #   :station => station,
+    #   :hour => hour,
+    #   :day => day,
+    # )
   end
 end
 
@@ -317,9 +317,9 @@ end
 def fourth_group(code)
   mes = " [4]Ciśnienie atmosferyczne zredukowane do poziomu morza: "
   if code[1..1] == "0"
-    mes += "10#{code[2..3]}.#{code[4..4]} hPa "
+    mes += "10#{code[2..3]}.#{code[4..4]} hPa."
   else
-    mes += "0#{code[2..3]}.#{code[4..4]} hPa "
+    mes += "0#{code[2..3]}.#{code[4..4]} hPa."
   end
   $message += mes
 end
@@ -348,12 +348,7 @@ def fifth_group(code)
   else
     mes += "b/d."
   end
-  mes += " wielkość tendencji: "
-  if code[1..1] == "0"
-    mes += "1#{code[1..3]}.#{code[4..4]} hPa."
-  else
-    mes += "#{code[1..3]}.#{code[4..4]} hPa."
-  end
+  mes += " wielkość tendencji: #{code[2..4].to_i}."
   $message += mes
 end
 
@@ -811,91 +806,91 @@ def third_eith_group(code)
 end
 
 def ninth_time_group(code)
-  mes = " [3.9.0]Zmienność położenia lub intensywność zjawiska "
-  case code[3..4]
-  when "0"
+  mes = " [3.9.0]Zmienność położenia lub intensywność zjawiska: "
+  case code[3..4].to_i
+  when 0
     mes += "w czasie obserwacji."
-  when 0..60
+  when 0..59
     mes += "#{(code[3..4].to_i)*6} min."
-  when "60"
+  when 60
     mes += "360 min 4 h."
-  when "61"
+  when 61
     mes += "6 do 7 h."
-  when "62"
+  when 62
     mes += "7 do 8 h."
-  when "63"
+  when 63
     mes += "8 do 9 h."
-  when "64"
+  when 64
     mes += "9 do 10 h."
-  when "65"
+  when 65
     mes += "10 do 11 h."
-  when "66"
+  when 66
     mes += "11 do 12 h."
-  when "67"
+  when 67
     mes += "12 do 18 h."
-  when "68"
+  when 68
     mes += "powyżej 18 h."
-  when "69"
+  when 69
     mes += "czas nieznany."
-  when "70"
+  when 70
     mes += "początek w czasie obserwacji."
-  when "71"
+  when 71
     mes += "koniec w czasie obserwacji."
-  when "72"
+  when 72
     mes += "początek i koniec w czasie obserwacji."
-  when "73"
+  when 73
     mes += "istotna zmiana w czasie obserwacji."
-  when "74"
+  when 74
     mes += "początek po obserwacji."
-  when "75"
+  when 75
     mes += "koniec po obserwacji."
-  when "76"
+  when 76
     mes += "na stacji (w otoczeniu)."
-  when "77"
+  when 77
     mes += "nad stacją."
-  when "78"
+  when 78
     mes += "we wszystkich kierunkach."
-  when "79"
+  when 79
     mes += "we wszystkich kierunkach, lecz nie nad stacją."
-  when "80"
+  when 80
     mes += "zbliżające się do stacji."
-  when "81"
+  when 81
     mes += "oddalające się od stacji."
-  when "82"
+  when 82
     mes += "przechodzące obok stacji w pewnej odległości."
-  when "83"
+  when 83
     mes += "widziane w pewnej odległości."
-  when "84"
+  when 84
     mes += "występujące w pobliżu, lecz nie na stacji."
-  when "85"
+  when 85
     mes += "uniesione wysoko nad gruntem."
-  when "86"
+  when 86
     mes += "w pobliżu gruntu."
-  when "87"
+  when 87
     mes += "sporadyczne, sporadycznie."
-  when "88"
+  when 88
     mes += "okresowe."
-  when "89"
+  when 89
     mes += "częste (w częstych przedziałach)."
-  when "90"
+  when 90
     mes += "jednostajne; jednostajne w natężeniu; jednostajnie; bez zmian."
-  when "91"
+  when 91
     mes += "wzrastające; wzrastające w natężeniu; wzrost."
-  when "92"
+  when 92
     mes += "zmniejszające się; zmniejszające się w natężeniu; spadek."
-  when "93"
+  when 93
     mes += "zmienne; zmieniające się."
-  when "94"
+  when 94
     mes += "ciągłe; ciągle."
-  when "95"
+  when 95
     mes += "bardzo słabe; znacznie poniżej normy; bardzo cienkie."
-  when "96"
+  when 96
     mes += "słabe; poniżej normy; cienkie."
-  when "97"
+  when 97
     mes += "średnie; w normie; średnia grubość; stopniowe."
-  when "98"
+  when 98
     mes += "silne; groźne; grube; powyżej normy; wyraźne; nagłe."
-  when "99"
+  when 99
     mes += "bardzo silne; zabijające; bardzo groźne; gęste; znacznie powyżej normy."
   else
     mes += "b/d."
@@ -990,7 +985,7 @@ def ninth_eleven_group(code)
 end
 
 def ninth_twleve_group(code)
-  $message += " [3.9.12]Największa śr. prędk. wiatru: #{code[3..4]}."
+  $message += " [3.9.12]Największa średnia prędkość wiatru: #{code[3..4]}."
 end
 
 def ninth_wind_medium_group(code)
@@ -998,7 +993,7 @@ def ninth_wind_medium_group(code)
 end
 
 def ninth_wind_minimal_group(code)
-  $message += " [3.9.14]Najmniejsza śr. prędk. wiatru: #{code[3..4]}."
+  $message += " [3.9.14]Najmniejsza średnia prędkość wiatru: #{code[3..4]}."
 end
 
 def ninth_wind_drection_group(code)

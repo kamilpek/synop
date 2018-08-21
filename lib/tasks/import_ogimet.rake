@@ -12,8 +12,8 @@ def build_import_ogimet
   print "Import begining.\n"
   ogimet_html = Nokogiri::HTML(open("http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=html&Enviar=Ver"))
   ogimet_table = ogimet_html.css('table')[0].css('table')[0].css('tr')
-  # for i in 0..ogimet_table.count-1
-  for i in 1..1
+  for i in 0..ogimet_table.count-1
+  # for i in 1..1
     $temperature = ""
     $cloud_cover = ""
     $wind_direct = ""
@@ -30,23 +30,23 @@ def build_import_ogimet
     station = ogimet_metar[10..15]
     hour = ogimet_metar[7..8]
     day = ogimet_metar[5..6]
-    puts ogimet_metar + " " + station
-    puts $message
-    # MetarRaport.create!(
-    #   :temperature => $temperature,
-    #   :cloud_cover => $cloud_cover,
-    #   :wind_direct => $wind_direct,
-    #   :wind_speed => $wind_speed,
-    #   :visibility => $visibility,
-    #   :created_at => created_at,
-    #   :situation => $situation,
-    #   :pressure => $pressure,
-    #   :metar => ogimet_metar,
-    #   :message => $message,
-    #   :station => station,
-    #   :hour => hour,
-    #   :day => day,
-    # )
+    # puts ogimet_metar + " " + station
+    # puts $message
+    MetarRaport.create!(
+      :temperature => $temperature,
+      :cloud_cover => $cloud_cover,
+      :wind_direct => $wind_direct,
+      :wind_speed => $wind_speed,
+      :visibility => $visibility,
+      :created_at => created_at,
+      :situation => $situation,
+      :pressure => $pressure,
+      :metar => ogimet_metar,
+      :message => $message,
+      :station => station,
+      :hour => hour,
+      :day => day,
+    )
   end
 end
 

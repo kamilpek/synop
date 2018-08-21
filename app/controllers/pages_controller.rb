@@ -45,10 +45,9 @@ class PagesController < ApplicationController
   end
 
   def metar
-    @stations_number = MetarRaport.all.pluck(:station)
-    @stations = MetarStation.where(number:@stations_number)
+    @stations = MetarStation.where(number:MetarRaport.all.pluck(:station))
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
-      @metar_raport_id = MetarRaport.where(station:station.number).pluck(:id).last
+      @metar_raport_id = MetarRaport.where(station:station.number).order(:created_at).pluck(:id).last
       @metar_raport = MetarRaport.find(@metar_raport_id)
       marker.lat station.latitude
       marker.lng station.longitude
@@ -86,7 +85,7 @@ class PagesController < ApplicationController
     @stations_number = GwMeasur.all.pluck(:gw_station_id)
     @stations = GwStation.where(id:@stations_number)
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
-      @gw_measur_id = GwMeasur.where(gw_station_id:station.id).pluck(:id).last
+      @gw_measur_id = GwMeasur.where(gw_station_id:station.id).order(:created_at).pluck(:id).last
       @gw_measurment = GwMeasur.find(@gw_measur_id)
       @image = "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png" if @gw_measurment.rain
       if @gw_measurment.water

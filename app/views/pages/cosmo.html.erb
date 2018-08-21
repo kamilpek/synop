@@ -3,928 +3,266 @@
 <div class="container-fluid">
   <h4>MODEL COSMO – POLSKA CISNIENIE + ZACHMURZENIE (Aktualizacja 2 razy na dobe o 7UTC i 19UTC)<h4/>
   <i>Start modelu o 0UTC<i/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c24.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c24.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c27.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c27.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c30.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c30.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c33.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c33.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c36.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c36.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c39.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c39.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c42.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c42.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c45.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c45.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c48.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c48.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c51.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c51.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c54.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c54.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c57.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c57.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c60.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c60.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c63.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c63.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c66.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c66.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://www.pogodynka.pl/http/assets/products/c69.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c69.Z_TEST._PL_CT.PNG" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (24..69).step(3) %>
+    <% if i % 12 == 0 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://www.pogodynka.pl/http/assets/products/c<%= i %>.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c<%= i %>.Z_TEST._PL_CT.PNG" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://www.pogodynka.pl/http/assets/products/c<%= i+3 %>.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c<%= i+3 %>.Z_TEST._PL_CT.PNG" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://www.pogodynka.pl/http/assets/products/c<%= i+6 %>.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c<%= i+6 %>.Z_TEST._PL_CT.PNG" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://www.pogodynka.pl/http/assets/products/c<%= i+9 %>.Z_TEST._PL_CT.PNG"><img src="http://www.pogodynka.pl/http/assets/products/c<%= i+9 %>.Z_TEST._PL_CT.PNG" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4>MODEL COSMO – EUROPA TEMPERATURA 2m  (Aktualizacja 4 razy na dobe)<h4/>
   <i>Start modelu o 00UTC, 06UTC, 12UTC, 18UTC. Czas prognozy co 3 godziny łączny czas prognozy 78 godzin</i>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_T2m,H500,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4> MODEL COSMO – EUROPA TEMPERATURA 2m (06UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_T2m,H500,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4> MODEL COSMO – EUROPA TEMPERATURA 2m (12UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_T2m,H500,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4> MODEL COSMO – EUROPA TEMPERATURA 2m (18UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_T2m,H500,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4> MODEL COSMO – EUROPA CISNIENIE + ZACHMURZENIE + OPAD (Aktualizacja 4 razy na dobe)<h4/>
   <i>Start modelu o 00, 06, 12, 18UTC. Czas prognozy co 3ggodziny laczny czas prognozy +78 godzin</i>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4>MODEL COSMO – EUROPA CIŚNIENIE + ZACHMURZENIE + OPAD (06UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4>MODEL COSMO – EUROPA CISNIENIE + ZACHMURZENIE + OPAD (12UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4> MODEL COSMO – EUROPA CISNIENIE + ZACHMURZENIE + OPAD (18UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_precip,mClouds,PMSL_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4>MODEL COSMO – EUROPA WIATR 10m (00UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/00/FM_wind10m,gust10m_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4>MODEL COSMO – EUROPA WIATR 10m (06UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/06/FM_wind10m,gust10m_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4>MODEL COSMO – EUROPA WIATR 10m (12UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/12/FM_wind10m,gust10m_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4>MODEL COSMO – EUROPA WIATR 10m (18UTC)<h4/>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_21hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_21hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_24hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_24hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_27hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_27hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_30hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_30hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_33hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_33hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_36hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_36hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_39hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_39hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_42hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_42hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_45hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_45hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_48hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_48hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_51hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_51hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_54hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_54hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_57hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_57hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_60hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_60hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_63hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_63hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_66hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_66hour.png" class="full-img"></a>
-    </div>
-  </div>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_69hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_69hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_72hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_72hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_75hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_75hour.png" class="full-img"></a>
-    </div>
-    <div class="col-sm">
-      <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_78hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_78hour.png" class="full-img"></a>
-    </div>
-  </div>
+  <% for i in (21..78).step(3) %>
+    <% if i % 12 == 9 %>
+      <div class="row" align="center">
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i+3 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i+3 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i+6 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i+6 %>hour.png" class="full-img"></a>
+        </div>
+        <div class="col-sm">
+          <a href="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i+9 %>hour.png"><img src="http://frost2014.meteoinfo.ru/images/cosmo7/pictures/18/FM_wind10m,gust10m_<%= i+9 %>hour.png" class="full-img"></a>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
   <hr>
   <h4> MODEL COSMO – PRĘDKOŚĆ WIATRU POMORZE U0 AGL (Above Ground Level)<h4/>
   <i>Start modelu o 00Z. Czas prognozy +8 godzin</i>

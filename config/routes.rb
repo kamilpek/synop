@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   get 'pages/rainviewer'
   get 'pages/alerts'
   get 'pages/petrobaltic'
+  get 'pages/lightings'
 
   resources :gios_measurments
   resources :gios_stations

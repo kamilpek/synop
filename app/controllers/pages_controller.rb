@@ -120,6 +120,31 @@ class PagesController < ApplicationController
     end
   end
 
+  def lightings
+    # https://dane.imgw.pl/datastore/getfiledown/Oper/Perun/1min_secondaire/safir180825-101400.txt
+    perun_data = Array.new
+    file = "https://dane.imgw.pl/datastore/getfiledown/Oper/Perun/1min_secondaire/safir#{(DateTime.now.utc - 3.minutes).strftime("%y%m%d-%H%M")}00.txt"
+    perun = open(file).read.split("\r\n")
+    perun.each { |p| perun_data.push(p.split(";"))}
+    @hash = Gmaps4rails.build_markers(perun_data) do |perun, marker|
+      marker.lat (perun[5].to_f * 0.0001) #szerokość
+      marker.lng (perun[6].to_f * 0.0001) #długość
+      @image = "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png"
+      if perun[7].to_i.between?(0, 3) #trójkąt
+        @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1535203660/trojkat_8_dy7vdo.png"
+      elsif perun[7].to_i.between?(4, 5) #piorun
+        @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1535203602/piorun_8_areqvd.png"
+      end
+      marker.picture({
+                      :url    => @image,
+                      :width  => 16,
+                      :height => 16,
+                      :scaledWidth => 32,
+                      :scaledHeight => 32,
+                     })
+    end
+  end
+
   def radars
     @radar = Radar.last
   end

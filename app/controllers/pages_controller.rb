@@ -129,11 +129,37 @@ class PagesController < ApplicationController
     @hash = Gmaps4rails.build_markers(perun_data) do |perun, marker|
       marker.lat (perun[5].to_f * 0.0001) #szerokość
       marker.lng (perun[6].to_f * 0.0001) #długość
+      case perun[2].to_i
+      when (1..4)
+        @type = "1"
+      when (5..9)
+        @type = "2"
+      when (10..14)
+        @type = "3"
+      when (15..19)
+        @type = "4"
+      when (20..24)
+        @type = "5"
+      when (25..29)
+        @type = "6"
+      when (30..34)
+        @type = "7"
+      when (35..39)
+        @type = "8"
+      when (40..44)
+        @type = "9"
+      when (45..49)
+        @type = "10"
+      when (50..1000)
+        @type = "11"
+      else
+        @type = "1"
+      end
       @image = "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png"
       if perun[7].to_i.between?(0, 3) #trójkąt
-        @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1535203660/trojkat_8_dy7vdo.png"
+        @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1535203660/trojkat_#{@type}.png"
       elsif perun[7].to_i.between?(4, 5) #piorun
-        @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1535203602/piorun_8_areqvd.png"
+        @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1535203602/piorun_#{@type}.png"
       end
       marker.picture({
                       :url    => @image,

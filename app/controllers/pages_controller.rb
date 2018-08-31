@@ -85,22 +85,31 @@ class PagesController < ApplicationController
     @stations_number = GwMeasur.all.pluck(:gw_station_id)
     @stations = GwStation.where(id:@stations_number)
     @hash = Gmaps4rails.build_markers(@stations) do |station, marker|
+      @type = 1
       @gw_measur_id = GwMeasur.where(gw_station_id:station.id).order(:created_at).pluck(:id).last
       @gw_measurment = GwMeasur.find(@gw_measur_id)
+      @gw_measur_second_id = GwMeasur.where(gw_station_id:station.id).order(:created_at).pluck(:id).second_to_last
+      @gw_measurment_second = GwMeasur.find(@gw_measur_second_id)
       @image = "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/c_scale,h_17,w_15/v1502900938/bluedot_spc6oq.png" if @gw_measurment.rain
       if @gw_measurment.water
+        @type = 2
         @image = "http://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1533547330/bluetraingle_nqxfq5.png"
         if station.level_normal
           case @gw_measurment.water
           when 0..(station.level_normal.to_i/2) # niski
+            @level = 1
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/blue_traingle_uzugp2.png" # Niebieski
           when (station.level_normal.to_i/2)..station.level_normal # średni
+            @level = 2
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/green_traingle_bcsd1y.png" # Zielony
           when (station.level_max.to_i/2)..station.level_max # wysoki
+            @level = 3
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/yellow_traingle_xzsthb.png" # Żółty
           when station.level_max..(station.level_max+station.level_rise) # ostrzegawczy
+            @level = 4
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/orange_traingle_kdztwa.png" # Pomarańczowy
           when (station.level_max+station.level_rise)..1000 # alarmowy
+            @level = 5
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/red_traingle_jwjgx3.png" # Czerwony
           else
             @image = "https://res.cloudinary.com/traincms-herokuapp-com/image/upload/v1534177339/black_traingle_btmgkp.png" # Czarny
@@ -109,7 +118,14 @@ class PagesController < ApplicationController
       end
       marker.lat station.lat
       marker.lng station.lng
-      marker.infowindow render_to_string(:partial => "infowindow_gw", :locals => {:object => @gw_measur_id, :gw_measurment => @gw_measurment, :type => @type})
+      marker.infowindow render_to_string(:partial => "infowindow_gw", :locals => {
+        :object => @gw_measur_id,
+        :gw_measurment => @gw_measurment,
+        :gw_measurment_second => @gw_measurment_second,
+        :type => @type,
+        :level => @level,
+        :station => station
+        })
       marker.picture({
                       :url    => @image,
                       :width  => 16,

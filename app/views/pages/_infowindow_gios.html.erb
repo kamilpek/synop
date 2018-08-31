@@ -1,29 +1,24 @@
-<div class="card" align="center">
-  <div class="card box-shadow text-black <%= get_index_class(@gios_measurment.st_index) %>">
-   <div class="card-header">
-     <p class="lead card-title"><strong><%= GiosStation.find_by(number:@gios_measurment.station).name %> – <%= @gios_measurment.station %></strong></p>
-   </div>
-   <div class="card-body">
-     <p class="card-title">Polski indeks jakości powietrza:</p>
-     <p class="lead card-title"><%= get_index_level(@gios_measurment.st_index) %></p><hr>
-     <% if @gios_measurment.pm10_value %>
-     <p class="card-text">
-       PM<sub>10</sub>: <%= @gios_measurment.pm10_value.round(2) %> µg/m<sup>3</sup>
-       <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: <%= (@gios_measurment.pm10_value)/(0.5) %>%;"><%= ((@gios_measurment.pm10_value)/(0.5)).round(0) %>%</div>
-       </div>
-     </p><hr>
-     <% end %>
-     <% if @gios_measurment.pm25_value %>
-     <p class="card-text">
-       PM<sub>2.5</sub>: <%= @gios_measurment.pm25_value.round(2) %> µg/m<sup>3</sup>
-       <div class="progress">
-         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: <%= (@gios_measurment.pm25_value)/(0.25) %>%;"><%= ((@gios_measurment.pm25_value)/(0.25)).round(0) %>%</div>
-       </div>
-     </p><hr>
-     <% end %>
-     <p><%= @gios_measurment.calc_date.strftime("%Y-%m-%d; %H:%M") if @gios_measurment.calc_date %></p>
-     <p><%= link_to "Więcej informacji...", @gios_measurment, class:"btn btn-xs btn-block btn-outline-primary" %></p>
-   </div>
-  </div>
-</div><br>
+<div>
+  <h5><strong><%= GiosStation.find_by(number:@gios_measurment.station).name %> – <%= @gios_measurment.station %></strong></h5><hr>
+  <p>Polski indeks jakości powietrza:</p>
+  <p class="lead"><%= get_index_level(@gios_measurment.st_index) %></p><hr>
+
+  <% if @gios_measurment.pm10_value %>
+  <p>
+    PM<sub>10</sub>: <%= @gios_measurment.pm10_value.round(2) %> µg/m<sup>3</sup>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: <%= (@gios_measurment.pm10_value)/(0.5) %>%;"><%= ((@gios_measurment.pm10_value)/(0.5)).round(0) %>%</div>
+    </div>
+  </p><hr>
+  <% end %>
+  <% if @gios_measurment.pm25_value %>
+  <p>
+    PM<sub>2.5</sub>: <%= @gios_measurment.pm25_value.round(2) %> µg/m<sup>3</sup>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: <%= (@gios_measurment.pm25_value)/(0.25) %>%;"><%= ((@gios_measurment.pm25_value)/(0.25)).round(0) %>%</div>
+    </div>
+  </p><hr>
+  <% end %>
+  <p><%= @gios_measurment.calc_date.strftime("%Y-%m-%d; %H:%M") if @gios_measurment.calc_date %></p><hr>
+  <p><%= link_to "Więcej informacji...", @gios_measurment, class:"btn btn-sm btn-block btn-outline-primary" %></p>
+</div>

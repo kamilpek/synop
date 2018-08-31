@@ -12,9 +12,29 @@ def build_import_gios_measur
   print "Import begining.\n"
 
   GiosStation.all.each do |station|
-    co_value = no2_value = o3_value = pm10_value = pm25_value = so2_value = c6h6_value = calc_date = 0
-    st_index = co_index = no2_index = o3_index = pm10_index = pm25_index = so2_index = c6h6_index = 0
-    co_date = no2_date = o3_date = pm10_date = pm25_date = so2_date = c6h6_date = 0
+    co_value = 0
+    no2_value = 0
+    o3_value = 0
+    pm10_value = 0
+    pm25_value = 0
+    so2_value = 0
+    c6h6_value = 0
+    calc_date = 0
+    st_index = 0
+    co_index = 0
+    no2_index = 0
+    o3_index = 0
+    pm10_index = 0
+    pm25_index = 0
+    so2_index = 0
+    c6h6_index = 0
+    co_date = 0
+    no2_date = 0
+    o3_date = 0
+    pm10_date = 0
+    pm25_date = 0
+    so2_date = 0
+    c6h6_date = 0
 
     sensors = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/station/sensors/#{station.number}"), nil, Encoding::UTF_8.to_s))
     for i in 0..sensors.count-1

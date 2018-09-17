@@ -38,6 +38,7 @@ Rails.application.routes.draw do
   get 'pages/petrobaltic'
   get 'pages/lightings'
   get 'pages/satbaltyk'
+  get 'pages/wetter'
 
   resources :gios_measurments
   resources :gios_stations

@@ -16,6 +16,7 @@
  */
 
 @import "bootstrap";
+ @import "font-awesome";
 
 .jumbotron {
   padding: 2rem;
@@ -188,4 +189,14 @@ body {
 
 .water-strong {
   font-weight: bold;
+}
+
+.carousel-arrows {
+  font-size: 3em;
+  color: #FFFFFF !important;
+  text-shadow:
+  -1px -1px 0 #000000,
+  1px -1px 0 #000000,
+  -1px 1px 0 #000000,
+  1px 1px 0 #000000;
 }

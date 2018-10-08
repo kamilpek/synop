@@ -241,4 +241,19 @@ class PagesController < ApplicationController
     @alerts = Alert.where("time_from < ?", DateTime.now).where("time_for > ?", DateTime.now)
     @clients = Client.where(status:1)
   end
+
+  def alaro
+    @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
+        "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP", "Narastająca suma opadu" => "APCP",
+        "Narastająca suma opadu konwekcyjnego" => "APCPC", "Narastająca suma opadu śneigu" => "SNOL", "Narastająca suma opadu śniegu konwekcyjnego" => "SNOC",
+        "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
+        "Zachmurzenie piętra wysokiego" => "CH"}
+  end
+
+  def arome
+    @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
+        "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP",
+        "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
+        "Zachmurzenie piętra wysokiego" => "CH"}
+  end
 end

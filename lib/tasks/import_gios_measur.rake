@@ -8,118 +8,117 @@ task :import_gios_measur => :environment do
   end
 end
 
-def build_import_gios_measur
-  print "Import begining.\n"
+class GiosMeasurmentApiCrawler
+  @@stations = nil
+  @@allSensors = Array.new
+  @@allValues = Array.new
+  @@allIndexes = Array.new
+  @@valueTypes = {"10" => "c6h6_value", "8" => "co_value", "6" => "no2_value", "5" => "o3_value", "1" => "so2_value",
+    "3" => "pm10_value", "69" => "pm25_value"}
+  @@indexTypes = {"stIndexLevel" => "st_index", "so2IndexLevel" => "so2_index", "no2IndexLevel" => "no2_index",
+    "coIndexLevel" => "co_index", "pm10IndexLevel" => "pm10_index", "pm25IndexLevel" => "pm25_index", "c6h6IndexLevel" => "c6h6_index"}
+  @@calc_date = DateTime.now.strftime("%d.%m.%Y, %H:%M")
 
-  GiosStation.all.each do |station|
-    co_value = 0
-    no2_value = 0
-    o3_value = 0
-    pm10_value = 0
-    pm25_value = 0
-    so2_value = 0
-    c6h6_value = 0
-    calc_date = 0
-    st_index = 0
-    co_index = 0
-    no2_index = 0
-    o3_index = 0
-    pm10_index = 0
-    pm25_index = 0
-    so2_index = 0
-    c6h6_index = 0
-    co_date = 0
-    no2_date = 0
-    o3_date = 0
-    pm10_date = 0
-    pm25_date = 0
-    so2_date = 0
-    c6h6_date = 0
-
-    sensors = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/station/sensors/#{station.number}"), nil, Encoding::UTF_8.to_s))
-    for i in 0..sensors.count-1
-      data = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/data/getData/#{sensors[i]["id"]}")))["values"]
-      value = 0
-      date = 0
-      if data != []
-        value = data[1]["value"]
-        date = data[1]["date"]
-      end
-      case sensors[i]["param"]["idParam"].to_i
-      when 1
-        value == "null" ? so2_value = 0 : so2_value = value
-        date == "null" ? so2_date = 0 : so2_date = date
-      when 3
-        value == "null" ? pm10_value = 0 : pm10_value = value
-        date == "null" ? pm10_date = 0 : pm10_date = date
-      when 5
-        value == "null" ? o3_value = 0 : o3_value = value
-        date == "null" ? o3_date = 0 : o3_date = date
-      when 6
-        value == "null" ? no2_value = 0 : no2_value = value
-        date == "null" ? no2_date = 0 : no2_date = date
-      when 8
-        value == "null" ? co_value = 0 : co_value = value
-        date == "null" ? co_date = 0 : co_date = date
-      when 10
-        value == "null" ? c6h6_value = 0 : c6h6_value = value
-        date == "null" ? c6h6_date = 0 : c6h6_date = date
-      when 69
-        value == "null" ? pm25_value = 0 : pm25_value = value
-        date == "null" ? pm25_date = 0 : pm25_date = date
-      end
-    end
-
-    index = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/aqindex/getIndex/#{station.number}")))
-    st_calc_date = index["stCalcDate"]
-    if st_calc_date
-      calc_date = DateTime.parse(st_calc_date).strftime("%d.%m.%Y, %H:%M")
-      st_index = index["stIndexLevel"]["id"] if index["stIndexLevel"]
-      co_index = index["coIndexLevel"]["id"] if index["coIndexLevel"]
-      pm10_index = index["pm10IndexLevel"]["id"] if index["pm10IndexLevel"]
-      c6h6_index = index["c6h6IndexLevel"]["id"] if index["c6h6IndexLevel"]
-      no2_index = index["no2IndexLevel"]["id"] if index["no2IndexLevel"]
-      pm25_index = index["pm25IndexLevel"]["id"] if index["pm25IndexLevel"]
-      o3_index = index["o3IndexLevel"]["id"] if index["o3IndexLevel"]
-      so2_index = index["so2IndexLevel"]["id"] if index["so2IndexLevel"]
-    else
-      calc_date = DateTime.now.strftime("%d.%m.%Y, %H:%M")
-      st_index = 0
-      co_index = 0
-      pm10_index = 0
-      c6h6_index = 0
-      no2_index = 0
-      pm25_index = 0
-      o3_index = 0
-      so2_index = 0
-    end
-
-    GiosMeasurment.create(
-      :calc_date => calc_date,
-      :st_index => st_index,
-      :co_index => co_index,
-      :co_value => co_value,
-      :co_date => co_date,
-      :pm10_index  => pm10_index,
-      :pm10_value => pm10_value,
-      :pm10_date => pm10_date,
-      :c6h6_index => c6h6_index,
-      :c6h6_value => c6h6_value,
-      :c6h6_date => c6h6_date,
-      :no2_index => no2_index,
-      :no2_value => no2_value,
-      :no2_date => no2_date,
-      :pm25_index => pm25_index,
-      :pm25_value => pm25_value,
-      :pm25_date => pm25_date,
-      :o3_index => o3_index,
-      :o3_value => o3_value,
-      :o3_date => o3_date,
-      :so2_index => so2_index,
-      :so2_value => so2_value,
-      :so2_date => so2_date,
-      :station => station.number
-    )
+  def initialize
+    getStations
+    downloadSensors
   end
 
+  def getStations
+    @@stations = GiosStation.all
+  end
+
+  def downloadSensors
+    @@stations.each do |station|
+      sensors = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/station/sensors/#{station.number}"), nil, Encoding::UTF_8.to_s))
+      @@allSensors.push(sensors)
+    end
+  end
+
+  def getSensors
+    @@allSensors
+  end
+
+  def downloadValues
+    @@allSensors.each do |stationSensors|
+      stationSensors.each do |sensor|
+        setSensorValue(sensor["stationId"], sensor["id"], sensor["param"]["idParam"])
+      end
+    end
+  end
+
+  def setSensorValue(station_id, sensor_id, param_id)
+    @@allValues.push({"station_id" => station_id, "#{param_id}_value" => downloadSensorValue(sensor_id)})
+  end
+
+  def downloadSensorValue(sensor_id)
+    json = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/data/getData/#{sensor_id}")))["values"]
+    json.find { |x| !x["value"].blank? }    
+    json.dig(0, "value")
+  end
+
+  def getValues
+    @@allValues
+  end
+
+  def downloadIndexes
+    @@stations.each do |station|
+      @@indexTypes.keys.each do |indexType|
+        setSensorIndex(station["number"], indexType)
+      end
+    end
+  end
+
+  def setSensorIndex(station_id, index_type)
+    @@allIndexes.push({"station_id" => station_id, "#{index_type}" => downloadSensorIndex(station_id, index_type)})
+  end
+
+  def downloadSensorIndex(station_number, index_type)
+    index = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/aqindex/getIndex/#{station_number}")))["#{index_type}"]
+    index == nil ? nil : index["id"]
+  end
+
+  def getIndexes
+    @@allIndexes
+  end
+
+  def createRecordInDb
+    @@stations.each do |station|
+      stationIndexes = @@allIndexes.select { |index| index["station_id"] == station.number }
+      stationValues = @@allValues.select { |value| value["station_id"] == station.number }
+      GiosMeasurment.create(
+        :calc_date => @@calc_date,
+        :st_index => stationIndexes.select { |index_value| index_value["stIndexLevel"] != nil }.dig(0, "stIndexLevel"),
+        :co_index => stationIndexes.select { |index_value| index_value["coIndexLevel"] != nil }.dig(0, "coIndexLevel"),
+        :co_value => stationValues.select { |sensor_value| sensor_value["8_value"] != nil }.dig(0, "8_value"),
+        :co_date => 0,
+        :pm10_index  => stationIndexes.select { |index_value| index_value["pm10IndexLevel"] != nil }.dig(0, "pm10IndexLevel"),
+        :pm10_value => stationValues.select { |sensor_value| sensor_value["3_value"] != nil }.dig(0, "3_value"),
+        :pm10_date => 0,
+        :c6h6_index => stationIndexes.select { |index_value| index_value["c6h6IndexLevel"] != nil }.dig(0, "c6h6IndexLevel"),
+        :c6h6_value => stationValues.select { |sensor_value| sensor_value["10_value"] != nil }.dig(0, "10_value"),
+        :c6h6_date => 0,
+        :no2_index => stationIndexes.select { |index_value| index_value["no2IndexLevel"] != nil }.dig(0, "no2IndexLevel"),
+        :no2_value => stationValues.select { |sensor_value| sensor_value["6_value"] != nil }.dig(0, "6_value"),
+        :no2_date => 0,
+        :pm25_index => stationIndexes.select { |index_value| index_value["pm25ndexLevel"] != nil }.dig(0, "pm25ndexLevel"),
+        :pm25_value => stationValues.select { |sensor_value| sensor_value["69_value"] != nil }.dig(0, "69_value"),
+        :pm25_date => 0,
+        :o3_index => stationIndexes.select { |index_value| index_value["o3IndexLevel"] != nil }.dig(0, "o3IndexLevel"),
+        :o3_value => stationValues.select { |sensor_value| sensor_value["5_value"] != nil }.dig(0, "5_value"),
+        :o3_date => 0,
+        :so2_index => stationIndexes.select { |index_value| index_value["so2IndexLevel"] != nil }.dig(0, "so2IndexLevel"),
+        :so2_value => stationValues.select { |sensor_value| sensor_value["1_value"] != nil }.dig(0, "1_value"),
+        :so2_date => 0,
+        :station => station.number
+      )
+    end
+  end
+end
+
+def build_import_gios_measur
+  giosCrawler = GiosMeasurmentApiCrawler.new
+  giosCrawler.downloadValues
+  giosCrawler.downloadIndexes
+  giosCrawler.createRecordInDb
 end

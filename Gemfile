@@ -59,7 +59,7 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.5' # paginacja
 gem 'will_paginate-bootstrap4', '~> 0.1.3' # pagination
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2' # views
 gem 'roo', '~> 2.7', '>= 2.7.1' # importing
-gem 'geocoder', '~> 1.4', '>= 1.4.7' # geocoding
+gem 'geocoder', '~> 1.5' # geocoding
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2' # geocoding
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3' # js lib
 gem 'whenever', '~> 0.9.7' # schedule

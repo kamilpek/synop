@@ -30,6 +30,6 @@ def build_import_radar
                 :remote_sri_url => sri,
                 :remote_rtr_url => rtr)
 
-  Radar.first.delete if Radar.count > 1000
+  Radar.first.delete if Radar.count > 144
   # Radar.first.delete
 end

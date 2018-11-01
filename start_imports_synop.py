@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf8
-# Kamil Pek (C)11.03.2018
+# Kamil Pek (C)01.11.2018
 # nohup /root/synop/start_imports_synop.py &
 # nohup python start_imports_synop.py
 
@@ -15,7 +15,7 @@ def imgw():
     os.system("sudo docker exec synop_app_1 rake import_imgw_xml RAILS_ENV=production")
 
 def metar():
-    os.system("Rscript lib/tasks/ogimet.R")
+    os.system("sudo docker exec synop_app_1 rake import_ogimet RAILS_ENV=production")
 
 def gios():
     os.system("sudo docker exec synop_app_1 rake import_gios_measur RAILS_ENV=production")
@@ -23,7 +23,7 @@ def gios():
 def radar():
     os.system("sudo docker exec synop_app_1 rake import_radar RAILS_ENV=production")
 
-def radar():
+def gw():
     os.system("sudo docker exec synop_app_1 rake import_gw RAILS_ENV=production")
 
 def planer():

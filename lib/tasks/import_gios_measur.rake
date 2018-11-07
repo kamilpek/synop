@@ -53,8 +53,8 @@ class GiosMeasurmentApiCrawler
 
   def downloadSensorValue(sensor_id)
     json = JSON.parse(Nokogiri.HTML(open("http://api.gios.gov.pl/pjp-api/rest/data/getData/#{sensor_id}")))["values"]
-    json.find { |x| !x["value"].blank? }    
-    json.dig(0, "value")
+    json = json.find { |x| !x["value"].blank? }
+    json == nil ? nil : json["value"]
   end
 
   def getValues

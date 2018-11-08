@@ -13,5 +13,14 @@ child :data do
     end
     attributes :hour, :times_from, :times_to
     attributes :temperatures, :wind_speeds, :wind_directs, :preasures, :situations, :precipitations
+    node(:station) do |m|
+      "#{Station.where(number:m.station_number).pluck(:name).last}"
+    end
+    node(:latitude) do |m|
+      "#{Station.where(number:m.station_number).pluck(:latitude).last}"
+    end
+    node(:longitude) do |m|
+      "#{Station.where(number:m.station_number).pluck(:longitude).last}"
+    end
   end
 end

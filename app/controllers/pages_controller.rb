@@ -189,6 +189,17 @@ class PagesController < ApplicationController
 
   def radars
     @radar = Radar.last
+    date = Time.now.utc.strftime("%Y%m%d")
+    hour = Time.now.utc.strftime("%H") + ((((Time.now.utc.strftime("%M").to_s.first).to_i*6)-1)%5).to_s + 0.to_s
+    @radar_0 = 'https://meteomodel.pl/radar/cappi.png'
+    @radar_1 = 'https://meteomodel.pl/radar/cmax.png'
+    @radar_2 = 'https://meteomodel.pl/radar/eht.png'
+    @radar_3 = 'https://meteomodel.pl/radar/pac.png'
+    @radar_4 = 'https://meteomodel.pl/radar/zhail.png'
+    @radar_5 = 'https://meteomodel.pl/radar/hshear.png'  
+    @radar_6 = "https://danepubliczne.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_SRI.comp.sri/#{date}#{hour}0000dBR.sri.png"
+    @radar_7 = "https://dane.imgw.pl/datastore/getfiledown/Oper/Polrad/Produkty/POLCOMP/COMPO_RTR.rtr/#{date}#{hour}0000avg_sri.rtr.png"
+    @radars = [@radar_1, @radar_2, @radar_3, @radar_4, @radar_5, @radar_6, @radar_7]
   end
 
   def rtr

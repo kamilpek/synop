@@ -31,7 +31,7 @@ def planer():
     schedule.every().hour.do(imgw)
     schedule.every().hour.do(metar)
     schedule.every().hour.do(gios)
-    schedule.every(20).minutes.do(radar)
+    # schedule.every(20).minutes.do(radar)
     schedule.every().hour.do(gw)
 
 def test():
@@ -39,7 +39,7 @@ def test():
     imgw()
     metar()
     gios()
-    radar()
+    # radar()
     gw()
 
 planer()

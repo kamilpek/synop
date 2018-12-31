@@ -1,44 +1,36 @@
 <% content_for :title, "Radary" %>
 
-<div class="container-fluid" align="center">
-  <div class="row" align="center">
-    <div class="col-sm">
-      <h5>CAPPI</h5>
-      <%= link_to (image_tag(@radar.cappi.url(:pomorze))), @radar.cappi.url, class:"full-img" %>
-    </div>
-    <div class="col-sm">
-      <h5>CMAX</h5>
-      <%= link_to (image_tag(@radar.cmaxdbz.url(:pomorze))), @radar.cmaxdbz.url, class:"full-img" %>
-    </div>
-    <div class="col-sm">
-      <h5>EHT</h5>
-      <%= link_to (image_tag(@radar.eht.url(:pomorze))), @radar.eht.url, class:"full-img" %>
-    </div>
-    <div class="col-sm">
-      <h5>RTR</h5>
-      <%= link_to (image_tag(@radar.rtr.url(:pomorze))), @radar.rtr.url, class:"full-img" %>
-    </div>
-  </div>
-  <br>
-  <div class="row" align="center">
-    <div class="col-sm">
-      <h5>PAC</h5>
-      <%= link_to (image_tag(@radar.pac.url(:pomorze))), @radar.pac.url, class:"full-img" %>
-    </div>
-    <div class="col-sm">
-      <h5>ZHAIL</h5>
-      <%= link_to (image_tag(@radar.zhail.url(:pomorze))), @radar.zhail.url, class:"full-img" %>
-    </div>
-    <div class="col-sm">
-      <h5>HSHEAR</h5>
-      <%= link_to (image_tag(@radar.hshear.url(:pomorze))), @radar.hshear.url, class:"full-img" %>
-    </div>
-    <div class="col-sm">
-      <h5>SRI</h5>
-      <%= link_to (image_tag(@radar.sri.url(:pomorze))), @radar.sri.url, class:"full-img" %>
+<div class="container-fluid" align="center" id="home_test">
+  <div class="card text-center">
+
+    <div class="card-body">
+      <h5 class="card-title"><%= params[:key] %></h5>
+      <div id="radars_indicators" class="carousel slide" data-ride="false">
+        <ol class="carousel-indicators">
+          <li data-target="radars_indicators" data-slide-to="0" class="active"></li>
+          <% for id in 2..8 %>
+            <li data-target="radars_indicators" data-slide-to="<%= id %>"></li>
+          <% end %>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= link_to (image_tag @radar_0, class:"radar-img"), @radar_0, class:"d-block w-100", alt:"TOP_0" %>
+          </div>
+          <% @radars.each_with_index do |radar, index| %>
+            <div class="carousel-item">
+              <%= link_to (image_tag radar, class:"radar-img"), radar, class:"d-block w-100", alt:"TOP_#{index+1}" %>
+            </div>
+          <% end %>
+        </div>
+        <a class="carousel-control-prev" href="#radars_indicators" role="button" data-slide="prev">
+          <i class="fa fa-arrow-left carousel-arrows"></i>
+          <span class="sr-only">Poprzedni</span>
+        </a>
+        <a class="carousel-control-next" href="#radars_indicators" role="button" data-slide="next">
+          <i class="fa fa-arrow-right carousel-arrows"></i>
+          <span class="sr-only">Następny</span>
+        </a>
+      </div>
     </div>
   </div>
-  <hr>
-  <p><i>Data i godzina pobrania: <%= @radar.created_at.strftime("%d.%m.%Y %H:%M %z") %></i></p>
-  <p><%= link_to "Źródło danych: meteomodel.pl", "https://meteomodel.pl/dane/radary/", class:"btn btn-sm btn-outline-primary" %></p>
 </div>

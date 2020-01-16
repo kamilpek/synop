@@ -29,7 +29,7 @@ curl http://localhost:3000/api/v1/alerts.json?access_token=f04e31f2a69a7eedc293c
 ```
 
 ## Wersja produktu
-* v2.9.5 z dnia 31.12.2018
+* v2.10.0 z dnia 16.01.2020
 
 ## Autor
 [Kamil Pek](https://github.com/kamilpek)

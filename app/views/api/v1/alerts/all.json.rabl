@@ -23,6 +23,9 @@ child @alerts do
   node(:author) do |m|
     User.find(m.user_id).first_name + " " + User.find(m.user_id).last_name
   end
+  node(:clients) do |m|
+    Client.where(id: m.clients.compact).pluck(:name)
+  end
   node(:image) do |m|
     image = Category.find(m.category_id).image.thumb.url
     if (image.nil?)

@@ -129,7 +129,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :alerts do
-        get 'alerts' => 'alerts#index'
+        collection do
+          get 'alerts'
+          get 'all'
+        end        
       end
       resources :measurements do
         get 'measurements' => 'measurements#index'

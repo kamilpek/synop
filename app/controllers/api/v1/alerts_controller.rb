@@ -1,9 +1,13 @@
 class Api::V1::AlertsController < ApplicationController
   respond_to :json
-  before_action :restrict_access
+  before_action :restrict_access, only: [:index]
 
   def index
     @alerts = Alert.where("'#{@client.id}' = ANY (clients)").where(status:1).where("time_for > ?", DateTime.now)
+  end
+
+  def all
+    @alerts = Alert.where(status: 1).where("time_for > ?", DateTime.now)
   end
 
   private

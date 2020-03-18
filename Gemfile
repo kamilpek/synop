@@ -69,3 +69,4 @@ gem 'carrierwave', '~> 1.2', '>= 1.2.3' # upload
 gem 'rmagick', '~> 2.16' # images
 gem 'mini_magick', '~> 4.8' # images
 gem 'httparty', '~> 0.16.2' # scaping
+gem 'rest-client', '~> 2.1' #scraping

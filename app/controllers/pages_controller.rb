@@ -202,6 +202,76 @@ class PagesController < ApplicationController
     @radars = [@radar_1, @radar_2, @radar_3, @radar_4, @radar_5, @radar_6, @radar_7]
   end
 
+  def radars_wrn
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/GDA_125_ZVW_vol_PAZP.wrn', productType: 'oper'}
+    wrn_html = Nokogiri::HTML(response.body)
+    li_collection = wrn_html.css('div').css('ul').css('li')
+    li_size = li_collection.count()
+    @radars = []
+
+    for i in (li_size-25)..(li_size-1)
+      if li_collection[i].css('a')[0]['href'].include? "png"
+        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
+  end
+  
+  def radars_rtr
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda.rtr', productType: 'oper'}
+    rtr_html = Nokogiri::HTML(response.body)
+    li_collection = rtr_html.css('div').css('ul').css('li')
+    li_size = li_collection.count()
+    @radars = []
+
+    for i in (li_size-25)..(li_size-1)
+      if li_collection[i].css('a')[0]['href'].include? "png"
+        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
+  end
+  
+  def radars_vvp
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda.vvp', productType: 'oper'}
+    vvp_html = Nokogiri::HTML(response.body)
+    li_collection = vvp_html.css('div').css('ul').css('li')
+    li_size = li_collection.count()
+    @radars = []
+
+    for i in (li_size-25)..(li_size-1)
+      if li_collection[i].css('a')[0]['href'].include? "png"
+        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
+  end
+  
+  def radars_ppi
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda_0_5.ppi', productType: 'oper'}
+    ppi_html = Nokogiri::HTML(response.body)
+    li_collection = ppi_html.css('div').css('ul').css('li')
+    li_size = li_collection.count()
+    @radars = []
+
+    for i in (li_size-25)..(li_size-1)
+      if li_collection[i].css('a')[0]['href'].include? "png"
+        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
+  end
+  
+  def radars_swi
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda_100.swi', productType: 'oper'}
+    swi_html = Nokogiri::HTML(response.body)
+    li_collection = swi_html.css('div').css('ul').css('li')
+    li_size = li_collection.count()
+    @radars = []
+
+    for i in (li_size-25)..(li_size-1)
+      if li_collection[i].css('a')[0]['href'].include? "png"
+        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
+  end
+
   def rtr
     date = Time.now.utc.strftime("%Y%m%d")
     hour = Time.now.utc.strftime("%H") + ((((Time.now.utc.strftime("%M").to_s.first).to_i*6)-1)%5).to_s + 0.to_s
@@ -253,18 +323,18 @@ class PagesController < ApplicationController
     @clients = Client.where(status:1)
   end
 
-  def alaro
-    @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
-        "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP", "Narastająca suma opadu" => "APCP",
-        "Narastająca suma opadu konwekcyjnego" => "APCPC", "Narastająca suma opadu śneigu" => "SNOL", "Narastająca suma opadu śniegu konwekcyjnego" => "SNOC",
-        "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
-        "Zachmurzenie piętra wysokiego" => "CH"}
-  end
+  # def alaro
+  #   @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
+  #       "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP", "Narastająca suma opadu" => "APCP",
+  #       "Narastająca suma opadu konwekcyjnego" => "APCPC", "Narastająca suma opadu śneigu" => "SNOL", "Narastająca suma opadu śniegu konwekcyjnego" => "SNOC",
+  #       "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
+  #       "Zachmurzenie piętra wysokiego" => "CH"}
+  # end
 
-  def arome
-    @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
-        "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP",
-        "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
-        "Zachmurzenie piętra wysokiego" => "CH"}
-  end
+  # def arome
+  #   @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
+  #       "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP",
+  #       "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
+  #       "Zachmurzenie piętra wysokiego" => "CH"}
+  # end
 end

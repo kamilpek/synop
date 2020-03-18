@@ -53,7 +53,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # added gems
-gem 'devise', '~> 4.3' # users
+gem 'devise', '~> 4.7' # users
 gem 'bootstrap', '~> 4.1', '>= 4.1.3' # views
 gem 'will_paginate', '~> 3.1', '>= 3.1.5' # paginacja
 gem 'will_paginate-bootstrap4', '~> 0.1.3' # pagination

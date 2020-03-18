@@ -67,6 +67,6 @@ gem 'cookies_eu', '~> 1.6', '>= 1.6.2' # cookies
 gem 'rabl', '~> 0.13.1' # generowanie json
 gem 'carrierwave', '~> 1.2', '>= 1.2.3' # upload
 gem 'rmagick', '~> 2.16' # images
-gem 'mini_magick', '~> 4.8' # images
+gem 'mini_magick', '~> 4.9' # images
 gem 'httparty', '~> 0.16.2' # scaping
 gem 'rest-client', '~> 2.1' #scraping

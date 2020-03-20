@@ -202,10 +202,10 @@ class PagesController < ApplicationController
     @radars = [@radar_1, @radar_2, @radar_3, @radar_4, @radar_5, @radar_6, @radar_7]
   end
 
-  def radars_wrn
-    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/GDA_125_ZVW_vol_PAZP.wrn', productType: 'oper'}
-    wrn_html = Nokogiri::HTML(response.body)
-    li_collection = wrn_html.css('div').css('ul').css('li')
+  def radars_gda
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/Polrad/Produkty/GDA/#{params[:radar]}", productType: 'oper'}
+    html = Nokogiri::HTML(response.body)
+    li_collection = html.css('div').css('ul').css('li')
     li_size = li_collection.count()
     @radars = []
 
@@ -214,6 +214,8 @@ class PagesController < ApplicationController
         @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
       end
     end
+
+    @name = params[:name]
   end
   
   def radars_rtr

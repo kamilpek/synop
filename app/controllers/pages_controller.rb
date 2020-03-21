@@ -217,62 +217,6 @@ class PagesController < ApplicationController
 
     @name = params[:name]
   end
-  
-  def radars_rtr
-    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda.rtr', productType: 'oper'}
-    rtr_html = Nokogiri::HTML(response.body)
-    li_collection = rtr_html.css('div').css('ul').css('li')
-    li_size = li_collection.count()
-    @radars = []
-
-    for i in (li_size-25)..(li_size-1)
-      if li_collection[i].css('a')[0]['href'].include? "png"
-        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
-      end
-    end
-  end
-  
-  def radars_vvp
-    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda.vvp', productType: 'oper'}
-    vvp_html = Nokogiri::HTML(response.body)
-    li_collection = vvp_html.css('div').css('ul').css('li')
-    li_size = li_collection.count()
-    @radars = []
-
-    for i in (li_size-25)..(li_size-1)
-      if li_collection[i].css('a')[0]['href'].include? "png"
-        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
-      end
-    end
-  end
-  
-  def radars_ppi
-    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda_0_5.ppi', productType: 'oper'}
-    ppi_html = Nokogiri::HTML(response.body)
-    li_collection = ppi_html.css('div').css('ul').css('li')
-    li_size = li_collection.count()
-    @radars = []
-
-    for i in (li_size-25)..(li_size-1)
-      if li_collection[i].css('a')[0]['href'].include? "png"
-        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
-      end
-    end
-  end
-  
-  def radars_swi
-    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: '/Oper/Polrad/Produkty/GDA/gda_100.swi', productType: 'oper'}
-    swi_html = Nokogiri::HTML(response.body)
-    li_collection = swi_html.css('div').css('ul').css('li')
-    li_size = li_collection.count()
-    @radars = []
-
-    for i in (li_size-25)..(li_size-1)
-      if li_collection[i].css('a')[0]['href'].include? "png"
-        @radars << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
-      end
-    end
-  end
 
   def rtr
     date = Time.now.utc.strftime("%Y%m%d")
@@ -290,14 +234,6 @@ class PagesController < ApplicationController
     hour_um
   end
 
-  def coamps
-    hour_coamps
-  end
-
-  def coamps_ground
-    hour_coamps
-  end
-
   def hour_um
     doc = HTTParty.get("http://new.meteo.pl/um/php/pict_show.php?cat=0&time=0")
     @parse_page ||= Nokogiri::HTML(doc)
@@ -306,12 +242,56 @@ class PagesController < ApplicationController
     @hour = @datetime.strftime("%H")
   end
 
-  def hour_coamps
-    doc = HTTParty.get("http://coamps.icm.edu.pl/")
-    @parse_page ||= Nokogiri::HTML(doc)
-    @datetime = DateTime.parse(@parse_page.css('font').text)
-    @date = @datetime.strftime("%Y%m%d")
-    @hour = @datetime.strftime("%H")
+  def twokeight
+    time = Time.new.strftime("%H").to_i
+    path_time = "00"
+    if(time > 0 && time < 6)
+      path_time = "18"
+    elsif(time > 6 && time < 12)
+      path_time = "00"
+    elsif(time > 12 && time < 18)
+      path_time = "06"
+    elsif(time > 18)
+      path_time = "12"
+    end
+
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/COSMO/post_proc_2k8e/#{path_time}", productType: 'oper'}
+    html = Nokogiri::HTML(response.body)
+    li_collection = html.css('div').css('ul').css('li')
+    li_size = li_collection.count()
+    @models = []
+
+    for i in (li_size-25)..(li_size-1)
+      if li_collection[i].css('a')[0]['href'].include? "png"
+        @models << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
+  end
+
+  def cosmo_seven
+    time = Time.new.strftime("%H").to_i
+    path_time = "00"
+    if(time > 0 && time < 6)
+      path_time = "18"
+    elsif(time > 6 && time < 12)
+      path_time = "00"
+    elsif(time > 12 && time < 18)
+      path_time = "06"
+    elsif(time > 18)
+      path_time = "12"
+    end
+
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/COSMO/post_proc_7/maps_test/d#{path_time}", productType: 'oper'}
+    html = Nokogiri::HTML(response.body)
+    li_collection = html.css('div').css('ul').css('li')
+    li_size = li_collection.count()
+    @models = []
+
+    for i in (li_size-25)..(li_size-1)
+      if li_collection[i].css('a')[0]['href'].include? "png"
+        @models << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
   end
 
   def stats
@@ -325,18 +305,4 @@ class PagesController < ApplicationController
     @clients = Client.where(status:1)
   end
 
-  # def alaro
-  #   @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
-  #       "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP", "Narastająca suma opadu" => "APCP",
-  #       "Narastająca suma opadu konwekcyjnego" => "APCPC", "Narastająca suma opadu śneigu" => "SNOL", "Narastająca suma opadu śniegu konwekcyjnego" => "SNOC",
-  #       "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
-  #       "Zachmurzenie piętra wysokiego" => "CH"}
-  # end
-
-  # def arome
-  #   @parameters = {"Temperatura 2m" => "T2M", "Temperatura maksymalna 2m" => "TMAX", "Temperatura minimalna 2m" => "TMIN",
-  #       "Temperatura 850hPa" => "T850", "Ciśnienie zredukowane do poziomu morza" => "MSLP",
-  #       "Prędkość wiatru 10m" => "WIND10", "Zachmurzenie piętra niskiego" => "CL", "Zachmurzenie piętra średniego" => "CM",
-  #       "Zachmurzenie piętra wysokiego" => "CH"}
-  # end
 end

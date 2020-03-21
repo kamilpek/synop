@@ -10,12 +10,41 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
+//= require rails-ujs
+//= require jquery3
 //= require popper
+//= require bootstrap-sprockets
 //= require gmaps/google
 //= require underscore
 //= require_tree .
-//= require bootstrap-sprockets
-//= require cookies_eu
+//= require_self
+
+window.onload = activeCollapse();
+
+function activeCollapse() {
+    $(".sidebar-sticky ul li").each(function() {
+        if($(this).children("a").hasClass("active") && $(this).parent().hasClass("collapse")){
+            $(this).parent().toggleClass("collapse");
+        }
+    });
+}
+
+function mapsCollapse() {
+    $("#maps").toggleClass("collapse");
+};
+
+function alertsCollapse() {
+    $("#alerts").toggleClass("collapse");
+};
+
+function radarsCollapse() {
+    $("#radars").toggleClass("collapse");
+};
+
+function calendarsCollapse() {
+    $("#calendars").toggleClass("collapse");
+};
+
+function modelsCollapse() {
+    $("#models").toggleClass("collapse");
+};

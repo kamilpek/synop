@@ -7,26 +7,27 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.5'
+gem 'rails', '~> 5.2.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 4.3.3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.10'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -53,20 +54,19 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # added gems
-gem 'devise', '~> 4.3' # users
-gem 'bootstrap', '~> 4.1', '>= 4.1.3' # views
-gem 'will_paginate', '~> 3.1', '>= 3.1.5' # paginacja
-gem 'will_paginate-bootstrap4', '~> 0.1.3' # pagination
+gem 'devise', '~> 4.7.1' # users
+gem 'bootstrap', '~> 4.4', '>= 4.4.1' # views
+gem 'will_paginate', '~> 3.3' # paginacja
+gem 'will_paginate-bootstrap4', '~> 0.2.2' # pagination
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2' # views
 gem 'roo', '~> 2.7', '>= 2.7.1' # importing
 gem 'geocoder', '~> 1.5' # geocoding
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2' # geocoding
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3' # js lib
 gem 'whenever', '~> 0.9.7' # schedule
-gem 'cookies_eu', '~> 1.6', '>= 1.6.2' # cookies
 gem 'rabl', '~> 0.13.1' # generowanie json
 gem 'carrierwave', '~> 1.2', '>= 1.2.3' # upload
 gem 'rmagick', '~> 2.16' # images
-gem 'mini_magick', '~> 4.8' # images
+gem 'mini_magick', '~> 4.10.1' # images
 gem 'httparty', '~> 0.16.2' # scaping
 gem 'rest-client', '~> 2.1' #scraping

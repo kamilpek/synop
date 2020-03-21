@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark fixed-top bg-blue flex-md-nowrap p-0 shadow">
-    <%= link_to 'Synoptyk', pages_home_path, :title => "Strona Główna", class:"navbar-brand col-sm-3 col-md-2 mr-0" %>
+    <%= link_to 'Synoptyk - Meteo Pomorze', pages_home_path, :title => "Strona Główna", class:"navbar-brand col-sm-3 col-md-2 mr-0" %>
     <ul class="navbar-nav w-100">
         <li class="nav-item text-nowrap">
             <a class="nav-link active"><%= yield :title %></a>
@@ -7,7 +7,7 @@
     </ul>
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-            <%= link_to "v2.10.0 \u00A9 #{DateTime.now.strftime("%Y")}", pages_about_path, :title => "v2.11.0 z dnia 20.03.2020", class:"nav-link" %>
+            <%= link_to "v2.12.0 \u00A9 #{DateTime.now.strftime("%Y")} Kamil Pek", pages_about_path, :title => "v2.12.0 z dnia 21.03.2020", class:"nav-link" %>
         </li>
     </ul>
 </nav>

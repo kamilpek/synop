@@ -17,17 +17,12 @@ Rails.application.routes.draw do
   get 'pages/stats'
   get 'pages/nowcasting'
   get 'pages/monitor'
-  get 'pages/icon'
-  get 'pages/gfs'
   get 'pages/radio'
   get 'pages/dwd'
   get 'pages/eumetsat'
   get 'pages/forecast_map'
   get 'pages/showers'
   get 'pages/um'
-  get 'pages/coamps'
-  get 'pages/coamps_ground'
-  get 'pages/eport'
   get 'pages/aladin'
   get 'pages/about'
   get 'pages/measurements'
@@ -40,8 +35,8 @@ Rails.application.routes.draw do
   get 'pages/lightings'
   get 'pages/satbaltyk'
   get 'pages/wetter'
-  get 'pages/alaro'
-  get 'pages/arome'
+  get 'pages/estofex_gfs'
+  get 'pages/jsmsg'
 
   resources :gios_measurments
   resources :gios_stations

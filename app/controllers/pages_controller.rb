@@ -255,7 +255,7 @@ class PagesController < ApplicationController
       path_time = "12"
     end
 
-    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/COSMO/post_proc_2k8e/#{path_time}", productType: 'oper'}
+    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/COSMO/post_proc_2k8/maps_test/d#{path_time}", productType: 'oper'}
     html = Nokogiri::HTML(response.body)
     li_collection = html.css('div').css('ul').css('li')
     li_size = li_collection.count()

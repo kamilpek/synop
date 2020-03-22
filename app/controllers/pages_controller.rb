@@ -245,24 +245,33 @@ class PagesController < ApplicationController
   def cosmo
     time = Time.new.strftime("%H").to_i
     path_time = "00"
-    if(time > 0 && time < 6)
+    if(time >= 0 && time < 6)
       path_time = "18"
-    elsif(time > 6 && time < 12)
+    elsif(time >= 6 && time < 12)
       path_time = "00"
-    elsif(time > 12 && time < 18)
+    elsif(time >= 12 && time < 18)
       path_time = "06"
-    elsif(time > 18)
+    elsif(time >= 18)
       path_time = "12"
     end
 
-    response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/COSMO/post_proc_#{params[:cosmo]}/maps_test/d#{path_time}", productType: 'oper'}
-    html = Nokogiri::HTML(response.body)
-    li_collection = html.css('div').css('ul').css('li')
-    li_size = li_collection.count()
     @models = []
+    maps_response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/COSMO/post_proc_#{params[:cosmo]}/maps_test/d#{path_time}", productType: 'oper'}
+    maps_html = Nokogiri::HTML(maps_response.body)
+    li_collection = maps_html.css('div').css('ul').css('li')
+    li_size = li_collection.size()
+    for i in 0..(li_size - 1)
+      if li_collection[i].css('a')[0]['href'].include? ".00."
+        @models << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
+      end
+    end
 
-    for i in (li_size-25)..(li_size-1)
-      if li_collection[i].css('a')[0]['href'].include? "png"
+    graf_response = RestClient.post 'https://dane.imgw.pl/datastore/getFilesList', {path: "/Oper/COSMO/post_proc_#{params[:cosmo]}/graf/d#{path_time}", productType: 'oper'}
+    graf_html = Nokogiri::HTML(graf_response.body)
+    li_collection = graf_html.css('div').css('ul').css('li')
+    li_size = li_collection.size()
+    for i in 00..(li_size - 1)
+      if li_collection[i].css('a')[0]['href'].include? ".00."
         @models << 'https://dane.imgw.pl/' + li_collection[i].css('a')[0]['href']
       end
     end

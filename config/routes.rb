@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'pages/radars'
   get 'pages/radars_gda'
   get 'pages/visir'
+  get 'pages/bonn_gfs'
+  get 'pages/bonn_cosmo'
   get 'pages/safir'
   get 'pages/stats'
   get 'pages/nowcasting'

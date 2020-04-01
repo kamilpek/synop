@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'pages/gios'
   get 'pages/radars'
   get 'pages/radars_gda'
+  get 'pages/visir'
   get 'pages/safir'
   get 'pages/stats'
   get 'pages/nowcasting'

@@ -1,9 +1,34 @@
 <% content_for :title, "Mapa METAR" %>
 
-<div class="container-fluid" align="center">
-  <div style='height: 750px;'>
-    <div id="sidebar_builder" style='width: 100%; height: 100%;'></div>
-    <%= render "multimap" %>
-  </div><br>
-  <p><%= link_to "Źródło danych: ogimet.net", "http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=html&Enviar=Vet", class:"btn btn-sm btn-outline-primary" %></p>
+<div class="container-fluid" >
+  <div id="map"></div>
+  <h5 class="controls">Pomiar z <span id="measur_time"></span></h5>
 </div>
+
+<%= map(:center => {
+    :latlng => [52.069167, 19.480556],
+    :zoom => 6 
+    },
+    :attribution => '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="http://meteopomorze.pl/">Meteo Pomorze</a> | &copy; <a href="http://ogimet.com/ultimos_synops2.php?estado=Pola&fmt=html&Enviar=Ver">Ogimet.com</a> '
+) %>
+
+<script type="text/javascript">    
+    var metars = <%= raw json_escape(@metars.to_json) %>;    
+    loadOgimet();
+    function loadOgimet() {
+        for(var metar of metars) {
+            var marker = new L.marker([metar["station_latitude"], metar["station_longitude"]], { opacity: 1 });            
+            var moreInfo = "";
+            moreInfo = moreInfo.concat("<p>Prędkość wiatru: <strong>" + metar["wind_speed"] + " m/s</strong>");
+            moreInfo = moreInfo.concat("Kierunek wiatru: <strong>" + metar["wind_direct"] + " stopni</strong><p>");
+            moreInfo = moreInfo.concat("<p>Ciśnienie: <strong>" + metar["pressure"] + "</strong>");
+            moreInfo = moreInfo.concat(" Zachmurzenie: <strong>" + metar["cloud_cover"] + "</strong>");
+            moreInfo = moreInfo.concat(" Widoczność: <strong>" + metar["visibility"] + "</strong><p>");
+            moreInfo = moreInfo.concat("<p>" + metar["message"] + "<p>");
+            moreInfo = moreInfo.concat("<p><strong>" + metar["ogimet_metar"] + "</strong><p>");
+            moreInfo = moreInfo.concat("<p><strong>Dzień pomiaru: " + metar["date"] + ", godzina: " + metar["hour"] + ":00</strong><p>");
+            marker.bindPopup(moreInfo, { maxWidth : 620 });
+            marker.addTo(this.map);
+        }
+    }
+</script>

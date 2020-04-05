@@ -14,10 +14,10 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require gmaps/google
 //= require underscore
 //= require_tree .
 //= require_self
+//= require leaflet
 
 window.onload = activeCollapse();
 

@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require leaflet
  */
 
 @import "bootstrap";
@@ -203,4 +204,21 @@ body {
   1px -1px 0 #000000,
   -1px 1px 0 #000000,
   1px 1px 0 #000000;
+}
+
+#map {
+  height: 850px;
+  width: 1500px;
+}
+
+.marker-label {
+  position: absolute;
+  width:auto;
+  font-size:14px;
+}
+
+.controls {
+  padding-top: .5rem;
+  align-items: center;
+  text-align: center;
 }

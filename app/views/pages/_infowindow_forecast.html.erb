@@ -1,9 +1,0 @@
-<% for i in 0..4 %>
-  <p>
-    Od <strong><%= @forecast.times_from[i].strftime("%Y-%m-%d; %H:%M") if @forecast.times_from[i] %></strong>
-    do <strong><%= @forecast.times_to[i].strftime("%Y-%m-%d; %H:%M") if @forecast.times_to[i] %></strong>;
-    Temperatura: <strong><%= @forecast.temperatures[i] %>&#8451;</strong>.
-  </p>
-<% end %>
-
-<p><%= link_to "#{name}", forecast_path(object), class:"btn btn-sm btn-block btn-outline-primary" %></p>

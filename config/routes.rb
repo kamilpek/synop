@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'pages/bonn_gfs'
   get 'pages/bonn_cosmo'
   get 'pages/safir'
+  get 'pages/osm'
   get 'pages/stats'
   get 'pages/nowcasting'
   get 'pages/monitor'

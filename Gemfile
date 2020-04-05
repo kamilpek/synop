@@ -61,7 +61,6 @@ gem 'will_paginate-bootstrap4', '~> 0.2.2' # pagination
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2' # views
 gem 'roo', '~> 2.7', '>= 2.7.1' # importing
 gem 'geocoder', '~> 1.5' # geocoding
-gem 'gmaps4rails', '~> 2.1', '>= 2.1.2' # geocoding
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3' # js lib
 gem 'whenever', '~> 0.9.7' # schedule
 gem 'rabl', '~> 0.13.1' # generowanie json
@@ -70,3 +69,4 @@ gem 'rmagick', '~> 2.16' # images
 gem 'mini_magick', '~> 4.10.1' # images
 gem 'httparty', '~> 0.16.2' # scaping
 gem 'rest-client', '~> 2.1' #scraping
+gem 'leaflet-rails', '~> 1.6' # openstreetmaps

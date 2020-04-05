@@ -1,10 +1,32 @@
 <% content_for :title, "Mapa pomiarów" %>
 
-<div class="container-fluid" align="center">
-  <div style='height: 750px;'>
-    <div id="sidebar_builder" style='width: 100%; height: 100%;'></div>
-    <%= render "multimap" %>
-  </div><hr>
-  <p align="center">Data i godzina ostatniego pomiaru: <%= @date %>; <%= @hour %>:00 UTC.</p>
-  <p><%= link_to "Źródło danych: imgw.pl", "http://www.imgw.pl/", class:"btn btn-sm btn-outline-primary" %></p>
+<div class="container-fluid" >
+  <div id="map"></div>
+  <h5 class="controls">Pomiar z <span id="measur_time"></span></h5>
 </div>
+
+<%= map(:center => {
+    :latlng => [52.069167, 19.480556],
+    :zoom => 6 },
+    :attribution => '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="http://meteopomorze.pl/">Meteo Pomorze</a> | &copy; <a href="https://danepubliczne.imgw.pl/">IMGW</a> '
+) %>
+
+<script type="text/javascript">    
+    var measurements = <%= raw json_escape(@measurements.to_json) %>;    
+    loadIMGW();
+    function loadIMGW() {
+        for(var measurement of measurements) {
+            var marker = new L.marker([measurement["station_latitude"], measurement["station_longitude"]], { opacity: 1 });
+            marker.bindTooltip(measurement["temperature"] + "°C", {permanent: true, className: "marker-label", offset: [0, 0] });
+            var moreInfo = "";
+            moreInfo = moreInfo.concat("<p>Wind speed: <strong>" + measurement["wind_speed"] + " m/s</strong><p>");
+            moreInfo = moreInfo.concat("<p>Wind direct: <strong>" + measurement["wind_direct"] + " degrees</strong><p>");
+            moreInfo = moreInfo.concat("<p>Preasure: <strong>" + measurement["preasure"] + " hPa</strong><p>");
+            moreInfo = moreInfo.concat("<p>Rainfall: <strong>" + measurement["rainfall"] + " mm/h</strong><p>");
+            moreInfo = moreInfo.concat("<p>ET: <strong>" + measurement["et"] + " </strong><p>");
+            moreInfo = moreInfo.concat("<p>Humidity: <strong>" + measurement["humidity"] + " %</strong><p>");
+            marker.bindPopup(moreInfo);
+            marker.addTo(this.map);
+        }
+    }
+</script>

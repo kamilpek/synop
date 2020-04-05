@@ -1,10 +1,56 @@
-<% content_for :title, "Mapa prognoz" %>
+<% content_for :title, "Prognozy YrNO" %>
 
-<div class="container-fluid" align="center">
-  <div style='height: 750px;'>
-    <div id="sidebar_builder" style='width: 100%; height: 100%;'></div>
-    <%= render "multimap" %>
-  </div><hr>
-  <p align="center">Prognoza z godziny: <%= @hour %>:00 CEST dnia <%= @date %>.</p>
-  <p><%= link_to "Źródło danych: yr.no", "http://yr.no/", class:"btn btn-sm btn-outline-primary" %></p>
+<div class="container-fluid" >
+    <div id="map"></div>
+    <h5 class="controls"><button onclick="loadForecast(-1);">Poprzednia prognoza</button> |
+         Prognoza na czas od: <span id="time_from"></span> 
+         do: <span id="time_to"></span> | 
+         <button onclick="loadForecast(1);">Następna prognoza</button></h5>
 </div>
+
+<%= map(:center => {
+    :latlng => [52.069167, 19.480556],
+    :zoom => 6 },
+    :attribution => '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="http://meteopomorze.pl/">Meteo Pomorze</a> | &copy; <a href="https://www.yr.no/">yr.no</a> '
+) %>
+
+<script type="text/javascript">
+    var allMarkes = []
+    var forecasts = <%= raw json_escape(@forecasts) %>;
+    var forecastIndex = 0;
+    loadForecast(0);
+    function loadForecast(increment) {
+        clearAllMarkers();
+        if(increment > 0) {
+            forecastIndex += 1
+        } else if(increment < 0) {
+            forecastIndex -= 1
+        }
+
+        for(var forecast of forecasts) {
+            var marker = new L.marker([forecast["station_latitude"], forecast["station_longitude"]], { opacity: 1 });
+            marker.bindTooltip(forecast["temperatures"][forecastIndex] + "°C (" + forecast["situations"][forecastIndex] + ")", {permanent: true, className: "marker-label", offset: [0, 0] });
+            var moreInfo = "";
+            moreInfo = moreInfo.concat("<p>Wind speed: <strong>" + forecast["wind_speeds"][forecastIndex] + " m/s</strong><p>");
+            moreInfo = moreInfo.concat("<p>Wind direct: <strong>" + forecast["wind_directs"][forecastIndex] + " degrees</strong><p>");
+            moreInfo = moreInfo.concat("<p>Preasure: <strong>" + forecast["preasures"][forecastIndex] + " hPa</strong><p>");
+            moreInfo = moreInfo.concat("<p>Precipitations: <strong>" + forecast["precipitations"][forecastIndex] + " mm/h</strong><p>");
+            marker.bindPopup(moreInfo);
+            marker.addTo(this.map);
+            this.allMarkes.push(marker);
+        }
+
+        setTimes(forecastIndex);
+    }
+
+    function setTimes(index) {
+        $("#time_from").text(forecasts[0]["times_from"][index]);
+        $("#time_to").text(forecasts[0]["times_to"][index]);
+    }
+
+    function clearAllMarkers() {
+        for (index = 0; index < allMarkes.length; index++) {
+            this.map.removeLayer(allMarkes[index]);
+        }
+    }
+</script>

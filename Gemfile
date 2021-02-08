@@ -64,7 +64,7 @@ gem 'geocoder', '~> 1.5' # geocoding
 gem 'underscore-rails', '~> 1.8', '>= 1.8.3' # js lib
 gem 'whenever', '~> 0.9.7' # schedule
 gem 'rabl', '~> 0.13.1' # generowanie json
-gem 'carrierwave', '~> 1.2', '>= 1.2.3' # upload
+gem 'carrierwave', '~> 1.3' # upload
 gem 'rmagick', '~> 2.16' # images
 gem 'mini_magick', '~> 4.10.1' # images
 gem 'httparty', '~> 0.16.2' # scaping
